@@ -1,3 +1,8 @@
 # Put overrides to your pantheon.upstream.yml file here.
 # For more information, see: https://pantheon.io/docs/pantheon-yml/
 api_version: 1
+
+database:
+ version: 10.4
+
+# add a comment to trigger a change and build
