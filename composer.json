@@ -40,6 +40,7 @@
         "drupal/smtp": "^1.0-beta4",
         "drupal/svg_image": "^1.14",
         "drupal/token": "^1.9",
+        "drupal/upgrade_status": "^3.9",
         "drupal/viewsreference": "^2.0-beta2",
         "drupal/webform": "^6.0",
         "drush/drush": "^10",
