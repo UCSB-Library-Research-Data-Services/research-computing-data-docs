@@ -1,0 +1,9 @@
+name: CKEditor UCSB Button
+type: module
+description: This plugin module adds a UCSB button feature to CKEditor in Drupal 8
+package: SIS&T
+dependencies:
+  - ckeditor
+version: '8.x-1.0'
+core: '8.x'
+core_version_requirement: ^8 || ^9
