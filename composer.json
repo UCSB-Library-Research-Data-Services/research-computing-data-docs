@@ -24,6 +24,7 @@
         "drupal/editor_advanced_link": "^2.0",
         "drupal/embed": "^1.4",
         "drupal/entity_browser": "^2.6",
+        "drupal/entity_embed": "^1.1",
         "drupal/entity_reference_revisions": "^1.9",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/features": "^3.12",
