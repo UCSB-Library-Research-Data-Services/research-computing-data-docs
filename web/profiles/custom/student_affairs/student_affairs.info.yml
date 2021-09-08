@@ -1,7 +1,7 @@
 name: Student Affairs
 type: profile
 description: 'SIS&T Drupal 9 Distribution for Student Affairs websites.'
-core: 9.x
+core: 8.x
 core_version_requirement: '^8 || ^9'
 
 distribution:
