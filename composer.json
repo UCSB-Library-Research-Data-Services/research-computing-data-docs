@@ -15,6 +15,7 @@
     ],
     "require": {
         "drupal/block_visibility_groups": "^1.4",
+        "drupal/cas": "^1.7",
         "drupal/color_field": "^2.4",
         "drupal/imce": "^2.4",
         "drupal/site_settings": "^1.19",

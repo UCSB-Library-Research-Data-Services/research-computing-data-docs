@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d1ce7599cdb4094f57b79dae4c786113",
+    "content-hash": "a7a6796f20598ab4407c40c19f9538ff",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1376,6 +1376,77 @@
             }
         },
         {
+            "name": "drupal/cas",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/cas.git",
+                "reference": "8.x-1.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/cas-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "a8f7689f1e610bf3d9390d5a2a97eaa6911842d1"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/externalauth": "^1.2"
+            },
+            "require-dev": {
+                "drupal/cas_mock_server": "^1.0||dev-0.x"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.7",
+                    "datestamp": "1592250922",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "David Metzler",
+                    "homepage": "https://www.drupal.org/u/metzlerd",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Brian Osborne",
+                    "homepage": "https://www.drupal.org/u/bkosborne",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Tim Yale",
+                    "homepage": "https://www.drupal.org/u/yalet",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/78967/committers",
+                    "role": "contributor"
+                }
+            ],
+            "description": "Provides CAS authentication for Drupal.",
+            "homepage": "http://drupal.org/project/cas",
+            "support": {
+                "source": "https://git.drupalcode.org/project/cas",
+                "issues": "http://drupal.org/project/issues/cas",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
             "name": "drupal/color_field",
             "version": "2.4.0",
             "source": {
@@ -1824,6 +1895,58 @@
                 "source": "https://github.com/drupal/core-recommended/tree/9.2.5"
             },
             "time": "2021-09-01T21:51:44+00:00"
+        },
+        {
+            "name": "drupal/externalauth",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/externalauth.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/externalauth-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "caea7d2d5a890adad9e6b5beaa2cf139727266d6"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1624457496",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "rgristroph",
+                    "homepage": "https://www.drupal.org/user/516442"
+                },
+                {
+                    "name": "snufkin",
+                    "homepage": "https://www.drupal.org/user/58645"
+                },
+                {
+                    "name": "svendecabooter",
+                    "homepage": "https://www.drupal.org/user/35369"
+                }
+            ],
+            "description": "Helper module to authenticate users using an external site / service and storing identification details",
+            "homepage": "https://www.drupal.org/project/externalauth",
+            "support": {
+                "source": "https://git.drupalcode.org/project/externalauth"
+            }
         },
         {
             "name": "drupal/imce",
