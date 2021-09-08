@@ -1,22 +1,18 @@
-# Composer-enabled Drupal template
+# Drupal 9 Upstream for UCSB Student Affairs Websites
 
-This is Pantheon's recommended starting point for forking new [Drupal](https://www.drupal.org/) upstreams
-that work with the Platform's Integrated Composer build process. It is also the
-Platform's standard Drupal 9 upstream.
+This is Pantheon's recommended starting point for forking new Drupal upstreams that work with the Platform's Integrated Composer build process. The custom upstream includes the UCSB's Web theme with modifications and several custom modules.
 
-Unlike with earlier Pantheon upstreams, files such as Drupal Core that you are
-unlikely to adjust while building sites are not in the main branch of the 
-repository. Instead, they are referenced as dependencies that are installed by
-Composer.
+To get started, there are accounts and tools that require registration prior to getting started.
 
-For more information and detailed installation guides, please visit the
-Integrated Composer Pantheon documentation: https://pantheon.io/docs/integrated-composer
+### You will need:
 
-## Contributing
+* A GitHub account connected to the [UCSB organization](https://github.com/ucsb/github-guide) if you plan on contributing to this upstream.
 
-Contributions are welcome in the form of GitHub pull requests. However, the
-`pantheon-upstreams/drupal-project` repository is a mirror that does not
-directly accept pull requests.
+* A Pantheon account setup using the EDU pathway during [registration](https://pantheon.io/register).
 
-Instead, to propose a change, please fork [pantheon-systems/drupal-project](https://github.com/pantheon-systems/drupal-project)
-and submit a PR to that repository.
+* [Terminus, the Pantheon command line tool](https://pantheon.io/docs/terminus/install/) (recommended for developers)
+
+* The codebase uses a CSS-preprocessor called Sass for our styles. We recommend all style changes be made using SASS and are compiled accordingly.
+
+* We use a custom development workflow while implementing new features for the upstream. Please contact us to request more information.
+<br />
