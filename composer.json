@@ -33,6 +33,7 @@
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/lazy": "^3.10",
         "drupal/linkit": "^6.0@beta",
+        "drupal/media_entity_browser": "^2.0@alpha",
         "drupal/site_settings": "^1.19",
         "drupal/svg_image": "^1.15",
         "drush/drush": "^10",
