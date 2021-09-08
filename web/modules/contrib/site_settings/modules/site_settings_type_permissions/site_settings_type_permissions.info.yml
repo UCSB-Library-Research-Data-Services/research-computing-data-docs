@@ -1,0 +1,14 @@
+name: Site Settings and Labels Type Permissions
+type: module
+description: 'Allows users to configure permissions for individual Site Settings types.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: Custom
+
+dependencies:
+  - site_settings:site_settings
+
+# Information added by Drupal.org packaging script on 2020-05-23
+version: '8.x-1.19'
+project: 'site_settings'
+datestamp: 1590234918

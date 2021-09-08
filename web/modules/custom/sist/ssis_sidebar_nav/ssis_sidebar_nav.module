@@ -1,0 +1,49 @@
+<?php
+
+/**
+ * @file
+ * Contains ssis_sidebar_nav.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ssis_sidebar_nav_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ssis_sidebar_nav module.
+    case 'help.page.ssis_sidebar_nav':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom block to display a sidebar menu') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ssis_sidebar_nav_theme() {
+  return [
+    'menu__sidebar_nav' => [
+      'render element' => 'element',
+      'template' => 'menu--sidebar-nav',
+      'base hook' => 'menu'
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess().
+ */
+function ssis_sidebar_nav_preprocess(&$variables, $hook, &$info) {
+  // Replace theme page.html.twig template with the one from custom module
+  $theme = \Drupal::theme()->getActiveTheme()->getName();
+  if (($hook === 'page') && ($theme == 'ucsbwebsub')) {
+    $info['theme path'] = 'modules/custom/sist/ssis_sidebar_nav';
+    $info['path'] = 'modules/custom/sist/ssis_sidebar_nav/templates';
+  }
+}
