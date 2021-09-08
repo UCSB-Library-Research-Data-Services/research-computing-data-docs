@@ -35,6 +35,7 @@
         "drupal/linkit": "^6.0@beta",
         "drupal/media_entity_browser": "^2.0@alpha",
         "drupal/menu_block": "^1.7",
+        "drupal/menu_breadcrumb": "^1.16",
         "drupal/site_settings": "^1.19",
         "drupal/svg_image": "^1.15",
         "drush/drush": "^10",
