@@ -46,6 +46,7 @@
         "drupal/replicate": "^1.0",
         "drupal/scheduler": "^1.4",
         "drupal/simple_gmap": "^3.0",
+        "drupal/simple_sitemap": "^4.0@alpha",
         "drupal/site_settings": "^1.19",
         "drupal/svg_image": "^1.15",
         "drupal/webform": "^6.0",
