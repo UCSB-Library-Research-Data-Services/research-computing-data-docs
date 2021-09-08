@@ -44,6 +44,7 @@
         "drupal/paragraphs": "^1.12",
         "drupal/site_settings": "^1.19",
         "drupal/svg_image": "^1.15",
+        "drupal/webform": "^6.0",
         "drush/drush": "^10",
         "pantheon-upstreams/upstream-configuration": "*"
     },
