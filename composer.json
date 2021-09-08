@@ -18,6 +18,7 @@
         "drupal/cas": "^1.7",
         "drupal/color_field": "^2.4",
         "drupal/config_update": "^1.7",
+        "drupal/csv_importer": "^1.11",
         "drupal/imce": "^2.4",
         "drupal/site_settings": "^1.19",
         "drupal/svg_image": "^1.15",
