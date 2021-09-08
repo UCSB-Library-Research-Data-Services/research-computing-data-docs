@@ -22,6 +22,7 @@
         "drupal/ctools": "^3.7",
         "drupal/default_content": "^2.0@alpha",
         "drupal/editor_advanced_link": "^2.0",
+        "drupal/embed": "^1.4",
         "drupal/imce": "^2.4",
         "drupal/site_settings": "^1.19",
         "drupal/svg_image": "^1.15",
