@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5299e906a70fa8caaad6b1040568679e",
+    "content-hash": "da0226bcef9764febabda1a86fad8102",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3923,6 +3923,57 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/scheduler",
                 "issues": "https://www.drupal.org/project/issues/scheduler"
+            }
+        },
+        {
+            "name": "drupal/simple_gmap",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/simple_gmap.git",
+                "reference": "3.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/simple_gmap-3.0.1.zip",
+                "reference": "3.0.1",
+                "shasum": "16c3d3a2f3470312e8e82d5d95cb70ba7cb54ff1"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/address": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.1",
+                    "datestamp": "1622931515",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "jhodgdon",
+                    "homepage": "https://www.drupal.org/user/155601"
+                },
+                {
+                    "name": "martin107",
+                    "homepage": "https://www.drupal.org/user/2659379"
+                }
+            ],
+            "description": "Provides a Google Maps link/map formatter for simple Text fields.",
+            "homepage": "https://www.drupal.org/project/simple_gmap",
+            "support": {
+                "source": "https://git.drupalcode.org/project/simple_gmap"
             }
         },
         {
