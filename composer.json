@@ -24,6 +24,7 @@
         "drupal/editor_advanced_link": "^2.0",
         "drupal/embed": "^1.4",
         "drupal/entity_browser": "^2.6",
+        "drupal/entity_reference_revisions": "^1.9",
         "drupal/imce": "^2.4",
         "drupal/site_settings": "^1.19",
         "drupal/svg_image": "^1.15",
