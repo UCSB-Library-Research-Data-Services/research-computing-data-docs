@@ -43,6 +43,7 @@
         "drupal/pantheon_advanced_page_cache": "^1.2",
         "drupal/paragraphs": "^1.12",
         "drupal/redirect": "^1.6",
+        "drupal/replicate": "^1.0",
         "drupal/site_settings": "^1.19",
         "drupal/svg_image": "^1.15",
         "drupal/webform": "^6.0",
