@@ -97,6 +97,7 @@ install:
   - simple_gmap
   - simple_sitemap
   - site_settings
+  - smtp
   - svg_image
   - system
   - taxonomy
