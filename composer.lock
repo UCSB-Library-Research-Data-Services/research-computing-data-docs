@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eb04608aa6236489bca7274fd2e56c0f",
+    "content-hash": "14e9ead3c14f7bbb1be2f5251697e84d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1390,6 +1390,118 @@
             },
             "abandoned": "roave/better-reflection",
             "time": "2020-10-27T21:46:55+00:00"
+        },
+        {
+            "name": "drupal/block_cache",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/block_cache.git",
+                "reference": "e405ec67af25476692f613ba3fcb11c3174428e8"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1+2-dev",
+                    "datestamp": "1584743362",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Thiha Thit",
+                    "homepage": "https://www.drupal.org/u/thihathit",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Allows site builders to set cache setting for each block",
+            "homepage": "https://www.drupal.org/project/block_cache",
+            "keywords": [
+                "Block Cache",
+                "Drupal",
+                "block_cache"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/block_cache",
+                "issues": "https://www.drupal.org/project/issues/block_cache"
+            }
+        },
+        {
+            "name": "drupal/block_field",
+            "version": "1.0.0-rc2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/block_field.git",
+                "reference": "8.x-1.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/block_field-8.x-1.0-rc2.zip",
+                "reference": "8.x-1.0-rc2",
+                "shasum": "44472f8e89c319af884b25ac0a66337329a9b309"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc2",
+                    "datestamp": "1621950813",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "acbramley",
+                    "homepage": "https://www.drupal.org/user/1036766"
+                },
+                {
+                    "name": "fenstrat",
+                    "homepage": "https://www.drupal.org/user/362649"
+                },
+                {
+                    "name": "jrockowitz",
+                    "homepage": "https://www.drupal.org/user/371407"
+                },
+                {
+                    "name": "michaellander",
+                    "homepage": "https://www.drupal.org/user/636494"
+                },
+                {
+                    "name": "paulocs",
+                    "homepage": "https://www.drupal.org/user/3640109"
+                }
+            ],
+            "description": "Provides a field that allows a content entity to create and configure custom block instances.",
+            "homepage": "https://www.drupal.org/project/block_field",
+            "support": {
+                "source": "https://git.drupalcode.org/project/block_field"
+            }
         },
         {
             "name": "drupal/block_visibility_groups",
@@ -6148,7 +6260,7 @@
         },
         {
             "name": "pantheon-upstreams/upstream-configuration",
-            "version": "2348.x-dev",
+            "version": "2349.x-dev",
             "dist": {
                 "type": "path",
                 "url": "upstream-configuration",
@@ -9855,6 +9967,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/block_field": 5,
         "drupal/default_content": 15,
         "drupal/entity_usage": 10,
         "drupal/feeds": 15,
