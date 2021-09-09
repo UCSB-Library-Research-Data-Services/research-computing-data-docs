@@ -16,3 +16,11 @@ To get started, there are accounts and tools that require registration prior to 
 
 * We use a custom development workflow while implementing new features for the upstream. Please contact us to request more information.
 <br />
+
+### About the new upstream:
+
+* Pantheon will automatically run composer. The build results are added to your repository as a tag; they are not pushed to your development branch. When you update a site from the dashboard, Pantheon will both update the git repository from the upstream and then run Composer to get any updates to core, modules or themes.
+
+* You generally do not need to update core in the custom upstream any longer. Pantheon / Composer will update core when there are new versions available, without requiring changes to the upstream.
+
+* Do not attempt to require a different set of modules on different sites. This use case does not work well with Composer, which is designed to manage dependencies for a single application. Instead, include the superset of modules needed in the upstream, and only enable the ones that are needed on any given site.
