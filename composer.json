@@ -11,9 +11,16 @@
         {
             "type": "path",
             "url": "upstream-configuration"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
     ],
     "require": {
+        "bower-asset/jquery-simple-color": "^1.2",
+        "bower-asset/lazysizes": "^5.1",
+        "bower-asset/spectrum": "^1.8",
         "drupal/block_visibility_groups": "^1.4",
         "drupal/cas": "^1.7",
         "drupal/color_field": "^2.4",
@@ -30,6 +37,7 @@
         "drupal/features": "^3.12",
         "drupal/feeds": "^3.0@alpha",
         "drupal/google_analytics": "^3.1",
+        "drupal/honeypot": "^2.0",
         "drupal/imce": "^2.4",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/lazy": "^3.10",
@@ -57,6 +65,7 @@
         "drupal/viewsreference": "^1.7",
         "drupal/webform": "^6.0",
         "drush/drush": "^10",
+        "oomphinc/composer-installers-extender": "^2.0",
         "pantheon-upstreams/upstream-configuration": "*"
     },
     "conflict": {
@@ -65,15 +74,16 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
+        "installer-types": ["bower-asset", "npm-asset"],
         "installer-paths": {
             "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
             "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"],
-            "web/profiles/custom/{$name}": ["type:student_affairs"]
+            "web/profiles/custom/{$name}": ["type:student_affairs"],
+            "web/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"]
         },
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
