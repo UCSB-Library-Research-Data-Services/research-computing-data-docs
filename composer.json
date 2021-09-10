@@ -21,7 +21,10 @@
         "bower-asset/jquery-simple-color": "^1.2",
         "bower-asset/lazysizes": "^5.1",
         "bower-asset/spectrum": "^1.8",
+        "drupal/block_cache": "^1.1",
+        "drupal/block_field": "^1.0@RC",
         "drupal/block_visibility_groups": "^1.4",
+        "drupal/bootstrap": "^3.23",
         "drupal/cas": "^1.7",
         "drupal/color_field": "^2.4",
         "drupal/config_update": "^1.7",
@@ -64,6 +67,7 @@
         "drupal/video_embed_field": "^2.4",
         "drupal/viewsreference": "^1.7",
         "drupal/webform": "^6.0",
+        "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^10",
         "oomphinc/composer-installers-extender": "^2.0",
         "pantheon-upstreams/upstream-configuration": "*"
