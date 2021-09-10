@@ -67,15 +67,15 @@
 #}
 {%
   set classes = [
-    node.bundle|clean_class,
-    node.isPromoted() ? 'is-promoted',
-    node.isSticky() ? 'is-sticky',
-    not node.isPublished() ? 'is-unpublished',
-    view_mode ? view_mode|clean_class,
-    node.field_top_padding.value ? 'top-padding-' ~ node.field_top_padding.value,
-    node.field_bottom_padding.value ? 'bottom-padding-' ~ node.field_bottom_padding.value,
-    'clearfix',
-  ]
+  node.bundle|clean_class,
+  node.isPromoted() ? 'is-promoted',
+  node.isSticky() ? 'is-sticky',
+  not node.isPublished() ? 'is-unpublished',
+  view_mode ? view_mode|clean_class,
+  node.field_top_padding.value ? 'top-padding-' ~ node.field_top_padding.value,
+  node.field_bottom_padding.value ? 'bottom-padding-' ~ node.field_bottom_padding.value,
+  'clearfix',
+]
 %}
 <article{{ attributes.addClass(classes) }}>
 
@@ -89,18 +89,18 @@
 
             {# Description #}
             <div class="paragraph paragraph--type--column col-sm-12 col-md-8">
-               <div class="inner">
-                      <p> {{ node.field_description.value|raw }}</p>
-                </div>
+              <div class="inner">
+                <p> {{ node.field_description.value|raw }}</p>
+              </div>
             </div>
 
             {# Address #}
             <div class="paragraph paragraph--type--column col-sm-12 col-md-4">
               <div class="inner has-border border-color-9cbebe">
-                  <p><span><img alt="Adress" src="/sites/default/files/images/pages/Dept%20Pages/icons/address%20mist.png"></span><br>
-                    <strong>Mailing Address</strong><br>
-                    {{ node.field_grad_address.value|raw }}
-                  </p>
+                <p><span><img alt="Adress" src="/sites/default/files/images/pages/Dept%20Pages/icons/address%20mist.png"></span><br>
+                  <strong>Mailing Address</strong><br>
+                  {{ node.field_grad_address.value|raw }}
+                </p>
               </div>
             </div>
 
@@ -130,7 +130,7 @@
               <div class="inner">
                 <div>
                   <p class="text-align-center"><img alt="Email" src="/sites/default/files/images/pages/Dept%20Pages/icons/email%20mist.png"></p>
-                  <p class="text-align-center"><strong>Email&nbsp;</strong><br><a href="mailto:{{ node.field_grad_email.value }}">{{ node.field_grad_email.value }}</a></p>
+                  <p class="text-align-center"><strong>Email&nbsp;</strong><br><a href="mailto:{{ node.field_grad_email.value|striptags|raw }}">{{ node.field_grad_email.value|striptags|raw }}</a></p>
                 </div>
               </div>
             </div>
@@ -138,10 +138,10 @@
             {# Phone #}
             <div class="paragraph paragraph--type--column col-sm-12 col-md-4">
               <div class="inner">
-                  <div>
-                    <p class="text-align-center"><img alt="Phone" src="/sites/default/files/images/pages/Dept%20Pages/icons/phone%20mist.png"></p>
-                    <p class="text-align-center"><strong>Department Phone Number</strong><br><a href="tel:{{ node.field_grad_phone.value|preg_replace('/[^0-9]+/', '$1') }}">{{ node.field_grad_phone.value }}</a></p>
-                  </div>
+                <div>
+                  <p class="text-align-center"><img alt="Phone" src="/sites/default/files/images/pages/Dept%20Pages/icons/phone%20mist.png"></p>
+                  <p class="text-align-center"><strong>Department Phone Number</strong><br><a href="tel:{{ node.field_grad_phone.value|striptags|raw|preg_replace('/[^0-9]+/', '$1') }}">{{ node.field_grad_phone.value|striptags|raw }}</a></p>
+                </div>
               </div>
             </div>
           </div>
@@ -159,7 +159,7 @@
                 <div>
                   <p><span><img alt="Degree icon" src="/sites/default/files/images/pages/Dept%20Pages/icons/degree%20mist.png"></span>
                     <strong>Degrees Offered</strong><br>
-                    {{ node.field_degrees.value }}
+                    {{ node.field_degrees.value|striptags|raw }}
                   </p>
                 </div>
               </div>
@@ -199,7 +199,7 @@
             <div class="paragraph paragraph--type--column col-sm-12 col-md-8">
               <div class="inner">
                 <div class="columns columns-2">
-                {{ node.field_requirements.value|raw }}
+                  {{ node.field_requirements.value|raw }}
                 </div>
               </div>
             </div>
@@ -211,47 +211,47 @@
 
       {# Blade 5 #}
       {% if node.field_emphases.value %}
-      <div class="paragraph paragraph--type--blade">
-        <div class="inner">
-          <div  class="columns">
+        <div class="paragraph paragraph--type--blade">
+          <div class="inner">
+            <div  class="columns">
 
-            {# Emphases #}
-            <div class="paragraph paragraph--type--column col-sm-12 col-md-12">
-              <div class="inner">  
-                <div class="columns columns-2">
-                  <strong>Emphases</strong>
+              {# Emphases #}
+              <div class="paragraph paragraph--type--column col-sm-12 col-md-12">
+                <div class="inner">
+                  <div class="columns columns-2">
+                    <strong>Emphases</strong>
+                  </div>
+                  <div class="columns columns-2">&nbsp;</div>
+                  {{ node.field_emphases.value|raw }}
                 </div>
-                <div class="columns columns-2">&nbsp;</div>
-                {{ node.field_emphases.value|raw }}
+
               </div>
-      
             </div>
           </div>
         </div>
-      </div>
       {% endif %}
 
 
       {# Blade 6 #}
       {% if node.field_specializations.value %}
-      <div class="paragraph paragraph--type--blade background-color-eef0f2">
-        <div class="inner">
-          <div  class="columns">
+        <div class="paragraph paragraph--type--blade background-color-eef0f2">
+          <div class="inner">
+            <div  class="columns">
 
-            {# Specializations #}
-            <div class="paragraph paragraph--type--column col-sm-12 col-md-12">
-              <div class="inner">  
-                <div class="columns columns-2">
-                  <strong>Specializations</strong>
+              {# Specializations #}
+              <div class="paragraph paragraph--type--column col-sm-12 col-md-12">
+                <div class="inner">
+                  <div class="columns columns-2">
+                    <strong>Specializations</strong>
+                  </div>
+                  <div class="columns columns-2">&nbsp;</div>
+                  {{ node.field_specializations.value|raw }}
                 </div>
-                <div class="columns columns-2">&nbsp;</div>
-                {{ node.field_specializations.value|raw }}
+
               </div>
-      
             </div>
           </div>
         </div>
-      </div>
       {% endif %}
 
     </div>
