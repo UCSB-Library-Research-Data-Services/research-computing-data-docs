@@ -21,6 +21,7 @@
         "bower-asset/jquery-simple-color": "^1.2",
         "bower-asset/lazysizes": "^5.1",
         "bower-asset/spectrum": "^1.8",
+        "drupal/asset_injector": "^2.7",
         "drupal/block_cache": "^1.1",
         "drupal/block_field": "^1.0@RC",
         "drupal/block_visibility_groups": "^1.4",
