@@ -76,6 +76,7 @@
         "drupal/site_settings": "^1.19",
         "drupal/smtp": "^1.0",
         "drupal/svg_image": "^1.15",
+        "drupal/tawk_to": "^2.0",
         "drupal/toolbar_menu": "^2.2",
         "drupal/twig_tweak": "^3.1",
         "drupal/userprotect": "^1.1",
