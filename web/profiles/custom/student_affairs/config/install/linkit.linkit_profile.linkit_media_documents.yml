@@ -11,17 +11,6 @@ third_party_settings:
 id: linkit_media_documents
 label: 'Linkit Media Documents'
 description: 'Used for listing media entities'
-attributes:
-  title:
-    id: title
-    weight: 0
-    settings:
-      automatic_title: true
-  target:
-    id: target
-    weight: 0
-    settings:
-      widget_type: simple_checkbox
 matchers:
   69536266-0d02-4294-b26f-5d740dcc4e81:
     uuid: 69536266-0d02-4294-b26f-5d740dcc4e81
@@ -32,6 +21,9 @@ matchers:
       bundles:
         document: document
       group_by_bundle: true
+      metadata: '[media:url:relative]'
+      substitution_type: canonical
+      limit: 100
   e0b945db-f642-43cf-a360-fa1164254fc0:
     uuid: e0b945db-f642-43cf-a360-fa1164254fc0
     id: 'entity:node'
@@ -40,5 +32,11 @@ matchers:
       result_description: '[node:url:relative]'
       bundles:
         page: page
+        people_profile: people_profile
+        resources_links: resources_links
       group_by_bundle: true
       include_unpublished: false
+      metadata: '[node:url:relative]'
+      substitution_type: canonical
+      limit: 100
+

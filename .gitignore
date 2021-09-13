@@ -130,3 +130,9 @@ upstream/web/
 
 # Ignore .env files as they are personal
 /.env
+
+# Ignore files inside the .vscode folder
+/.vscode/launch.json
+
+# Ignore .lando.yml
+.lando.yml
