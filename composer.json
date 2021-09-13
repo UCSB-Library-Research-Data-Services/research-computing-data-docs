@@ -76,6 +76,7 @@
         "drupal/video_embed_field": "^2.4",
         "drupal/viewsreference": "^1.7",
         "drupal/webform": "^6.0",
+        "drupal/webform_encrypt": "^1.0@beta",
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^10",
         "oomphinc/composer-installers-extender": "^2.0",
