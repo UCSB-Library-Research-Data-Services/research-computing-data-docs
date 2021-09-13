@@ -27,6 +27,7 @@
         "drupal/bootstrap": "^3.23",
         "drupal/cas": "^1.7",
         "drupal/color_field": "^2.4",
+        "drupal/config_split": "^1.7",
         "drupal/config_update": "^1.7",
         "drupal/csv_importer": "^1.11",
         "drupal/ctools": "^3.7",
