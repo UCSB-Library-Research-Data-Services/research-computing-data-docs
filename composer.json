@@ -32,6 +32,7 @@
         "drupal/csv_importer": "^1.11",
         "drupal/ctools": "^3.7",
         "drupal/default_content": "^2.0@alpha",
+        "drupal/devel": "^4.1",
         "drupal/diff": "^1.0",
         "drupal/editor_advanced_link": "^2.0",
         "drupal/embed": "^1.4",
