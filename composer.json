@@ -64,6 +64,7 @@
         "drupal/pathauto": "^1.8",
         "drupal/real_aes": "^2.3",
         "drupal/redirect": "^1.6",
+        "drupal/redis": "^1.5",
         "drupal/replicate": "^1.0",
         "drupal/replicate_ui": "^1.0",
         "drupal/scheduler": "^1.4",
