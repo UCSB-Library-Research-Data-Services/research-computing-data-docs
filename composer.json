@@ -37,6 +37,7 @@
         "drupal/default_content": "^2.0@alpha",
         "drupal/devel": "^4.1",
         "drupal/diff": "^1.0",
+        "drupal/easy_breadcrumb": "^2.0",
         "drupal/editor_advanced_link": "^2.0",
         "drupal/embed": "^1.4",
         "drupal/entity_browser": "^2.6",
