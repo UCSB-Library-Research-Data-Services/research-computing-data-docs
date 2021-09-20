@@ -48,6 +48,7 @@
         "drupal/entity_reference_revisions": "^1.9",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/externalauth": "^1.4",
+        "drupal/fakeobjects": "^1.1",
         "drupal/features": "^3.12",
         "drupal/feeds": "^3.0@alpha",
         "drupal/field_group": "^3.2",
