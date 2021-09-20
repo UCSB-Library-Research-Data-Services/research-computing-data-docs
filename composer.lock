@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "49eecdc542f2b33f884729bf8317897d",
+    "content-hash": "b7cfd4b6468ed30fe81df3f17812d8b4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7534,6 +7534,54 @@
             }
         },
         {
+            "name": "drupal/views_fields_on_off",
+            "version": "1.0.0-alpha5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/views_fields_on_off.git",
+                "reference": "8.x-1.0-alpha5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_fields_on_off-8.x-1.0-alpha5.zip",
+                "reference": "8.x-1.0-alpha5",
+                "shasum": "4a8bc067f1113b3db6cd6ee713df8fa435f908ab"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha5",
+                    "datestamp": "1588741526",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "andileco",
+                    "homepage": "https://www.drupal.org/user/2054544"
+                },
+                {
+                    "name": "franksj",
+                    "homepage": "https://www.drupal.org/user/2743481"
+                }
+            ],
+            "description": "Exposed form to allow users to switch fields in a View on or off.",
+            "homepage": "https://www.drupal.org/project/views_fields_on_off",
+            "support": {
+                "source": "https://git.drupalcode.org/project/views_fields_on_off"
+            }
+        },
+        {
             "name": "drupal/viewsreference",
             "version": "2.0.0-beta2",
             "source": {
@@ -13028,6 +13076,7 @@
         "drupal/media_entity_browser": 15,
         "drupal/rabbit_hole": 10,
         "drupal/simple_sitemap": 15,
+        "drupal/views_fields_on_off": 15,
         "drupal/viewsreference": 10,
         "drupal/webform_encrypt": 10,
         "drupal/webform_views": 15
