@@ -32,6 +32,7 @@
         "drupal/color_field": "^2.4",
         "drupal/config_split": "^1.7",
         "drupal/config_update": "^1.7",
+        "drupal/content_moderation_notifications": "^3.3",
         "drupal/csv_importer": "^1.11",
         "drupal/ctools": "^3.7",
         "drupal/default_content": "^2.0@alpha",
