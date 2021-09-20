@@ -34,6 +34,7 @@
         "drupal/config_update": "^1.7",
         "drupal/content_moderation_notifications": "^3.3",
         "drupal/csv_importer": "^1.11",
+        "drupal/csv_serialization": "^2.0",
         "drupal/ctools": "^3.7",
         "drupal/default_content": "^2.0@alpha",
         "drupal/devel": "^4.1",
