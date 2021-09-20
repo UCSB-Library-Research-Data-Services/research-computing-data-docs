@@ -71,6 +71,7 @@
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/permissions_by_term": "^3.1",
+        "drupal/rabbit_hole": "^1.0@beta",
         "drupal/real_aes": "^2.3",
         "drupal/redirect": "^1.6",
         "drupal/redis": "^1.5",
