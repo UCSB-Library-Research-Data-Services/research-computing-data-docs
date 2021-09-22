@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "595f6fe82ccdf4049e42f60b8f8ecf7d",
+    "content-hash": "7bfc5f2b68b47cdeb39320d1e7528370",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6901,17 +6901,11 @@
         },
         {
             "name": "drupal/simple_sitemap",
-            "version": "4.0.0-alpha2",
+            "version": "dev-4.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/simple_sitemap.git",
-                "reference": "4.0.0-alpha2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simple_sitemap-4.0.0-alpha2.zip",
-                "reference": "4.0.0-alpha2",
-                "shasum": "d5c749859b72dfa8e82a6e41108c2f74f4efe6f2"
+                "reference": "77552aa38ff92b1868af8a91225b7873a1c46436"
             },
             "require": {
                 "drupal/core": "^8.7.7 || ^9",
@@ -6919,12 +6913,15 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
                 "drupal": {
-                    "version": "4.0.0-alpha2",
-                    "datestamp": "1626796343",
+                    "version": "4.x-dev",
+                    "datestamp": "1632267395",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 },
                 "drush": {
@@ -6953,8 +6950,7 @@
             "homepage": "https://drupal.org/project/simple_sitemap",
             "support": {
                 "source": "https://cgit.drupalcode.org/simple_sitemap",
-                "issues": "https://drupal.org/project/issues/simple_sitemap",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
+                "issues": "https://drupal.org/project/issues/simple_sitemap"
             }
         },
         {
@@ -9436,7 +9432,7 @@
         },
         {
             "name": "pantheon-upstreams/upstream-configuration",
-            "version": "2364.x-dev",
+            "version": "2369.x-dev",
             "dist": {
                 "type": "path",
                 "url": "upstream-configuration",
@@ -13145,7 +13141,7 @@
         "drupal/linkit": 10,
         "drupal/media_entity_browser": 15,
         "drupal/rabbit_hole": 10,
-        "drupal/simple_sitemap": 15,
+        "drupal/simple_sitemap": 20,
         "drupal/views_fields_on_off": 15,
         "drupal/viewsreference": 10,
         "drupal/webform_encrypt": 10,
