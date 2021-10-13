@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Contains ssis_core.module.
+ */
+
+use Drupal\Core\Entity\Display\EntityFormDisplayInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ssis_core_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ssis_core module.
+    case 'help.page.ssis_core':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom module for Student Affairs sites.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_entity_form_display_alter().
+ */
+function ssis_core_entity_form_display_alter(EntityFormDisplayInterface &$form_display, array $context) {
+  // use our custom form display for basic pages
+  if ($context['entity_type'] == 'node' && $context['bundle'] == 'page') {
+    /** @var \Drupal\Core\Entity\EntityDisplayRepository $entity_display_repo */
+    $entity_display_repo = \Drupal::service('entity_display.repository');
+    $form_display = $entity_display_repo->getFormDisplay($context['entity_type'], $context['bundle'], 'ssis_basic_page') ?: $form_display;
+  }
+}
