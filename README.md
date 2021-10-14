@@ -1,6 +1,12 @@
-# Drupal 9 Upstream for UCSB Student Affairs Websites
+# UCSB Web Theme Upstream for Drupal 9 Sites using Pantheon's Integrated Composer.
 
-This is Pantheon's recommended starting point for forking new Drupal upstreams that work with the Platform's Integrated Composer build process. The custom upstream includes the UCSB's Web theme with modifications and several custom modules.
+This is a collaborative effort from SIS&T and the Office of Public Affairs & Communications to bring the campus one unified CMS template.
+
+* SIS&T = Student Information Systems & Technology
+* OPAC = Office of Public Affairs & Communications
+* ETS = Pantheon admins for UCSB
+
+We used Pantheon's recommended starting point for forking new Drupal upstreams that work with the Platform's Integrated Composer build process. The custom upstream includes the UCSB's Web theme and several custom modules.
 
 To get started, there are accounts and tools that require registration prior to getting started.
 
