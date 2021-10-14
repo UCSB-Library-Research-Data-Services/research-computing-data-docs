@@ -32,8 +32,6 @@ matchers:
       result_description: '[node:url:relative]'
       bundles:
         page: page
-        people_profile: people_profile
-        resources_links: resources_links
       group_by_bundle: true
       include_unpublished: false
       metadata: '[node:url:relative]'
