@@ -1,11 +1,11 @@
 name: Student Affairs
 type: profile
-description: 'SIS&T Drupal 9 Distribution for Student Affairs websites.'
+description: 'Drupal 9 Distribution for UCSB Websites.'
 core: 8.x
 core_version_requirement: '^8 || ^9'
 
 distribution:
-  name: 'SIS&T Drupal 9 Distribution'
+  name: 'UCSB Web Theme Drupal 9 Distribution'
 
 # Modules to install to support the profile.
 install:

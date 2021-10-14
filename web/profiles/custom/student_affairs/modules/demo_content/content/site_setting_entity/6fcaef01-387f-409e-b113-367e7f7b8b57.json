@@ -90,15 +90,12 @@
     "metatag": [
         {
             "value": {
-                "title": "| SA Demo site",
+                "title": "| UC Santa Barbara",
                 "canonical_url": "http:\/\/default\/home"
             }
         }
     ],
     "field_address": [
-        {
-            "value": "Division of Student Affairs"
-        },
         {
             "value": "University of California, Santa Barbara"
         },

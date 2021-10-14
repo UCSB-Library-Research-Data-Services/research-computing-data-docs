@@ -102,18 +102,8 @@
     ],
     "field_link": [
         {
-            "uri": "https:\/\/my.sa.ucsb.edu\/",
-            "title": "MyUCSB & GOLD",
-            "options": []
-        },
-        {
-            "uri": "http:\/\/status.sa.ucsb.edu\/",
-            "title": "Student Affairs Information Systems Status",
-            "options": []
-        },
-        {
-            "uri": "https:\/\/registrar.sa.ucsb.edu\/calendars\/calendars-deadlines\/academic-calendars",
-            "title": "Academic Calendar",
+            "uri": "https:\/\/www.ucsb.edu\/policies-and-disclosures",
+            "title": "Policies and Disclosures",
             "options": []
         },
         {

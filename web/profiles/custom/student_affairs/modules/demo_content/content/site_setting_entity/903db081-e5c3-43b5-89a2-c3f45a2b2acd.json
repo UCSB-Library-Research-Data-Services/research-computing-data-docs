@@ -97,31 +97,31 @@
     ],
     "field_link": [
         {
-            "uri": "tel:(805) 893-3651",
-            "title": "(805) 893-3651",
+            "uri": "tel:(805) 893-8000",
+            "title": "(805) 893-8000",
             "options": [],
             "lang": "en"
         },
         {
-            "uri": "https:\/\/www.facebook.com\/ucsbsa",
+            "uri": "https:\/\/www.facebook.com\/ucsantabarbara",
             "title": "Facebook",
             "options": [],
             "lang": "en"
         },
         {
-            "uri": "https:\/\/www.youtube.com\/user\/ucsbsa",
+            "uri": "https:\/\/www.youtube.com\/c\/ucsantabarbara",
             "title": "Youtube",
             "options": [],
             "lang": "en"
         },
         {
-            "uri": "mailto:VCSAOffice@sa.ucsb.edu",
-            "title": "VCSAOffice@sa.ucsb.edu",
+            "uri": "mailto:youremail@ucsb.edu",
+            "title": "youremail@ucsb.edu",
             "options": [],
             "lang": "en"
         },
         {
-            "uri": "https:\/\/twitter.com\/VCSAKlawunnUCSB",
+            "uri": "https:\/\/twitter.com\/ucsantabarbara",
             "title": "Twitter",
             "options": [],
             "lang": "en"
