@@ -99,14 +99,14 @@
 
   // Create multiple uls for the main nav dropdown
   $.fn.menuColumns = function() {
-    $('body:not(.toolbar-tray-open) ul.nav > li.dropdown ul > li:nth-child(1)').each(function() {
+    $('body:not(.toolbar-tray-open) ul.nav > li.dropdown .dropdown-menu > ul > li:nth-child(1)').each(function() {
       var overviewItem = $(this);
       var currentList = overviewItem.closest('ul');
       var newList = $('<ul>');
       newList.insertBefore(currentList);
       newList.append(overviewItem);
     });
-    $('body:not(.toolbar-tray-open) ul.nav > li.dropdown ul + ul').each(function() {
+    $('body:not(.toolbar-tray-open) ul.nav > li.dropdown .dropdown-menu > ul').each(function() {
       var secontList = $(this);
       var listLength = $(this).children().length;
       var halfLength = Math.round(listLength / 2);

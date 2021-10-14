@@ -8,10 +8,10 @@
 (function (factory) {
 	if (typeof define === 'function' && define.amd) {
 		// AMD (Register as an anonymous module)
-		define(['jquery'], factory);
+		define(['web/libraries/spectrum/test/jquery'], factory);
 	} else if (typeof exports === 'object') {
 		// Node/CommonJS
-		module.exports = factory(require('jquery'));
+		module.exports = factory(require('web/libraries/spectrum/test/jquery'));
 	} else {
 		// Browser globals
 		factory(jQuery);

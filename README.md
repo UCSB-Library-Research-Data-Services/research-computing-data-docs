@@ -1,22 +1,32 @@
-# Composer-enabled Drupal template
+# UCSB Web Theme Upstream for Drupal 9 Sites using Pantheon's Integrated Composer.
 
-This is Pantheon's recommended starting point for forking new [Drupal](https://www.drupal.org/) upstreams
-that work with the Platform's Integrated Composer build process. It is also the
-Platform's standard Drupal 9 upstream.
+This is a collaborative effort from SIS&T and the Office of Public Affairs & Communications to bring the campus one unified CMS template.
 
-Unlike with earlier Pantheon upstreams, files such as Drupal Core that you are
-unlikely to adjust while building sites are not in the main branch of the 
-repository. Instead, they are referenced as dependencies that are installed by
-Composer.
+* SIS&T = Student Information Systems & Technology
+* OPAC = Office of Public Affairs & Communications
+* ETS = Pantheon admins for UCSB
 
-For more information and detailed installation guides, please visit the
-Integrated Composer Pantheon documentation: https://pantheon.io/docs/integrated-composer
+We used Pantheon's recommended starting point for forking new Drupal upstreams that work with the Platform's Integrated Composer build process. The custom upstream includes the UCSB's Web theme and several custom modules.
 
-## Contributing
+To get started, there are accounts and tools that require registration prior to getting started.
 
-Contributions are welcome in the form of GitHub pull requests. However, the
-`pantheon-upstreams/drupal-project` repository is a mirror that does not
-directly accept pull requests.
+### You will need:
 
-Instead, to propose a change, please fork [pantheon-systems/drupal-project](https://github.com/pantheon-systems/drupal-project)
-and submit a PR to that repository.
+* A GitHub account connected to the [UCSB organization](https://github.com/ucsb/github-guide) if you plan on contributing to this upstream.
+
+* A Pantheon account setup using the EDU pathway during [registration](https://pantheon.io/register).
+
+* [Terminus, the Pantheon command line tool](https://pantheon.io/docs/terminus/install/) (recommended for developers)
+
+* The codebase uses a CSS-preprocessor called Sass for our styles. We recommend all style changes be made using SASS and are compiled accordingly.
+
+* We use a custom development workflow while implementing new features for the upstream. Please contact us to request more information.
+<br />
+
+### About the new upstream:
+
+* Pantheon will automatically run composer. The build results are added to your repository as a tag; they are not pushed to your development branch. When you update a site from the dashboard, Pantheon will both update the git repository from the upstream and then run Composer to get any updates to core, modules or themes.
+
+* You generally do not need to update core in the custom upstream any longer. Pantheon / Composer will update core when there are new versions available, without requiring changes to the upstream.
+
+* Do not attempt to require a different set of modules on different sites. This use case does not work well with Composer, which is designed to manage dependencies for a single application. Instead, include the superset of modules needed in the upstream, and only enable the ones that are needed on any given site.

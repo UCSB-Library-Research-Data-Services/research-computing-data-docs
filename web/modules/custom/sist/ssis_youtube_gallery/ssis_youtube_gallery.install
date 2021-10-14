@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall hooks for SSIS YouTube Gallery module.
+ */
+
+use Drupal\paragraphs\ParagraphInterface;
+use Drupal\paragraphs\Entity\Paragraph;
+use Drupal\Core\Config\FileStorage;
+
+/**
+ * Implements hook_uninstall().
+ *
+ * Clean up all the config provided by the module so that we can re-install if we want to
+ * See https://www.drupal.org/node/2404447 how to enforce dependency for config
+ */
+
+function ssis_youtube_gallery_uninstall() {
+
+  // Remove the parent gallery first
+  $paragraph_youtube_video_gallery_ids = \Drupal::entityQuery('paragraph')
+    ->condition('type', 'youtube_video_gallery')
+    ->execute();
+  $storage = \Drupal::entityTypeManager()->getStorage('paragraph');
+
+  if ($paragraphs = $storage->loadMultiple($paragraph_youtube_video_gallery_ids)) {
+    $storage->delete($paragraphs);
+    \Drupal::messenger()->addStatus(t('Paragraphs of type "YouTube Video Gallery" have been deleted.'));
+  }
+
+  // Delete the orphan videos
+  $paragraph_youtube_video_ids = \Drupal::entityQuery('paragraph')
+    ->condition('type', 'youtube_video')
+    ->execute();
+  $storage = \Drupal::entityTypeManager()->getStorage('paragraph');
+  if ($paragraphs = $storage->loadMultiple($paragraph_youtube_video_ids)) {
+    $storage->delete($paragraphs);
+    \Drupal::messenger()->addStatus(t('Paragraphs of type "YouTube Video" have been deleted.'));
+  }
+
+  // Clear all caches.
+  drupal_flush_all_caches();
+
+}
