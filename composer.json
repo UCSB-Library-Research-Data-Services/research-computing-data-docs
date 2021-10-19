@@ -60,6 +60,7 @@
         "drupal/entity_reference_revisions": "^1.9",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/entityqueue": "^1.2",
+        "drupal/entityreference_filter": "^1.4",
         "drupal/externalauth": "^1.4",
         "drupal/fakeobjects": "^1.1",
         "drupal/features": "^3.12",
