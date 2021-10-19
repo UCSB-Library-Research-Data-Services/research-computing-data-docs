@@ -50,6 +50,7 @@
         "drupal/delete_all": "^2.0",
         "drupal/devel": "^4.1",
         "drupal/diff": "^1.0",
+        "drupal/dropzonejs": "^2.5",
         "drupal/ds": "^3.13",
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/editor_advanced_link": "^2.0",
