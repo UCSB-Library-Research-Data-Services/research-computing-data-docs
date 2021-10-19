@@ -69,6 +69,7 @@
         "drupal/fontawesome": "^2.19",
         "drupal/geolocation": "^3.7",
         "drupal/google_analytics": "^3.1",
+        "drupal/google_tag": "^1.4",
         "drupal/honeypot": "^2.0",
         "drupal/imce": "^2.4",
         "drupal/inline_entity_form": "^1.0@RC",
