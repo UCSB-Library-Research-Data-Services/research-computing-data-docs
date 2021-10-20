@@ -115,6 +115,8 @@
         "drupal/webform_encrypt": "^1.0@beta",
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^10",
+        "npm-asset/dropzone": "^5.9",
+        "npm-asset/fakeobjects": "^4.15",
         "oomphinc/composer-installers-extender": "^2.0",
         "pantheon-upstreams/upstream-configuration": "*"
     },
