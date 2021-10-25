@@ -21,6 +21,7 @@
         "bower-asset/jquery-simple-color": "^1.2",
         "bower-asset/lazysizes": "^5.1",
         "bower-asset/spectrum": "^1.8",
+        "drupal/admin_content_notification": "^3.8",
         "drupal/admin_toolbar": "^3.0",
         "drupal/anchor_link": "^2.5",
         "drupal/asset_injector": "^2.7",
