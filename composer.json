@@ -25,6 +25,7 @@
         "drupal/admin_content_notification": "^3.8",
         "drupal/admin_toolbar": "^3.0",
         "drupal/anchor_link": "^2.5",
+        "drupal/antibot": "^1.4",
         "drupal/asset_injector": "^2.7",
         "drupal/back_to_top": "^2.0",
         "drupal/block_cache": "^1.1",
