@@ -31,6 +31,7 @@
         "drupal/block_cache": "^1.1",
         "drupal/block_field": "^1.0@RC",
         "drupal/block_visibility_groups": "^1.4",
+        "drupal/book_blocks": "^1.6",
         "drupal/bootstrap": "^3.23",
         "drupal/cacheexclude": "^1.0",
         "drupal/captcha": "^1.2",

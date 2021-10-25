@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a650a55acef27136abf1cc2109264e75",
+    "content-hash": "bc116e04b69880c68ba6ddf11a337872",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2641,6 +2641,50 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/block_visibility_groups",
                 "issues": "https://www.drupal.org/project/issues/block_visibility_groups"
+            }
+        },
+        {
+            "name": "drupal/book_blocks",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/book_blocks.git",
+                "reference": "8.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/book_blocks-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "6a7f9c93a2c96c285846990a282ec858b0315942"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.6",
+                    "datestamp": "1611026388",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bwong",
+                    "homepage": "https://www.drupal.org/user/161967"
+                }
+            ],
+            "description": "Provides additional blocks for book entity.",
+            "homepage": "https://www.drupal.org/project/book_blocks",
+            "support": {
+                "source": "https://git.drupalcode.org/project/book_blocks"
             }
         },
         {
