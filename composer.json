@@ -65,6 +65,7 @@
         "drupal/ds": "^3.13",
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/editor_advanced_link": "^2.0",
+        "drupal/element_class_formatter": "^1.4",
         "drupal/embed": "^1.4",
         "drupal/entity_browser": "^2.6",
         "drupal/entity_embed": "^1.1",
