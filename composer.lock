@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9c6f54e93a39b9c566bf9dedf01556f0",
+    "content-hash": "d2f361c4287409dc5cb2f281d62064e7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2079,6 +2079,51 @@
             },
             "abandoned": "roave/better-reflection",
             "time": "2020-10-27T21:46:55+00:00"
+        },
+        {
+            "name": "drupal/a11y_paragraphs_tabs",
+            "version": "1.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/a11y_paragraphs_tabs.git",
+                "reference": "8.x-1.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/a11y_paragraphs_tabs-8.x-1.11.zip",
+                "reference": "8.x-1.11",
+                "shasum": "bd4b08fdb5527233f35278259487517260e48977"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/paragraphs": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.11",
+                    "datestamp": "1586965000",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "hmartens",
+                    "homepage": "https://www.drupal.org/user/622826"
+                }
+            ],
+            "description": "Adds a paragraph component/type for Tabs that comply to Accessibility (A11Y) standards.",
+            "homepage": "https://www.drupal.org/project/a11y_paragraphs_tabs",
+            "support": {
+                "source": "https://git.drupalcode.org/project/a11y_paragraphs_tabs"
+            }
         },
         {
             "name": "drupal/addtoany",
@@ -10850,6 +10895,18 @@
             "time": "2021-09-20T12:20:58+00:00"
         },
         {
+            "name": "npm-asset/a11y-accordion-tabs",
+            "version": "1.0.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/a11y-accordion-tabs/-/a11y-accordion-tabs-1.0.2.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
             "name": "npm-asset/cropper",
             "version": "4.1.0",
             "dist": {
@@ -11002,7 +11059,7 @@
         },
         {
             "name": "pantheon-upstreams/upstream-configuration",
-            "version": "dev-ssops-2403",
+            "version": "dev-ssops-2412",
             "dist": {
                 "type": "path",
                 "url": "upstream-configuration",
