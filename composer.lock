@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a07b36f034883223fa04b6e092da429",
+    "content-hash": "2cb6fd7d79cf038a4dce37f838b7c87c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3220,6 +3220,50 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/ckeditor_config",
                 "issues": "https://www.drupal.org/project/issues/ckeditor_config"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_markdown",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_markdown.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_markdown-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "73efabe8c4d86ab73b21bd0b8f5cece8688c1b48"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1580498736",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "JeroenT",
+                    "homepage": "https://www.drupal.org/user/2228934"
+                }
+            ],
+            "description": "Enables Markdown Plugin for CKEditor.",
+            "homepage": "https://www.drupal.org/project/ckeditor_markdown",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor_markdown"
             }
         },
         {
