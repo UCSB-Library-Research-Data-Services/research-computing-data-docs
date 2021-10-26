@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d2f361c4287409dc5cb2f281d62064e7",
+    "content-hash": "ff09869a9fc887f6f832295f29d51147",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2840,6 +2840,76 @@
             "homepage": "https://www.drupal.org/project/bootstrap_layouts",
             "support": {
                 "source": "https://git.drupalcode.org/project/bootstrap_layouts"
+            }
+        },
+        {
+            "name": "drupal/bricks",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bricks.git",
+                "reference": "2.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bricks-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "2ccf39abf154b77d2b636b0c2899a8cf9d0b231b"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/bricks_inline": "*",
+                "drupal/bricks_revisions": "*",
+                "drupal/dynamic_entity_reference": "*",
+                "drupal/entity_reference_revisions": "*",
+                "drupal/inline_entity_form": "*",
+                "drupal/paragraphs": "*",
+                "drupal/paragraphs_demo": "*",
+                "querypath/querypath": "^3.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.1",
+                    "datestamp": "1630134535",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Charlie ChX Negyesi",
+                    "homepage": "https://www.drupal.org/user/3619592"
+                },
+                {
+                    "name": "rjjakes",
+                    "homepage": "https://www.drupal.org/user/3457245"
+                },
+                {
+                    "name": "tonycorp",
+                    "homepage": "https://www.drupal.org/user/787240"
+                }
+            ],
+            "description": "Allows to create bricky content.",
+            "homepage": "https://www.drupal.org/project/bricks",
+            "keywords": [
+                "Drupal",
+                "blocks",
+                "bricks",
+                "layout"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/bricks",
+                "issues": "https://www.drupal.org/project/issues/bricks",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
