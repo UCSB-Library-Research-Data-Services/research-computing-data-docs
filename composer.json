@@ -72,6 +72,7 @@
         "drupal/entity_embed": "^1.1",
         "drupal/entity_print": "^2.4",
         "drupal/entity_reference_revisions": "^1.9",
+        "drupal/entity_type_clone": "^1.7",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/entityqueue": "^1.2",
         "drupal/entityreference_filter": "^1.4",
