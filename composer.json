@@ -114,6 +114,7 @@
         "drupal/metatag_import_export_csv": "^1.0",
         "drupal/migrate_plus": "^5.1",
         "drupal/migrate_tools": "^5.0",
+        "drupal/month_year": "^2.0",
         "drupal/pantheon_advanced_page_cache": "^1.2",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
