@@ -80,6 +80,7 @@
         "drupal/fakeobjects": "^1.1",
         "drupal/features": "^3.12",
         "drupal/feeds": "^3.0@alpha",
+        "drupal/field_delimiter": "^1.1",
         "drupal/field_group": "^3.2",
         "drupal/fontawesome": "^2.19",
         "drupal/geolocation": "^3.7",
