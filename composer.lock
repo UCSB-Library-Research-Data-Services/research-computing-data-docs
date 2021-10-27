@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "680931b46598ecec0a129712de57085e",
+    "content-hash": "fd65721117c869b44c35ff7c19fe5d3f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -8506,6 +8506,60 @@
                 "source": "https://git.drupalcode.org/project/metatag",
                 "issues": "https://www.drupal.org/project/issues/metatag",
                 "docs": "https://www.drupal.org/docs/8/modules/metatag"
+            }
+        },
+        {
+            "name": "drupal/metatag_import_export_csv",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/metatag_import_export_csv.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/metatag_import_export_csv-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "87ee9edfb69cb574e1a8695278668ce91e6c91d1"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9",
+                "drupal/metatag": "*",
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1634656951",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "aayush23",
+                    "homepage": "https://www.drupal.org/user/3389476"
+                },
+                {
+                    "name": "joachim",
+                    "homepage": "https://www.drupal.org/user/107701"
+                },
+                {
+                    "name": "namit.garg",
+                    "homepage": "https://www.drupal.org/user/3258680"
+                }
+            ],
+            "description": "Import or Export Metatags with the help of a CSV file",
+            "homepage": "https://www.drupal.org/project/metatag_import_export_csv",
+            "support": {
+                "source": "https://git.drupalcode.org/project/metatag_import_export_csv"
             }
         },
         {
