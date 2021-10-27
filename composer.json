@@ -83,6 +83,7 @@
         "drupal/field_delimiter": "^1.1",
         "drupal/field_group": "^3.2",
         "drupal/file_mdm": "^2.1",
+        "drupal/flexslider": "^2.0",
         "drupal/fontawesome": "^2.19",
         "drupal/geolocation": "^3.7",
         "drupal/google_analytics": "^3.1",
@@ -143,6 +144,7 @@
         "npm-asset/cropper": "^4.1",
         "npm-asset/dropzone": "^5.9",
         "npm-asset/fakeobjects": "^4.15",
+        "npm-asset/flexslider": "^2.7",
         "oomphinc/composer-installers-extender": "^2.0",
         "pantheon-upstreams/upstream-configuration": "*"
     },
