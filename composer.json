@@ -102,6 +102,7 @@
         "drupal/linkit": "^6.0@beta",
         "drupal/linkit_media_library": "^1.0",
         "drupal/mailchimp": "^2.0",
+        "drupal/masonry": "^1.2",
         "drupal/media_entity_browser": "^2.0@alpha",
         "drupal/menu_block": "^1.7",
         "drupal/menu_breadcrumb": "^1.16",
@@ -149,6 +150,8 @@
         "npm-asset/dropzone": "^5.9",
         "npm-asset/fakeobjects": "^4.15",
         "npm-asset/flexslider": "^2.7",
+        "npm-asset/imagesloaded": "^4.1",
+        "npm-asset/masonry-layout": "^4.2",
         "oomphinc/composer-installers-extender": "^2.0",
         "pantheon-upstreams/upstream-configuration": "*"
     },

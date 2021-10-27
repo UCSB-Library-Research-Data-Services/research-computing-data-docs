@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e58b117ece10980a6001131d2cd7a31a",
+    "content-hash": "cb5073ad8f4517b2bbc3bc9b489b4684",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7994,6 +7994,56 @@
             }
         },
         {
+            "name": "drupal/masonry",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/masonry.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/masonry-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "28b780a93c1692f4b746093c9e52b734cf179ff8"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1602247057",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Dominique Clause (Dom.)",
+                    "homepage": "https://www.drupal.org/u/dom",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Dom.",
+                    "homepage": "https://www.drupal.org/user/801982"
+                }
+            ],
+            "description": "Masonry integrates with Masonry library",
+            "homepage": "https://www.drupal.org/project/masonry",
+            "support": {
+                "source": "https://git.drupalcode.org/project/masonry",
+                "issues": "https://www.drupal.org/project/issues/masonry?version=8.x"
+            }
+        },
+        {
             "name": "drupal/media_entity_browser",
             "version": "2.0.0-alpha3",
             "source": {
@@ -12146,11 +12196,35 @@
             ]
         },
         {
+            "name": "npm-asset/desandro-matches-selector",
+            "version": "2.0.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/desandro-matches-selector/-/desandro-matches-selector-2.0.2.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
             "name": "npm-asset/dropzone",
             "version": "5.9.3",
             "dist": {
                 "type": "tar",
                 "url": "https://registry.npmjs.org/dropzone/-/dropzone-5.9.3.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/ev-emitter",
+            "version": "1.1.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/ev-emitter/-/ev-emitter-1.1.1.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -12170,6 +12244,21 @@
             ]
         },
         {
+            "name": "npm-asset/fizzy-ui-utils",
+            "version": "2.0.7",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/fizzy-ui-utils/-/fizzy-ui-utils-2.0.7.tgz"
+            },
+            "require": {
+                "npm-asset/desandro-matches-selector": ">=2.0.0,<3.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
             "name": "npm-asset/flexslider",
             "version": "2.7.2",
             "dist": {
@@ -12185,11 +12274,71 @@
             ]
         },
         {
+            "name": "npm-asset/get-size",
+            "version": "2.0.3",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/get-size/-/get-size-2.0.3.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/imagesloaded",
+            "version": "4.1.4",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/imagesloaded/-/imagesloaded-4.1.4.tgz"
+            },
+            "require": {
+                "npm-asset/ev-emitter": ">=1.0.0,<2.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
             "name": "npm-asset/jquery",
             "version": "3.6.0",
             "dist": {
                 "type": "tar",
                 "url": "https://registry.npmjs.org/jquery/-/jquery-3.6.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/masonry-layout",
+            "version": "4.2.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/masonry-layout/-/masonry-layout-4.2.2.tgz"
+            },
+            "require": {
+                "npm-asset/get-size": ">=2.0.2,<3.0.0",
+                "npm-asset/outlayer": ">=2.1.0,<3.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/outlayer",
+            "version": "2.1.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/outlayer/-/outlayer-2.1.1.tgz"
+            },
+            "require": {
+                "npm-asset/ev-emitter": ">=1.0.0,<2.0.0",
+                "npm-asset/fizzy-ui-utils": ">=2.0.0,<3.0.0",
+                "npm-asset/get-size": ">=2.0.2,<3.0.0"
             },
             "type": "npm-asset",
             "license": [
