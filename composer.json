@@ -103,6 +103,7 @@
         "drupal/linkit_media_library": "^1.0",
         "drupal/mailchimp": "^2.0",
         "drupal/masonry": "^1.2",
+        "drupal/masonry_views": "^1.1",
         "drupal/media_entity_browser": "^2.0@alpha",
         "drupal/menu_block": "^1.7",
         "drupal/menu_breadcrumb": "^1.16",
