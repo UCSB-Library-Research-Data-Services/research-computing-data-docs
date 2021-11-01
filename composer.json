@@ -127,6 +127,7 @@
         "drupal/rabbit_hole": "^1.0@beta",
         "drupal/real_aes": "^2.3",
         "drupal/rebuild_cache_access": "^1.7",
+        "drupal/recaptcha": "^3.0",
         "drupal/redirect": "^1.6",
         "drupal/redis": "^1.5",
         "drupal/replicate": "^1.0",
