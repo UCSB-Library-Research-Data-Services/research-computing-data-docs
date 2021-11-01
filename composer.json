@@ -130,6 +130,7 @@
         "drupal/recaptcha": "^3.0",
         "drupal/redirect": "^1.6",
         "drupal/redis": "^1.5",
+        "drupal/registration_role": "^1.1",
         "drupal/replicate": "^1.0",
         "drupal/replicate_ui": "^1.0",
         "drupal/responsive_tables_filter": "^1.8",
