@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca3fba193eda2c008aee02ecb96653fe",
+    "content-hash": "59a20a186bd8c0bb488bb0dc1c5f0f5b",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -11173,6 +11173,55 @@
             "homepage": "https://www.drupal.org/project/video_embed_field",
             "support": {
                 "source": "https://git.drupalcode.org/project/video_embed_field"
+            }
+        },
+        {
+            "name": "drupal/video_embed_panopto",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/video_embed_panopto.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/video_embed_panopto-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "2417b3a4a4678a026c037c0982a98e27b87b3e7c"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/video_embed_field": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1589975487",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "jadhavdevendra",
+                    "homepage": "https://www.drupal.org/user/485984"
+                },
+                {
+                    "name": "szeidler",
+                    "homepage": "https://www.drupal.org/user/767652"
+                }
+            ],
+            "description": "Panopto handler for Video Embed Field.",
+            "homepage": "https://www.drupal.org/project/video_embed_panopto",
+            "support": {
+                "source": "https://git.drupalcode.org/project/video_embed_panopto"
             }
         },
         {
