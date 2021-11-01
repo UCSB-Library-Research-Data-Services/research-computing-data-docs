@@ -135,6 +135,7 @@
         "drupal/replicate_ui": "^1.0",
         "drupal/responsive_tables_filter": "^1.8",
         "drupal/scheduler": "^1.4",
+        "drupal/semanticviews": "^2.3",
         "drupal/simple_gmap": "^3.0",
         "drupal/simple_instagram_feed": "^3.11",
         "drupal/simple_sitemap": "4.x-dev@dev",
