@@ -159,6 +159,7 @@
         "drupal/views_conditional": "^1.4",
         "drupal/views_data_export": "^1.0",
         "drupal/views_fields_on_off": "^1.0@alpha",
+        "drupal/views_flipped_table": "^1.4",
         "drupal/viewsreference": "^2.0@beta",
         "drupal/webform": "^6.0",
         "drupal/webform_encrypt": "^1.0@beta",
