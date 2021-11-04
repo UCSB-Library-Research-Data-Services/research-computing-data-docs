@@ -51,6 +51,18 @@
                     "type": "file"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "tobia/pause",
+                "version": "3.0.3",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/tobia/Pause/blob/master/jquery.pause.js",
+                    "type": "file"
+                }
+            }
         }
     ],
     "require": {
@@ -211,6 +223,7 @@
         "drupal/youtube": "^1.2",
         "drush/drush": "^10",
         "malsup/cycle": "^3.0.3",
+        "tobia/pause": "^3.0.3",
         "npm-asset/a11y-accordion-tabs": "^1.0",
         "npm-asset/cropper": "^4.1",
         "npm-asset/dropzone": "^5.9",

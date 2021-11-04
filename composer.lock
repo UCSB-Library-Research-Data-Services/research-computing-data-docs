@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f17b1735a5037b8d35fdf5f728cfbf2b",
+    "content-hash": "bcb656b84fff89df20e18ed04fd94b4f",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -17924,6 +17924,15 @@
                 "source": "https://github.com/thinkshout/mailchimp-api-php/tree/v2.1.1"
             },
             "time": "2021-08-05T15:12:34+00:00"
+        },
+        {
+            "name": "tobia/pause",
+            "version": "3.0.3",
+            "dist": {
+                "type": "file",
+                "url": "https://github.com/tobia/Pause/blob/master/jquery.pause.js"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "twig/twig",
