@@ -162,6 +162,7 @@
         "drupal/views_flipped_table": "^1.4",
         "drupal/views_infinite_scroll": "^1.9",
         "drupal/views_json_source": "^1.1",
+        "drupal/views_taxonomy_term_name_depth": "^7.0",
         "drupal/viewsreference": "^2.0@beta",
         "drupal/webform": "^6.0",
         "drupal/webform_encrypt": "^1.0@beta",
