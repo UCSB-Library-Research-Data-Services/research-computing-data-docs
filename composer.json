@@ -27,12 +27,25 @@
                     "type": "file"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "briancherne/jquery-hoverintent",
+                "version": "1.10.1",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://briancherne.github.io/jquery-hoverIntent/jquery.hoverIntent.js",
+                    "type": "file"
+                }
+            }
         }
     ],
     "require": {
         "bower-asset/jquery-simple-color": "^1.2",
         "bower-asset/lazysizes": "^5.1",
         "bower-asset/spectrum": "^1.8",
+        "briancherne/jquery-hoverintent": "^1.10.1",
         "drupal/a11y_paragraphs_tabs": "^1.11",
         "drupal/addtoany": "^1.15",
         "drupal/admin_content_notification": "^3.8",
