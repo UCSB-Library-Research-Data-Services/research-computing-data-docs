@@ -170,6 +170,7 @@
         "drupal/webform_content_creator": "^2.0",
         "drupal/webform_encrypt": "^1.0@beta",
         "drupal/webform_views": "^5.0@alpha",
+        "drupal/youtube": "^1.2",
         "drush/drush": "^10",
         "npm-asset/a11y-accordion-tabs": "^1.0",
         "npm-asset/cropper": "^4.1",
