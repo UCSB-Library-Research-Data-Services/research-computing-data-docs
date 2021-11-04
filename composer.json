@@ -167,6 +167,7 @@
         "drupal/views_year_filter": "^1.7",
         "drupal/viewsreference": "^2.0@beta",
         "drupal/webform": "^6.0",
+        "drupal/webform_content_creator": "^2.0",
         "drupal/webform_encrypt": "^1.0@beta",
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^10",
