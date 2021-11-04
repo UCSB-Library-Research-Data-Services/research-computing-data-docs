@@ -239,6 +239,16 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "autoload": {
+        "classmap": [
+            "scripts/composer/LibrariesHandler.php"
+        ]
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "DrupalProject\\composer\\LibrariesHandler::renameLibraries"
+        ]
+    },
     "extra": {
         "installer-types": ["bower-asset", "npm-asset"],
         "installer-paths": {
