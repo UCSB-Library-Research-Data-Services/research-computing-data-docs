@@ -15,6 +15,18 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "malsup/cycle",
+                "version": "3.0.3",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/malsup/cycle/blob/master/jquery.cycle.all.js",
+                    "type": "file"
+                }
+            }
         }
     ],
     "require": {
@@ -172,6 +184,7 @@
         "drupal/webform_views": "^5.0@alpha",
         "drupal/youtube": "^1.2",
         "drush/drush": "^10",
+        "malsup/cycle": "^3.0.3",
         "npm-asset/a11y-accordion-tabs": "^1.0",
         "npm-asset/cropper": "^4.1",
         "npm-asset/dropzone": "^5.9",
