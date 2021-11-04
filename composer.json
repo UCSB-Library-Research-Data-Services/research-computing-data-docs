@@ -39,6 +39,18 @@
                     "type": "file"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "douglascrockford/json-js",
+                "version": "2.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://raw.githubusercontent.com/douglascrockford/JSON-js/master/json2.js",
+                    "type": "file"
+                }
+            }
         }
     ],
     "require": {
@@ -46,6 +58,7 @@
         "bower-asset/lazysizes": "^5.1",
         "bower-asset/spectrum": "^1.8",
         "briancherne/jquery-hoverintent": "^1.10.1",
+        "douglascrockford/json-js": "^2.0",
         "drupal/a11y_paragraphs_tabs": "^1.11",
         "drupal/addtoany": "^1.15",
         "drupal/admin_content_notification": "^3.8",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b3547ba4c9b235e09a89b42f36283f1",
+    "content-hash": "f17b1735a5037b8d35fdf5f728cfbf2b",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2297,6 +2297,15 @@
                 "source": "https://github.com/dompdf/dompdf/tree/v1.0.2"
             },
             "time": "2021-01-08T14:18:52+00:00"
+        },
+        {
+            "name": "douglascrockford/json-js",
+            "version": "2.0",
+            "dist": {
+                "type": "file",
+                "url": "https://raw.githubusercontent.com/douglascrockford/JSON-js/master/json2.js"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "drupal-ckeditor-libraries-group/codesnippet",
