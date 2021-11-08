@@ -15,12 +15,62 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "malsup/cycle",
+                "version": "3.0.3",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/malsup/cycle/blob/master/jquery.cycle.all.js",
+                    "type": "file"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "briancherne/jquery-hoverintent",
+                "version": "1.10.1",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://briancherne.github.io/jquery-hoverIntent/jquery.hoverIntent.js",
+                    "type": "file"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "douglascrockford/json-js",
+                "version": "2.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://raw.githubusercontent.com/douglascrockford/JSON-js/master/json2.js",
+                    "type": "file"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "tobia/pause",
+                "version": "3.0.3",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/tobia/Pause/blob/master/jquery.pause.js",
+                    "type": "file"
+                }
+            }
         }
     ],
     "require": {
         "bower-asset/jquery-simple-color": "^1.2",
         "bower-asset/lazysizes": "^5.1",
         "bower-asset/spectrum": "^1.8",
+        "briancherne/jquery-hoverintent": "^1.10.1",
+        "douglascrockford/json-js": "^2.0",
         "drupal/a11y_paragraphs_tabs": "^1.11",
         "drupal/addtoany": "^1.15",
         "drupal/admin_content_notification": "^3.8",
@@ -162,6 +212,7 @@
         "drupal/views_flipped_table": "^1.4",
         "drupal/views_infinite_scroll": "^1.9",
         "drupal/views_json_source": "^1.1",
+        "drupal/views_slideshow": "^4.8",
         "drupal/views_taxonomy_term_name_depth": "^7.0",
         "drupal/views_templates": "^1.1",
         "drupal/views_year_filter": "^1.7",
@@ -172,6 +223,7 @@
         "drupal/webform_views": "^5.0@alpha",
         "drupal/youtube": "^1.2",
         "drush/drush": "^10",
+        "malsup/cycle": "^3.0.3",
         "npm-asset/a11y-accordion-tabs": "^1.0",
         "npm-asset/cropper": "^4.1",
         "npm-asset/dropzone": "^5.9",
@@ -180,13 +232,24 @@
         "npm-asset/imagesloaded": "^4.1",
         "npm-asset/masonry-layout": "^4.2",
         "oomphinc/composer-installers-extender": "^2.0",
-        "pantheon-upstreams/upstream-configuration": "*"
+        "pantheon-upstreams/upstream-configuration": "*",
+        "tobia/pause": "^3.0.3"
     },
     "conflict": {
             "drupal/drupal": "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "autoload": {
+        "classmap": [
+            "scripts/composer/LibrariesHandler.php"
+        ]
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "DrupalProject\\composer\\LibrariesHandler::renameLibraries"
+        ]
+    },
     "extra": {
         "installer-types": ["bower-asset", "npm-asset"],
         "installer-paths": {
