@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a05b4f2d9853b356c90b5c1f7a8640e",
+    "content-hash": "ff7dc5d93957aa72beda3f861e9cc0b3",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -8371,6 +8371,64 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/masonry_views",
                 "issues": "https://www.drupal.org/project/issues/masonry_views?version=8.x"
+            }
+        },
+        {
+            "name": "drupal/media_bulk_upload",
+            "version": "1.0.0-alpha27",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/media_bulk_upload.git",
+                "reference": "8.x-1.0-alpha27"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_bulk_upload-8.x-1.0-alpha27.zip",
+                "reference": "8.x-1.0-alpha27",
+                "shasum": "8dbb1d2c45731650d12ae53519913d385ce8497e"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/dropzonejs": "^2.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha27",
+                    "datestamp": "1592297811",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mirnaxvb",
+                    "homepage": "https://www.drupal.org/user/3157031"
+                },
+                {
+                    "name": "Steven Buteneers",
+                    "homepage": "https://www.drupal.org/user/3301055"
+                },
+                {
+                    "name": "jefuri",
+                    "homepage": "https://www.drupal.org/user/2733365"
+                },
+                {
+                    "name": "mycw1991",
+                    "homepage": "https://www.drupal.org/user/3523472"
+                }
+            ],
+            "description": "Allows uploading files in bulk and converting them to media entities.",
+            "homepage": "https://www.drupal.org/project/media_bulk_upload",
+            "support": {
+                "source": "git://git.drupal.org/project/media_bulk_upload.git",
+                "issues": "https://www.drupal.org/project/issues/media_bulk_upload"
             }
         },
         {
@@ -18518,6 +18576,7 @@
         "drupal/feeds": 15,
         "drupal/inline_entity_form": 5,
         "drupal/linkit": 10,
+        "drupal/media_bulk_upload": 15,
         "drupal/media_entity_browser": 15,
         "drupal/rabbit_hole": 10,
         "drupal/simple_sitemap": 20,

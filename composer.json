@@ -156,6 +156,7 @@
         "drupal/mailchimp": "^2.0",
         "drupal/masonry": "^1.2",
         "drupal/masonry_views": "^1.1",
+        "drupal/media_bulk_upload": "^1.0@alpha",
         "drupal/media_entity_browser": "^2.0@alpha",
         "drupal/media_entity_file_replace": "^1.0",
         "drupal/menu_block": "^1.7",
