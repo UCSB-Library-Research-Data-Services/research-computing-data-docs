@@ -88,6 +88,7 @@
         "drupal/bootstrap_layouts": "^5.2",
         "drupal/bricks": "^2.0",
         "drupal/cacheexclude": "^1.0",
+        "drupal/calendar": "^1.0@alpha",
         "drupal/captcha": "^1.2",
         "drupal/cas": "^1.7",
         "drupal/cas_attributes": "^2.0@beta",
