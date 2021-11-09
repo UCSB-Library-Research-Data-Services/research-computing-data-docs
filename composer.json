@@ -101,6 +101,7 @@
         "drupal/colorbox_field_formatter": "^2.0",
         "drupal/colorbox_load": "^1.2",
         "drupal/comment_notify": "^1.2",
+        "drupal/computed_field": "^3.0@alpha",
         "drupal/config_split": "^1.7",
         "drupal/config_update": "^1.7",
         "drupal/content_moderation_notifications": "^3.3",
