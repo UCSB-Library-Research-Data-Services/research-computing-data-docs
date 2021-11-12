@@ -198,6 +198,7 @@
         "drupal/replicate": "^1.0",
         "drupal/replicate_ui": "^1.0",
         "drupal/responsive_tables_filter": "^1.8",
+        "drupal/rules": "3.x-dev@dev",
         "drupal/scheduler": "^1.4",
         "drupal/semanticviews": "^2.3",
         "drupal/simple_gmap": "^3.0",
