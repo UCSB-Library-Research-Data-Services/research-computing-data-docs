@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "80834e721ff8cc8c72363bac95e8d707",
+    "content-hash": "f0806e4446092827ebf383c97b1570bf",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -11689,6 +11689,58 @@
             }
         },
         {
+            "name": "drupal/social_media",
+            "version": "1.9.0-rc2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/social_media.git",
+                "reference": "8.x-1.9-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/social_media-8.x-1.9-rc2.zip",
+                "reference": "8.x-1.9-rc2",
+                "shasum": "0ff14957d0b47288c425e5008ac036c16952105d"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.9-rc2",
+                    "datestamp": "1603094978",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Takim Islam",
+                    "homepage": "http://drupalsharing.com/",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Jack Over",
+                    "homepage": "https://www.drupal.org/user/252386",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Share current page to social media",
+            "homepage": "https://drupal.org/project/social_media",
+            "support": {
+                "source": "http://cgit.drupalcode.org/social_media",
+                "issues": "https://www.drupal.org/project/issues/social_media"
+            }
+        },
+        {
             "name": "drupal/socialfeed",
             "version": "1.3.0",
             "source": {
@@ -12142,6 +12194,58 @@
             "homepage": "https://www.drupal.org/project/toolbar_menu",
             "support": {
                 "source": "https://git.drupalcode.org/project/toolbar_menu"
+            }
+        },
+        {
+            "name": "drupal/tr_rulez",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/tr_rulez.git",
+                "reference": "9c7429a1de6b9cf8096c3245651ff4af809cd847"
+            },
+            "require": {
+                "drupal/core": "^9",
+                "drupal/rules": "3.x-dev"
+            },
+            "require-dev": {
+                "drupal/rules": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1635751126",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Rohaly (tr)",
+                    "homepage": "https://www.drupal.org/u/tr",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides missing functionality and documentation for the Rules module.",
+            "homepage": "https://www.drupal.org/project/tr_rulez",
+            "support": {
+                "source": "https://git.drupalcode.org/project/tr_rulez",
+                "issues": "https://www.drupal.org/project/issues/tr_rulez"
             }
         },
         {
@@ -19756,6 +19860,8 @@
         "drupal/search_exclude": 10,
         "drupal/simple_sitemap": 20,
         "drupal/sitemap": 10,
+        "drupal/social_media": 5,
+        "drupal/tr_rulez": 20,
         "drupal/views_fields_on_off": 15,
         "drupal/viewsreference": 10,
         "drupal/webform_encrypt": 10,
