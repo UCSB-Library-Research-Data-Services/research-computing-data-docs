@@ -227,6 +227,7 @@
         "drupal/views_bulk_operations": "^4.0",
         "drupal/views_conditional": "^1.4",
         "drupal/views_data_export": "^1.0",
+        "drupal/views_field_select_filter": "^8.0@beta",
         "drupal/views_fields_on_off": "^1.0@alpha",
         "drupal/views_flipped_table": "^1.4",
         "drupal/views_infinite_scroll": "^1.9",

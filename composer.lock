@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f0806e4446092827ebf383c97b1570bf",
+    "content-hash": "4338796d69358a4a67c41e833086419c",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -12934,6 +12934,54 @@
             }
         },
         {
+            "name": "drupal/views_field_select_filter",
+            "version": "8.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/views_field_select_filter.git",
+                "reference": "8.0.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_field_select_filter-8.0.0-beta1.zip",
+                "reference": "8.0.0-beta1",
+                "shasum": "3376f19bab4e5a3d7027dea8a0102b0b483592b6"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.0.0-beta1",
+                    "datestamp": "1617790238",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Rene Bakx",
+                    "homepage": "https://www.drupal.org/user/590180"
+                }
+            ],
+            "description": "Views select filter based on the unique values of a single field.",
+            "homepage": "https://www.drupal.org/project/views_field_select_filter",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/views_field_select_filter",
+                "issues": "https://www.drupal.org/project/issues/views_field_select_filter"
+            }
+        },
+        {
             "name": "drupal/views_fields_on_off",
             "version": "1.0.0-alpha5",
             "source": {
@@ -19862,6 +19910,7 @@
         "drupal/sitemap": 10,
         "drupal/social_media": 5,
         "drupal/tr_rulez": 20,
+        "drupal/views_field_select_filter": 10,
         "drupal/views_fields_on_off": 15,
         "drupal/viewsreference": 10,
         "drupal/webform_encrypt": 10,
