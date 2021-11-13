@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1077cbb01f82bec0e33abd61b4a68437",
+    "content-hash": "6d4a7f886801374764c66b3be50b3374",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -15826,6 +15826,21 @@
             "dist": {
                 "type": "tar",
                 "url": "https://registry.npmjs.org/jquery/-/jquery-3.6.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/jquery-colorbox",
+            "version": "1.6.4",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/jquery-colorbox/-/jquery-colorbox-1.6.4.tgz"
+            },
+            "require": {
+                "npm-asset/jquery": ">=1.3.2"
             },
             "type": "npm-asset",
             "license": [

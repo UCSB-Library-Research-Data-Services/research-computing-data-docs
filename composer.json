@@ -252,6 +252,7 @@
         "npm-asset/fakeobjects": "^4.15",
         "npm-asset/flexslider": "^2.7",
         "npm-asset/imagesloaded": "^4.1",
+        "npm-asset/jquery-colorbox": "^1.6",
         "npm-asset/jquery-ui-touch-punch": "^0.2.3",
         "npm-asset/masonry-layout": "^4.2",
         "oomphinc/composer-installers-extender": "^2.0",
