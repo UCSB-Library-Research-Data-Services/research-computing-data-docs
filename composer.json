@@ -242,6 +242,7 @@
         "drupal/webform_content_creator": "^2.0",
         "drupal/webform_encrypt": "^1.0@beta",
         "drupal/webform_views": "^5.0@alpha",
+        "drupal/yearonly": "^9.0",
         "drupal/youtube": "^1.2",
         "drush/drush": "^10",
         "malsup/cycle": "^3.0.3",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "212712b96c42f577b99a5de18d76135e",
+    "content-hash": "1077cbb01f82bec0e33abd61b4a68437",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -13824,6 +13824,50 @@
             "homepage": "https://www.drupal.org/project/webform_views",
             "support": {
                 "source": "https://git.drupalcode.org/project/webform_views"
+            }
+        },
+        {
+            "name": "drupal/yearonly",
+            "version": "9.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/yearonly.git",
+                "reference": "9.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/yearonly-9.0.0.zip",
+                "reference": "9.0.0",
+                "shasum": "31239c8a80fcb6eb6cde56af3c908d23430d2119"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "9.0.0",
+                    "datestamp": "1591948946",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "sharma.amitt16",
+                    "homepage": "https://www.drupal.org/user/2629679"
+                }
+            ],
+            "description": "Provide field to collect year only.",
+            "homepage": "https://www.drupal.org/project/yearonly",
+            "support": {
+                "source": "https://git.drupalcode.org/project/yearonly"
             }
         },
         {
