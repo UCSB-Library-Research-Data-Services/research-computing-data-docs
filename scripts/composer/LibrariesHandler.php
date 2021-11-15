@@ -24,8 +24,8 @@ class LibrariesHandler
         $fs = new Filesystem();
         $root = static::getDrupalRoot(getcwd());
 
-        $oldNames = [0 => "cycle", 1 => "jquery-hoverintent", 2 => "json-js", 3 => "pause"];
-        $newNames = [0 => "jquery.cycle", 1 => "jquery.hoverIntent", 2 => "json2", 3 => "jquery.pause"];
+        $oldNames = [0 => "cycle", 1 => "jquery-hoverintent", 2 => "json-js", 3 => "pause", 4 => "masonry-layout"];
+        $newNames = [0 => "jquery.cycle", 1 => "jquery.hoverIntent", 2 => "json2", 3 => "jquery.pause", 4 => "masonry"];
 
         // rename the libraries but check case it already exists
         foreach($oldNames as $key => $fromFilename) {
