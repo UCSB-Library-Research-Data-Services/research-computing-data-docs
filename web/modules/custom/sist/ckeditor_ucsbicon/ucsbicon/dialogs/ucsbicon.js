@@ -53,7 +53,7 @@
 								this.preview_icon = preview;
 									
 								try {
-									if( element.getStyle('width').slice(1) == '%') {
+									if (element.getStyle('width').includes('%')) {
 										this.setValue( element.getStyle('width') );
 									}
 									else {
@@ -68,7 +68,7 @@
 							commit: function( element ) {
 								
 								if(this.getValue().length >0){
-									if( this.getValue().slice(1) == '%') {
+									if( this.getValue().includes('%')) {
 										element.setAttribute(  'style', 'width:' + this.getValue() + ";");
 									}
 									else {
@@ -84,7 +84,7 @@
 
 								if(this.getValue().length >0){
 									if (valid) {
-										if( this.getValue().slice(1) == '%') {
+										if (this.getValue().includes('%')) {
 											this.preview_icon.setStyle(  'width', this.getValue());
 										}
 										else {
