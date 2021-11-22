@@ -2,3 +2,10 @@ style:
     css:
       theme:
         ucsbicon/css/style.css: {}
+
+icon-style:
+    css:
+      theme:
+        css/style.css: {}
+
+        
