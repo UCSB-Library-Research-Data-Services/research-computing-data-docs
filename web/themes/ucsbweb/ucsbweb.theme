@@ -17,7 +17,7 @@ use Drupal\Core\Url;
 
 
 function _blog_topics() {
-  $vars = [];  
+  $vars = [];
   $url = $_SERVER['REQUEST_URI'];
   $url_parts = explode('/',$url);
   if (isset($url_parts[2]) && $url_parts[2] != '' && strpos($url_parts[2], '?page=') !== false) {
@@ -58,7 +58,7 @@ function _blog_topics() {
   if (isset($term_id) && $term_id != '') {
     $vars['term_id'] = $term_id;
     $vars['topics_filter'] = views_embed_view('topics','block_1',$term_id);
-    $vars['topics_list'] = views_embed_view('topics','block_2',$term_id);    
+    $vars['topics_list'] = views_embed_view('topics','block_2',$term_id);
   }
   if (isset($term_name) && $term_name != '') {
     $vars['term_name'] = $term_name;
@@ -157,11 +157,11 @@ function ucsbweb_preprocess_views_view(&$variables) {
       $variables['featured_post'] = views_embed_view('blog','block_1',$topics['stub']);
     }
     if (isset($topics['paged']) && $topics['paged'] != '') {
-      $variables['paged'] = $topics['paged'];      
+      $variables['paged'] = $topics['paged'];
     }
     if (isset($topics['term_id']) && $topics['term_id'] != '') {
       $variables['topics_filter'] = views_embed_view('topics','block_1',$topics['term_id']);
-      $variables['topics_list'] = views_embed_view('topics','block_2',$topics['term_id']);      
+      $variables['topics_list'] = views_embed_view('topics','block_2',$topics['term_id']);
     }
     $variables['all_topics_list'] = views_embed_view('topics','block_3');
     if (isset($topics['blog_description']) && $topics['blog_description'] != '') {
@@ -243,7 +243,7 @@ function ucsbweb_preprocess_node(&$variables, $hook) {
       $variables['author_display_name'] = $node->getOwner()->field_display_name->value;
     } else {
       $variables['author_display_name'] = 'Staff Writer';
-    }    
+    }
   }
 }
 

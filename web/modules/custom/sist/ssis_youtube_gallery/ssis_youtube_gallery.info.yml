@@ -1,0 +1,13 @@
+name: 'YouTube Video Gallery'
+type: module
+description: 'YouTube Playlist Video Player'
+core: 8.x
+version: '8.x-1.0'
+core_version_requirement: ^8 || ^9
+package: 'SIS&T'
+dependencies:
+  - lazy
+  - media
+  - media_library
+  - twig_tweak
+  - paragraphs

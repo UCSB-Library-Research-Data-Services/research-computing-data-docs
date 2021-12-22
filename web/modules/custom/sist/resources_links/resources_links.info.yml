@@ -1,0 +1,22 @@
+name: Resources Links
+type: module
+description: This plugin module adds a content type named Resources Links
+package: SIS&T
+dependencies:
+  - link
+  - media_library
+  - path
+  - scheduler
+  - text
+  - link
+  - text
+  - user
+  - node
+  - taxonomy
+  - media
+  - menu_ui
+  - scheduler
+  - content_moderation
+version: '8.x-1.0'
+core: '8.x'
+core_version_requirement: ^8 || ^9
