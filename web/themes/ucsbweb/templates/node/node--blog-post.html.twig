@@ -66,7 +66,7 @@
  */
 #}
 
-{% set img = file_url(node.field_image.entity.fileuri) %}
+{% set img = node.field_image.0.entity.uri.value ? file_url(node.field_image.0.entity.uri.value) : '' %}
 {% set item_width = node.field_width.value %}
 {% set item_height = node.field_height.value %}
 
