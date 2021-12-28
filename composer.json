@@ -166,6 +166,7 @@
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/insert": "^2.0@beta",
         "drupal/jquery_ui_accordion": "^1.1",
+        "drupal/jquery_ui_checkboxradio": "^1.2",
         "drupal/jquery_ui_datepicker": "^1.1",
         "drupal/jquery_ui_slider": "^1.1",
         "drupal/jquery_ui_tabs": "^1.1",
