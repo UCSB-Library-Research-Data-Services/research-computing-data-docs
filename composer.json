@@ -63,6 +63,18 @@
                     "type": "file"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor-plugin/link",
+                "version": "4.17.1",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.ckeditor.com/link/releases/link_4.17.1.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
@@ -70,6 +82,7 @@
         "bower-asset/lazysizes": "^5.1",
         "bower-asset/spectrum": "^1.8",
         "briancherne/jquery-hoverintent": "^1.10.1",
+        "ckeditor-plugin/link": "^4.17",
         "douglascrockford/json-js": "^2.0",
         "drupal/a11y_paragraphs_tabs": "^1.11",
         "drupal/addtoany": "^1.15",
@@ -153,6 +166,7 @@
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/insert": "^2.0@beta",
         "drupal/jquery_ui_accordion": "^1.1",
+        "drupal/jquery_ui_checkboxradio": "^1.2",
         "drupal/jquery_ui_datepicker": "^1.1",
         "drupal/jquery_ui_slider": "^1.1",
         "drupal/jquery_ui_tabs": "^1.1",

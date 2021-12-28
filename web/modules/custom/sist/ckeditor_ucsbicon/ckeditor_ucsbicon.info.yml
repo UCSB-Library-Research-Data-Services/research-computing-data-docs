@@ -1,6 +1,6 @@
 name: CKEditor UCSB Icon
 type: module
-description: This plugin module adds a UCSB icon feature to CKEditor in Drupal 8
+description: This plugin module adds a UCSB icon feature to CKEditor
 package: SIS&T
 dependencies:
   - ckeditor
