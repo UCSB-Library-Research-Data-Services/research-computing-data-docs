@@ -1,5 +1,5 @@
 name: Media to Document
-description: Media to Docuemnt module used to redirect users from Media Document page to the File URL
+description: Media to Document module used to redirect users from Media Document page to the File URL
 type: module
 core: 8.x
 core_version_requirement: ^8 || ^9
