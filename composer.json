@@ -271,7 +271,8 @@
         "npm-asset/masonry-layout": "^4.2",
         "oomphinc/composer-installers-extender": "^2.0",
         "pantheon-upstreams/upstream-configuration": "*",
-        "tobia/pause": "^3.0.3"
+        "tobia/pause": "^3.0.3",
+        "wikimedia/composer-merge-plugin": "^2.0"
     },
     "conflict": {
             "drupal/drupal": "*"
@@ -316,6 +317,11 @@
                 "[project-root]/pantheon.upstream.yml": false,
                 "[project-root]/.gitattributes": false
             }
+        },
+        "merge-plugin": {
+            "include": [
+                "web/modules/contrib/webform/composer.libraries.json"
+            ]
         }
     },
     "config": {
