@@ -135,6 +135,7 @@
         "drupal/editor_advanced_link": "^2.0",
         "drupal/element_class_formatter": "^1.4",
         "drupal/embed": "^1.4",
+        "drupal/encrypt": "^3.0",
         "drupal/entity_browser": "^2.6",
         "drupal/entity_class_formatter": "^1.3",
         "drupal/entity_embed": "^1.1",
@@ -271,8 +272,7 @@
         "npm-asset/masonry-layout": "^4.2",
         "oomphinc/composer-installers-extender": "^2.0",
         "pantheon-upstreams/upstream-configuration": "*",
-        "tobia/pause": "^3.0.3",
-        "wikimedia/composer-merge-plugin": "^2.0"
+        "tobia/pause": "^3.0.3"
     },
     "conflict": {
             "drupal/drupal": "*"
@@ -305,6 +305,11 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
+        "patches": {
+            "drupal/webform_encrypt": {
+                "D9 readiness": "https://www.drupal.org/files/issues/2021-01-20/3142997-29.patch"
+            }
+        },
         "drupal-scaffold": {
             "allowed-packages": [
                 "pantheon-systems/drupal-integrations"
@@ -317,11 +322,6 @@
                 "[project-root]/pantheon.upstream.yml": false,
                 "[project-root]/.gitattributes": false
             }
-        },
-        "merge-plugin": {
-            "include": [
-                "web/modules/contrib/webform/composer.libraries.json"
-            ]
         }
     },
     "config": {
