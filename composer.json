@@ -99,6 +99,7 @@
         "drupal/book_blocks": "^1.6",
         "drupal/bootstrap": "^3.23",
         "drupal/bootstrap_layouts": "^5.2",
+        "drupal/bootstrap_site_alert": "^1.9",
         "drupal/bricks": "^2.0",
         "drupal/cacheexclude": "^1.0",
         "drupal/calendar": "^1.0@alpha",

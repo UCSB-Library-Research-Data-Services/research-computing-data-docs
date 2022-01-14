@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f9beb94973dc59c25c767a3a59c56b6",
+    "content-hash": "95bff9b6e8d85d4d09da3ffcaa9530bd",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -3138,6 +3138,50 @@
             "homepage": "https://www.drupal.org/project/bootstrap_layouts",
             "support": {
                 "source": "https://git.drupalcode.org/project/bootstrap_layouts"
+            }
+        },
+        {
+            "name": "drupal/bootstrap_site_alert",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap_site_alert.git",
+                "reference": "8.x-1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_site_alert-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "5559eb47fa817610217c81c46c86f18aead74bb1"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.9",
+                    "datestamp": "1590198392",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "labboy0276",
+                    "homepage": "https://www.drupal.org/user/2397942"
+                }
+            ],
+            "description": "This module is for rendering alerts site wide using the power of Bootstrap",
+            "homepage": "https://www.drupal.org/project/bootstrap_site_alert",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap_site_alert"
             }
         },
         {
@@ -9426,17 +9470,17 @@
         },
         {
             "name": "drupal/metatag",
-            "version": "1.18.0",
+            "version": "1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/metatag.git",
-                "reference": "8.x-1.18"
+                "reference": "8.x-1.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.18.zip",
-                "reference": "8.x-1.18",
-                "shasum": "b35683715780a45f0809af5a612f28bc4fbb777e"
+                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.19.zip",
+                "reference": "8.x-1.19",
+                "shasum": "d70f59c034e971885ed4969a11bb392f6ab447ee"
             },
             "require": {
                 "drupal/core": "^9",
@@ -9455,8 +9499,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.18",
-                    "datestamp": "1640098931",
+                    "version": "8.x-1.19",
+                    "datestamp": "1641496014",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11104,7 +11148,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/rules.git",
-                "reference": "5c23deb5eee0173e5fbb21c80f9547ddb0fc3830"
+                "reference": "8a63c77a0eafd547c047f754873d158671daa5a1"
             },
             "require": {
                 "drupal/core": "^9 || ^10",
@@ -11117,7 +11161,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.x-dev",
-                    "datestamp": "1641238314",
+                    "datestamp": "1641327161",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -12236,7 +12280,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/tr_rulez.git",
-                "reference": "3879eadcdfce39d61e8d4fe049981ba09e334240"
+                "reference": "f291cd1e53070d2462dd0d32b9df2480d5d1f06d"
             },
             "require": {
                 "drupal/core": "^9 || ^10",
@@ -12252,7 +12296,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1641359415",
+                    "datestamp": "1642039191",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -12991,7 +13035,7 @@
                     "datestamp": "1617790238",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -16094,7 +16138,7 @@
         },
         {
             "name": "pantheon-upstreams/upstream-configuration",
-            "version": "2535.x-dev",
+            "version": "2544.x-dev",
             "dist": {
                 "type": "path",
                 "url": "upstream-configuration",
