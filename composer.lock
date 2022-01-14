@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "95bff9b6e8d85d4d09da3ffcaa9530bd",
+    "content-hash": "177f222bb0e9970ea7b2e57a7d02a309",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -17085,6 +17085,15 @@
                 "source": "https://github.com/sabberworm/PHP-CSS-Parser/tree/8.4.0"
             },
             "time": "2021-12-11T13:40:54+00:00"
+        },
+        {
+            "name": "simple_instagram_feed/jquery.instagramfeed",
+            "version": "3.0.4",
+            "dist": {
+                "type": "file",
+                "url": "https://github.com/jsanahuja/jquery.instagramFeed/blob/master/jquery.instagramFeed.min.js"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "softcreatr/jsonpath",

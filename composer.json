@@ -75,6 +75,18 @@
                     "type": "zip"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "simple_instagram_feed/jquery.instagramfeed",
+                "version": "3.0.4",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/jsanahuja/jquery.instagramFeed/blob/master/jquery.instagramFeed.min.js",
+                    "type": "file"
+                }
+            }
         }
     ],
     "require": {
@@ -273,6 +285,7 @@
         "npm-asset/masonry-layout": "^4.2",
         "oomphinc/composer-installers-extender": "^2.0",
         "pantheon-upstreams/upstream-configuration": "*",
+        "simple_instagram_feed/jquery.instagramfeed": "^3.0.4",
         "tobia/pause": "^3.0.3"
     },
     "conflict": {
