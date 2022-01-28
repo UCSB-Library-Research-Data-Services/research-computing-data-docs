@@ -27,7 +27,6 @@ install:
   - comment
   - config
   - config_update
-  - contact
   - content_moderation
   - contextual
   - csv_importer
@@ -92,6 +91,7 @@ install:
   - responsive_image
   - rest
   - scheduler
+  - scheduler_content_moderation_integration
   - search
   - serialization
   - shortcut
