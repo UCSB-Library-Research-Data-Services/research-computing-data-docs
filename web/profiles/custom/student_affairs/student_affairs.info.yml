@@ -27,7 +27,6 @@ install:
   - comment
   - config
   - config_update
-  - contact
   - content_moderation
   - contextual
   - csv_importer
