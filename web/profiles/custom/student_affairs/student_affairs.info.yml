@@ -91,6 +91,7 @@ install:
   - responsive_image
   - rest
   - scheduler
+  - scheduler_content_moderation_integration
   - search
   - serialization
   - shortcut
