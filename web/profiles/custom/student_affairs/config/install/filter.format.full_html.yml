@@ -13,6 +13,7 @@ dependencies:
   module:
     - editor
     - entity_embed
+    - linkit
     - media
     - video_embed_wysiwyg
 name: 'Full HTML'
@@ -43,7 +44,7 @@ filters:
     status: false
     weight: -10
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p> <h1> <pre>'
+      allowed_html: '<em> <strong> <cite> <blockquote cite> <code> <ol start type> <li> <dl> <dt> <dd> <h5 id> <h6 id> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <h1> <pre> <u> <a href hreflang data-entity-substitution data-entity-type data-entity-uuid title class="offsite btn btn-default btn-secondary btn-tertiary"> <ul type class="columns columns-2 columns-3 inline"> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title> <p class="lead caption extra-small label image-right display-extra-large display-large display-medium display-small"> <h2 id class="display-extra-large display-large display-medium display-small"> <h3 id class="display-large display-medium display-small"> <h4 id class="display-small"> <div class="columns columns-2 columns-3"> <span class="serif caption">'
       filter_html_help: true
       filter_html_nofollow: false
   entity_embed:
@@ -65,7 +66,6 @@ filters:
     weight: 100
     settings:
       default_view_mode: full
-      allowed_media_types: {  }
       allowed_view_modes:
         full: full
         large_480x480_: large_480x480_
@@ -75,9 +75,17 @@ filters:
         media_library: media_library
         medium_220x220_: medium_220x220_
         thumbnail_100x100_: thumbnail_100x100_
+      allowed_media_types: {  }
   video_embed_wysiwyg:
     id: video_embed_wysiwyg
     provider: video_embed_wysiwyg
     status: true
     weight: 0
     settings: {  }
+  linkit:
+    id: linkit
+    provider: linkit
+    status: true
+    weight: 0
+    settings:
+      title: true
