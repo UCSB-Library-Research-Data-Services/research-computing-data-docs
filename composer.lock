@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "486a74b481ee8b6d5d2239b55e577709",
+    "content-hash": "21f286958b6784683cda1e4619a6578c",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -122,6 +122,15 @@
                 "source": "https://github.com/asm89/stack-cors/tree/1.3.0"
             },
             "time": "2019-12-24T22:41:47+00:00"
+        },
+        {
+            "name": "authorizenet/authorizenet",
+            "version": "2.0.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/AuthorizeNet/sdk-php/archive/refs/tags/2.0.2.zip"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "bower-asset/jquery",
@@ -847,16 +856,16 @@
         },
         {
             "name": "consolidation/log",
-            "version": "2.0.4",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/log.git",
-                "reference": "fc9ec5476ba13a31778695bd2d4f2fa0b0684356"
+                "reference": "9efdd57031bf2fda033f6a256cd8b7902a4e6b92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/log/zipball/fc9ec5476ba13a31778695bd2d4f2fa0b0684356",
-                "reference": "fc9ec5476ba13a31778695bd2d4f2fa0b0684356",
+                "url": "https://api.github.com/repos/consolidation/log/zipball/9efdd57031bf2fda033f6a256cd8b7902a4e6b92",
+                "reference": "9efdd57031bf2fda033f6a256cd8b7902a4e6b92",
                 "shasum": ""
             },
             "require": {
@@ -893,9 +902,9 @@
             "description": "Improved Psr-3 / Psr\\Log logger based on Symfony Console components.",
             "support": {
                 "issues": "https://github.com/consolidation/log/issues",
-                "source": "https://github.com/consolidation/log/tree/2.0.4"
+                "source": "https://github.com/consolidation/log/tree/2.1.0"
             },
-            "time": "2021-12-30T19:05:18+00:00"
+            "time": "2022-01-30T03:49:07+00:00"
         },
         {
             "name": "consolidation/output-formatters",
@@ -5609,7 +5618,7 @@
                 "drupal/core": "^8.8 || ^9"
             },
             "require-dev": {
-                "drupal/entity_browser": "^2.5"
+                "drupal/entity_browser": "*"
             },
             "suggest": {
                 "enyo/dropzone": "Required to use drupal/dropzonejs. DropzoneJS is an open source library that provides drag’n’drop file uploads with image previews."
@@ -8596,17 +8605,17 @@
         },
         {
             "name": "drupal/lazy",
-            "version": "3.10.0",
+            "version": "3.11.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lazy.git",
-                "reference": "8.x-3.10"
+                "reference": "8.x-3.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lazy-8.x-3.10.zip",
-                "reference": "8.x-3.10",
-                "shasum": "af1d3b94a0c171d4f70d88af94bf5dbd772f547f"
+                "url": "https://ftp.drupal.org/files/projects/lazy-8.x-3.11.zip",
+                "reference": "8.x-3.11",
+                "shasum": "199429ec56d55d7709312f1844e2202d57b0e836"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -8618,8 +8627,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.10",
-                    "datestamp": "1622478708",
+                    "version": "8.x-3.11",
+                    "datestamp": "1643593568",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9646,6 +9655,10 @@
                     "name": "Lucas Hedding",
                     "homepage": "https://www.drupal.org/u/heddn",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
                 }
             ],
             "description": "Enhancements to core migration support.",
@@ -11146,7 +11159,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/rules.git",
-                "reference": "66f671d8812f880900bc8ff060362da60f620477"
+                "reference": "e26bc68afc601a4bb7ab93bd118237b909ca26db"
             },
             "require": {
                 "drupal/core": "^9.1 || ^10",
@@ -11159,7 +11172,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.x-dev",
-                    "datestamp": "1643092987",
+                    "datestamp": "1643584409",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -11876,17 +11889,17 @@
         },
         {
             "name": "drupal/socialfeed",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/socialfeed.git",
-                "reference": "8.x-1.3"
+                "reference": "8.x-1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/socialfeed-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "cfbda04825cdc52dc226301c1d2fff8ffbf7af21"
+                "url": "https://ftp.drupal.org/files/projects/socialfeed-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "889cfe249d0b33690e094cbf13a40e51ead7d06e"
             },
             "require": {
                 "abraham/twitteroauth": "^1",
@@ -11899,8 +11912,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.3",
-                    "datestamp": "1624287426",
+                    "version": "8.x-1.4",
+                    "datestamp": "1643633216",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11913,16 +11926,8 @@
             ],
             "authors": [
                 {
-                    "name": "BPI",
-                    "homepage": "https://www.drupal.org/user/1591146"
-                },
-                {
                     "name": "Hemangi Gokhale",
                     "homepage": "https://www.drupal.org/user/2008064"
-                },
-                {
-                    "name": "wrwipeout",
-                    "homepage": "https://www.drupal.org/user/531156"
                 }
             ],
             "description": "Provides user an option to easily fetch feeds from Facebook, Twitter or Instagram and then display them accordingly using block",
@@ -12335,7 +12340,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/tr_rulez.git",
-                "reference": "b9233df625c3fc6874bd9c94992e8e8d9668bb0f"
+                "reference": "cde37d9a3e050bb1eca7b54dcbe9b37310237f5a"
             },
             "require": {
                 "drupal/core": "^9 || ^10",
@@ -12351,7 +12356,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1642625481",
+                    "datestamp": "1643086873",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -16194,7 +16199,7 @@
         },
         {
             "name": "pantheon-upstreams/upstream-configuration",
-            "version": "2562.x-dev",
+            "version": "2567.x-dev",
             "dist": {
                 "type": "path",
                 "url": "upstream-configuration",
@@ -17877,16 +17882,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.4.27",
+            "version": "v4.4.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "517fb795794faf29086a77d99eb8f35e457837a7"
+                "reference": "c59f37705c3e513ae55b2735f128f4ce363c82ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/517fb795794faf29086a77d99eb8f35e457837a7",
-                "reference": "517fb795794faf29086a77d99eb8f35e457837a7",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/c59f37705c3e513ae55b2735f128f4ce363c82ec",
+                "reference": "c59f37705c3e513ae55b2735f128f4ce363c82ec",
                 "shasum": ""
             },
             "require": {
@@ -17920,7 +17925,7 @@
             "description": "Provides basic utilities for the filesystem",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/filesystem/tree/v4.4.27"
+                "source": "https://github.com/symfony/filesystem/tree/v4.4.37"
             },
             "funding": [
                 {
@@ -17936,20 +17941,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-07-21T12:19:41+00:00"
+            "time": "2022-01-02T09:41:36+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v5.4.2",
+            "version": "v5.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "e77046c252be48c48a40816187ed527703c8f76c"
+                "reference": "231313534dded84c7ecaa79d14bc5da4ccb69b7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/e77046c252be48c48a40816187ed527703c8f76c",
-                "reference": "e77046c252be48c48a40816187ed527703c8f76c",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/231313534dded84c7ecaa79d14bc5da4ccb69b7d",
+                "reference": "231313534dded84c7ecaa79d14bc5da4ccb69b7d",
                 "shasum": ""
             },
             "require": {
@@ -17983,7 +17988,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v5.4.2"
+                "source": "https://github.com/symfony/finder/tree/v5.4.3"
             },
             "funding": [
                 {
@@ -17999,7 +18004,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-15T11:06:13+00:00"
+            "time": "2022-01-26T16:34:36+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
