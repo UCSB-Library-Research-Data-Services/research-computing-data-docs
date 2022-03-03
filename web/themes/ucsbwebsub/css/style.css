@@ -646,5 +646,17 @@ iframe {
     padding: 0 30px 30px 30px;
   }
 }
+.paragraph--type--column.col-md-12 form {
+  float: left;
+  margin: 40px 0 15px 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 60%;
+}
+@media all and (max-width: 768px) {
+  .paragraph--type--column.col-md-12 form {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

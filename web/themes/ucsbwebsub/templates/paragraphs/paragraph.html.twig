@@ -89,6 +89,9 @@
 {% if paragraph.bundle == 'view' %}
   {% set bundle = 'column' %}
 {% endif %}
+{% if paragraph.bundle == 'form' %}
+  {% set bundle = 'column' %}
+{% endif %}
 {%
   set classes = [
     'paragraph',
