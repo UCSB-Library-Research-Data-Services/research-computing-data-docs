@@ -67,10 +67,7 @@
         if($(window).width() > 767) {
             var navheight = $('#navbar').outerHeight();
             var bodytopmargin = parseInt($('#body').css('margin-top'));
-            if(bodytopmargin < navheight)
-            { 
-                $('#body').css('margin-top', navheight); 
-            }
+            $('#body').css('margin-top', navheight); 
 
         } else {
             var navheight = parseInt($('#navbar .navbar-header').outerHeight());

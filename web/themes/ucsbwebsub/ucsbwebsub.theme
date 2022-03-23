@@ -84,3 +84,25 @@ function ucsbwebsub_preprocess_page_title(&$variables) {
       $link['link'] = str_replace(".ext-prod.", ".", $link['link']);
     }
   }
+  
+  /**
+   * Implements hook_preprocess_block().
+   */
+  function ucsbwebsub_preprocess_block(&$variables){
+    $block = \Drupal\block\Entity\Block::load($variables["elements"]["#id"]);
+    $variables['parent_region'] = $block->getRegion();
+  }
+
+  
+  /**
+   * Implements hook_theme().
+   */
+  function ucsbwebsub_nav_theme() {
+    return [
+      'menu__secondary_nav' => [
+        'render element' => 'element',
+        'template' => 'menu--secondary-nav',
+        'base hook' => 'menu'
+      ],
+    ];
+  }

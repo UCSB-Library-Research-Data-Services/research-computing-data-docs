@@ -34,7 +34,19 @@
  */
 #}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<nav class="ucsbwebsub-main-nav primary-nav-block" aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }}>
+
+
+{% set navbar_classes = [ ] %}
+
+
+{% if parent_region == 'navigation_collapsible' %}
+  {%
+    set navbar_classes = [ 'ucsbwebsub-main-nav', 'primary-nav-block', ]
+  %}
+{% endif %}
+
+
+<nav aria-labelledby="{{ heading_id }}"{{ attributes.addClass(navbar_classes)|without('role', 'aria-labelledby') }}>
   {# Label. If not displayed, we still provide it for screen readers. #}
   {% if not configuration.label_display %}
     {% set title_attributes = title_attributes.addClass('visually-hidden') %}
