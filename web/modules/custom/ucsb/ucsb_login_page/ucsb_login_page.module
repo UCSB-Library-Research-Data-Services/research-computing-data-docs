@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Config\FileStorage;
 
 /**
  * Implements hook_help().
@@ -43,5 +44,27 @@ function ucsb_login_page_menu_local_tasks_alter(&$data, $route_name) {
         foreach ($data['tabs'][0] as $key => $tab){
             $data['tabs'][0][$key]['#access'] = FALSE;
         }
+    }
+}
+
+/**
+ * Implements hook_preprocess_page().
+ * Prepare the variables for the template
+ */
+function ucsb_login_page_preprocess_page(&$variables) {
+    $route_name = \Drupal::routeMatch()->getRouteName();
+    if($route_name == 'user.login') {
+        // You will most likely want to show and render the form for anonymous users.
+        $login_form = false;
+        if (\Drupal::currentUser()->isAnonymous()) {
+            $login_form = \Drupal::formBuilder()->getForm(Drupal\user\Form\UserLoginForm::class);
+        }
+        $variables['login_form'] = $login_form;
+        // if cas module is enabled then create flag
+        $cas_enabled = false;
+        if (\Drupal::moduleHandler()->moduleExists('cas')) {
+            $cas_enabled = true;
+        }
+        $variables['cas_enabled'] = $cas_enabled;
     }
 }

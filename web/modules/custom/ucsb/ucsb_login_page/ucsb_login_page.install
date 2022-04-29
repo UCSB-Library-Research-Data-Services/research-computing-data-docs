@@ -13,7 +13,6 @@ use Drupal\Core\Config\FileStorage;
 
 function ucsb_login_page_install() {
     // if CAS module is enabled, update configuration to disable link
-    $route_name = \Drupal::routeMatch()->getRouteName();
     if (\Drupal::moduleHandler()->moduleExists('cas')) {
         $config_factory = \Drupal::configFactory();
         $config = $config_factory->getEditable('cas.settings');
@@ -34,7 +33,6 @@ function ucsb_login_page_install() {
 
 function ucsb_login_page_uninstall() {
     // if CAS module is enabled, update configuration to enable sso link
-    $route_name = \Drupal::routeMatch()->getRouteName();
     if (\Drupal::moduleHandler()->moduleExists('cas')) {
         $config_factory = \Drupal::configFactory();
         $config = $config_factory->getEditable('cas.settings');
