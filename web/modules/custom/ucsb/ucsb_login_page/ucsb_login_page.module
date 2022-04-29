@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains ucsb_login_page.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ucsb_login_page_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ucsb_login_page module.
+    case 'help.page.ucsb_login_page':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Login page for UCSB accounts') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ucsb_login_page_theme() {
+  return [
+    'ucsb_login_page' => [
+      'render element' => 'children',
+    ],
+  ];
+}
