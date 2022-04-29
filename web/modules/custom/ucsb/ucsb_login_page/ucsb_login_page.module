@@ -33,3 +33,15 @@ function ucsb_login_page_theme() {
     ],
   ];
 }
+
+/**
+ * Implements hook_menu_local_tasks_alter().
+ * Remove all tabs from user login form
+ */
+function ucsb_login_page_menu_local_tasks_alter(&$data, $route_name) {
+    if($route_name == 'user.login'  && isset($data['tabs'][0])) {
+        foreach ($data['tabs'][0] as $key => $tab){
+            $data['tabs'][0][$key]['#access'] = FALSE;
+        }
+    }
+}
