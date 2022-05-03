@@ -44,6 +44,8 @@ function ucsb_login_page_form_alter(&$form, \Drupal\Core\Form\FormStateInterface
 
   if($form_id == 'user_login_form' || $form_id == 'user_pass' || $form_id == 'user_register_form') {
 
+    $route_provider = \Drupal::service('router.route_provider');
+
     // Cached form must be busted if we enable/disable CAS module.
     $config = Drupal::config('core.extension');
     $form['#cache']['tags'] = array_merge($form['#cache']['tags'], $config->getCacheTags());
@@ -55,8 +57,8 @@ function ucsb_login_page_form_alter(&$form, \Drupal\Core\Form\FormStateInterface
     $cas_enabled = false;  
     $caslogin_url = '';
     if (\Drupal::moduleHandler()->moduleExists('cas')) {
-      $cas_enabled = true;   
-      $caslogin_url = \Drupal\Core\Url::fromRoute('cas.login');
+      $cas_enabled = true;
+      $caslogin_url = $route_provider->getRouteByName('cas.login')->getPath();
       
       if($form['cas_login_link'] != null) {
         $form['cas_login_link']['#access'] = false;
@@ -71,16 +73,35 @@ function ucsb_login_page_form_alter(&$form, \Drupal\Core\Form\FormStateInterface
       $register_enabled = true;
     }
 
-    $login_url = \Drupal\Core\Url::fromRoute('user.login');
-    $register_url = \Drupal\Core\Url::fromRoute('user.register');
-    $reset_url = \Drupal\Core\Url::fromRoute('user.pass');
+    $login_url = $route_provider->getRouteByName('user.login')->getPath();
+    $register_url = $route_provider->getRouteByName('user.register')->getPath();
+    $reset_url = $route_provider->getRouteByName('user.pass')->getPath();
 
-    $form['cas_enabled'] = $cas_enabled;
-    $form['caslogin_url'] = $caslogin_url;
-    $form['login_url'] = $login_url;
-    $form['reset_url'] = $reset_url;
-    $form['register_enabled'] = $register_enabled;
-    $form['register_url'] = $register_url;
+    $form['cas_enabled'] = array(
+      '#type' => 'value',
+      '#value' => $cas_enabled,
+    );
+    $form['caslogin_url'] = array(
+      '#type' => 'value',
+      '#value' => $caslogin_url,
+    );
+    $form['login_url'] = array(
+      '#type' => 'value',
+      '#value' => $login_url,
+    );
+    $form['reset_url'] = array(
+      '#type' => 'value',
+      '#value' => $reset_url,
+    );
+    $form['register_enabled'] = array(
+      '#type' => 'value',
+      '#value' => $register_enabled,
+    );
+    $form['register_url'] = array(
+      '#type' => 'value',
+      '#value' => $register_url,
+    );
+
 
     $form['#theme'] = 'ucsb_login_page';
   }
@@ -93,6 +114,7 @@ function ucsb_login_page_theme($existing, $type, $theme, $path) {
 
   return [
 	'ucsb_login_page' => [
+      '#param' => 'value', 
       'render element' => 'form'
     ],
   ];
