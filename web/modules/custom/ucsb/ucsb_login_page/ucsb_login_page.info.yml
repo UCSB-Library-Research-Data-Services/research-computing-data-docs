@@ -4,5 +4,5 @@ description: 'Login page for UCSB accounts'
 core: 8.x
 core_version_requirement: ^8 || ^9
 package: 'ucsb'
-dependencies:
-  - cas
+libraries:
+  - 'ucsb_login_page/main-styling'
