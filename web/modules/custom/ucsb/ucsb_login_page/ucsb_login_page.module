@@ -60,7 +60,7 @@ function ucsb_login_page_form_alter(&$form, \Drupal\Core\Form\FormStateInterface
       $cas_enabled = true;
       $caslogin_url = $route_provider->getRouteByName('cas.login')->getPath();
       
-      if($form['cas_login_link'] != null) {
+      if(array_key_exists('cas_login_link', $form)) {
         $form['cas_login_link']['#access'] = false;
       }
     } 
