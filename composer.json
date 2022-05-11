@@ -104,7 +104,7 @@
     "require": {
         "authorizenet/authorizenet": "^2.0",
         "bower-asset/jquery-simple-color": "^1.2",
-        "bower-asset/lazysizes": "^5.1",
+        "bower-asset/lazysizes": "^5.3",
         "bower-asset/spectrum": "^1.8",
         "briancherne/jquery-hoverintent": "^1.10.1",
         "ckeditor-plugin/link": "^4.17",
