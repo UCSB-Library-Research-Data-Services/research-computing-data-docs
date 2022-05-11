@@ -359,6 +359,13 @@
         "sort-packages": true,
         "platform": {
             "php": "7.4"
+        },
+        "allow-plugins": {
+            "composer/installers": true,
+            "zaporylie/composer-drupal-optimizations": true,
+            "drupal/core-composer-scaffold": true,
+            "cweagans/composer-patches": true,
+            "oomphinc/composer-installers-extender": true
         }
     }
 }
