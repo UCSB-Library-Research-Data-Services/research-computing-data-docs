@@ -292,6 +292,7 @@
         "malsup/cycle": "^3.0.3",
         "npm-asset/a11y-accordion-tabs": "^1.0",
         "npm-asset/cropper": "^4.1",
+        "npm-asset/dompurify": "^2.3",
         "npm-asset/dropzone": "^5.9",
         "npm-asset/fakeobjects": "^4.15",
         "npm-asset/flexslider": "^2.7",
