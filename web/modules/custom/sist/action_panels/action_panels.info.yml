@@ -1,0 +1,12 @@
+name: 'Action Panels'
+type: module
+description: 'Action Panels UI Component'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'SIS&T'
+dependencies:
+  - lazy
+  - media
+  - media_library
+  - twig_tweak
+  - paragraphs
