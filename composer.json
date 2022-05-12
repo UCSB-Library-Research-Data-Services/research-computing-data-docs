@@ -173,6 +173,7 @@
         "drupal/entityreference_filter": "^1.4",
         "drupal/externalauth": "^1.4",
         "drupal/fakeobjects": "^1.1",
+        "drupal/faq": "^1.1",
         "drupal/features": "^3.12",
         "drupal/feeds": "^3.0@alpha",
         "drupal/feeds_ex": "^1.0@alpha",
