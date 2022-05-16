@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Install, update and uninstall hooks for SSIS Action Panels module.
+ * Install, update and uninstall hooks for UCSB Action Panels module.
  */
 
 use Drupal\paragraphs\ParagraphInterface;
@@ -13,7 +13,7 @@ use Drupal\Core\Config\FileStorage;
  * Implements hook_install().
  */
 
-function action_panels_install() {
+function ucsb_action_panels_install() {
 
     // Configure and add the Action Panel Container to the Blades columns
     $config_factory = \Drupal::configFactory();
@@ -40,7 +40,7 @@ function action_panels_install() {
  * See https://www.drupal.org/node/2404447 how to enforce dependency for config
  */
 
-function action_panels_uninstall() {
+function ucsb_action_panels_uninstall() {
 
   // Remove the parent panel first
   $paragraph_action_panel_container = \Drupal::entityQuery('paragraph')

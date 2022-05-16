@@ -16,7 +16,7 @@ This module depends on the following modules:
 To install this module please use the following drush command
 
 ```bash
-drush en action_panels
+drush en ucsb_action_panels
 ```
 
 ## Usage
@@ -28,5 +28,5 @@ To use this option, when editing a Blade select the Action Panel Container optio
 To uninstall this module please use the following drush command
 
 ```bash
-drush pmu action_panels
+drush pmu ucsb_action_panels
 ```

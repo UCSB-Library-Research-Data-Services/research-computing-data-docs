@@ -6,7 +6,7 @@ dependencies:
     - paragraphs
   enforced:
     module:
-      - action_panels
+      - ucsb_action_panels
 id: paragraph.field_action_panel_item
 field_name: field_action_panel_item
 entity_type: paragraph

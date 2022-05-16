@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains action_panels.module.
+ * Contains ucsb_action_panels.module.
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
@@ -10,10 +10,10 @@ use Drupal\Core\Routing\RouteMatchInterface;
 /**
  * Implements hook_help().
  */
-function action_panels_help($route_name, RouteMatchInterface $route_match) {
+function ucsb_action_panels_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
-    // Main module help for the action_panels module.
-    case 'help.page.action_panels':
+    // Main module help for the ucsb_action_panels module.
+    case 'help.page.ucsb_action_panels':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
       $output .= '<p>' . t('Action Panels UI Component') . '</p>';
@@ -26,7 +26,7 @@ function action_panels_help($route_name, RouteMatchInterface $route_match) {
 /**
  * Implements hook_preprocess_paragraph().
  */
-function action_panels_preprocess_paragraph(&$variables) {
+function ucsb_action_panels_preprocess_paragraph(&$variables) {
   $is_admin = \Drupal::service('router.admin_context')->isAdminRoute();
   $variables['is_admin_route'] = $is_admin;
 }
@@ -34,7 +34,7 @@ function action_panels_preprocess_paragraph(&$variables) {
 /**
  * Implements hook_theme().
  */
-function action_panels_theme() {
+function ucsb_action_panels_theme() {
   return [
       'paragraph__action_panel_container' => [
           'render element' => 'element',
@@ -46,7 +46,7 @@ function action_panels_theme() {
 /**
  * Implements hook_paragraphs_preprocess_paragraph__paragraph_type().
  */
-function action_panels_paragraphs_preprocess_paragraph__action_panel_container(&$variables) {
+function ucsb_action_panels_paragraphs_preprocess_paragraph__action_panel_container(&$variables) {
     // Add .action-panel class.
     $variables['attributes']['class'][] = 'action-panel';
 }

@@ -9,7 +9,7 @@ distribution:
 
 # Modules to install to support the profile.
 install:
-  - action_panels
+  - ucsb_action_panels
   - aggregator
   - automated_cron
   - ban
