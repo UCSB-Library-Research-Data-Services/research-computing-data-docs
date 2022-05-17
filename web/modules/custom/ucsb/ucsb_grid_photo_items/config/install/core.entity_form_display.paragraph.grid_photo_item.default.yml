@@ -16,7 +16,7 @@ dependencies:
     - text
   enforced:
     module:
-      - grid_photo_items
+      - ucsb_grid_photo_items
 id: paragraph.grid_photo_item.default
 targetEntityType: paragraph
 bundle: grid_photo_item

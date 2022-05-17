@@ -16,7 +16,7 @@ use Drupal\Core\Config\FileStorage;
  * See https://www.drupal.org/node/2404447 how to enforce dependency for config
  */
 
-function grid_photo_items_uninstall() {
+function ucsb_grid_photo_items_uninstall() {
 
 
   // Delete the Grid Photo Items
@@ -61,7 +61,7 @@ function grid_photo_items_uninstall() {
  * See https://www.drupal.org/node/2404447 how to enforce dependency for config
  */
 
-function grid_photo_items_install() {
+function ucsb_grid_photo_items_install() {
 
     // Configure and add the Grid Photo Item to the Grid
     $config_factory = \Drupal::configFactory();

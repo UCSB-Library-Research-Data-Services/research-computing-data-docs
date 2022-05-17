@@ -10,11 +10,11 @@ use Drupal\Core\Routing\RouteMatchInterface;
 /**
  * Implements hook_help().
  */
-function grid_photo_items_help($route_name, RouteMatchInterface $route_match) {
+function ucsb_grid_photo_items_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
     case 'help.page.grid_photo_items':
       $output = '';
-      $output .= '<h3>' . t('Grid Photo Items') . '</h3>';
+      $output .= '<h3>' . t('UCSB Grid Photo Items') . '</h3>';
       $output .= '<p>' . t('Grid Photo Items module adds an additional paragraph type for the Grid and enables users to add photos to the front side of the grid cards') . '</p>';
       return $output;
 
@@ -25,7 +25,7 @@ function grid_photo_items_help($route_name, RouteMatchInterface $route_match) {
 /**
  * Implements hook_preprocess_paragraph().
  */
-function grid_photo_items_preprocess_paragraph(&$variables) {
+function ucsb_grid_photo_items_preprocess_paragraph(&$variables) {
   $is_admin = \Drupal::service('router.admin_context')->isAdminRoute();
   $variables['is_admin_route'] = $is_admin;
 }
@@ -33,7 +33,7 @@ function grid_photo_items_preprocess_paragraph(&$variables) {
 /**
  * Implements hook_theme().
  */
-function grid_photo_items_theme($existing, $type, $theme, $path) {
+function ucsb_grid_photo_items_theme($existing, $type, $theme, $path) {
   
   return [
     'paragraph__grid_photo_item' => [

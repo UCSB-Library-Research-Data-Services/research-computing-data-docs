@@ -3,7 +3,7 @@ status: true
 dependencies:
   enforced:
     module:
-      - grid_photo_items
+      - ucsb_grid_photo_items
 id: grid_photo_item
 label: 'Grid Photo Item'
 icon_uuid: null

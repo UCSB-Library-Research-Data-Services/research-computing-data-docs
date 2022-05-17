@@ -6,7 +6,7 @@ dependencies:
     - paragraphs
   enforced:
     module:
-      - grid_photo_items
+      - ucsb_grid_photo_items
 id: paragraph.field_item_image
 field_name: field_item_image
 entity_type: paragraph

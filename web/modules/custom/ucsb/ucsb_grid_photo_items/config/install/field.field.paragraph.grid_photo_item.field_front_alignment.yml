@@ -8,7 +8,7 @@ dependencies:
     - options
   enforced:
     module:
-      - grid_photo_items
+      - ucsb_grid_photo_items
 id: paragraph.grid_photo_item.field_front_alignment
 field_name: field_front_alignment
 entity_type: paragraph

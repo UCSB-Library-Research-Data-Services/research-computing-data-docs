@@ -53,7 +53,7 @@ install:
   - file
   - filter
   - google_analytics
-  - grid_photo_items
+  - ucsb_grid_photo_items
   - help
   - history
   - honeypot

@@ -8,7 +8,7 @@ dependencies:
     - text
   enforced:
     module:
-      - grid_photo_items
+      - ucsb_grid_photo_items
 id: paragraph.grid_photo_item.field_back
 field_name: field_back
 entity_type: paragraph
