@@ -16,7 +16,7 @@ function ucsb_action_panels_help($route_name, RouteMatchInterface $route_match) 
     case 'help.page.ucsb_action_panels':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('Action Panels UI Component') . '</p>';
+      $output .= '<p>' . t('Action Panel UI Component') . '</p>';
       return $output;
 
     default:

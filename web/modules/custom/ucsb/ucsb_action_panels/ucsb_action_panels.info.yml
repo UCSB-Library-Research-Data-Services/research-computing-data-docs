@@ -1,9 +1,9 @@
-name: 'UCSB Action Panels'
+name: 'UCSB Action Panel'
 type: module
-description: 'Action Panels UI Component'
+description: 'Action Panel UI Component'
 core: 8.x
 core_version_requirement: ^8 || ^9
-package: 'UCSB'
+package: ucsb
 dependencies:
   - lazy
   - media

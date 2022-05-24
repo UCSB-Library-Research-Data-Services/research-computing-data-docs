@@ -44,6 +44,9 @@ function student_affairs_install_content() {
 
     // Install UCSB Web Theme Overlay module
     \Drupal::service('module_installer')->install(['ucsb_web_theme_overlay']);
+    
+    //Install UCSB Action Panel module
+    \Drupal::service('module_installer')->install(['ucsb_action_panels']);
 
     \Drupal::service('module_installer')->install(['ssis_core']);
 
