@@ -47,6 +47,9 @@ function student_affairs_install_content() {
     
     //Install UCSB Action Panel module
     \Drupal::service('module_installer')->install(['ucsb_action_panels']);
+    
+    //Install UCSB Grid Photo Item module
+    \Drupal::service('module_installer')->install(['ucsb_grid_photo_items']);
 
     \Drupal::service('module_installer')->install(['ssis_core']);
 
