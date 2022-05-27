@@ -14,7 +14,7 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
-function playVideo(id, name, title) {
+function playVideo(id, name, title, desc) {
   
   var playlist_item = document.getElementsByClassName("playlist-item");
   for (var i = 0; i < playlist_item.length; i++) {
@@ -36,6 +36,9 @@ function playVideo(id, name, title) {
   // Add the title
   var speaker_title = player_placeholder.getElementsByClassName('speaker-title')[0];
   speaker_title.innerHTML = title;
+  // Add the video description
+  var speaker_desc = player_placeholder.getElementsByClassName('speaker-desc')[0];
+  speaker_desc.innerHTML = desc;
 
   newPlayer.loadVideoById(id);
 
