@@ -11,6 +11,12 @@
 %}
 
 {% block paragraph %}
+
+  {% if is_admin_route %}
+    {{ content }}
+  {% else %}
+
+
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
       {% set paragraph_name = content.field_youtube_videos %}
@@ -105,4 +111,6 @@
       </div>
     {% endblock %}
   </div>
+  
+  {% endif %}
 {% endblock paragraph %}
