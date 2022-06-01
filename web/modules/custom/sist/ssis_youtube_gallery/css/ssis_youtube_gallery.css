@@ -92,8 +92,11 @@
 }
 
 .img_placeholder-caption, .video-caption {
-  margin-top: 35px;
+  margin-top: 20px;
   line-height: 28px;
+}
+.img_placeholder-caption h3.speaker-name {
+  margin-bottom: 0;
 }
 #player_placeholder .img_placeholder-caption {
   line-height: 22px;
