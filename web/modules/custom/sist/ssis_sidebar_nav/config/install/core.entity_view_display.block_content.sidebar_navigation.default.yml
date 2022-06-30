@@ -6,8 +6,6 @@ dependencies:
     - field.field.block_content.sidebar_navigation.field_sidebar_navigation_menu
   module:
     - block_field
-_core:
-  default_config_hash: ErVHEDiZAWCdMmU0IvxUcUPsJQl4tG3RgUKP1IKxse4
 id: block_content.sidebar_navigation.default
 targetEntityType: block_content
 bundle: sidebar_navigation
