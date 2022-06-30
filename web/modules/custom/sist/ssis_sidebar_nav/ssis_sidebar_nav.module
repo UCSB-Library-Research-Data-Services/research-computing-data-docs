@@ -33,17 +33,23 @@ function ssis_sidebar_nav_theme() {
       'template' => 'menu--sidebar-nav',
       'base hook' => 'menu'
     ],
+    'page__subnav' => [
+      'render element' => 'element',
+      'template' => 'page--subnav',
+      'base hook' => 'page'
+    ],
   ];
 }
 
 /**
- * Implements hook_preprocess().
+ * Implements hook__theme_suggestions_HOOK_alter().
  */
-function ssis_sidebar_nav_preprocess(&$variables, $hook, &$info) {
-  // Replace theme page.html.twig template with the one from custom module
-  $theme = \Drupal::theme()->getActiveTheme()->getName();
-  if (($hook === 'page') && ($theme == 'ucsbwebsub')) {
-    $info['theme path'] = 'modules/custom/sist/ssis_sidebar_nav';
-    $info['path'] = 'modules/custom/sist/ssis_sidebar_nav/templates';
-  }
+function ssis_sidebar_nav_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if(!empty($node)){
+        $type = $node->getType();
+        if($type == 'page'){
+            $suggestions[] = 'page__subnav';
+        }
+    }
 }
