@@ -9,7 +9,6 @@ distribution:
 
 # Modules to install to support the profile.
 install:
-  - aggregator
   - automated_cron
   - ban
   - big_pipe
@@ -22,7 +21,6 @@ install:
   - ckeditor
   - ckeditor_ucsbbutton
   - ckeditor_ucsbicon
-  - color
   - color_field
   - comment
   - config
@@ -118,7 +116,6 @@ install:
   - views_ui
   - viewsreference
   - webform
-  - webform_location_geocomplete
   - webform_node
   - webform_scheduled_email
   - webform_templates
