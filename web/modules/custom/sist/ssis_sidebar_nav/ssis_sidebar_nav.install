@@ -55,6 +55,7 @@ function ssis_sidebar_nav_uninstall() {
     ->getStorage('block_content');
   $blocks = $storage_handler->loadByProperties(['type' => 'sidebar_navigation']);
   $storage_handler->delete($blocks);
+  \Drupal::configFactory()->getEditable('block.block.sidebarnavmenublock')->delete();
   \Drupal::messenger()->addStatus(t('Blocks of type "Sidebar Navigation" have been deleted.'));
 
   // Clear all caches.
