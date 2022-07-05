@@ -6,8 +6,6 @@ dependencies:
   enforced:
     module:
       - ucsb_power_bi
-_core:
-  default_config_hash: M9AMePQmjWXXEfCv8L6v6u0wgAxYAaHwES7qRXfUtuU
 id: paragraph.field_ucsb_power_bi_report
 field_name: field_ucsb_power_bi_report
 entity_type: paragraph

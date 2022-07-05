@@ -9,8 +9,6 @@ dependencies:
   enforced:
     module:
       - ucsb_power_bi
-_core:
-  default_config_hash: rqSjapcVPg4-zszU-bSUTfwS4PYSiwcCh9mixCTtYjs
 id: paragraph.ucsb_power_bi.default
 targetEntityType: paragraph
 bundle: ucsb_power_bi
