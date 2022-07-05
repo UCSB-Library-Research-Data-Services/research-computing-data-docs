@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - ucsb_power_bi
+_core:
+  default_config_hash: AT7R-TssNbhX2gk7job5ueVH3n1Eqe8wmQcg3hdYddc
+id: ucsb_power_bi
+label: 'Power BI'
+icon_uuid: null
+icon_default: null
+description: 'A Power BI Paragraph'
+behavior_plugins: {  }

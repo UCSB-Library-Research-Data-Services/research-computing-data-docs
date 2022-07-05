@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Install utilities for ucsb_power_bi.
+ */
+
+use Drupal\field\Entity\FieldConfig;
+
+use Drupal\user\Entity\Role;
+use Drupal\user\RoleInterface;
+
+define('POWER_BI_PERMISSION', 'view power bi reports');
+
+/**
+ * Delete the paragraph field.
+ */
+function ucsb_power_bi_uninstall() {
+  // Delete the field instance.
+  if ($fc = FieldConfig::load('paragraph.field_ucsb_power_bi_report')) {
+    $fc->delete();
+  }
+
+  $role_object = Role::load(RoleInterface::AUTHENTICATED_ID);
+  $role_object->revokePermission(POWER_BI_PERMISSION);
+  $role_object->save();
+}
+
+/**
+ * Add the paragraph field.
+ */
+function ucsb_power_bi_install() {
+  $role_object = Role::load(RoleInterface::AUTHENTICATED_ID);
+  $role_object->grantPermission(POWER_BI_PERMISSION);
+  $role_object->save();
+}

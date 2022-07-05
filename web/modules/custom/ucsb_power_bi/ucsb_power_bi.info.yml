@@ -1,0 +1,13 @@
+name: 'UCSB Power BI'
+description: 'PowerBi/Drupal row-level security integration using Service Principal.'
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: ucsb
+dependencies:
+  - cas
+  - user
+  - field
+  - node
+  - text
+  - paragraphs
