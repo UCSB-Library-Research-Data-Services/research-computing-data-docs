@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ad9b42d9f5546e522b6a517dadeb5ff",
+    "content-hash": "af818a7c8411c6ae2cc1035f320cb9d0",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -12335,6 +12335,58 @@
             }
         },
         {
+            "name": "drupal/title_length",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/title_length.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/title_length-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "22a19724c3807b6847a84ae0a38df80eebe69360"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1631721151",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "cbccharlie",
+                    "homepage": "https://www.drupal.org/user/616836"
+                },
+                {
+                    "name": "maximpodorov",
+                    "homepage": "https://www.drupal.org/user/515310"
+                }
+            ],
+            "description": "Increases maximum length of node titles.",
+            "homepage": "https://www.drupal.org/project/title_length",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/title_length",
+                "issues": "https://www.drupal.org/project/issues/title_length"
+            }
+        },
+        {
             "name": "drupal/token",
             "version": "1.10.0",
             "source": {
@@ -16382,7 +16434,7 @@
         },
         {
             "name": "pantheon-upstreams/upstream-configuration",
-            "version": "dev-issue-60",
+            "version": "dev-module-4",
             "dist": {
                 "type": "path",
                 "url": "upstream-configuration",
