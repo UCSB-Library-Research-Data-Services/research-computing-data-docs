@@ -258,6 +258,7 @@
         "drupal/svg_image": "^1.15",
         "drupal/tawk_to": "^2.0",
         "drupal/taxonomy_import": "^2.0",
+        "drupal/title_length": "^1.2",
         "drupal/toolbar_menu": "^2.2",
         "drupal/tr_rulez": "1.x-dev@dev",
         "drupal/twig_tweak": "^3.1",
