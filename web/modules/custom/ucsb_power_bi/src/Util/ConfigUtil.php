@@ -148,13 +148,16 @@ class ConfigUtil {
     curl_close($curlGetUrl);
 
     $embedUrl = '';
+    $embedToken = '';
     if ($embedError) {
       \Drupal::logger('ucsb_power_bi')->notice("CURL Error #:" . $embedError);
     }
     else {
       $embedResponse = json_decode($embedResponse, TRUE);
       \Drupal::logger('ucsb_power_bi')->notice('<pre><code>(success) Embed Response (embed token): ' . print_r($embedResponse, TRUE) . '</code></pre>');
-      $embedToken = $embedResponse['token'];
+      if (isset($embedResponse['token'])) {
+        $embedToken = $embedResponse['token'];
+      }
     }
     return $embedToken;
   }
@@ -194,7 +197,9 @@ class ConfigUtil {
     else {
       $embedResponse = json_decode($embedResponse, TRUE);
       \Drupal::logger('ucsb_power_bi')->notice('<pre><code>Embed URL: ' . print_r($embedResponse, TRUE) . '</code></pre>');
-      $embedUrl = $embedResponse['value'][0]['embedUrl'];
+      if (isset($embedResponse['value'][0]['embedUrl'])) {
+        $embedUrl = $embedResponse['value'][0]['embedUrl'];
+      }
     }
     return $embedUrl;
   }
