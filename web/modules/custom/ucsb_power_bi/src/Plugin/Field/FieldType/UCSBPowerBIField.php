@@ -76,11 +76,11 @@ class UCSBPowerBIField extends FieldItemBase {
 
     $properties['report_width'] = DataDefinition::create('float')
       ->setLabel(t('Report width'))
-      ->setDescription(t('PowerBI Report width'));
+      ->setDescription(t('PowerBI Report width (must be entered in pixels with only digits)'));
 
     $properties['report_height'] = DataDefinition::create('float')
       ->setLabel(t('Report height'))
-      ->setDescription(t('PowerBI Report height'));
+      ->setDescription(t('PowerBI Report height (must be entered in pixels with only digits)'));
 
     $properties['report_title'] = DataDefinition::create('string')
       ->setLabel(t('Report title'))

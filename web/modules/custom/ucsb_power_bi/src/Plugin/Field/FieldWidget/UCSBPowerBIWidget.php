@@ -64,17 +64,23 @@ class UCSBPowerBIWidget extends WidgetBase {
     $element['report_width'] = [
       '#type' => 'textfield',
       '#title' => t('Report width'),
-      '#description' => t('PowerBI Report width'),
+      '#description' => t('PowerBI Report width (must be entered in pixels with only digits)'),
       '#default_value' => isset($items[$delta]->report_width) ? $items[$delta]->report_width : 0,
       '#size' => 255,
+      '#element_validate' => array(
+        array($this, 'validateNumber'),
+      ),
     ];
 
     $element['report_height'] = [
       '#type' => 'textfield',
       '#title' => t('Report height'),
-      '#description' => t('PowerBI Report height'),
+      '#description' => t('PowerBI Report height (must be entered in pixels with only digits)'),
       '#default_value' => isset($items[$delta]->report_height) ? $items[$delta]->report_height : 0,
       '#size' => 255,
+      '#element_validate' => array(
+        array($this, 'validateNumber'),
+      ),
     ];
 
     $element['report_title'] = [
@@ -86,6 +92,16 @@ class UCSBPowerBIWidget extends WidgetBase {
     ];
 
     return $element;
+  }
+
+  /**
+   * Validate the color text field.
+   */
+  public static function validateNumber($element, FormStateInterface $form_state) {
+    $value = $element['#value'];
+    if ( !is_numeric($value) ) {
+      $form_state->setError($element, t("Data entered was not numeric."));
+    }
   }
 
 }

@@ -1,3 +1,4 @@
+
 {% if allow_view_bi %}
   {% if token is not empty %}
   <div id="pbi-{{ field_name }}-{{ report_id }}"></div>
@@ -38,12 +39,15 @@
       </div>
     {% endif %}
   {% else %}
-    <div class="power-access"><p>You do not have access to view this PowerBI Report ({{ report_id }}).</p></div>
+    <div class="field--item--label">Power BI Report: {{ report_id }}</div>
+    <div class="power-access"><p>You cannot see the content of this report because you do not have permission to the underlying data. Please contact the data owner to request access.</p></div>
   {% endif %}
 {% else %}
   {% if logged_in %}
-    <div class="power-access"><p>You do not have access to view this PowerBI Report ({{ report_id }}).</p></div>
+    <div class="field--item--label">Power BI Report: {{ report_id }}</div>
+    <div class="power-access"><p>You cannot see the content of this report because you do not have permission to the underlying data. Please contact the data owner to request access.</p></div>
   {% else %}
+    <div class="field--item--label">Power BI Report: {{ report_id }}</div>
     <div class="power-access"><p>You must be <a href="/caslogin?returnto={{ url('<current>')|render }}">logged in</a> to view this report from Power BI.</p></div>
   {% endif %}
 {% endif %}
