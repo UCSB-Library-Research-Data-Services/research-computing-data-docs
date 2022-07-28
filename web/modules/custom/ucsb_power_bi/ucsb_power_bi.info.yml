@@ -3,7 +3,7 @@ description: 'PowerBi/Drupal row-level security integration using Service Princi
 type: module
 core: 8.x
 core_version_requirement: ^8 || ^9
-package: ucsb
+package: 'SIS&T'
 configure: ucsb_power_bi.admin_config_ucsb_power_bi
 dependencies:
   - cas
