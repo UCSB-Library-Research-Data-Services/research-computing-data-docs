@@ -2,10 +2,6 @@
 	max-width: 500px;
 }
 
-.field--type-ucsb-power-bi {
-	padding: 0px 15px !important;
-}
-
 .paragraph--type--ucsb-power-bi .field--type-ucsb-power-bi {
 	max-width: 1200px;
 	margin-left: auto;
