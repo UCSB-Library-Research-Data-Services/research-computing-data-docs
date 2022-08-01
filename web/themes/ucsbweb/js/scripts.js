@@ -3,7 +3,7 @@
  * UI behaviors
  */
 
-(function ($, Drupal) {
+ (function ($, Drupal) {
 
   'use strict';
 
@@ -124,6 +124,9 @@
     var quicklinksRegion = $('.quick-links ul.menu.nav');
     if (windowsize < 768) {
       $('.block-search-form-block input.form-search').attr("placeholder", "Search...");
+      if ($('.block-search-form-block input.form-search').is(':focus')) {
+        e.preventDefault();
+      }
       $('#eyebrow .search').removeClass('expanded');
       $('#eyebrow .quick-links').removeClass('expanded');
       $('#navbar-collapse .region-navigation-collapsible').prepend(searchFormRegion);
