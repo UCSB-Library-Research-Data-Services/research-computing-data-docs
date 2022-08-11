@@ -148,7 +148,7 @@
         "drupal/css_editor": "^2.0",
         "drupal/csv_importer": "^1.11",
         "drupal/csv_serialization": "^2.0",
-        "drupal/ctools": "^3.9",
+        "drupal/ctools": "^3.11",
         "drupal/date_all_day": "^1.0@beta",
         "drupal/date_popup": "^1.1",
         "drupal/default_content": "^2.0@alpha",
