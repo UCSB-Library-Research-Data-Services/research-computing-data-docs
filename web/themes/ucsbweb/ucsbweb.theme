@@ -13,6 +13,7 @@
 
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Url;
+use Drupal\Core\Menu\MenuTreeParameters;
 
 
 
@@ -230,6 +231,19 @@ function ucsbweb_preprocess_page(&$variables, $hook) {
       $variables['with_topic'] = 1;
     }
   }
+
+  
+  $show_quick_links = false;
+  $quick_links_menu = \Drupal\system\Entity\Menu::load('quick-links');
+  if($quick_links_menu){
+    $parameters = new MenuTreeParameters();
+    $parameters->onlyEnabledLinks();
+    $tree = \Drupal::menuTree()->load('quick-links', $parameters);
+    if(!empty($tree)){
+      $show_quick_links = true;
+    } 
+  }
+  $variables['quicklinks'] = $show_quick_links;
 }
 
 

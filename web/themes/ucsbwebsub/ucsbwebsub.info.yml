@@ -2,6 +2,8 @@ core: 8.x
 core_version_requirement: ^8 || ^9
 type: theme
 base theme: ucsbweb
+dependencies:
+  - twig_tweak
 
 name: 'UCSB Web Subtheme'
 description: 'Sub Theme for Student Affairs websites'
