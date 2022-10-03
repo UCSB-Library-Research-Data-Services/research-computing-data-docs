@@ -27,18 +27,20 @@
               
                   {# If no avatar or profile photo exist #}
                   {% if (not node.field_avatar.entity.field_media_image) and (not node.field_photo.entity.field_media_image) %}
-                        <div class="flip-box-front"><img style="width: 270px;" src="{{ img_path }}" alt="Image with white UCSB logo on navy blue background"></div> 
-                        <div class="flip-box-back"><img style="width: 270px;" src="{{ img_path }}" alt="Image with white UCSB logo on navy blue background"></div> 
+                        <div class="flip-box-front"><img src="{{ img_path }}" alt="Image with white UCSB logo on navy blue background"></div> 
+                        <div class="flip-box-back"><img src="{{ img_path }}" alt="Image with white UCSB logo on navy blue background"></div> 
                   {% endif %} 
 
                   {# If only avatar exists #}
                   {% if node.field_avatar.entity.field_media_image %}
-                        {{ drupal_image(node.field_avatar.entity.field_media_image.entity.uri.value, 'wide', {alt: node.field_avatar.entity.field_media_image.alt, loading: "lazy"}, true) }}
+                        <div class="flip-box-front">{{ drupal_image(node.field_avatar.entity.field_media_image.entity.uri.value, 'wide', {alt: node.field_avatar.entity.field_media_image.alt, loading: "lazy"}, true) }}</div> 
+                        <div class="flip-box-back">{{ drupal_image(node.field_avatar.entity.field_media_image.entity.uri.value, 'wide', {alt: node.field_avatar.entity.field_media_image.alt, loading: "lazy"}, true) }}</div> 
                   {% endif %}   
 
                   {# If only profile proto exists #}
                   {% if node.field_photo.entity.field_media_image %}
-                        {{ drupal_image(node.field_photo.entity.field_media_image.entity.uri.value, 'wide', {alt: node.field_photo.entity.field_media_image.alt, loading: "lazy"}, true) }}                   
+                        <div class="flip-box-front">{{ drupal_image(node.field_photo.entity.field_media_image.entity.uri.value, 'wide', {alt: node.field_photo.entity.field_media_image.alt, loading: "lazy"}, true) }}</div>     
+                        <div class="flip-box-back">{{ drupal_image(node.field_photo.entity.field_media_image.entity.uri.value, 'wide', {alt: node.field_photo.entity.field_media_image.alt, loading: "lazy"}, true) }}</div>                
                   {% endif %}
 
               {% endif %}     
