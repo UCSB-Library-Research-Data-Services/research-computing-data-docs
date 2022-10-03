@@ -324,6 +324,8 @@
     if (viewportWidth < 768 && alertHeight > 0) {
       var headerHeight = $('.navbar-header').height();
       $('#body').attr('style', 'margin-top: ' + headerHeight + 'px;');
+      var toolbar = parseInt($('#toolbar-administration #toolbar-bar').outerHeight());
+      $('.navbar-header').css('margin-top', toolbar);
     } else if (alertHeight > 0) {
       var headerHeight = $('header.navbar').height();
       $('#body').attr('style', 'margin-top: ' + headerHeight + 'px;');
