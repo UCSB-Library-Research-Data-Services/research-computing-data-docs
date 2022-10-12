@@ -255,6 +255,7 @@
         "drupal/simple_timeline": "^1.2",
         "drupal/site_settings": "^1.19",
         "drupal/sitemap": "^2.0@beta",
+        "drupal/smart_date": "^3.6",
         "drupal/smtp": "^1.0",
         "drupal/social_media": "^1.9@RC",
         "drupal/socialfeed": "^1.3",
