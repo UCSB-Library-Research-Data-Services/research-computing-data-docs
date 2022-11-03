@@ -266,12 +266,18 @@
   }
 
   $.fn.initializeCarousel = function() {
-    $('.carousel').each(function(){
+
+    $('.carousel-static').find('.carousel').each(function () {
       $(this).carousel({
         pause: true,
         interval: false
       });
     });
+
+    $('.carousel-autoscroll').find('.carousel').each(function () {
+      $(this).carousel();
+    });
+
   }
 
   $.fn.logoSize = function() {

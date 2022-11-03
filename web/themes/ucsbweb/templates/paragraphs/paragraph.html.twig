@@ -75,6 +75,15 @@
 {% endif %}
 
 
+{% set autoscroll = '' %}
+{% if paragraph.bundle == 'slideshow' %}
+  {% if paragraph.field_autoscroll.value == 1 %}
+    {% set autoscroll = 'carousel-autoscroll' %}
+  {% else %}
+    {% set autoscroll = 'carousel-static' %}
+  {% endif %}
+{% endif %}
+
 {%
   set classes = [
     'paragraph',
@@ -91,6 +100,7 @@
     paragraph.field_css_classes.value ? paragraph.field_css_classes.value,
     is_article ? 'article',
     overlay_position ? 'overlay ' ~ overlay_position,
+    autoscroll,
   ]
 %}
 
