@@ -702,6 +702,14 @@ div.background-color-000000 div {
   color: #ffffff;
 }
 
+.view .views-exposed-form .select-wrapper select {
+  padding-right: 40px;
+}
+
+.view .views-exposed-form .select-wrapper:after {
+  margin-right: 4px;
+}
+
 @media (max-width: 767px) {
   .navbar .navbar-header .region-navigation .logo.logo-size-2 img, .navbar .navbar-header .region-navigation .logo.logo-size-2 svg, .navbar .navbar-header .region-navigation .logo.logo-size-0.logo-size-2 img, .navbar .navbar-header .region-navigation .logo.logo-size-0.logo-size-2 svg {
     width: 75%;
