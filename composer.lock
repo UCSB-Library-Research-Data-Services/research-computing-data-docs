@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7d23609caa2defbded91c95a904a4b6",
+    "content-hash": "83fa9c5907e57150b8523b8ec5955b7d",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -3358,6 +3358,72 @@
             }
         },
         {
+            "name": "drupal/business_rules",
+            "version": "2.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/business_rules.git",
+                "reference": "2.0.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/business_rules-2.0.0-beta1.zip",
+                "reference": "2.0.0-beta1",
+                "shasum": "3e50c68364a0e780117ab55f7cff064b5526afe3"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/dbug": "*"
+            },
+            "require-dev": {
+                "drupal/group": "*",
+                "drupal/paragraphs": "*",
+                "drupal/sms": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-beta1",
+                    "datestamp": "1615910333",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "C.E.A",
+                    "homepage": "https://www.drupal.org/user/3189629"
+                },
+                {
+                    "name": "colan",
+                    "homepage": "https://www.drupal.org/user/58704"
+                },
+                {
+                    "name": "pratik_kamble",
+                    "homepage": "https://www.drupal.org/user/3204909"
+                },
+                {
+                    "name": "rohit-rajput-sahab",
+                    "homepage": "https://www.drupal.org/user/2036406"
+                },
+                {
+                    "name": "yuriseki",
+                    "homepage": "https://www.drupal.org/user/1523064"
+                }
+            ],
+            "description": "Business Rules",
+            "homepage": "https://www.drupal.org/project/business_rules",
+            "support": {
+                "source": "https://git.drupalcode.org/project/business_rules"
+            }
+        },
+        {
             "name": "drupal/cacheexclude",
             "version": "1.0.0",
             "source": {
@@ -5298,6 +5364,54 @@
             "homepage": "https://www.drupal.org/project/date_popup",
             "support": {
                 "source": "https://git.drupalcode.org/project/date_popup"
+            }
+        },
+        {
+            "name": "drupal/dbug",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/dbug.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/dbug-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "25dc98f97228da9852a08b7af876373b0e8e382d"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1613864836",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "colan",
+                    "homepage": "https://www.drupal.org/user/58704"
+                },
+                {
+                    "name": "yuriseki",
+                    "homepage": "https://www.drupal.org/user/1523064"
+                }
+            ],
+            "description": "Drupal version of ColdFusion's cfdump",
+            "homepage": "https://www.drupal.org/project/dbug",
+            "support": {
+                "source": "https://git.drupalcode.org/project/dbug"
             }
         },
         {
@@ -21564,6 +21678,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/block_field": 5,
+        "drupal/business_rules": 10,
         "drupal/calendar": 15,
         "drupal/cas_attributes": 10,
         "drupal/computed_field": 15,
