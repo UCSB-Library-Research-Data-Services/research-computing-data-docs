@@ -182,6 +182,7 @@
         "drupal/field_group": "^3.2",
         "drupal/field_group_link": "^3.0",
         "drupal/file_mdm": "^2.1",
+        "drupal/flexible_views": "^2.0",
         "drupal/flexslider": "^2.0",
         "drupal/fontawesome": "^2.19",
         "drupal/geolocation": "^3.7",
