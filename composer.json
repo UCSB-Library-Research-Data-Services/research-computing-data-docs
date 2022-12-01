@@ -126,6 +126,7 @@
         "drupal/bootstrap_layouts": "^5.2",
         "drupal/bootstrap_site_alert": "^1.9",
         "drupal/bricks": "^2.0",
+        "drupal/business_rules": "^2.0@beta",
         "drupal/cacheexclude": "^1.0",
         "drupal/calendar": "^1.0@alpha",
         "drupal/captcha": "^1.2",
@@ -182,6 +183,7 @@
         "drupal/field_group": "^3.2",
         "drupal/field_group_link": "^3.0",
         "drupal/file_mdm": "^2.1",
+        "drupal/flexible_views": "^2.0",
         "drupal/flexslider": "^2.0",
         "drupal/fontawesome": "^2.19",
         "drupal/geolocation": "^3.7",
@@ -349,6 +351,10 @@
         "patches": {
             "drupal/webform_encrypt": {
                 "D9 readiness": "https://www.drupal.org/files/issues/2021-01-20/3142997-29.patch"
+            },
+            "drupal/business_rules": {
+                "Cannot add an action to a condition": "https://www.drupal.org/files/issues/2021-05-15/cannot_add_action-3200711-29.patch",
+                "Error: Call to a member function toString()": "https://www.drupal.org/files/issues/2021-04-30/3211671-support_base_paths.patch"
             }
         },
         "drupal-scaffold": {
