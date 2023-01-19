@@ -299,7 +299,7 @@
         "drupal/webform_views": "^5.0@alpha",
         "drupal/yearonly": "^9.0",
         "drupal/youtube": "^1.2",
-        "drush/drush": "^11",
+        "drush/drush": "^10",
         "malsup/cycle": "^3.0.3",
         "npm-asset/a11y-accordion-tabs": "^1.0",
         "npm-asset/cropper": "^4.1",
