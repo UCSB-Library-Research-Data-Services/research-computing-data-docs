@@ -1,0 +1,29 @@
+name: Pantheon Sync
+
+# This action pulls the autopilot commits from Pantheon
+# Controls when the action will run. 
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Installing PHP
+      uses: shivammathur/setup-php@master
+      with:
+        php-version: '7.4'
+    - name: Install SSH key
+      uses: shimataro/ssh-key-action@v2
+      with:
+        config: ${{ secrets.SSH_CONFIG }}
+        key: ${{ secrets.SSH_KEY_PABLO_LINUX }}
+        known_hosts: ${{ secrets.KNOWN_HOSTS }}
+    - name: Push Code
+      if: success()
+      run: |
+        git config --global user.name 'Your Username' 
+        git config --global user.email 'email@youremail.com'
+        git remote add pantheon ${{ secrets.PANTHEON_REPO }}
+        git pull pantheon HEAD:master
+        git push origin master --force
