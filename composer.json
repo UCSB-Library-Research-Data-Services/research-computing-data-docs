@@ -355,6 +355,9 @@
             "drupal/business_rules": {
                 "Cannot add an action to a condition": "https://www.drupal.org/files/issues/2021-05-15/cannot_add_action-3200711-29.patch",
                 "Error: Call to a member function toString()": "https://www.drupal.org/files/issues/2021-04-30/3211671-support_base_paths.patch"
+            },
+            "drupal/core": {
+                "Toolbar doesn't stay fixed properly for non-admin users": "https://www.drupal.org/files/issues/2022-10-25/3296081-21.patch"
             }
         },
         "drupal-scaffold": {
