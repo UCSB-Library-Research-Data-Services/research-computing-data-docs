@@ -22,8 +22,6 @@ jobs:
     - name: Push Code
       if: success()
       run: |
-        git config --global user.name 'njohnson' 
-        git config --global user.email 'njohnson@ucsb.edu'
         git remote add pantheon ${{ secrets.PANTHEON_REPO }}
         git pull pantheon HEAD:master
         git push origin master --force
