@@ -1,4 +1,5 @@
-.adp-people-profiles h2, .adp-people-profiles p {
+.adp-people-profiles h2,
+.adp-people-profiles p {
   color: #3d4952;
 }
 
@@ -6,7 +7,7 @@
   width: 100%;
   margin: auto;
   padding: 40px;
-  
+
 }
 
 .adp-people-profiles .profile-row {
@@ -22,24 +23,23 @@
 
 .adp-people-profiles .picture {
   float: left;
-  width: 40%;
-  
+
   padding: 20px;
-  margin:auto
+  margin: auto
 }
 
-.adp-people-profiles .title{
+.adp-people-profiles .title {
   font-weight: bold;
   padding-top: 20px;
   float: left;
-  
+
 }
 
-.adp-people-profiles .description{
+.adp-people-profiles .description {
   padding-top: 20px;
   padding-bottom: 20px;
   float: left;
-  
+
 }
 
 /* @media screen and (max-width: 1050px) {
@@ -66,6 +66,7 @@
   background-color: transparent;
   text-decoration: none;
 }
+
 .adp-people-profiles ul.gilist:hover {
   text-decoration: none;
 }
@@ -95,21 +96,23 @@
 
 .adp-people-profiles .flip-box {
   background-color: transparent;
-  width: 300px;
-  height: 410px;
-  perspective: 1000px;
-}
-.adp-people-profiles .flip-box img{
+  width: 100%;
   max-width: 260px;
   max-height: 370px;
+  perspective: 1000px;
+}
+
+.adp-people-profiles .flip-box img {
   object-fit: contain;
 }
 
 .adp-people-profiles .flip-box-inner {
-  position: relative;
   width: 100%;
-  height: 100%;
-  
+  height: auto;
+  max-width: 260px;
+  max-height: 370px;
+  display: block;
+
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
@@ -118,12 +121,17 @@
   transform: rotateY(180deg);
 }
 
-.adp-people-profiles .flip-box-front,.adp-people-profiles  .flip-box-back {
-  position: absolute;
+.adp-people-profiles .flip-box-front,
+.adp-people-profiles .flip-box-back {
   width: 100%;
-  height: 100%;
+  height: auto;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+
+.adp-people-profiles .flip-box-back {
+  position: absolute;
+  top: 0px;
 }
 
 .adp-people-profiles .flip-box-front {
@@ -134,7 +142,8 @@
   color: white;
   transform: rotateY(180deg);
 }
-.adp-people-profiles #parent-btn{
+
+.adp-people-profiles #parent-btn {
   display: flex;
 }
 
@@ -144,11 +153,12 @@
 
 
 @media screen and (max-width: 1050px) {
-  
+
   .adp-people-profiles #left-btn {
     margin: 0 auto;
     float: none;
   }
+
   .adp-people-profiles #right-btn {
     margin: 0 auto;
     float: none;

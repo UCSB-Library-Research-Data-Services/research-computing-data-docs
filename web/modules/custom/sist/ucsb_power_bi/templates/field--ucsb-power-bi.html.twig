@@ -39,15 +39,33 @@
       </div>
     {% endif %}
   {% else %}
-    <div class="field--item--label">Power BI Report: {{ report_id }}</div>
-    <div class="power-access"><p>You cannot see the content of this report because you do not have permission to the underlying data. Please contact the data owner to request access.</p></div>
+    <div class="power-access">
+      <div aria-label="Status message" class="alert alert-danger alert-dismissible" role="status">
+        <p>You cannot see the content of this report because you do not have permission to the underlying data. Please contact the data owner to request access.</p>
+      </div>
+    </div>
   {% endif %}
 {% else %}
   {% if logged_in %}
-    <div class="field--item--label">Power BI Report: {{ report_id }}</div>
-    <div class="power-access"><p>You cannot see the content of this report because you do not have permission to the underlying data. Please contact the data owner to request access.</p></div>
+    <div class="field--item--label">Report ID: {{ report_id }}</div>
+    <div class="power-access">
+      <p>You cannot see the content of this report because you do not have permission to the underlying data. Please contact the data owner to request access.</p></div>
   {% else %}
-    <div class="field--item--label">Power BI Report: {{ report_id }}</div>
-    <div class="power-access"><p>You must be <a href="/caslogin?returnto={{ url('<current>')|render }}">logged in</a> to view this report from Power BI.</p></div>
+    <div class="power-access">
+      <div class="paragraph paragraph--type--blade paragraph--view-mode--default top-padding-none bottom-padding-none">
+        <div class="inner">
+          <div class="columns">
+            <div class="paragraph paragraph--type--column paragraph--view-mode--default col-sm-12 col-md-12">
+              <div class="inner">
+                <div class="field field--name-field-body field--type-text-long field--label-hidden field--item">
+                  <p>Please log-in with your UCSBnetID and Password to view the report.</p>
+                  <p><a class="ucsb-button btn  btn-secondary" href="/caslogin?returnto={{ url('<current>')|render }}">LOGIN</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   {% endif %}
 {% endif %}

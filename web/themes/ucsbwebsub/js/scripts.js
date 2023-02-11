@@ -72,6 +72,8 @@
         } else {
             var navheight = parseInt($('#navbar .navbar-header').outerHeight());
             $('#body').css('margin-top', navheight);
+            var toolbar = parseInt($('#toolbar-administration #toolbar-bar').outerHeight());
+            $('.navbar-header').css('margin-top', toolbar);
         }
     }
 
