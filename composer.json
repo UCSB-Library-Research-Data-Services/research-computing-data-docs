@@ -315,6 +315,7 @@
         "oomphinc/composer-installers-extender": "^2.0",
         "pantheon-upstreams/upstream-configuration": "*",
         "simple_instagram_feed/jquery.instagramfeed": "^3.0.4",
+        "spatie/pdf-to-image": "^2.2",
         "tobia/pause": "^3.0.3"
     },
     "conflict": {
