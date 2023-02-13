@@ -182,8 +182,14 @@ footer a {
   opacity: 0.68;
   text-indent: 0; }
 
+/* Nick - Temporary change to make Finder module App fit in the web page */
+#app{
+  margin-left: 2em;
+}
+
 .app-title {
-  margin-bottom: 2em; }
+  margin-bottom: 2em; 
+}
 
 h2.sub-heading {
   font-size: 24px;
