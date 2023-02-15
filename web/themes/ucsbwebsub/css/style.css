@@ -878,5 +878,13 @@ iframe {
   }
 }
 
+/* Nick - Temporary edit: */
+
+@media (min-width: 992px){
+  .resource-image-view.col-md-4{
+    padding-right: 15px;
+  }
+}
+
 
 /*# sourceMappingURL=style.css.map */
