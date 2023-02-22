@@ -46,6 +46,13 @@
   min-height: 50px;
 }
 
+.icon-container th {
+  text-align: center;
+    font-size: 15px !important;
+    border-bottom: solid #242d32 thin;
+    padding: 5px;
+}
+
 .icon-container td {
   padding: 4px;
   vertical-align: middle;

@@ -19,18 +19,32 @@ class IconController  extends ControllerBase {
         if ($cache = \Drupal::cache()->get($cid)) {
             $data = $cache->data;
         } else {
-            $icon_folder = drupal_get_path('module', 'ckeditor_ucsbicon') . '/ucsbicon/icons/SVG';
+            $icon_folder = \Drupal::service('extension.list.module')->getPath('ckeditor_ucsbicon') . '/ucsbicon/icons/SVG';
             // Check if directory exists.
             if (!is_dir($_SERVER['HTTP_HOST'] . "/" . $icon_folder)) {
-                $files = \Drupal::service('file_system')->scanDirectory($icon_folder, '/.*\.(svg)$/', []);
+                $files = \Drupal::service('file_system')->scanDirectory($icon_folder, '/.*\.(svg)$/', ['recurse' => TRUE, 'min_depth' => 0, ]);
                 asort($files);
                 $addSlash = function($n)
                 {
                     $filePath = $_SERVER['HTTP_HOST'] . '/' . $n;
-                        $content = (string) \Drupal::httpClient()
+                    $icon_folder = \Drupal::service('extension.list.module')->getPath('ckeditor_ucsbicon') . '/ucsbicon/icons/SVG/';
+                    $relative_path = str_replace($icon_folder, "", $n);
+                    $properties = explode("/", $relative_path);
+
+                    $category = $properties[0];
+                    $filename = end($properties);
+
+                    $content = (string) \Drupal::httpClient()
                         ->get($filePath)
                         ->getBody();
-                    return $content;
+
+                    $file_element = array(
+                        'category' => $category,
+                        'file_name' => $filename,
+                        'content' => $content,
+                    );
+                    
+                    return $file_element;
                 };
                 if(is_array($files)){
                     $data = array_map($addSlash, array_column($files, 'uri'));
