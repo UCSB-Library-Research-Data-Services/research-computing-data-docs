@@ -16,8 +16,6 @@ jobs:
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
         config: ${{ secrets.SSH_CONFIG }} # ssh_config; optional
         if_key_exists: fail # replace / ignore / fail; optional (defaults to fail)
-    - name: rsync over SSH
-      run: rsync -r ./foo/ user@remote:bar/
     - name: deployer
       env:
         pantheon_repo: '${{ secrets.PANTHEON_REPO }}'
