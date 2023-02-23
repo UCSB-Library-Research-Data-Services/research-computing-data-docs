@@ -1,7 +1,8 @@
-glo-libraties:
-version: 1.x
-js:
-  js/script.js: {}
-css:
-theme:
-  css/style.css: {}
+ucsbwebrdhsub-styling:
+  css:
+    theme:
+      css/style.css: {}
+
+ucsbwebrdhsub-scripts:
+  js:
+    js/scripts.js: {}
