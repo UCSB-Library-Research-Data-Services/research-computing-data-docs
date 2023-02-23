@@ -2,7 +2,7 @@
 
 ## Automation
 
-There is a github action deploy-to-pantheon.yml that is triggered ONLY when you push code to the master branch on the github repo.  This action will automatically pull code from the dev master branch from Pantheon (to merge Pantheon repo with Github Repo) and then it will push your code changes to Pantheon dev environment as well, so your code changes will be seen on both the Github and the Pantheon repositories.  Again, this only works if you push your code to the Github repo master branch.  
+There is a github action deploy-to-pantheon.yml that is triggered ONLY when you push code to the master branch on the github repo.  This action will automatically pull code from the dev master branch from Pantheon (to merge Pantheon repo with Github Repo) and then it will push your code changes to Pantheon dev environment as well, so your code changes will be seen on both the Github and the Pantheon repositories.  Again, this is only automated if you push your code to the Github repo master branch.  
 
 It is also important for the dev environment of the Pantheon site to be on the Git Development Mode in order for this automation to work.
 
@@ -32,5 +32,9 @@ When you push a code change, you can push to either the Github remote labeled 'g
 ### Branching Workflows:
 
 Github and Pantheon both have their own ways of creating branches, then merging them into the main code.  Github uses Pull Requests to do this.  In Pantheon, it is with 'multidev.'
+
+## Summary:
+
+Any git pushes to the master branch on the Github Repository will automatically push the changes to the Pantheon dev Repository. ie: git push github master
 
   
