@@ -1,8 +1,0 @@
-ucsbwebrdhsub-styling:
-  css:
-    theme:
-      css/style.css: {}
-
-ucsbwebrdhsub-scripts:
-  js:
-    js/scripts.js: {}

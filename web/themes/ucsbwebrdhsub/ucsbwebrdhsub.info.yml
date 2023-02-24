@@ -1,7 +1,7 @@
 name: UCSB Web RDH Sub Theme
 type: theme
 base theme: ucsbweb
-description: &#39;Custom Sub Theme for UCSB Research Data Hub Website.&#39;
+description: Custom Sub Theme for UCSB Research Data Hub Website.
 package: Other
 core_version_requirement: ^9
 regions:
@@ -19,6 +19,3 @@ regions:
   footer: 'Footer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
-libraries:
-  - 'ucsbwebrdhsub/ucsbwebrdhsub-styling'
-  - 'ucsbwebrdhsub/ucsbwebrdhsub-scripts'
