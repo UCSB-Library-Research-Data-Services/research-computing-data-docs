@@ -3,6 +3,3 @@ ucsbwebrdhsub-styling:
     theme:
       css/style.css: {}
 
-ucsbwebsub-scripts:
-  js:
-    js/scripts.js: {}
