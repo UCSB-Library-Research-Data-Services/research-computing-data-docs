@@ -20,5 +20,5 @@ regions:
   page_top: 'Page top'
   page_bottom: 'Page bottom'
 libraries:
-  - 'ucsbwebsub/ucsbwebsub-styling'
+  - 'ucsbwebrdhsub/ucsbwebrdhsub-styling'
   - 'ucsbwebsub/ucsbwebsub-scripts'
