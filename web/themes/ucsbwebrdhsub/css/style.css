@@ -1,0 +1,5 @@
+@media (min-width: 992px){
+    .resource-image-view.col-md-4{
+      padding-right: 0px;
+    }
+  }
