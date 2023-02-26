@@ -8,14 +8,36 @@
 .dls-media-thumbnail > article:first-of-type > div:last-of-type{
     display: none;
 }
+
+.dls-media-thumbnail img:hover {
+  filter: grayscale(70%);
+}
   
 /* Fix margin on  data literacy series page*/
 
-.contextual-region.view.view-data-literacy-series-view{
+.view.view-data-literacy-series-view{
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     max-width: 1230px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.views-exposed-form .form-actions .button{
+  padding: 10px 28px;
+  margin: 0px 10px;
+}
+
+.dls-item-title{
+  margin: 0 0 10px 0;
+}
+
+.dls-item-body{
+  font-size: 14px;
+  line-height: 0px;
+}
+
+.dls-item-body > p {
+  line-height: 24px;
 }
