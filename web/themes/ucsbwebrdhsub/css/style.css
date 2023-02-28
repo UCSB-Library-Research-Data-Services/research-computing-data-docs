@@ -4,6 +4,18 @@
     }
 }
 
+#edit-sort-bef-combine{
+  width: 140px;
+}
+
+
+.resource-title-link h2:hover{
+  color: #005aa3;
+  position: relative;
+  text-decoration: underline #005aa3;
+  /* border-bottom: 1px solid #005aa3; */
+}
+
   /* Get rid of pdf file name under the thumbnail in the DLS View */
 .dls-media-thumbnail > article:first-of-type > div:last-of-type{
     display: none;
