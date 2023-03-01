@@ -17,17 +17,17 @@
 }
 
   /* Get rid of pdf file name under the thumbnail in the DLS View */
-.dls-media-thumbnail > article:first-of-type > div:last-of-type{
+.dls-media-thumbnail > div:first-of-type > article:first-of-type > div:last-of-type{
     display: none;
 }
 
 .dls-media-thumbnail img:hover {
-  filter: grayscale(70%);
+  filter: drop-shadow(6px 3px 2px #484a63);
 }
   
 /* Fix margin on  data literacy series page*/
 
-.view.view-data-literacy-series-view{
+.paragraph--type--view .view.view-data-literacy-series-view{
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
@@ -52,4 +52,49 @@
 
 .dls-item-body > p {
   line-height: 24px;
+}
+
+@media (max-width: 992px){
+  .dls-item-title{
+  font-size: 20px;
+  line-height: 25px;
+}
+
+
+.dls-item-body > p {
+  line-height: 16px;
+}
+}
+
+
+/* For DLS Filter: */
+
+.view-data-literacy-series-view .bef--secondary {
+  clear: right !important;
+  float: right !important;
+  width: min-content;
+}
+
+
+.view-data-literacy-series-view .bef-exposed-form .form--inline > .form-item{
+  float: none;
+}
+
+
+@media (min-width: 992px){
+.view-data-literacy-series-view .bef-exposed-form .form--inline > .form-item{
+  margin-right: 8px;
+  }
+}
+.view-data-literacy-series-view .bef--secondary > .panel-heading{
+  width: max-content;
+}
+
+.view-data-literacy-series-view .form-actions{
+  clear: both;
+  display: block;
+}
+
+.view-data-literacy-series-view #edit-secondary--content.collapse.in{
+  display: flex;
 }
