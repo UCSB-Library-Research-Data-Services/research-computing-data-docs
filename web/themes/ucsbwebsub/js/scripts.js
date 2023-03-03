@@ -8,11 +8,13 @@
     'use strict';
     $(function () {
         $('body').leftPosition();
+        $('body').equalHeight();
         $('body').equalHeightSlides();
         $('body').equalHeightPeopleProfiles();
     })
 
-    $(document).ready(function(){
+    $(document).ready(function () {
+        $('body').equalHeight();
         $('body').equalHeightSlides();
         $('body').initializeCarousel();
         $('body').topOffset();
@@ -22,6 +24,7 @@
 
     $(window).on('load', function(){
         $('body').leftPosition();
+        $('body').equalHeight();
         $('body').equalHeightSlides();
         $('body').initializeCarousel();
         $('body').equalHeightPeopleProfiles();
@@ -29,6 +32,7 @@
 
     $(window).on('resize', function () {
         $('body').leftPosition();
+        $('body').equalHeight();
         $('body').equalHeightSlides();
         $('body').equalHeightPeopleProfiles();
     });    
@@ -82,6 +86,50 @@
         var $this = $('#body:not(.localist-body) #navbar li.active');
         $this.parents('li').last().addClass("active");
     }
+
+
+    //function that handles the equalHeight
+    $.fn.equalHeight = function () {
+
+        const parents = new Set(
+            [...document.querySelectorAll('.equal-height')]
+                .map(div => div.parentElement)
+        );
+
+        parents.forEach((parent) => {
+
+            let children = parent.getElementsByClassName('equal-height');
+            var maxHeight = 0;
+
+            // Get the max height
+            Array.from(children).forEach(function (element) {
+                element.style.height = null;
+
+                if (window.innerWidth >= 992) {
+                    maxHeight = element.offsetHeight > maxHeight ? element.offsetHeight : maxHeight;
+                }
+            });
+
+            // Apply the height for each of the elements
+            Array.from(children).forEach(function (element) {
+                if (window.innerWidth >= 992) {
+                    element.style.height = maxHeight + "px";
+                }
+            });
+        });
+    }
+
+    Drupal.behaviors.infiniteScrollEqualHeight = {
+        attach: function (context, settings) {
+            //find all views-infinite-scroll
+            const views_infinite_scroll = document.getElementsByClassName('views-infinite-scroll-content-wrapper');
+            for (var i = 0; i < views_infinite_scroll.length; i++) {
+                //call the equalHeight function
+                $(views_infinite_scroll[i]).equalHeight();
+            }
+        }
+    };
+
 
     //initialize the Slideshow
     $.fn.equalHeightSlides = function() {
