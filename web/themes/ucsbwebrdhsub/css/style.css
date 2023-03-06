@@ -125,8 +125,9 @@
   }
 }
 
-#edit-submit-data-literacy-series-view{
-  padding: 10px 15px;
+#edit-submit-data-literacy-series-view,
+#edit-submit-data-literacy-series-view + #edit-reset{
+  padding: 10px 18px;
   font-size: 15px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -139,7 +140,8 @@
   text-align: center;
 }
 
-#edit-submit-data-literacy-series-view:hover{
+#edit-submit-data-literacy-series-view:hover,
+#edit-submit-data-literacy-series-view + #edit-reset:hover{
   background: #369;
 }
 
