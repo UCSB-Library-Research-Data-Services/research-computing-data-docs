@@ -125,3 +125,21 @@
   }
 }
 
+#edit-submit-data-literacy-series-view{
+  padding: 10px 15px;
+  font-size: 15px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  font-family: Hind,sans-serif;
+  border: 0 none;
+  background: #2280bf;
+  color: #fff;
+  text-align: center;
+}
+
+#edit-submit-data-literacy-series-view:hover{
+  background: #369;
+}
+
