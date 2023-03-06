@@ -103,6 +103,8 @@
   display: block;
 }
 
+
+
 /* .view-data-literacy-series-view #edit-secondary--content.collapse.in{
   display: flex;
 } */
@@ -117,6 +119,10 @@
 
 #edit-dls-tags-advanced-id{
   width: 400px;
+}
+
+#edit-dls-tags-advanced-id::-webkit-input-placeholder::before{
+  content: "Comma Separated.  Example: Storage, Metadata, ..."
 }
 
 @media (max-width: 992px) {
