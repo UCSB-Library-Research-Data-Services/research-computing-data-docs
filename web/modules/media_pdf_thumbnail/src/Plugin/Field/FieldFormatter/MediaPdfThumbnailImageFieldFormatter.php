@@ -92,7 +92,7 @@ class MediaPdfThumbnailImageFieldFormatter extends ImageFormatter {
       'pdf_file_field' => '',
       'pdf_page' => '',
       'image_link_attributes_download' => '',
-      'image_link_attributes_target' => '',
+      'image_link_attributes_target' => '_blank',
       'image_link_attributes_rel' => '',
     ];
 
@@ -102,7 +102,7 @@ class MediaPdfThumbnailImageFieldFormatter extends ImageFormatter {
       $settings[$bundleId . '_enable'] = '';
       $settings[$bundleId . '_link'] = '';
       $settings[$bundleId . '_attributes_download'] = '';
-      $settings[$bundleId . '_attributes_target'] = '';
+      $settings[$bundleId . '_attributes_target'] = '_blank';
       $settings[$bundleId . '_attributes_rel'] = '';
     }
     return $settings + parent::defaultSettings();

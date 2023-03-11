@@ -1,3 +1,6 @@
+
+
+/* Resource List Page: */
 @media (min-width: 992px){
     .resource-image-view.col-md-4{
       padding-right: 16px;
@@ -15,6 +18,13 @@
   text-decoration: underline #005aa3;
   /* border-bottom: 1px solid #005aa3; */
 }
+
+
+/* DLS List Page: */
+.views-element-container .contextual-region.view-data-literacy-series-view{
+  margin-bottom: 40px;
+}
+
 
   /* Get rid of pdf file name under the thumbnail in the DLS View */
 .dls-media-thumbnail > div:first-of-type > article:first-of-type > div:last-of-type{
@@ -104,19 +114,6 @@
 }
 
 
-
-/* .view-data-literacy-series-view #edit-secondary--content.collapse.in{
-  display: flex;
-} */
-
-/* #edit-dls-tags{
-  width: 20rem;
-}
-
-.form-item-dls-tags .input-group{
-  width: max-content;
-} */
-
 #edit-dls-tags-advanced-id{
   width: 400px;
 }
@@ -144,6 +141,25 @@
 
 #edit-submit-data-literacy-series-view:hover,
 #edit-submit-data-literacy-series-view + #edit-reset:hover{
+  background: #369;
+}
+
+.view-data-literacy-series-view .previous>a,
+.view-data-literacy-series-view .next>a
+{
+    box-shadow: 5px 3px 3px grey;
+    font-size: 22px;
+    font-weight: bolder;
+    background: #2280bf;
+    color: white !important;
+    border:none !important;
+    padding: 7px 16px !important;
+
+}
+
+.view-data-literacy-series-view .previous>a:hover,
+.view-data-literacy-series-view .next>a:hover {
+  color: white !important;
   background: #369;
 }
 
