@@ -121,10 +121,6 @@
   width: 400px;
 }
 
-#edit-dls-tags-advanced-id::-webkit-input-placeholder::before{
-  content: "Comma Separated.  Example: Storage, Metadata, ..."
-}
-
 @media (max-width: 992px) {
 #edit-dls-tags-advanced-id {
     width: 250px;
