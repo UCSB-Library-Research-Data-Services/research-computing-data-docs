@@ -63,6 +63,10 @@ function ssis_events_theme($existing, $type, $theme, $path) {
         'template' => 'node--eventtype--event-thumbnail',
         'base hook' => 'node'
       ],
+    'node__eventtype__event_block_with_summary_category' => [
+      'template' => 'node--eventtype--event-block-with-summary-category',
+      'base hook' => 'node'
+    ],
      'node__eventtype__event_thumbnail_with_summary' => [
         'template' => 'node--eventtype--event-thumbnail-with-summary',
         'base hook' => 'node'
