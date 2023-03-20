@@ -85,6 +85,18 @@ a:focus > .blk-template {
             font-size: 27px;
         }
 
+                .blk-template .blk-caption-category {
+                  box-shadow: 0 2px 2px 0 rgba(17, 21, 23, 0.2);
+                  padding: 8px 12px;
+                  top: 25px;
+                  left: 25px;
+                  position: relative;
+                  text-align: center;
+                  max-width: 80%;
+                  width: fit-content;
+                  z-index: 3;
+                }
+
     .blk-template .blk-container {
         bottom: 0px;
         box-sizing: border-box;

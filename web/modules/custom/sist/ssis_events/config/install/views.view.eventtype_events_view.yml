@@ -4,6 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.event_block
     - core.entity_view_mode.node.event_block_with_summary
+    - core.entity_view_mode.node.event_block_with_summary_category
     - core.entity_view_mode.node.event_thumbnail
     - core.entity_view_mode.node.event_thumbnail_with_summary
     - core.entity_view_mode.node.teaser
@@ -631,11 +632,146 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  block_eventtype_blocks_summary_and_category:
+    id: block_eventtype_blocks_summary_and_category
+    display_title: 'Block Events Blocks w Summary & Category'
+    display_plugin: block
+    position: 5
+    display_options:
+      title: 'Events Blocks w Summary & Category'
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 4
+      sorts:
+        field_eventtype_event_date_value:
+          id: field_eventtype_event_date_value
+          table: node__field_eventtype_event_date
+          field: field_eventtype_event_date_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: date
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: minute
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            eventtype: eventtype
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_eventtype_event_date_end_value:
+          id: field_eventtype_event_date_end_value
+          table: node__field_eventtype_event_date
+          field: field_eventtype_event_date_end_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: date
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: today
+            type: offset
+            granularity: day
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: 'col-xs-6, col-sm-3, col-md-3'
+          default_row_class: true
+          uses_fields: true
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: event_block_with_summary_category
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
   block_eventtype_grid:
     id: block_eventtype_grid
     display_title: 'Block Events Grid'
     display_plugin: block
-    position: 7
+    position: 8
     display_options:
       title: 'Events Grid'
       pager:
@@ -787,7 +923,7 @@ display:
     id: block_eventtype_grid_block_summary
     display_title: 'Block Events Blocks Grid w Summary'
     display_plugin: block
-    position: 9
+    position: 10
     display_options:
       title: 'Events Grid with Summary'
       pager:
@@ -935,11 +1071,163 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  block_eventtype_grid_block_summary_cat:
+    id: block_eventtype_grid_block_summary_cat
+    display_title: 'Block Events Blocks Grid w Summary & Category'
+    display_plugin: block
+    position: 12
+    display_options:
+      title: 'Events Grid with Summary & Category'
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 20
+          total_pages: null
+          id: 0
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      sorts:
+        field_eventtype_event_date_value:
+          id: field_eventtype_event_date_value
+          table: node__field_eventtype_event_date
+          field: field_eventtype_event_date_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: date
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: minute
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            eventtype: eventtype
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_eventtype_event_date_end_value:
+          id: field_eventtype_event_date_end_value
+          table: node__field_eventtype_event_date
+          field: field_eventtype_event_date_end_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: date
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: today
+            type: offset
+            granularity: day
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: 'col-sm-3 left-padding-1 right-padding-1 bottom-padding-1'
+          default_row_class: true
+          uses_fields: true
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: event_block_with_summary_category
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
   block_eventtype_grid_past:
     id: block_eventtype_grid_past
     display_title: '(Past) Block Events Grid'
     display_plugin: block
-    position: 8
+    position: 9
     display_options:
       title: 'Events Grid'
       pager:
@@ -1090,7 +1378,7 @@ display:
     id: block_eventtype_grid_past_w_summary
     display_title: '(Past) Block Events Blocks Grid w Summary'
     display_plugin: block
-    position: 10
+    position: 11
     display_options:
       title: 'Events Grid with Summary'
       pager:
@@ -1237,11 +1525,162 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  block_eventtype_grid_past_w_summary_cat:
+    id: block_eventtype_grid_past_w_summary_cat
+    display_title: '(Past) Block Events Blocks Grid w Summary & Category'
+    display_plugin: block
+    position: 13
+    display_options:
+      title: 'Events Grid with Summary & Category'
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 20
+          total_pages: null
+          id: 0
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      sorts:
+        field_eventtype_event_date_end_value:
+          id: field_eventtype_event_date_end_value
+          table: node__field_eventtype_event_date
+          field: field_eventtype_event_date_end_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: minute
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            eventtype: eventtype
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_eventtype_event_date_end_value:
+          id: field_eventtype_event_date_end_value
+          table: node__field_eventtype_event_date
+          field: field_eventtype_event_date_end_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: date
+          operator: '<'
+          value:
+            min: ''
+            max: ''
+            value: today
+            type: offset
+            granularity: day
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: default
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: true
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: event_block_with_summary_category
+      defaults:
+        title: false
+        pager: false
+        style: false
+        row: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
   block_eventtype_grid_summary:
     id: block_eventtype_grid_summary
     display_title: 'Block Events Grid w Summary'
     display_plugin: block
-    position: 11
+    position: 14
     display_options:
       title: 'Events Grid w Summary'
       pager:
@@ -1395,7 +1834,7 @@ display:
     id: block_eventtype_grid_summary_past
     display_title: '(Past) Block Events Grid w Summary'
     display_plugin: block
-    position: 12
+    position: 15
     display_options:
       title: 'Events Grid w Summary'
       pager:
@@ -1858,7 +2297,7 @@ display:
     id: block_eventtype_thumbs
     display_title: 'Block Events Thumbnails'
     display_plugin: block
-    position: 5
+    position: 6
     display_options:
       title: 'Events Thumbnails'
       pager:
@@ -2012,7 +2451,7 @@ display:
     id: block_eventtype_thumbs_past
     display_title: '(Past) Block Events Thumbnails'
     display_plugin: block
-    position: 6
+    position: 7
     display_options:
       title: 'Events Thumbnails'
       pager:
