@@ -8,13 +8,13 @@
     'use strict';
     $(function () {
         $('body').leftPosition();
-        $('body').equalHeight();
+        $('body').equalHeightItems();
         $('body').equalHeightSlides();
         $('body').equalHeightPeopleProfiles();
     })
 
     $(document).ready(function () {
-        $('body').equalHeight();
+        $('body').equalHeightItems();
         $('body').equalHeightSlides();
         $('body').initializeCarousel();
         $('body').topOffset();
@@ -24,7 +24,7 @@
 
     $(window).on('load', function(){
         $('body').leftPosition();
-        $('body').equalHeight();
+        $('body').equalHeightItems();
         $('body').equalHeightSlides();
         $('body').initializeCarousel();
         $('body').equalHeightPeopleProfiles();
@@ -32,7 +32,7 @@
 
     $(window).on('resize', function () {
         $('body').leftPosition();
-        $('body').equalHeight();
+        $('body').equalHeightItems();
         $('body').equalHeightSlides();
         $('body').equalHeightPeopleProfiles();
     });    
@@ -89,16 +89,16 @@
 
 
     //function that handles the equalHeight
-    $.fn.equalHeight = function () {
+    $.fn.equalHeightItems = function () {
 
         const parents = new Set(
-            [...document.querySelectorAll('.equal-height')]
+            [...document.querySelectorAll('.equal-height-item')]
                 .map(div => div.parentElement)
         );
 
         parents.forEach((parent) => {
 
-            let children = parent.getElementsByClassName('equal-height');
+            let children = parent.getElementsByClassName('equal-height-item');
             var maxHeight = 0;
 
             // Get the max height
@@ -119,13 +119,13 @@
         });
     }
 
-    Drupal.behaviors.infiniteScrollEqualHeight = {
+    Drupal.behaviors.infiniteScrollEqualHeightItems = {
         attach: function (context, settings) {
             //find all views-infinite-scroll
             const views_infinite_scroll = document.getElementsByClassName('views-infinite-scroll-content-wrapper');
             for (var i = 0; i < views_infinite_scroll.length; i++) {
-                //call the equalHeight function
-                $(views_infinite_scroll[i]).equalHeight();
+                //call the equalHeightItems function
+                $(views_infinite_scroll[i]).equalHeightItems();
             }
         }
     };
