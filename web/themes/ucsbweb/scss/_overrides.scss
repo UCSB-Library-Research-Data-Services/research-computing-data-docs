@@ -3969,3 +3969,15 @@ form.search-form {
     }
   }
 }
+
+.navbar #eyebrow>.inner .items .item:nth-child(2)>.inner div.highlighted {}
+
+.navbar #eyebrow>.inner .items .item:nth-child(2)>.inner div.highlighted>a {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.nav>li.highlighted>a {
+  color: #EF5645 !important;
+  font-weight: bolder;
+}
