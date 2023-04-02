@@ -2,6 +2,19 @@
 .community-container {
   background-size: cover;
   background-position: center;
+  padding: 100px 0px;
+}
+
+.community-inner {
+  display:flex;
+  padding: 0 30px;
+  max-width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.community-column {
+  flex: 50%;
 }
 
 

@@ -102,8 +102,24 @@
 %}
 {% if view_mode == 'full' %}
   <div{{ attributes.addClass(classes)}} {{attributes.setAttribute("style",style)}}>
-    <div class="inner">
-      {{ content.body }}
+    <div class="inner community-inner">
+
+    {% if content.field_title_block_image['#items'].entity.uri.value %}
+    {% set community_image =   file_url(content.field_title_block_image['#items'].entity.uri.value)%}
+
+      <div class='community-column'>
+       {{ content.body }}
+      </div>
+      <div class='community-column'>
+        <img src={{ file_url(content.field_title_block_image['#items'].entity.uri.value) }} />
+      </div>
+
+    {% endif %}
+
+
+
+
+      {# {{ content.body }} #}
     </div>
   </div>
 {% endif %}
