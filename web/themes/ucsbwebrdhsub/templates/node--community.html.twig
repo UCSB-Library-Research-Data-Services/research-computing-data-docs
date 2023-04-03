@@ -107,11 +107,18 @@
     {% if content.field_title_block_image['#items'].entity.uri.value %}
     {% set community_image =   file_url(content.field_title_block_image['#items'].entity.uri.value)%}
 
-      <div class='community-column'>
-       {{ content.body }}
+      <div class='community-column-left community-column'>
+        <div class='community-title'>
+          {{ content.field_displayed_title_logo.0 }}
+        </div>
+        <div class='community-body'>
+          {{ content.body }}
+        </div>
+{# test #}
+        
       </div>
-      <div class='community-column'>
-        <img src={{ file_url(content.field_title_block_image['#items'].entity.uri.value) }} />
+      <div class='community-column-right community-column'>
+        <img class='community-image' src={{ file_url(content.field_title_block_image['#items'].entity.uri.value) }} />
       </div>
 
     {% endif %}

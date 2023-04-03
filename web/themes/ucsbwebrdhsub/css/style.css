@@ -1,8 +1,10 @@
 /* Communities Page */
+/* *************************************** */
 .community-container {
   background-size: cover;
   background-position: center;
   padding: 100px 0px;
+  margin-bottom: 50px;
 }
 
 .community-inner {
@@ -15,12 +17,50 @@
 
 .community-column {
   flex: 50%;
+ 
+}
+
+.community-column-right{
+   display: flex;
+  justify-content: center;
+}
+
+.community-title{
+  margin-bottom: 10px;
+}
+
+.community-body p{
+  font-size: 18px;
+}
+
+.community-image{
+  object-fit: contain;
+  max-height: 300px;
+}
+
+@media (max-width: 992px) {
+  .community-body p {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+  .community-container {
+    height: 300px !important;
+    padding: 35px 0;
+  }
+  .community-inner {
+    padding: 0 8px;
+  }
+
+  .community-image {
+    max-height: 230px;
+  }
 }
 
 
 
-
 /* Resource List Page: */
+/* *************************************** */
 @media (min-width: 992px) {
   .resource-image-view.col-md-4 {
     padding-right: 16px;
