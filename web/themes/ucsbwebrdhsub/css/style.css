@@ -3,16 +3,21 @@
 .community-container {
   background-size: cover;
   background-position: center;
-  padding: 100px 0px;
+  padding: 70px 0px 100px 0;
   margin-bottom: 50px;
+  min-height: fit-content;
 }
 
 .community-inner {
-  display:flex;
+  justify-content: center;
   padding: 0 30px;
   max-width: 1230px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.community-inner-cols {
+  display: flex;
 }
 
 .community-column {
@@ -29,13 +34,29 @@
   margin-bottom: 10px;
 }
 
+.community-title h1,
+.community-title h2,
+.community-title h3,
+.community-title h4,
+.community-title h5,
+.community-title h6,
+.community-title p {
+  margin: 0;
+}
+
+
 .community-body p{
   font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .community-image{
   object-fit: contain;
   max-height: 300px;
+}
+
+.community-btn{
+  background-color: azure;
 }
 
 @media (max-width: 992px) {
@@ -45,8 +66,9 @@
     }
 
   .community-container {
-    height: 300px !important;
+    height: fit-content !important;
     padding: 35px 0;
+    min-height: 300px;
   }
   .community-inner {
     padding: 0 8px;

@@ -73,6 +73,7 @@
 {% set img = content.field_backgroun['#items'].entity.uri.value ? file_url(content.field_backgroun['#items'].entity.uri.value) : ''%}
 {% set background_color = node.field_background_color.color ? node.field_background_color.color : ''%}
 {% set text_color = node.field_text_color.color %}
+{% set text_color_style =  'color: #'~ text_color ~';'%}
 {# {{img}} #}
 {% if node.field_backgroun.height < 500 %}
 {% set height = node.field_backgroun.height %}
@@ -82,6 +83,7 @@
 {% set style = 'background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(' ~ img  ~ '); height: '~ height ~'px; color: #'~ text_color ~';' %}
 {% if img == '' %}
 {% set style = 'height: 500px; background-color: #' ~ background_color ~'; color: #'~ text_color ~';' %}
+
 
 {% endif %}
 
@@ -102,24 +104,35 @@
 %}
 {% if view_mode == 'full' %}
   <div{{ attributes.addClass(classes)}} {{attributes.setAttribute("style",style)}}>
-    <div class="inner community-inner">
 
     {% if content.field_title_block_image['#items'].entity.uri.value %}
     {% set community_image =   file_url(content.field_title_block_image['#items'].entity.uri.value)%}
-
+    <div class="inner community-inner-cols community-inner">
       <div class='community-column-left community-column'>
-        <div class='community-title'>
+        <div class='community-title' >
           {{ content.field_displayed_title_logo.0 }}
         </div>
         <div class='community-body'>
           {{ content.body }}
         </div>
-{# test #}
+        <a class='btn btn-tertiary btn-sm community-btn' role='button' target='_blank'  rel='noreferrer' href={{ content.field_url.0['#url'] }}>Visit Website</a>
         
       </div>
       <div class='community-column-right community-column'>
         <img class='community-image' src={{ file_url(content.field_title_block_image['#items'].entity.uri.value) }} />
       </div>
+
+    {% else %}
+      <div class="inner community-inner">
+        <div class='community-title' >
+          {{ content.field_displayed_title_logo.0 }} 
+        </div>
+        <div class='community-body'>
+          {{ content.body }}
+        </div>
+        <a class='btn btn-tertiary btn-sm community-btn' role='button' target='_blank'  rel='noreferrer' href={{ content.field_url.0['#url'] }}>Visit Website</a>
+    
+
 
     {% endif %}
 
