@@ -80,7 +80,7 @@
 {% else %}
 {% set height = 500 %}
 {% endif %}
-{% set style = 'background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(' ~ img  ~ '); height: '~ height ~'px; color: #'~ text_color ~';' %}
+{% set style = 'background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(' ~ img  ~ '); min-height: '~ height ~'px; color: #'~ text_color ~';' %}
 {% if img == '' %}
 {% set style = 'height: 500px; background-color: #' ~ background_color ~'; color: #'~ text_color ~';' %}
 
@@ -125,7 +125,7 @@
     {% else %}
       <div class="inner community-inner">
         <div class='community-title' >
-          {{ content.field_displayed_title_logo.0 }} 
+          <center>{{ content.field_displayed_title_logo.0 }} </center>
         </div>
         <div class='community-body'>
           {{ content.body }}
