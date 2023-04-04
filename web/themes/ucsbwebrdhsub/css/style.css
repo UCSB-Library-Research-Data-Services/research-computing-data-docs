@@ -3,9 +3,10 @@
 .community-container {
   background-size: cover;
   background-position: center;
-  padding: 70px 0px 100px 0;
-  margin-bottom: 50px;
+  padding: 95px 0px 125px 0;
   min-height: fit-content;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 5px;
 }
 
 .community-inner {
@@ -42,6 +43,17 @@
 .community-title h6,
 .community-title p {
   margin: 0;
+  color: unset;
+}
+
+.community-body h1,
+.community-body h2,
+.community-body h3,
+.community-body h4,
+.community-body h5,
+.community-body h6,
+.community-body p {
+  color: unset;
 }
 
 
@@ -60,6 +72,10 @@
 }
 
 @media (max-width: 992px) {
+
+  .community-inner-cols {
+      flex-direction: column-reverse;
+    }
   .community-body p {
       font-size: 14px;
       line-height: 18px;
