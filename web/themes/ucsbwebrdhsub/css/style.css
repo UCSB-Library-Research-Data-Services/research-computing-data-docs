@@ -1,5 +1,18 @@
 /* Communities Page */
 /* *************************************** */
+
+[about |= "/communities"] .grid-item--height1{
+  height: 150px !important;
+}
+
+[about |="/communities"] .background-color-003660:hover {
+  background-color: #215985 !important;
+}
+
+[about |="/communities"] .background-color-febc11:hover {
+  background-color: #ce9d22 !important;
+}
+
 .community-container {
   background-size: cover;
   background-position: center;
@@ -7,6 +20,9 @@
   min-height: fit-content;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin-bottom: 5px;
+  max-width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .community-inner {
