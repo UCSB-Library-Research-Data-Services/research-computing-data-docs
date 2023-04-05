@@ -74,13 +74,16 @@
 {% set background_color = node.field_background_color.color ? node.field_background_color.color : ''%}
 {% set text_color = node.field_text_color.color %}
 {% set text_color_style =  'color: #'~ text_color ~';'%}
-{# {{img}} #}
+{% set overlay =  node.field_overlay_opacity.0.value %}
+{# 
 {% if node.field_backgroun.height < 500 %}
 {% set height = node.field_backgroun.height %}
 {% else %}
 {% set height = 500 %}
 {% endif %}
-{% set style = 'background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(' ~ img  ~ '); min-height: '~ height ~'px; color: #'~ text_color ~'; background-color: #' ~ background_color ~';' %}
+ #}
+
+{% set style = 'background-image: linear-gradient(rgba(0,0,0,' ~ overlay ~ '), rgba(0,0,0,' ~ overlay ~ ')), url(' ~ img  ~ '); min-height: '~ height ~'px; color: #'~ text_color ~'; background-color: #' ~ background_color ~';' %}
 {% if img == '' %}
 {% set style = 'min-height: 500px; background-color: #' ~ background_color ~'; color: #'~ text_color ~';' %}
 
@@ -107,7 +110,8 @@
 
     {% if content.field_title_block_image['#items'].entity.uri.value %}
     {% set community_image =   file_url(content.field_title_block_image['#items'].entity.uri.value)%}
-    <div class="inner community-inner-cols community-inner">
+    <div class="inner community-inner">
+    <div class="community-content community-inner-cols">
       <div class='community-column-left community-column'>
         <div class='community-title' >
           {{ content.field_displayed_title_logo.0 }}
@@ -115,7 +119,7 @@
         <div class='community-body'>
           {{ content.body }}
         </div>
-        <a class='btn btn-tertiary btn-sm community-btn' role='button' target='_blank'  rel='noreferrer' href={{ content.field_url.0['#url'] }}>Visit Website</a>
+       
         
       </div>
       <div class='community-column-right community-column'>
@@ -124,19 +128,22 @@
 
     {% else %}
       <div class="inner community-inner">
+      <div class="community-content">
         <div class='community-title' >
           <center>{{ content.field_displayed_title_logo.0 }} </center>
         </div>
         <div class='community-body' style="{{ text_color_style }}">
           {{ content.body }}
         </div>
-        <a class='btn btn-tertiary btn-sm community-btn' role='button' target='_blank'  rel='noreferrer' href={{ content.field_url.0['#url'] }}>Visit Website</a>
+    
     
 
 
     {% endif %}
-
     </div>
+    <a class='btn btn-tertiary btn-sm community-btn' role='button' target='_blank'  rel='noreferrer' href={{ content.field_url.0['#url'] }}>Visit Website</a>
+    </div>
+     
   </div>
 {% endif %}
 
