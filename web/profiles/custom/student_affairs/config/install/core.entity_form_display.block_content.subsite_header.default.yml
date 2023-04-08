@@ -33,7 +33,7 @@ content:
   field_background_color:
     weight: 1
     settings:
-      default_colors: '#eef0f2,#dce1e5,#9cbebe,#dae6e6,#dcd6cc,#f1eeea,#c9bf9d,#edeadf,#febc11,#003660,#0ba89a,#09847a,#048297,#047c91,#ef5645,#c43424'
+      default_colors: '#eef0f2,#dce1e5,#9cbebe,#dae6e6,#dcd6cc,#f1eeea,#c9bf9d,#edeadf,#febc11,#003660,#0ba89a,#6d7d33,#09847a,#048297,#047c91,#ef5645,#c43424'
     third_party_settings: {  }
     type: color_field_widget_box
     region: content
@@ -56,7 +56,7 @@ content:
   field_secondary_navigation_backg:
     weight: 2
     settings:
-      default_colors: '#eef0f2,#dce1e5,#9cbebe,#dae6e6,#dcd6cc,#f1eeea,#c9bf9d,#edeadf,#febc11,#003660,#0ba89a,#09847a,#048297,#047c91,#ef5645,#c43424'
+      default_colors: '#eef0f2,#dce1e5,#9cbebe,#dae6e6,#dcd6cc,#f1eeea,#c9bf9d,#edeadf,#febc11,#003660,#0ba89a,#6d7d33,#09847a,#048297,#047c91,#ef5645,#c43424'
     third_party_settings: {  }
     type: color_field_widget_box
     region: content
