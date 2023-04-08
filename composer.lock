@@ -3065,26 +3065,26 @@
         },
         {
             "name": "drupal/book_blocks",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/book_blocks.git",
-                "reference": "8.x-1.6"
+                "reference": "8.x-1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/book_blocks-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "6a7f9c93a2c96c285846990a282ec858b0315942"
+                "url": "https://ftp.drupal.org/files/projects/book_blocks-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "c6b7dfe91fa86315bf58f841f82a4dc1b5d8428f"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8 || ^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.6",
-                    "datestamp": "1611026388",
+                    "version": "8.x-1.7",
+                    "datestamp": "1680485194",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3109,17 +3109,17 @@
         },
         {
             "name": "drupal/bootstrap",
-            "version": "3.27.0",
+            "version": "3.28.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap.git",
-                "reference": "8.x-3.27"
+                "reference": "8.x-3.28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.27.zip",
-                "reference": "8.x-3.27",
-                "shasum": "3994dbbfe4b39126a324fd2e450b9f67ace23a1c"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.28.zip",
+                "reference": "8.x-3.28",
+                "shasum": "a38475b0a6896da85185d98af6de33dd456f33c2"
             },
             "require": {
                 "drupal/core": "^9.5 || ^10",
@@ -3128,8 +3128,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.27",
-                    "datestamp": "1677031723",
+                    "version": "8.x-3.28",
+                    "datestamp": "1680536061",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5038,26 +5038,26 @@
         },
         {
             "name": "drupal/csv_importer",
-            "version": "1.15.0",
+            "version": "1.16.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/csv_importer.git",
-                "reference": "8.x-1.15"
+                "reference": "8.x-1.16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/csv_importer-8.x-1.15.zip",
-                "reference": "8.x-1.15",
-                "shasum": "56da925f9f6cc33759fe2142e25bd047e203be53"
+                "url": "https://ftp.drupal.org/files/projects/csv_importer-8.x-1.16.zip",
+                "reference": "8.x-1.16",
+                "shasum": "8320887e22132375bc7fd65e78d57ad4e7acea3d"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10"
+                "drupal/core": "^8.8 || ^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.15",
-                    "datestamp": "1674411367",
+                    "version": "8.x-1.16",
+                    "datestamp": "1680596956",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9634,8 +9634,20 @@
             ],
             "authors": [
                 {
+                    "name": "jefuri",
+                    "homepage": "https://www.drupal.org/user/2733365"
+                },
+                {
+                    "name": "Kristen Pol",
+                    "homepage": "https://www.drupal.org/user/8389"
+                },
+                {
                     "name": "Mirnaxvb",
                     "homepage": "https://www.drupal.org/user/3157031"
+                },
+                {
+                    "name": "mycw1991",
+                    "homepage": "https://www.drupal.org/user/3523472"
                 },
                 {
                     "name": "Nitebreed",
@@ -9644,14 +9656,6 @@
                 {
                     "name": "Steven Buteneers",
                     "homepage": "https://www.drupal.org/user/3301055"
-                },
-                {
-                    "name": "jefuri",
-                    "homepage": "https://www.drupal.org/user/2733365"
-                },
-                {
-                    "name": "mycw1991",
-                    "homepage": "https://www.drupal.org/user/3523472"
                 }
             ],
             "description": "Allows uploading files in bulk and converting them to media entities.",
@@ -10136,28 +10140,28 @@
         },
         {
             "name": "drupal/metatag_import_export_csv",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/metatag_import_export_csv.git",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/metatag_import_export_csv-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "765d87302f3f258f9421fbcd0bfa0c4a43bb2e85"
+                "url": "https://ftp.drupal.org/files/projects/metatag_import_export_csv-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "febe7a16bdf72ddf89b7d71480420f80dd38ace5"
             },
             "require": {
-                "drupal/core": "^8.7.7 || ^9",
+                "drupal/core": "^9.3 || ^10",
                 "drupal/metatag": "*",
                 "drupal/token": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1637145695",
+                    "version": "8.x-1.2",
+                    "datestamp": "1680791134",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -13068,17 +13072,17 @@
         },
         {
             "name": "drupal/taxonomy_import",
-            "version": "2.0.11",
+            "version": "2.0.12",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/taxonomy_import.git",
-                "reference": "2.0.11"
+                "reference": "2.0.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/taxonomy_import-2.0.11.zip",
-                "reference": "2.0.11",
-                "shasum": "9bcb8bab871c117d84c925814afb3336ad9343c1"
+                "url": "https://ftp.drupal.org/files/projects/taxonomy_import-2.0.12.zip",
+                "reference": "2.0.12",
+                "shasum": "7ee3acb762e5f30208423c51035db1b889fe5785"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10"
@@ -13086,8 +13090,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.11",
-                    "datestamp": "1665938897",
+                    "version": "2.0.12",
+                    "datestamp": "1680814752",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -16893,16 +16897,16 @@
         },
         {
             "name": "mpdf/mpdf",
-            "version": "v8.1.4",
+            "version": "v8.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mpdf/mpdf.git",
-                "reference": "add590e93b7502efafd9839a68cff99f3497b318"
+                "reference": "c264ce27af0d794ecd04e201b7e37a06b8a9d720"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mpdf/mpdf/zipball/add590e93b7502efafd9839a68cff99f3497b318",
-                "reference": "add590e93b7502efafd9839a68cff99f3497b318",
+                "url": "https://api.github.com/repos/mpdf/mpdf/zipball/c264ce27af0d794ecd04e201b7e37a06b8a9d720",
+                "reference": "c264ce27af0d794ecd04e201b7e37a06b8a9d720",
                 "shasum": ""
             },
             "require": {
@@ -16966,7 +16970,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2022-12-15T11:24:39+00:00"
+            "time": "2023-04-04T15:06:48+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -18406,16 +18410,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.11.14",
+            "version": "v0.11.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "8c2e264def7a8263a68ef6f0b55ce90b77d41e17"
+                "reference": "5350ce0ec8ecf2c5b5cf554cd2496f97b444af85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/8c2e264def7a8263a68ef6f0b55ce90b77d41e17",
-                "reference": "8c2e264def7a8263a68ef6f0b55ce90b77d41e17",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/5350ce0ec8ecf2c5b5cf554cd2496f97b444af85",
+                "reference": "5350ce0ec8ecf2c5b5cf554cd2496f97b444af85",
                 "shasum": ""
             },
             "require": {
@@ -18476,9 +18480,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.11.14"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.11.15"
             },
-            "time": "2023-03-28T03:41:01+00:00"
+            "time": "2023-04-07T21:57:09+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
