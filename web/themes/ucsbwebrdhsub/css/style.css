@@ -33,6 +33,7 @@
   max-width: 1230px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 30px;
 }
 
 [about |= "/communities"] .grid-item--height1{
@@ -52,15 +53,12 @@
 }
 
 .community-container {
+  position:relative;
   background-size: cover;
   background-position: center;
   padding: 45px 0px 125px 0;
-  /* min-height: fit-content; */
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  /* margin-bottom: 5px; */
-  /* max-width: 1230px;
-  margin-left: auto;
-  margin-right: auto; */
+
   height: 615px;
   margin: 8px;
 }
@@ -115,7 +113,8 @@
 
 
 .community-body p{
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 24px;
   margin-bottom: 10px;
 }
 
@@ -124,17 +123,25 @@
   max-height: 200px;
 }
 
+.community-footer{
+    position: absolute;
+    bottom: 30px;
+}
+
+.community-footer h6{
+  color: unset;
+}
+
 .community-btn{
   background-color: azure;
-  position: absolute;
-  bottom: 30px;
+
 }
 
 @media (max-width: 992px) {
 
-  /* .community-inner-cols {
-      flex-direction: column-reverse;
-    } */
+  .view-communities .views-view-grid .views-col{
+    width: 100% !important;
+  }
   .community-body p {
       font-size: 14px;
       line-height: 18px;
@@ -142,7 +149,7 @@
 
   .community-container {
     height: fit-content !important;
-    padding: 20px 0;
+    padding: 20px 0 180px 0;
     min-height: 300px;
   }
   .community-inner {

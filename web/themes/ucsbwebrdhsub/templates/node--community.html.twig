@@ -90,6 +90,13 @@
 
 {% endif %}
 
+{% if content.field_community_label[0] %}
+  {% set labelList = content.field_community_label[0]['#title'] %}
+  {% for key, item in content.field_community_label if (key|first != '#' and key != 0) %}
+    {% set labelList = labelList ~ ', ' ~ item['#title'] %}
+  {% endfor %}
+{% endif %}
+
 
 
 {%
@@ -118,6 +125,7 @@
         </div>
         <div class='community-body'>
           {{ content.body }}
+
         </div>
        
         
@@ -134,14 +142,30 @@
         </div>
         <div class='community-body' style="{{ text_color_style }}">
           {{ content.body }}
+           
         </div>
     
     
 
 
     {% endif %}
-    </div>
+    
+    <span class="community-footer">
+    {% if content.field_community_mode[0] %}
+          <h6>
+          <b>MODE: </b>
+            {{content.field_community_mode[0]['#title']}}
+          </h6>
+    {% endif %}
+    {% if content.field_community_label[0] %}
+          <h6>
+          <b>OPEN TO: </b>
+            {{labelList}}
+          </h6>
+    {% endif %}
     <a class='btn btn-tertiary btn-sm community-btn' role='button' target='_blank'  rel='noreferrer' href={{ content.field_url.0['#url'] }}>Visit Website</a>
+    </span>
+    </div>
     </div>
      
   </div>
