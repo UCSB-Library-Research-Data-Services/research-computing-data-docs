@@ -15,11 +15,11 @@
 - Background color is not displayed if you have a background image.
 - Overlay Opacity is for the overlay that goes over the background image. For example, you may need to make the background image darker so that it is easier to see the text, so you would increase the overlay opacity to 0.6 or something.
 
-# Edit/Delete Community:
+## Edit/Delete Community:
 - Go to Manage >> Content
 - In the filter, you can search for the title of the Community you are looking for.  You should also use the 'Content Type' dropdown and change it to 'Community'.  
 
-# Edit DLS Page:  
+## Edit DLS Page:  
 - Go to Manage >> Content
 - In the Filter 'Content Type' dropdown, change it to 'Basic page'.  Then the title is 'Communities'  
 
