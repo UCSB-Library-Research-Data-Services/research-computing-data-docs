@@ -3,7 +3,7 @@
 
 ### Pantheon has a crash-course for Drupal 9 which I recommend going through: https://pantheon.io/drupal-9-training.  Note you have to scroll down to see the webinar recordings, and you do NOT have to sign up for the webinar.  
 
-### I also recommend getting more Drupal practice from Acquia which has free, in-depth Drupal courses.  Create an account, then start the "Drupal 9 Site Building Course" which is part of the "Drupal Developer Certification Learning Plan."  You will only need to complete the "Drupal 9 Site Building Course," and none of the other courses that are part of the learning plan, although Acquia is a good resource for any Drupal learning.  
+### I also recommend getting more Drupal practice from Acquia which has free, in-depth Drupal courses: acquiaacademy.com/  Create an account, then start the "Drupal 9 Site Building Course" which is part of the "Drupal Developer Certification Learning Plan."  You will only need to complete the "Drupal 9 Site Building Course," and none of the other courses that are part of the learning plan, although Acquia is a good resource for any Drupal learning.  
 
 - For Drupal 9 Site Building Course: You can skip Units 1-3 as they are not really relevant.  
 - I recommend creating your own Drupal website on Pantheon in order to follow along the course.
