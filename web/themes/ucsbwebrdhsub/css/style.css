@@ -22,14 +22,14 @@
 /* Communities Page */
 /* *************************************** */
 
-.view-communities .views-view-grid .views-row {
+.view-communities-list .views-view-grid .views-row {
   float:none !important;
   max-width: 1230px;
   margin-left: auto;
   margin-right: auto;
 }
 
-#views-exposed-form-communities-block-1 .form--inline{
+#views-exposed-form-communities-list-block-1 .form--inline{
   max-width: 1230px;
   margin-left: auto;
   margin-right: auto;
@@ -59,7 +59,7 @@
   padding: 45px 0px 125px 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
-  height: 615px;
+  /* height: 615px; */
   margin: 8px;
 }
 
@@ -87,7 +87,15 @@
 }
 
 .community-title{
+  height: 64px;
   margin-bottom: 10px;
+}
+
+.community-title p{
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: -0.1pt;
+  font-family: Avenir, "Century Gothic", sans-serif;
 }
 
 .community-title h1,
@@ -112,6 +120,7 @@
 }
 
 
+
 .community-body p{
   font-size: 16px;
   line-height: 24px;
@@ -134,12 +143,16 @@
 
 .community-btn{
   background-color: azure;
+  box-shadow: rgb(38,57,77) 0px 15px 25px -8px;
+  border-radius: 5px;
+  margin-bottom: 3px;
+  margin-left: -5px;
 
 }
 
 @media (max-width: 992px) {
 
-  .view-communities .views-view-grid .views-col{
+  .view-communities-list .views-view-grid .views-col{
     width: 100% !important;
   }
   .community-body p {
