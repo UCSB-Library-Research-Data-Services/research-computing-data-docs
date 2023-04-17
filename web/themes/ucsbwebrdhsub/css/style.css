@@ -22,14 +22,14 @@
 /* Communities Page */
 /* *************************************** */
 
-.view-communities .views-view-grid .views-row {
+.view-communities-list .views-view-grid .views-row {
   float:none !important;
   max-width: 1230px;
   margin-left: auto;
   margin-right: auto;
 }
 
-#views-exposed-form-communities-block-1 .form--inline{
+#views-exposed-form-communities-list-block-1 .form--inline{
   max-width: 1230px;
   margin-left: auto;
   margin-right: auto;
@@ -53,13 +53,14 @@
 }
 
 .community-container {
+  min-height: 465px;
   position:relative;
   background-size: cover;
   background-position: center;
   padding: 45px 0px 125px 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
-  height: 615px;
+  /* height: 615px; */
   margin: 8px;
 }
 
@@ -87,7 +88,15 @@
 }
 
 .community-title{
+  height: 64px;
   margin-bottom: 10px;
+}
+
+.community-title p{
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: -0.1pt;
+  font-family: Avenir, "Century Gothic", sans-serif;
 }
 
 .community-title h1,
@@ -112,6 +121,7 @@
 }
 
 
+
 .community-body p{
   font-size: 16px;
   line-height: 24px;
@@ -134,12 +144,16 @@
 
 .community-btn{
   background-color: azure;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-left: -5px;
 
 }
 
 @media (max-width: 992px) {
 
-  .view-communities .views-view-grid .views-col{
+  .view-communities-list .views-view-grid .views-col{
     width: 100% !important;
   }
   .community-body p {
