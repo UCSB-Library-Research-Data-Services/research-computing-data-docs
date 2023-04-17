@@ -67,10 +67,10 @@
 #}
 {% set background_color = node.field_background_color.color ? node.field_background_color.color : ''%}
 {% set text_color = node.field_text_color.color %}
-{% set text_color_style =  'color: #'~ text_color ~';'%}
+{# {% set text_color_style =  'color: #'~ text_color ~';'%} #}
 
-
-{% set style = 'background-color: #' ~ background_color ~'; color: #'~ text_color ~';' %}
+{# background-color: #' ~ background_color ~';  #}
+{# {% set style = 'color: #'~ text_color ~';' %} #}
 
 
 {# How to use PHP For statement within Twig: #}
@@ -100,7 +100,7 @@
 
 {# Example of using the HTML with help of PHP and Drupal values to display each of the content's fields: #}
 {% if view_mode == 'default' or view_mode == 'full' %}
-  <div{{ attributes.addClass(classes)}} {{attributes.setAttribute("style",style)}}>
+  <div{{ attributes.addClass(classes)}} >
 
       <div class="inner community-inner">
       <div class="community-content">
