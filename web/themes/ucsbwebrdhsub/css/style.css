@@ -53,6 +53,7 @@
 }
 
 .community-container {
+  min-height: 465px;
   position:relative;
   background-size: cover;
   background-position: center;
@@ -145,7 +146,7 @@
   background-color: azure;
   box-shadow: rgb(38,57,77) 0px 15px 25px -8px;
   border-radius: 5px;
-  margin-bottom: 3px;
+  margin-bottom: 30px;
   margin-left: -5px;
 
 }
