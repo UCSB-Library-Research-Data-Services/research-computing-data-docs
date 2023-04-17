@@ -22,6 +22,20 @@
 /* Communities Page */
 /* *************************************** */
 
+.view-communities-list .views-row:nth-of-type(odd) .views-col.col-1 .community-container,
+.view-communities-list .views-row:nth-of-type(even) .views-col.col-2 .community-container
+{
+  background-color: #003660;
+  color: white;
+}
+.view-communities-list .views-row:nth-of-type(odd) .views-col.col-2 .community-container,
+.view-communities-list .views-row:nth-of-type(even) .views-col.col-1 .community-container
+{
+  background-color: #febc11;
+  color: black;
+  font-weight: 600;
+}
+
 .view-communities-list .views-view-grid .views-row {
   float:none !important;
   max-width: 1230px;
