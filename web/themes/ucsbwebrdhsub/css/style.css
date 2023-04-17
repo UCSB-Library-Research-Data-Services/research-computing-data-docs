@@ -144,7 +144,7 @@
 
 .community-btn{
   background-color: azure;
-  box-shadow: rgb(38,57,77) 0px 15px 25px -8px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   border-radius: 5px;
   margin-bottom: 30px;
   margin-left: -5px;
