@@ -1,3 +1,11 @@
+.region-content{
+  max-width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .btn-primary {
   background-color: white;
   border-radius: 2px;
@@ -358,7 +366,7 @@ h2.sub-heading.heading-services {
       color: #414b7b;
       margin: 0; }
     #modularstorage-services .service-panel h4 {
-      font-size: 18px; }
+      font-size: 16px; }
       @media (max-width: 768px) {
         #modularstorage-services .service-panel h4 {
           font-size: 15px; } }
@@ -366,10 +374,12 @@ h2.sub-heading.heading-services {
       padding: 0;
       padding-right: 1.8em; }
       #modularstorage-services .service-panel .service-title + p {
+        line-height: 16px;
         margin-top: 10px; }
     #modularstorage-services .service-panel p {
       font-size: 12px;
-      padding-right: 1.8em; }
+      /* padding-right: 1.8em;  */
+    }
 
 .comparisonlist-wrapper {
   display: -webkit-box;
