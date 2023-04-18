@@ -1,3 +1,8 @@
+#pagequestionheader{
+  font-size:16px;
+  margin: 0 0 10px 0;
+}
+
 .region-content{
   max-width: 1230px;
   margin-left: auto;
@@ -372,7 +377,9 @@ h2.sub-heading.heading-services {
           font-size: 15px; } }
     #modularstorage-services .service-panel .service-title {
       padding: 0;
-      padding-right: 1.8em; }
+      padding-right: 1.8em; 
+      line-height: 18px;
+    }
       #modularstorage-services .service-panel .service-title + p {
         line-height: 16px;
         margin-top: 10px; }
@@ -459,6 +466,7 @@ h2.sub-heading.heading-services {
     color: #5a5a5a; }
 
 .cd-row {
+  min-height: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
