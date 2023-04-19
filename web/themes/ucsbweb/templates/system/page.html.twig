@@ -60,6 +60,9 @@
 {% set show_give = site_settings.utility_bar.give_link.field_display_give_link %}
 {% set give_text = site_settings.utility_bar.give_link.field_link_text %}
 {% set give_url = site_settings.utility_bar.give_link.field_url.url %}
+{% set show_highlighted = site_settings.utility_bar.highlighted_link ? 1 : 0 %}
+{% set highlighted_color = site_settings.utility_bar.highlighted_link.field_color.color %}
+
 {%
   set title_classes = [
     'content-header',
@@ -131,6 +134,28 @@
             </div>
             <div class="item">
               <div class="inner">
+                {% if show_highlighted %}
+                    {% for item in site_settings.utility_bar.highlighted_link %}
+        
+                      {% if item.field_color.color is not null %}
+                        {% set highlighted_color = ' has-background background-color-' ~ item.field_color.color %}
+                      {% endif %}
+
+                      {% if item.field_link_address  %}                        
+                            <div class="highlighted {{highlighted_color}}" >
+                            <a href="{{item.field_link_address.url}}">
+                            {{ item.field_link_address.title }}
+                            </a>
+                          </div>
+                      {% else %}
+                            <div class="highlighted {{highlighted_color}}">
+                            <a href="{{item.url}}">
+                            {{ item.title }}
+                            </a>
+                          </div>
+                      {% endif %}
+                    {% endfor %}
+                {% endif %}
                 {% if show_give == 1 %}
                   <div class="give"><a href="{{ give_url }}">{{ give_text }}</a></div>
                 {% endif %}
@@ -177,9 +202,22 @@
         <div id="navbar-collapse" class="navbar-collapse collapse">
           {{ page.navigation_collapsible }}
           {{ page.navigation_quicklinks }}
-          {% if show_give == 1 %}
+          {% if show_give == 1 or show_highlighted == 1 %}
             <div class="utility-bar">
-              <ul class="menu nav"><li><a href="{{ give_url }}">{{ give_text }}</a></li></ul>
+              <ul class="menu nav">
+                {% if show_give == 1 %}
+                <li><a href="{{ give_url }}">{{ give_text }}</a></li>
+                {% endif %}
+                {% if show_highlighted == 1 %}
+                  {% for item in site_settings.utility_bar.highlighted_link %}
+                    {% if item.field_link_address  %}                        
+                      <li class="highlighted"><a href="{{ item.field_link_address.url }}">{{ item.field_link_address.title }}</a></li>
+                    {% else %}
+                      <li class="highlighted"><a href="{{ item.url }}">{{ item.title }}</a></li>
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+              </ul>
             </div>
           {% endif %}
         </div>

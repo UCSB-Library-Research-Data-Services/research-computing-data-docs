@@ -49,15 +49,19 @@
 							id: 'icon-width',
 							label: 'Icon Width (\'px\' are default, add \'%\' for percentages)',
 							validate: CKEDITOR.dialog.validate.regex( /^\+?(0|[1-9]\d*)?(%)?$/, "Icon Width is not valid." ),
+							'default': '100',
 							setup: function( element, preview ) {
 								this.preview_icon = preview;
-									
+
 								try {
-									if (element.getStyle('width').includes('%')) {
-										this.setValue( element.getStyle('width') );
-									}
-									else {
-										this.setValue( element.getStyle('width').split('px')[0] );
+									if (element.getStyle('width').length > 0) {
+										if (element.getStyle('width').includes('%')) {
+											this.setValue(element.getStyle('width'));
+										}
+										else {
+											this.setValue(element.getStyle('width').split('px')[0]);
+										}
+
 									}
 								}
 								catch(err) {
@@ -76,7 +80,9 @@
 									}
 								}
 								else {
-									element.removeAttribute('style');
+									console.error('Width is missing!');
+									alert("Width is missing!");
+									this.preview_icon.removeStyle('width');
 								}
 							},
 							onChange: function() {
@@ -93,6 +99,8 @@
 									}
 								}
 								else {
+									console.error('Width is missing!');
+									alert("Width is missing!");
 									this.preview_icon.removeStyle('width');
 								}
 							}
@@ -167,8 +175,7 @@
 								var link = this.getElement().getAscendant('table').findOne('.preview-icon');
 
 								element.setHtml(preview.getHtml());
-
-								// element.setAttribute("class", preview.getAttribute("class").replace("preview-icon","ucsb-icon"));
+								
 							}
 						}
 					]
@@ -177,7 +184,6 @@
 
 			onShow: function() {
 				var selection = editor.getSelection();
-				// var element = selection.getStartElement();
 				var icon_Html = editor.document.$.getElementsByClassName('ucsb-icon')[0];
 				var element = new CKEDITOR.dom.element();	
 
@@ -210,52 +216,28 @@
 				
 			},
 
-			onOk: function() {
+			onOk: function (event, a, b) {
 				var dialog = this;
 				var ucsb_icon = this.element;
 				
-				this.commitContent( ucsb_icon );
-				
-				if ( this.insertMode ){
-					editor.insertElement( ucsb_icon );
-				} 
-
-				// var p = editor.document.$.getElementsByClassName('ucsb-icon')[0];
-				// p.addEventListener('click', function init() {
-				// 	p.removeEventListener('click', init, false);
-				// 	p.className = p.className + ' resizable';
-				// 	var resizer = document.createElement('div');
-				// 	resizer.className = 'resizer';
-				// 	p.appendChild(resizer);
-				// 	resizer.addEventListener('mousedown', initDrag, false);
-				// }, false);
-
-				// var startX, startY, startWidth, startHeight;
-
-				// function initDrag(e) {
-				// 	startX = e.clientX;
-				// 	startY = e.clientY;
-				// 	startWidth = parseInt(document.defaultView.getComputedStyle(p).width, 10);
-				// 	startHeight = parseInt(document.defaultView.getComputedStyle(p).height, 10);
-				// 	document.documentElement.addEventListener('mousemove', doDrag, false);
-				// 	document.documentElement.addEventListener('mouseup', stopDrag, false);
-				// }
-			
-				// function doDrag(e) {
-				// 	p.style.width = (startWidth + e.clientX - startX) + 'px';
-				// 	p.style.height = (startHeight + e.clientY - startY) + 'px';
-				// }
-			
-				// function stopDrag(e) {
-				// 	document.documentElement.removeEventListener('mousemove', doDrag, false);    document.documentElement.removeEventListener('mouseup', stopDrag, false);
-				// }
+				this.commitContent(ucsb_icon);
+				if (ucsb_icon.getStyle('width').length > 0) {
 					
+					if ( this.insertMode ){
+						editor.insertElement( ucsb_icon );
+					} 
 
-				// remove the assigned CSS classes 
-				var preview_icon = this.getElement().findOne(".preview-icon");
-				if (preview_icon != null)
-					preview_icon.setAttribute("class","preview-icon");
+					// remove the assigned CSS classes 
+					var preview_icon = this.getElement().findOne(".preview-icon");
+					if (preview_icon != null)
+						preview_icon.setAttribute("class","preview-icon");
 
+				} else {
+
+					console.error('Width is missing!');
+					alert("Width is missing!");
+					event.data.hide = false;
+				}
 
 			}
 		};
@@ -329,6 +311,7 @@
 			.done(function( data ) {
 				if(data) {
 					
+					// Prepare the container
 					var iconList = document.createElement("div");
 					iconList.setAttribute("id","iconlist");
 					iconList.style.display = "none";
@@ -337,27 +320,51 @@
 					icon_table.setAttribute("id","iconTable");
 
 					var count = 10;
-					var rows = Math.ceil(data.files.length/count);
 
-					for(var i=0; i<rows; i++){
-						if(i*count < data.files.length)
-						var row = document.createElement("tr");   
-						for(var j=0; j<count; j++){
-							var cell = document.createElement("td");
-							
+					// Get the categories
+					var icons_categories = [...new Set(data.files.map(item => item.category))];
+					var icons_arrays = data.files.reduce(function (memo, x) {
+						if (!memo[x['category']]) { memo[x['category']] = []; }
+						memo[x['category']].push(x);
+						return memo;
+					}, {});
 
-							if((i * count + j) < (data.files.length - 1)){							
-								var img = document.createElement("div");
-								img.setAttribute("class", "icon-img");
-								img.innerHTML = data.files[i * count + j];											
-								
-								cell.appendChild(img);
+					for (var indx = 0; indx < icons_categories.length; indx++){
+						var category = icons_categories[indx];
+						var category_files = icons_arrays[category];
+
+
+						var row = document.createElement("tr");
+						var cell = document.createElement("th");
+						cell.colSpan = "10";
+						cell.innerText = category;
+						row.appendChild(cell);
+						icon_table.appendChild(row);
+
+						var rows = Math.ceil(category_files.length / count);
+
+						for (var i = 0; i < rows; i++) {
+							if (i * count < category_files.length)
+								var row = document.createElement("tr");
+							for (var j = 0; j < count; j++) {
+								var cell = document.createElement("td");
+
+
+								if ((i * count + j) < (category_files.length - 1)) {
+									var img = document.createElement("div");
+									img.setAttribute("class", "icon-img");
+									img.innerHTML = category_files[i * count + j]['content'];
+
+									cell.appendChild(img);
+								}
+								row.appendChild(cell);
+
 							}
-							row.appendChild(cell);
-
-						}                  
-						icon_table.appendChild(row); 
+							icon_table.appendChild(row);
+						}
 					}
+
+					
 
 					iconList.appendChild(icon_table);
 					document.body.appendChild(iconList);

@@ -20,7 +20,7 @@ class UCSBIcon extends CKEditorPluginBase {
    * {@inheritdoc}
    */
   public function getFile() {
-    if ($library_path = drupal_get_path('module', 'ckeditor_ucsbicon')) {
+    if ($library_path = \Drupal::service('extension.list.module')->getPath('ckeditor_ucsbicon')) {
       return $library_path . '/ucsbicon/plugin.js';
     }
   }
@@ -57,7 +57,7 @@ class UCSBIcon extends CKEditorPluginBase {
     return [
       'ucsbicon' => [
         'label' => t('UCSB Icon'),
-        'image' => drupal_get_path('module', 'ckeditor_ucsbicon') . '/ucsbicon/icons/icon.png',
+        'image' => \Drupal::service('extension.list.module')->getPath('ckeditor_ucsbicon') . '/ucsbicon/icons/icon.png',
       ],
     ];
   }
