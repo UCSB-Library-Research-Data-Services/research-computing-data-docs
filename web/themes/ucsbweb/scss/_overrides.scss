@@ -63,6 +63,7 @@ body {
   font-style: normal;
   font-size: $base-font-size;
   margin-top: 0;
+  line-height: 2.3rem;
 }
 
 #body {
@@ -249,12 +250,12 @@ hr {
 }
 
 .large {
-  font-size: 22px;
+  font-size: 2.2rem; //22px
   line-height: normal;
 }
 
 .largest {
-  font-size: 23px;
+  font-size: 2.3rem;
   line-height: 36px;
 }
 
@@ -262,11 +263,11 @@ hr {
   color: $lightgray-darken-80;
   font-family: $avenir-font-stack;
   font-weight: $avenir-heavy;
-  font-size: 68px;
+  font-size: 6.8rem; //68px
   @media all and (max-width: $screen-sm) {
-    font-size: 50px;
+    font-size: 5rem;
   }
-  line-height: normal;
+  line-height: 1.5;
   &.serif, span.serif {
     font-family: $produkt-font-stack;
     font-weight: $produkt-extra-light;
@@ -277,11 +278,11 @@ hr {
   color: $lightgray-darken-80;
   font-family: $avenir-font-stack;
   font-weight: $avenir-heavy;
-  font-size: 50px !important;
+  font-size: 5.0rem !important; //50px
   @media all and (max-width: $screen-xs) {
-    font-size: 38px !important;
+    font-size: 3.8rem !important;
   }
-  line-height: normal;
+  line-height: 1.5;
   &.serif, span.serif {
     font-family: $produkt-font-stack;
     font-weight: $produkt-light;
@@ -292,8 +293,8 @@ hr {
   color: $lightgray-darken-80;
   font-family: $avenir-font-stack;
   font-weight: $avenir-heavy;
-  font-size: 38px;
-  line-height: normal;
+  font-size: 3.8rem; //38px;
+  line-height: 1.5;
   &.serif, span.serif {
     font-family: $produkt-font-stack;
     font-weight: $produkt-light;
@@ -304,17 +305,20 @@ hr {
   color: $lightgray-darken-80;
   font-family: $avenir-font-stack;
   font-weight: $avenir-heavy;
-  font-size: 28px;
-  line-height: normal;
+  font-size: 2.8rem; //28px;
+  line-height: 1.5;
   &.serif, span.serif {
     font-family: $produkt-font-stack;
     font-weight: $produkt-light;
   }
+  @media all and (min-width: $screen-sm) and (max-width: $screen-lg) {
+    font-size: 1.9rem;
+  }
 }
 
 .lead {
-  font-size: 22px;
-  line-height: 36px;
+  font-size: 2.2rem; //22px
+  line-height: 1.5;
 }
 
 .label {
@@ -323,7 +327,8 @@ hr {
   display: block;
   font-family: $avenir-font-stack;
   font-weight: $avenir-medium;
-  font-size: 14px;
+  font-size: 1.4rem; //14px
+  line-height: 1.5;
   letter-spacing: 1pt;
   padding: 0;
   text-align: left;
@@ -335,15 +340,15 @@ span.caption {
   color: $lightgray-darken-45;
   font-family: $avenir-font-stack;
   font-weight: $avenir-roman;
-  font-size: 12px;
+  font-size: 1.2rem; //12px
 }
 
 p.caption, .caption {
   color: $lightgray-darken-45;
   font-family: $avenir-font-stack;
   font-weight: $avenir-roman;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 1.2rem;
+  line-height: 1.5;
   margin-bottom: 12px;    
 
   i, em {
@@ -364,8 +369,8 @@ p.caption + p.caption, p + p.caption {
   color: $lightgray-darken-60;
   font-family: $avenir-font-stack;
   font-weight: $avenir-roman;
-  font-size: 10px;
-  line-height: 16px;
+  font-size: 1rem; //10px
+  line-height: 1.5;
 }
 
 img {
@@ -3713,262 +3718,291 @@ form.search-form {
     }
   }
 }
-
-.view-faculty-and-alumni {
-  margin-top: 16px;
-  .views-col {
-    margin-bottom: 72px;
-    @media all and (max-width: $screen-sm-max) {
-      width: 100% !important;
-    }
+.voices-quote .quote-image {
+  .field > p {
+    margin: 0 !important;
   }
-  p.caption {
-    margin-bottom: 8px;
-    & + p {
-      padding-top: 0;
-    }
+  .media {
+    padding-bottom: 100vh !important;
   }
 }
+.quote-image {
+  img {
+    -o-object-fit: cover !important;
+    object-fit: cover !important;
+    display: block;
+    width: 100vw !important;
+    height: 100% !important;
+  }
+  .inner .field {
+    height: 100vh;
+    display: flex;
+    overflow: hidden !important;
+  }
+}
+.page-node-type-page .page .field--name-field-blades .voices-quote .columns .paragraph--type--column {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 700px !important;
+  overflow: hidden;
+}
 
-.grid-table {
-  table {
-    position: relative;
-    border-spacing: 30px;
-    border-collapse: separate;
-    margin: 0 -30px 0 -30px;
-    width: auto !important;
-    td {
-      border: 1px solid $border-color-dark;
-      padding: 16px;
-      vertical-align: top;
-      width: 33.3333%;
-      p.caption {
-        margin-bottom: 6px;
-        & + p {
-          padding-top: 0;
+  .view-faculty-and-alumni {
+    margin-top: 16px;
+    .views-col {
+      margin-bottom: 72px;
+      @media all and (max-width: $screen-sm-max) {
+        width: 100% !important;
+      }
+    }
+    p.caption {
+      margin-bottom: 8px;
+      & + p {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .grid-table {
+    table {
+      position: relative;
+      border-spacing: 30px;
+      border-collapse: separate;
+      margin: 0 -30px 0 -30px;
+      width: auto !important;
+      td {
+        border: 1px solid $border-color-dark;
+        padding: 16px;
+        vertical-align: top;
+        width: 33.3333%;
+        p.caption {
+          margin-bottom: 6px;
+          & + p {
+            padding-top: 0;
+          }
+        }
+      }
+    }
+    @media all and (max-width: $screen-sm-max) {
+      table {
+        border-spacing: 0;
+        display: block;
+        margin: 0;
+        td {
+          display: block;
+          margin-bottom: 16px;
+          width: 100%;
         }
       }
     }
   }
-  @media all and (max-width: $screen-sm-max) {
-    table {
-      border-spacing: 0;
-      display: block;
-      margin: 0;
-      td {
-        display: block;
-        margin-bottom: 16px;
-        width: 100%;
+
+  .footer {
+    .paragraph--type--column:nth-child(1) {
+      p.label {
+        margin-top: 36px;
+        @media all and (min-width: $screen-md) {
+          margin-top: 52px;
+        }
       }
     }
-  }
-}
 
-.footer {
-  .paragraph--type--column:nth-child(1) {
-    p.label {
-      margin-top: 36px;
-      @media all and (min-width: $screen-md) {
-        margin-top: 52px;
+    .second-column {
+      p.label {
+        border-bottom: 1px solid $white-opacity-50;
+        margin-top: 0;
+        padding-top: 36px;
+        @media all and (min-width: $screen-md) {
+          padding-top: 27px;
+        }
       }
     }
-  }
-
-  .second-column {
-    p.label {
-      border-bottom: 1px solid $white-opacity-50;
-      margin-top: 0;
-      padding-top: 36px;
-      @media all and (min-width: $screen-md) {
-        padding-top: 27px;
-      }
-    }
-  }
-  .paragraph--type--column + .paragraph--type--column {
-    padding-right: 0;
-  }
-  .second-column + .second-column {
-    padding-left: 0;
-  }
-}
-
-.directory-form-container {
-  @include center();
-  padding-top: 36px;
-  .tab {
-    display: block;
-    float: left;
-    padding-right: 15px;
-    width: 50%;
-    a {
-      background-color: $base-navy;
-      color: $white !important;
-      display: block;
-      font-family: $avenir-font-stack;
-      font-weight: $avenir-roman;
-      font-size: $h3-font-size;
-      padding: 16px 32px;
-      text-decoration: none !important;
-    }    
-    &.students {
-      float: right;
+    .paragraph--type--column + .paragraph--type--column {
       padding-right: 0;
-      padding-left: 15px;   
-      a {
-        background-color: $base-gold;
-        color: $lightgray-darken-80 !important;
-      }   
+    }
+    .second-column + .second-column {
+      padding-left: 0;
     }
   }
-  form, .form-inner {
-    background-color: $base-navy;
-    display: block;
-    clear: both;
-    padding: 72px 20px 112px 20px;
-    @media all and (min-width: 800px) {
-      padding: 72px 100px 112px 100px;
-    }
-    .form-fields {
+
+  .directory-form-container {
+    @include center();
+    padding-top: 36px;
+    .tab {
+      display: block;
       float: left;
-      margin: 0 -10px;
-      @media all and (min-width: 800px) {
-        padding-bottom: 40px;
-      }
-    }
-    .form-type-textfield {
-      float: left;
-      padding: 0 10px;
-      margin-bottom: 40px !important;
+      padding-right: 15px;
       width: 50%;
-      @media all and (min-width: 800px) {
-        margin-bottom: 0 !important;
-        width: 25%;
-      }
-    }
-    p.display-medium {
-      margin-bottom: 40px;
-    }
-    label, legend {
-      display: none;
-    }
-    fieldset.webform-type-radios {
-      clear: both;
-      margin-bottom: 40px;
-    }
-    .form-type-radio.radio {
-      display: inline-block;
-      margin-top: 0 !important;
-      margin-bottom: 0 !important;
-      margin-right: 20px;
-      label {
-        color: $white;
-        display: inline-block;
-        padding-left: 0;
-        font-family: $avenir-font-stack;
-        font-weight: $sans-serif;
-        font-size: $base-font-size;
-        text-transform: none;
-      }
-      input[type="radio"] {
-        position: relative;
-        margin-right: 8px;
-        margin-left: 0 !important;
-      }
-    }
-    p {
-      color: $white;
-      span {
+      a {
+        background-color: $base-navy;
+        color: $white !important;
         display: block;
+        font-family: $avenir-font-stack;
+        font-weight: $avenir-roman;
+        font-size: $h3-font-size;
+        padding: 16px 32px;
+        text-decoration: none !important;
+      }
+      &.students {
+        float: right;
+        padding-right: 0;
+        padding-left: 15px;
+        a {
+          background-color: $base-gold;
+          color: $lightgray-darken-80 !important;
+        }
       }
     }
-    #edit-q {
-      margin-top: 44px;
+    form, .form-inner {
+      background-color: $base-navy;
+      display: block;
+      clear: both;
+      padding: 72px 20px 112px 20px;
+      @media all and (min-width: 800px) {
+        padding: 72px 100px 112px 100px;
+      }
+      .form-fields {
+        float: left;
+        margin: 0 -10px;
+        @media all and (min-width: 800px) {
+          padding-bottom: 40px;
+        }
+      }
+      .form-type-textfield {
+        float: left;
+        padding: 0 10px;
+        margin-bottom: 40px !important;
+        width: 50%;
+        @media all and (min-width: 800px) {
+          margin-bottom: 0 !important;
+          width: 25%;
+        }
+      }
+      p.display-medium {
+        margin-bottom: 40px;
+      }
+      label, legend {
+        display: none;
+      }
+      fieldset.webform-type-radios {
+        clear: both;
+        margin-bottom: 40px;
+      }
+      .form-type-radio.radio {
+        display: inline-block;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        margin-right: 20px;
+        label {
+          color: $white;
+          display: inline-block;
+          padding-left: 0;
+          font-family: $avenir-font-stack;
+          font-weight: $sans-serif;
+          font-size: $base-font-size;
+          text-transform: none;
+        }
+        input[type="radio"] {
+          position: relative;
+          margin-right: 8px;
+          margin-left: 0 !important;
+        }
+      }
+      p {
+        color: $white;
+        span {
+          display: block;
+        }
+      }
+      #edit-q {
+        margin-top: 44px;
+      }
+    }
+    & + .disclaimer, .disclaimer {
+      margin: 40px 0 72px 0;
     }
   }
-  & + .disclaimer, .disclaimer {
-    margin: 40px 0 72px 0;
-  }
-}
 
-.directory-search-results {
-  margin-bottom: 72px;
-  h3 {
-    margin-bottom: 44px;
-  }
-  td, th {
-    vertical-align: top;
-  }
-  .name {
-    font-family: $avenir-font-stack;
-    font-weight: $avenir-heavy;
-  }
-  .title {
-    color: $lightgray-darken-45;
-    font-size: $smallest-font-size;
-    padding-top: 6px;
-  }
-}
-
-
-.gsc-results-wrapper-nooverlay {
-  margin-top: 40px;
-}
-.gsc-control-cse {
-  border: 0 !important;
-  padding: 0 !important;
-  font-family: inherit !important;
-  .gs-title {
-    font-family: $avenir-font-stack;
-    font-weight: $avenir-black !important;
-    font-size: $h3-font-size !important;
-    margin: 0 0 10px 0 !important;
-    b {
-      font-size: 1em !important;
+  .directory-search-results {
+    margin-bottom: 72px;
+    h3 {
+      margin-bottom: 44px;
+    }
+    td, th {
+      vertical-align: top;
+    }
+    .name {
+      font-family: $avenir-font-stack;
+      font-weight: $avenir-heavy;
+    }
+    .title {
+      color: $lightgray-darken-45;
+      font-size: $smallest-font-size;
+      padding-top: 6px;
     }
   }
-  .gs-snippet {
-    font-family: $avenir-font-stack;
-    font-weight: $sans-serif !important;
-    font-size: $base-font-size !important;
-    line-height: $p-line-height !important;
-    margin-bottom: 16px !important;
+
+
+  .gsc-results-wrapper-nooverlay {
+    margin-top: 40px;
   }
-  .gs-web-image-box, .gs-promotion-image-box {
-    width: 100px;
-    @media all and (min-width: $screen-sm) {
-      width: 160px;
+  .gsc-control-cse {
+    border: 0 !important;
+    padding: 0 !important;
+    font-family: inherit !important;
+    .gs-title {
+      font-family: $avenir-font-stack;
+      font-weight: $avenir-black !important;
+      font-size: $h3-font-size !important;
+      margin: 0 0 10px 0 !important;
+      b {
+        font-size: 1em !important;
+      }
+    }
+    .gs-snippet {
+      font-family: $avenir-font-stack;
+      font-weight: $sans-serif !important;
+      font-size: $base-font-size !important;
+      line-height: $p-line-height !important;
+      margin-bottom: 16px !important;
+    }
+    .gs-web-image-box, .gs-promotion-image-box {
+      width: 100px;
+      @media all and (min-width: $screen-sm) {
+        width: 160px;
+      }
+    }
+    .gs-webResult div.gs-visibleUrl, .gs-imageResult div.gs-visibleUrl {
+      color: $lightgray-darken-45 !important;
+      font-family: $avenir-font-stack;
+      font-weight: $avenir-roman !important;
+      font-size: 12px !important;
+      line-height: 18px !important;
+      margin-bottom: 12px !important;
+    }
+    .gsc-results .gsc-cursor-box {
+      padding-top: 40px;
+      padding-bottom: 72px;
+      text-align: center;
+      font-size: $base-font-size !important;
     }
   }
-  .gs-webResult div.gs-visibleUrl, .gs-imageResult div.gs-visibleUrl {
-    color: $lightgray-darken-45 !important;
-    font-family: $avenir-font-stack;
-    font-weight: $avenir-roman !important;
-    font-size: 12px !important;
-    line-height: 18px !important;
-    margin-bottom: 12px !important;   
-  }
-  .gsc-results .gsc-cursor-box {
-    padding-top: 40px;
-    padding-bottom: 72px;
-    text-align: center;
-    font-size: $base-font-size !important;
-  }
-}
-.gs-webResult.gs-result a.gs-title {
-  color: $link-color-light !important;
-  text-decoration: underline;
-  * {
+  .gs-webResult.gs-result a.gs-title {
     color: $link-color-light !important;
-  }
-  &:hover {
-    color: $link-color-hover !important;
-    text-decoration: none !important;
+    text-decoration: underline;
     * {
+      color: $link-color-light !important;
+    }
+    &:hover {
       color: $link-color-hover !important;
       text-decoration: none !important;
+      * {
+        color: $link-color-hover !important;
+        text-decoration: none !important;
+      }
     }
   }
-}
 
 .navbar #eyebrow>.inner .items .item:nth-child(2)>.inner div.highlighted {}
 
@@ -3981,3 +4015,4 @@ form.search-form {
   color: #EF5645 !important;
   font-weight: bolder;
 }
+
