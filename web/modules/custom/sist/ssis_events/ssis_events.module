@@ -90,12 +90,47 @@ function ssis_events_theme($existing, $type, $theme, $path) {
         // Check if the view is not empty and return results.
         if (!empty($view->result)) {
 
-          // Get the results of the view.
+          // Get the results of the view and iterate through them
           $view_results = $view->result;
           foreach($view_results as &$row)
           {
-            //Assign it to the particular event
-            $row->_entity->set('field_eventtype_category', $argumentid);
+
+            //Get the particular event
+            $event = $row->_entity;
+
+            //Get the particular event categories
+            $event_categories = $event->field_eventtype_category->referencedEntities();
+            $event_categories_ids = array_map(function ($element) {
+              return $element->id();
+            }, $event_categories);
+            
+            // Check if argument is present in the assigned event categories
+            if (in_array($argumentid, $event_categories_ids)) {
+
+              //If present assign it
+              $event->set('field_eventtype_category', $argumentid);
+
+            } else {
+
+              // If the argument is a parent term, load the parent tree 
+              $parent_tree = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadTree('vocabulary_event_category', $argumentid);
+              if($parent_tree) {
+                $parent_tree_categories_ids = array_map(function ($element) {
+                  return $element->tid;
+                }, $parent_tree);
+
+                foreach ($parent_tree_categories_ids as $categoryid) {
+                  if (in_array($categoryid, $event_categories_ids)) {
+                    //If present assign it
+                    $event->set('field_eventtype_category', $categoryid);
+                    break;
+                  }
+                }
+
+              }
+
+            }
+            
           }
 
         }
