@@ -270,17 +270,25 @@
         sortedfields = Object.keys(fieldweight).sort(function(a,b){return fieldweight[a]-fieldweight[b]})
         // every other row
         for (var i=0;i<sortedfields.length;i++) {
-            field = sortedfields[i];
+            // console.log(field);
+            // field = sortedfields[i];
             //alert(field);
+
             chart = chart + "<tr>";
             chart = chart + "<th scope='row'>"+servicelist[0].field_data[field].label;
             help_text_counter++;
-            help =  servicehelp.field_data[field].value ? "<a class='popup' aria-haspop='true' href='#help-"+help_text_counter+"'><span class='sr-only'>More information about "+servicelist[0].field_data[field].label+"</span><span class='fa fa-info-circle'></span></a><div class='help' id='help-"+help_text_counter+"'><h3>"+servicelist[0].field_data[field].label+"</h3>"+servicehelp.field_data[field].value+"</div>" : "";
-            chart = chart + help;
+            
+            // Breaking the thread:
+            // help =  servicehelp.field_data[field].value ? "<a class='popup' aria-haspop='true' href='#help-"+help_text_counter+"'><span class='sr-only'>More information about "+servicelist[0].field_data[field].label+"</span><span class='fa fa-info-circle'></span></a><div class='help' id='help-"+help_text_counter+"'><h3>"+servicelist[0].field_data[field].label+"</h3>"+servicehelp.field_data[field].value+"</div>" : "";
+            // chart = chart + help;
+
             chart = chart +"</th>"; // row title
+
                 for (var j=0;j<servicelist.length;j++) {
+  
                     chart = chart + "<td class='service service-"+servicelist[j].id+"' data-label='"+servicelist[0].field_data[field].label+"'>"+servicelist[j].field_data[field].value+"</td>";
                 }
+
             chart = chart + "</tr>";
         }
 
@@ -341,11 +349,12 @@
             if ($("#service-"+service.id).find('.cardcheckbox').prop('checked') == false) { // card
                 hidden = "yes";
                 servicelist[i]["hidden"]="yes";
-                //$("#service-"+service.id).addClass("mismatch") // card
+                // $("#service-"+service.id).addClass("mismatch") // card
                 $(".service-"+service.id).hide(); // table column
             }
 
             if (hidden == "no") {
+
                 $("#service-"+service.id).removeClass('mismatch'); // card
                 $(".service-"+service.id).show(); // table column
                 servicelist[i]["hidden"]="no";

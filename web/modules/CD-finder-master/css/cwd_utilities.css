@@ -584,7 +584,7 @@ table.scrolling > thead > tr > th {
 .floating-row-header > div {
   border: 1px solid #ddd;
   border-top: none;
-  border-right: none;
+  /* border-right: black; */
   line-height: 19px !important;
 }
 

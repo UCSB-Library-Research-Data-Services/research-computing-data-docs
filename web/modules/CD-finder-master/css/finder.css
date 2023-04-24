@@ -116,10 +116,12 @@ footer a {
 
 #comparisonchart thead th, #comparisonchart thead td, .floating-col-header > div {
   white-space: nowrap;
-  background-color: #78879d; }
+  background-color: #78879d; 
+color: white; }
 
 .cwd-scrolling-table .floating-row-header {
-  background-color: whitesmoke; }
+  background-color: whitesmoke; 
+}
 
 .hero, .hero:hover {
   background-image: url("../images/bg-hero-home-t.jpg") !important; }
@@ -571,7 +573,8 @@ ul.browser-default li {
 
 /* new CSTSM */
 .notifications {
-  background: #b24800;
+  background: #337ab7;
+  opacity: 0.9;
   border-radius: 4px;
   position: absolute;
   right: -1%;
@@ -592,7 +595,7 @@ ul.browser-default li {
   position: absolute;
   pointer-events: none;
   border-color: rgba(0, 151, 167, 0);
-  border-top-color: #b24800;
+  border-top-color: #337ab7;
   border-width: 16px;
   margin-left: -16px; }
 
@@ -647,7 +650,8 @@ ul.browser-default li {
 
 /* new CSTSM  */
 .notifications {
-  background: #b24800;
+  background: #337ab7;
+    opacity: 0.9;
   border-radius: 4px;
   position: absolute;
   right: -1%;
@@ -668,7 +672,7 @@ ul.browser-default li {
   position: absolute;
   pointer-events: none;
   border-color: rgba(0, 151, 167, 0);
-  border-top-color: #b24800;
+  border-top-color: #337ab7;
   border-width: 16px;
   margin-left: -16px; }
 
