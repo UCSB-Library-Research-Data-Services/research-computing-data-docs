@@ -697,24 +697,31 @@ function validateEmail(Email) {
         if (elementSO && !SCROLL_CONF){
             var selected = $("#selection-number").text();
             var compChecked = $(".manualcheckbox:checked").length;
-            if (parseInt(selected) > 12 ){
+            if (parseInt(selected) <= 3 ){
+                // Don't show if there are only 3 or less columns.
+                $('#scroll-to-see-more').removeClass('my-show');
+                $('#scroll-to-see-more').addClass('my-hidden');
+
+                // Old code: Show regardless if its a big table, but wouldnt that be done automatically anyways?
                 //really big table just show
-                if (compChecked == selected){
-                    $('#scroll-to-see-more').removeClass('my-hidden');
-                    $('#scroll-to-see-more').addClass('my-show');
-                }else if(elementSO.offsetWidth < elementSO.scrollWidth){
-                    $('#scroll-to-see-more').removeClass('my-hidden');
-                    $('#scroll-to-see-more').addClass('my-show');
-                }else{
-                    $('#scroll-to-see-more').removeClass('my-show');
-                    $('#scroll-to-see-more').addClass('my-hidden');
-                }
-            }else if ((elementSO.offsetWidth < elementSO.scrollWidth) && (elementSO.scrollWidth < 5000)) {
-                //console.log("has overflow "+elementSO.offsetWidth+" < "+elementSO.scrollWidth);
+                // if (compChecked == selected){
+                //     $('#scroll-to-see-more').removeClass('my-hidden');
+                //     $('#scroll-to-see-more').addClass('my-show');
+                // }else if(elementSO.offsetWidth < elementSO.scrollWidth){
+                //     $('#scroll-to-see-more').removeClass('my-hidden');
+                //     $('#scroll-to-see-more').addClass('my-show');
+                // }else{
+                //     $('#scroll-to-see-more').removeClass('my-show');
+                //     $('#scroll-to-see-more').addClass('my-hidden');
+                // }
+            }
+            else if ((elementSO.offsetWidth < elementSO.scrollWidth) && (elementSO.scrollWidth < 5000)) {
+                // console.log("has overflow "+elementSO.offsetWidth+" < "+elementSO.scrollWidth);
                 $('#scroll-to-see-more').removeClass('my-hidden');
                 $('#scroll-to-see-more').addClass('my-show');
 
-            } else {
+            } 
+            else {
                 $('#scroll-to-see-more').removeClass('my-show');
                 $('#scroll-to-see-more').addClass('my-hidden');
             }
