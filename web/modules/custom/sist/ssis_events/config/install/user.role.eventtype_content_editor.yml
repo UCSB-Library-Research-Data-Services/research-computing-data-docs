@@ -18,6 +18,7 @@ dependencies:
     - filter
     - media
     - node
+    - smart_date_recur
     - system
     - taxonomy
     - toolbar
@@ -70,3 +71,6 @@ permissions:
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view the administration theme'
+  - 'cancel smart date recur instances'
+  - 'make smart dates recur'
+  - 'reschedule smart date recur instances'

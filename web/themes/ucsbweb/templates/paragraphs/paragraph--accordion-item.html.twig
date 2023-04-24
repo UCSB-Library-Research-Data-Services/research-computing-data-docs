@@ -49,10 +49,10 @@
     </p>
   </div>
   <div id="collapse-{{ paragraph_id }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{ paragraph_id }}">
-    <div class="panel-body">
-      {% autoescape false %}
-        {{ paragraph.field_body.value }}
-      {% endautoescape %}
+    <div class="panel-body">      
+        {% block content %}
+          {{ content.field_body }}
+        {% endblock %}
     </div>
   </div>
 {% endblock paragraph %}
