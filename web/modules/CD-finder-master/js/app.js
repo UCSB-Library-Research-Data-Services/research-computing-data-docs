@@ -271,7 +271,7 @@
         // every other row
         for (var i=0;i<sortedfields.length;i++) {
             // console.log(field);
-            // field = sortedfields[i];
+            field = sortedfields[i];
             //alert(field);
 
             chart = chart + "<tr>";
@@ -285,8 +285,8 @@
             chart = chart +"</th>"; // row title
 
                 for (var j=0;j<servicelist.length;j++) {
-  
-                    chart = chart + "<td class='service service-"+servicelist[j].id+"' data-label='"+servicelist[0].field_data[field].label+"'>"+servicelist[j].field_data[field].value+"</td>";
+                    let serviceParagraphContent = servicelist[j].field_data[field].value ? servicelist[j].field_data[field].value : ""
+                    chart = chart + "<td class='service service-" + servicelist[j].id + "' data-label='" + servicelist[0].field_data[field].label + "'>" + serviceParagraphContent +"</td>";
                 }
 
             chart = chart + "</tr>";
