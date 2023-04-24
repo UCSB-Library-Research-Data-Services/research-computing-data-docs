@@ -526,7 +526,7 @@ h4 + .back-to-toc, .h4 + .back-to-toc {
 }
 
 .cwd-scrolling-table thead th:first-child, .cwd-scrolling-table tbody th, .floating-row-header {
-  max-width: 280px;
+  width: 280px;
 }
 
 table.scrolling > thead > tr > th {
@@ -584,7 +584,7 @@ table.scrolling > thead > tr > th {
 .floating-row-header > div {
   border: 1px solid #ddd;
   border-top: none;
-  border-right: none;
+  /* border-right: black; */
   line-height: 19px !important;
 }
 

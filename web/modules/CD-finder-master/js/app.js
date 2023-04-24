@@ -270,17 +270,25 @@
         sortedfields = Object.keys(fieldweight).sort(function(a,b){return fieldweight[a]-fieldweight[b]})
         // every other row
         for (var i=0;i<sortedfields.length;i++) {
+            // console.log(field);
             field = sortedfields[i];
             //alert(field);
+
             chart = chart + "<tr>";
             chart = chart + "<th scope='row'>"+servicelist[0].field_data[field].label;
             help_text_counter++;
-            help =  servicehelp.field_data[field].value ? "<a class='popup' aria-haspop='true' href='#help-"+help_text_counter+"'><span class='sr-only'>More information about "+servicelist[0].field_data[field].label+"</span><span class='fa fa-info-circle'></span></a><div class='help' id='help-"+help_text_counter+"'><h3>"+servicelist[0].field_data[field].label+"</h3>"+servicehelp.field_data[field].value+"</div>" : "";
-            chart = chart + help;
+            
+            // Breaking the thread:
+            // help =  servicehelp.field_data[field].value ? "<a class='popup' aria-haspop='true' href='#help-"+help_text_counter+"'><span class='sr-only'>More information about "+servicelist[0].field_data[field].label+"</span><span class='fa fa-info-circle'></span></a><div class='help' id='help-"+help_text_counter+"'><h3>"+servicelist[0].field_data[field].label+"</h3>"+servicehelp.field_data[field].value+"</div>" : "";
+            // chart = chart + help;
+
             chart = chart +"</th>"; // row title
+
                 for (var j=0;j<servicelist.length;j++) {
-                    chart = chart + "<td class='service service-"+servicelist[j].id+"' data-label='"+servicelist[0].field_data[field].label+"'>"+servicelist[j].field_data[field].value+"</td>";
+                    let serviceParagraphContent = servicelist[j].field_data[field].value ? servicelist[j].field_data[field].value : ""
+                    chart = chart + "<td class='service service-" + servicelist[j].id + "' data-label='" + servicelist[0].field_data[field].label + "'>" + serviceParagraphContent +"</td>";
                 }
+
             chart = chart + "</tr>";
         }
 
@@ -341,11 +349,12 @@
             if ($("#service-"+service.id).find('.cardcheckbox').prop('checked') == false) { // card
                 hidden = "yes";
                 servicelist[i]["hidden"]="yes";
-                //$("#service-"+service.id).addClass("mismatch") // card
+                // $("#service-"+service.id).addClass("mismatch") // card
                 $(".service-"+service.id).hide(); // table column
             }
 
             if (hidden == "no") {
+
                 $("#service-"+service.id).removeClass('mismatch'); // card
                 $(".service-"+service.id).show(); // table column
                 servicelist[i]["hidden"]="no";
@@ -688,24 +697,31 @@ function validateEmail(Email) {
         if (elementSO && !SCROLL_CONF){
             var selected = $("#selection-number").text();
             var compChecked = $(".manualcheckbox:checked").length;
-            if (parseInt(selected) > 12 ){
+            if (parseInt(selected) <= 3 ){
+                // Don't show if there are only 3 or less columns.
+                $('#scroll-to-see-more').removeClass('my-show');
+                $('#scroll-to-see-more').addClass('my-hidden');
+
+                // Old code: Show regardless if its a big table, but wouldnt that be done automatically anyways?
                 //really big table just show
-                if (compChecked == selected){
-                    $('#scroll-to-see-more').removeClass('my-hidden');
-                    $('#scroll-to-see-more').addClass('my-show');
-                }else if(elementSO.offsetWidth < elementSO.scrollWidth){
-                    $('#scroll-to-see-more').removeClass('my-hidden');
-                    $('#scroll-to-see-more').addClass('my-show');
-                }else{
-                    $('#scroll-to-see-more').removeClass('my-show');
-                    $('#scroll-to-see-more').addClass('my-hidden');
-                }
-            }else if ((elementSO.offsetWidth < elementSO.scrollWidth) && (elementSO.scrollWidth < 5000)) {
-                //console.log("has overflow "+elementSO.offsetWidth+" < "+elementSO.scrollWidth);
+                // if (compChecked == selected){
+                //     $('#scroll-to-see-more').removeClass('my-hidden');
+                //     $('#scroll-to-see-more').addClass('my-show');
+                // }else if(elementSO.offsetWidth < elementSO.scrollWidth){
+                //     $('#scroll-to-see-more').removeClass('my-hidden');
+                //     $('#scroll-to-see-more').addClass('my-show');
+                // }else{
+                //     $('#scroll-to-see-more').removeClass('my-show');
+                //     $('#scroll-to-see-more').addClass('my-hidden');
+                // }
+            }
+            else if ((elementSO.offsetWidth < elementSO.scrollWidth) && (elementSO.scrollWidth < 5000)) {
+                // console.log("has overflow "+elementSO.offsetWidth+" < "+elementSO.scrollWidth);
                 $('#scroll-to-see-more').removeClass('my-hidden');
                 $('#scroll-to-see-more').addClass('my-show');
 
-            } else {
+            } 
+            else {
                 $('#scroll-to-see-more').removeClass('my-show');
                 $('#scroll-to-see-more').addClass('my-hidden');
             }

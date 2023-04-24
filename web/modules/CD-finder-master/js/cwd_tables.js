@@ -46,6 +46,7 @@ jQuery(document).ready(function($) {
     // refresh mode
     var refresh = false || refresh;
 
+
     // Set-up markup
     $('table.scrolling').each(function() {
 
