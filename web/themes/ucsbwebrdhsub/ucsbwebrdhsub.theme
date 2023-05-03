@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+/**
+ * Preprocess variables for html templates.
+ * @param $variables
+ */
+use Drupal\Component\Utility\Html;
+use Drupal\Core\Url;
+use Drupal\node\Entity\Node;
+
+
+function ucsbwebrdhsub_preprocess_page(&$variables){
+    if(\Drupal::routeMatch()->getRouteName() === 'entity.node.canonical' && \Drupal::routeMatch()->getParameter('node')->getTitle() === 'Data Literacy Series'){
+        $variables['#attached']['library'][] = 'ucsbwebrdhsub/data-literacy-series';
+    }
+}

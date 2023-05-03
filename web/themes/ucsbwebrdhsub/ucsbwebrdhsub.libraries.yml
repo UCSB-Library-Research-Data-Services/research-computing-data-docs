@@ -3,3 +3,9 @@ ucsbwebrdhsub-styling:
     theme:
       css/style.css: {}
 
+data-literacy-series:
+  version: 9
+  js:
+    js/data-literacy-series.js: {}
+  dependencies:
+    - core/jquery
