@@ -1,0 +1,12 @@
+name: Finder2
+description: Creates a page showing the Resource Finder.
+package: Custom
+
+type: module
+core_version_requirement: ^8 || ^9
+dependencies:
+  - paragraphs:paragraphs
+libraries:
+  - finder/finder
+configure: finder2.settings
+
