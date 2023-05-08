@@ -1,26 +1,26 @@
-uuid: dc6698f8-52aa-4aa4-9c43-2120a6343ed6
+uuid: dc6698f8-52aa-4aa4-9c43-2120a6343ed7
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.service.field_facet_matches
-    - field.field.node.service.field_service_paragraphs
-    - field.field.node.service.field_summary
-    - node.type.service
+    - field.field.node.service2.field_facet_matches2
+    - field.field.node.service2.field_service_paragraphs2
+    - field.field.node.service2.field_summary
+    - node.type.service2
   module:
     - paragraphs
-id: node.service.default
+id: node.service2.default
 targetEntityType: node
-bundle: service
+bundle: service2
 mode: default
 content:
-  field_facet_matches:
+  field_facet_matches2:
     type: options_buttons
     weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_service_paragraphs:
+  field_service_paragraphs2:
     type: paragraphs
     weight: 3
     region: content
@@ -32,7 +32,7 @@ content:
       autocollapse: none
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: service_paragraphs
+      default_paragraph_type: service_paragraphs2
       features:
         duplicate: duplicate
         collapse_edit_all: collapse_edit_all
