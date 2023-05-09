@@ -100,7 +100,7 @@
 
     // read the data from JSON endpoints
 
-    $.getJSON( "/rest/finder_settings", function( response ) {
+    $.getJSON( "/rest/finder2_settings", function( response ) {
         //alert(JSON.stringify(response));
         $('#pagetitle').html(response.title.replace(/(?:\r\n|\r|\n)/g, '<br />'));
         $('#pagesubtitle').html(response.subtitle.replace(/(?:\r\n|\r|\n)/g, '<br />'));
@@ -117,7 +117,7 @@
     });
 
 
-    $.getJSON( "/rest/facettree", function( response ) {
+    $.getJSON( "/rest/facet2tree", function( response ) {
 
         // JSON responses are automatically parsed.
 
@@ -208,7 +208,7 @@
 
 
     // load the services
-    $.getJSON( "/rest/servicelist", function( responseb ) {
+    $.getJSON( "/rest/servicelist2", function( responseb ) {
         services = responseb;
         //servicelist = responseb.data;
 

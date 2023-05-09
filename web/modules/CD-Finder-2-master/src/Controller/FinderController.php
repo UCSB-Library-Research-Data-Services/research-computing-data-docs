@@ -29,10 +29,10 @@ class FinderController extends ControllerBase {
 
 
     return [
-      '#theme' => 'finder',
+      '#theme' => 'finder2',
       '#attached' => [
         'library' => [
-          'finder/finder',
+          'finder2/finder2',
         ],
       ],
     ];
@@ -45,7 +45,7 @@ class FinderController extends ControllerBase {
   private function createfacettree() {
    $terms=Drupal::entityTypeManager()
         ->getStorage('taxonomy_term')
-        ->loadTree("facets", 0, null, true);
+        ->loadTree("facets2", 0, null, true);
         //  $vid, $parent, $max_depth, $load_entities);
 
     // extract data for all of the terms
@@ -119,7 +119,7 @@ class FinderController extends ControllerBase {
     private function createtestservicelist() {
 
         $values = [
-            'type' => 'service'
+            'type' => 'service2'
         ];
 
         $nodes = Drupal::entityTypeManager()
@@ -132,14 +132,14 @@ class FinderController extends ControllerBase {
 // this is how to get the node info
   $display = \Drupal::entityTypeManager()
     ->getStorage('entity_view_display')
-    ->load("node" . '.' . "service" . '.' . "default");
+    ->load("node" . '.' . "service2" . '.' . "default");
 
     //echo(json_encode($display->toArray())); echo"<br>";
 
 
         $paragraph_display = \Drupal::entityTypeManager()
         ->getStorage('entity_view_display')
-        ->load("paragraph.service_paragraphs.default");
+        ->load("paragraph.service_paragraphs2.default");
  //       ->load("paragraph" . '.' . "service_paragraphs" . '.' . "default");
 
 
@@ -149,14 +149,14 @@ class FinderController extends ControllerBase {
             $s["id"] = $node->nid->value;
             $s["title"] = $node->title->value;
             // get the facet matches
-            $s["facet_matches"] = [];
-            foreach ($node->field_facet_matches as $match) {
-                $s["facet_matches"][] = $match->target_id;
+            $s["facet_matches2"] = [];
+            foreach ($node->field_facet_matches2 as $match) {
+                $s["facet_matches2"][] = $match->target_id;
             }
             $s["summary"] = $node->field_summary->value;
             // get the service_paragraphs
 
-            $paragraph = $node->get('field_service_paragraphs')->first();
+            $paragraph = $node->get('field_service_paragraphs2')->first();
             if ($paragraph) {
                 $pdoutput = [];
                 $paragraph = $paragraph->get('entity')->getTarget();
@@ -177,7 +177,7 @@ class FinderController extends ControllerBase {
                     }
                     
 
-                    $field_config = \Drupal::entityTypeManager()->getStorage('field_config')->load("paragraph" . '.' . "service_paragraphs" . '.' . $machine_name)->toArray();
+                    $field_config = \Drupal::entityTypeManager()->getStorage('field_config')->load("paragraph" . '.' . "service_paragraphs2" . '.' . $machine_name)->toArray();
 
                     $field_data["label"] = $field_config["label"];
                     $field_data["weight"] = $pdcontent[$machine_name]["weight"];
@@ -278,8 +278,8 @@ class FinderController extends ControllerBase {
         $body = $body . "\r\nUse this link to return to the tool ".
                 "with your criteria already selected: " .
                 \Drupal::request()->getSchemeAndHttpHost() .
-                "/finder?facets=" .
-                implode($facets,",") .
+                "/finder2?facets2=" .
+                implode($facets2,",") .
                 "\r\n\r\n" .
                 "If you have any further questions or need more information about " .
                 "Finder services, please contact the helpdesk to set up a consultation, ".
@@ -288,7 +288,7 @@ class FinderController extends ControllerBase {
 
         $subject = "Assistance request from Finder application";
 
-        $mailManager = \Drupal::service('plugin.manager.mail');
+        $mailManager = \Drupal::service2('plugin.manager.mail');
         $module = "finder";
         $key = 'complete_form';
 
@@ -317,13 +317,13 @@ class FinderController extends ControllerBase {
     }
 
     public function configuration() {
-        if (\Drupal::service('session')->isStarted() === FALSE) {
-            \Drupal::service('session')->start();
-            \Drupal::service('session')->set('foo', 'bar');
+        if (\Drupal::service2('session')->isStarted() === FALSE) {
+            \Drupal::service2('session')->start();
+            \Drupal::service2('session')->set('foo', 'bar');
         }
         \Drupal::logger('finder')->notice("starting session.");
 
-        $config = \Drupal::service('config.factory')->getEditable("finder.settings");
+        $config = \Drupal::service2('config.factory')->getEditable("finder.settings");
         $data = [];
         $data["title"] = $config->get("title");
         $data["subtitle"] = $config->get("subtitle");
