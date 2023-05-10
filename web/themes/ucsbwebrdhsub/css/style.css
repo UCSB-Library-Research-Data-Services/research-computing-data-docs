@@ -1,5 +1,7 @@
 /* Changes style of exposed form filter buttons to be UCSB themed. */
-.form-actions button {
+.form-actions button,
+.localist_minicalendar_nav a
+{
   padding: 10px 18px;
   font-size: 15px;
   -moz-border-radius: 5px;
@@ -13,19 +15,46 @@
   text-align: center;
 }
 
-.form-actions button:hover {
+.form-actions button:hover,
+.localist_minicalendar_nav a:hover 
+{
   background: #369;
 }
 
 /* Calendar Page */
+.localist_minicalendar_nav a {
+  color: white !important
+}
+
+.localist_minicalendar_nav {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
 .localist_minicalendar_minicalendar{
-  width: 280px !important;
+  width: 520px !important;
+  height: 300px;
 }
 
 .localist_minicalendar_minicalendar a{
   color: inherit !important;
   border-bottom: none !important;
+  display: flex !important;
+  align-items: center;
+  height: 100% !important;
+  justify-content: center;
 
+}
+
+.localist_minicalendar table{
+  color: inherit !important;
+  border-bottom: none !important;
+  table-layout: fixed;
+}
+
+.localist_minicalendar table tbody td{
+  border: 1px solid white;
+  padding: 0 !important;
 }
 
 
