@@ -17,6 +17,16 @@
   background: #369;
 }
 
+/* Calendar Page */
+.localist_minicalendar_minicalendar{
+  width: 280px !important;
+}
+
+.localist_minicalendar_minicalendar a{
+  color: inherit !important;
+  border-bottom: none !important;
+
+}
 
 
 /* Communities Page */
