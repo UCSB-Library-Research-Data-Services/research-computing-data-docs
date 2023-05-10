@@ -173,7 +173,7 @@
                 var a = find_facet($(this).attr("facetid"));
 
                 $('.jump-to-chart').hide();
-
+                // console.log(a)
                 a.selected = ! a.selected;
                 if (! a.selected) {
                     $("#facet-"+a.id).prop("checked", false);
@@ -333,7 +333,7 @@
             service = servicelist[i];
             var hidden = "no";
             for (var j = 0; j < selected.length; j++) {
-                if ( service.facet_matches.indexOf(selected[j]) < 0) {
+                if ( service.facet_matches2.indexOf(selected[j]) < 0) {
                     $("#service-"+service.id) // card
                         .addClass('mismatch')
                         .find(".cardcheckbox")
@@ -626,7 +626,7 @@ function validateEmail(Email) {
             //alert("enter "+serviceid);
             for (i=0; i<servicelist.length; i++) {
                 if (servicelist[i].id == serviceid) {
-                    var facetlist = servicelist[i].facet_matches; //arr of strings
+                    var facetlist = servicelist[i].facet_matches2; //arr of strings
                     $('.checkbox').each( function () {
                         if ($.inArray($(this).attr("facetid"), facetlist) < 0) {
                             $(this).addClass('blocker');
