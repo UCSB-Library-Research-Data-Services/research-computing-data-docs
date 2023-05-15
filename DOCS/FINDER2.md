@@ -1,20 +1,25 @@
-# Editing the Data Tool Explorer Page.
+# Editing the Finder2 Page (Finder2 is a placeholder name for this page)
 
-## Add a new Software/Service:
-- Go to Manage >> Content >> Add Content >> Service
+## This page is a duplicate of the Data Tool Explorer Page that is supposed to have a separate use.
+## Since it is a duplicate, editing this page is identical to editing the Data Tool Explorer page, but all the nodes have the postfix '2'.  Example, instead of creating a 'Service' content that would appear in the Data Tool Explorer, you create 'Service2'.  Likewise, you now use 'Facet2' instead of 'Facet.'
+
+
+
+## Add a new Service:
+- Go to Manage >> Content >> Add Content >> Service2
 - The "Title" is for the name of the software.  The "Summary" is what is displayed on the purple card / selector table.  Keep it short.  You can add more details to this
 service later, because this is NOT what is displayed in the Comparison Chart (that renders below the selector table).  
 - Pick all the relevant facet matches.  If you need to make a new one, there is more information on how to do this below later in this tutorial.  The facet matches also do not determine any information that is displayed with the service, but this information is necessary for the filter to work (On the page, this information is for answering all the questions under "Describe your Data").
 - Service Paragraphs: This is for all the information displayed WITH the service (in the Comparison Chart).  Note that if you do not have information for some of the fields, it is okay to leave it empty.  
 
-## Edit a new Software/Service
+## Edit a new Service
 - Go to Manage >> Content
-- In the filter, you can search for the title of the Service/Software you are looking for.  You should also use the 'Content Type' dropdown and change it to 'Service'. 
+- In the filter, you can search for the title of the Service you are looking for.  You should also use the 'Content Type' dropdown and change it to 'Service2'. 
 
 ## Add a new Facet
-- Go to Manage >> Structure >> Taxonomy >> Facets
+- Go to Manage >> Structure >> Taxonomy >> Facets2
 - Here, you will be able to add new answers and 'questions' for the "Describe your Data" form.  Note that the 'questions' are not semantically structured as actual questions, but rather they are labels for the data for the form. Example: 'Application', 'Campus Provider', 'Availability,'... Also note that drupal does not very clearly distinguish the questions from the answers because they will both be labeled as 'facets'.  But you can create a hierarchy that will make drupal render some facets as questions and others as answers to those questions (more on this later).  
-- The facets added here will be added to both the frontend (Data Tool Explorer Page) and the backend (Adding/Editing a Service as described above).  In other words, once you add a facet here, you will be able to select it for your service, and you will be able to see this on the Data Tool Explorer Page after.  
+- The facets added here will be added to both the frontend and the backend (Adding/Editing a Service as described above).  In other words, once you add a facet here, you will be able to select it for your service, and you will be able to see this on the Data Tool Explorer Page after.  
 
 ### There is an 'Add Term' button you can use if you want to add a facet.
 
@@ -33,9 +38,9 @@ service later, because this is NOT what is displayed in the Comparison Chart (th
 
 ## Add Categories to the Comparison Chart
 When you click "Compare Results," a comparison chart should render below the service table.  The comparison chart has additional information to compare one service to another based off of categories.  You can add or remove these categories if necessary:
-### Manage >> Structure >> Paragraph Types >> Service Paragraphs
+### Manage >> Structure >> Paragraph Types >> Service Paragraphs2
 Here you can add categories by clicking "Add Field", or you can edit or delete the other categories.  When adding a category, select the field type "Text (formatted, long)," and type in the label which will be the name of the category that shows up on the Comparison Chart.  After you create your categories, if you want to reorder how the categories are displayed on the comparison chart, click on the "Manage Display" tab.  You will then see a icon that when you hover over it says "Drag to reorder."  You can also change the order of how these categories display in the backend (ie for when you enter in the information of what should be contained in the category for a specific service). You do this in the "Manage Form Display Tab".  Note: always make sure to save your work when you are finished.
 
- ## Editing other content on the Data Tool Explorer Page:
- - Unlike the other pages, editing the content of this page requires going into the code.  A pre-requisite is to have either a git connection estbalished, or by using cyber duck, so that you can commit the code changes to the website.  Since this requires going into the code, check under the DEVS docs for more information on how to edit the content.  
 
+ ## Editing other content on the Page:
+ - Unlike the other pages, editing the content of this page and changing the URL requires going into the code.  A pre-requisite is to have either a git connection estbalished, or by using cyber duck, so that you can commit the code changes to the website.  Since this requires going into the code, check under the DEVS docs for more information on how to edit the content.  
