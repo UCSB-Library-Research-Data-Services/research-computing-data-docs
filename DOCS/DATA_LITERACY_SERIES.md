@@ -1,5 +1,7 @@
 # Editing the Data Literacy Series Page.
 
+### Visit: https://github.com/UCSB-Library-Research-Data-Services/researchdata-ucsb-edu-v01/blob/master/web/modules/CD-finder-master/docs/Finder_module.pdf for pdf documentation.
+
 ## Add a new DLS Post:
 - Go to Manage >> Content >> Add Content >> DLS Post
 - Notes: DLS Media PDF is for adding the PDF that will be displayed in the post's thumbnail.  It will ask you to add or select the PDF.  You will first need to add the PDF, then it will appear for you to be able to select it.  Then, the DLS File input is for the alternate PDF file if there is one.  
@@ -19,3 +21,5 @@
 - For Path, enter: "taxonomy/term/{term id}"
 - For TO*, enter: "/data-literacy-series/search-view?dls_tags_advanced_id={Term Name}"
 You have to do all these steps in order to make the link to the tag on the DLS page redirect to the correct page.
+
+### There are further settings at route (on the drupal site) /admin/config/content/finder with little documentation on what it's for. It includes fields for email address, body, header, etc. As of right now, these settings have not been touched.
