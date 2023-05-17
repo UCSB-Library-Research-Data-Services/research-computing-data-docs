@@ -22,6 +22,61 @@
 }
 
 /* Calendar Page */
+.localist-widget-hl .event-card header {
+  height: 10.5em !important;
+}
+
+.localist-widget-hl .event-card{
+  font-size: 12px !important;
+  margin-bottom: 0 !important;
+}
+
+.localist-widget-hl .event-list .event-card .start-time.location{
+  display: none;
+}
+
+
+.localist_minicalendar_minicalendar td,
+.localist_minicalendar_minicalendar th
+{
+  background-color: white !important;
+  border: 1px solid #d7d7d7 !important;
+}
+.localist_minicalendar_minicalendar th {
+  font-size: 14px !important;
+}
+
+.localist_minicalendar .localist_minicalendar_page_heading h1{
+  background-color: #003660;
+  color: white !important;
+  font-size: 20px !important;
+}
+
+.localist_minicalendar .localist_minicalendar_pager a{
+  background-color: #febc11 !important;
+  padding-bottom: 4px !important;
+  color: white !important;
+  font-weight: 900;
+}
+.localist_minicalendar .localist_minicalendar_pager a.disabled{
+  background-color: #ccc !important;
+}
+
+.localist_minicalendar .localist_minicalendar_pager a:hover {
+  background-color: #ce9d22 !important;
+}
+
+table.localist_minicalendar_minicalendar caption{
+  padding-left: 10px;
+  background-color: #003660;
+  color: white !important;
+}
+
+.localist_minicalendar_events a.cover{
+  position: absolute !important;
+  border-bottom: none !important;
+}
+
 .localist_minicalendar_nav a {
   color: white !important
 }
@@ -32,7 +87,7 @@
 }
 
 .localist_minicalendar_minicalendar{
-  width: 520px !important;
+  /* width: 520px !important; */
   height: 300px;
 }
 
@@ -55,6 +110,38 @@
 .localist_minicalendar table tbody td{
   border: 1px solid white;
   padding: 0 !important;
+}
+
+.localist-widget-hl .event-title{
+  font-size: 12px !important;
+}
+
+.localist-widget-hl .event-list{
+  clear: none !important;
+}
+
+.localist-widget-hl .event-list li{
+  clear: none !important;
+}
+
+@media (min-width: 62.5em) {
+  .localist_minicalendar{
+    width: 400px;
+    float: right;
+  }
+
+  .localist-widget-hl .event-list>li {
+    width: 18.3% !important;
+  }
+
+  .localist-widget-hl .event-list>li{
+    margin-right: 1.666667% !important;
+  }
+
+  .localist-widget-hl .event-list>li:nth-child(7){
+    clear: left !important;
+  }
+
 }
 
 
