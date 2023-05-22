@@ -2,6 +2,7 @@
 
 ## Add a new DLS Post:
 - Go to Manage >> Content >> Add Content >> DLS Post
+- If you want to add a tag to the DLS post, but there is no existing tag of the same name, you will have to create a new tag.  This is very easy and it is showed how to do so below.
 - Notes: DLS Media PDF is for adding the PDF that will be displayed in the post's thumbnail.  It will ask you to add or select the PDF.  You will first need to add the PDF, then it will appear for you to be able to select it.  Then, the DLS File input is for the alternate PDF file if there is one.  
 
 ## Edit/Delete DLS Post:
@@ -14,8 +15,3 @@
 
 ## Make a new Tag for a DLS post:  
 - Go to Manage >> Structure >> Taxonomy >> DLS Vocabulary >> List Terms >> Add Term
-- Once you add the term.  You must find the term ID. To find the term ID, go back to DLS Vocabulary >> List Terms, find the term you just added, and click on it to view it.  In the URL, it should have an ending path of  "taxonomy/term/{term id}".  You should just copy this whole path.
-- Then, go to Manage >> Configuration >>  URL Redirects (Under Search and Metadata) >> Add Redirect
-- For Path, enter: "taxonomy/term/{term id}"
-- For TO*, enter: "/data-literacy-series/search-view?dls_tags_advanced_id={Term Name}"
-You have to do all these steps in order to make the link to the tag on the DLS page redirect to the correct page.
