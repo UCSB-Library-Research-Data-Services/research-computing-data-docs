@@ -15,3 +15,4 @@
 
 ## Make a new Tag for a DLS post:  
 - Go to Manage >> Structure >> Taxonomy >> DLS Vocabulary >> List Terms >> Add Term
+- The Name field is the only field you have to do.  You can optionally add a description, but you shouldn't change anything else.
