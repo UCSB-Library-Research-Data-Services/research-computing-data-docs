@@ -16,7 +16,17 @@ use Drupal\node\Entity\Node;
 
 
 function ucsbwebrdhsub_preprocess_page(&$variables){
-    if(\Drupal::routeMatch()->getRouteName() === 'entity.node.canonical' && \Drupal::routeMatch()->getParameter('node')->getTitle() === 'Data Literacy Series'){
-        $variables['#attached']['library'][] = 'ucsbwebrdhsub/data-literacy-series';
-    }
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  $node = \Drupal::routeMatch()->getParameter('node');
+
+  if ($route_name === 'entity.node.canonical' && $node->getTitle() === 'Data Literacy Series') {
+    $variables['#attached']['library'][] = 'ucsbwebrdhsub/data-literacy-series';
+  }
+
+  // Check if the current path starts with "/data-literacy-series/".
+  $current_path = \Drupal::service('path.current')->getPath();
+  if (strpos($current_path, '/data-literacy-series/') === 0) {
+    $variables['#attached']['library'][] = 'ucsbwebrdhsub/data-literacy-series';
+  }
+
 }
