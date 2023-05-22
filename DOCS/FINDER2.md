@@ -1,5 +1,7 @@
 # Editing the Finder2 Page (Finder2 is a placeholder name for this page)
 
+### Visit: https://github.com/UCSB-Library-Research-Data-Services/researchdata-ucsb-edu-v01/blob/master/web/modules/CD-finder-master/docs/Finder_module.pdf for pdf documentation.
+
 ## This page is a duplicate of the Data Tool Explorer Page that is supposed to have a separate use.
 ## Since it is a duplicate, editing this page is identical to editing the Data Tool Explorer page, but all the nodes have the postfix '2'.  Example, instead of creating a 'Service' content that would appear in the Data Tool Explorer, you create 'Service2'.  Likewise, you now use 'Facet2' instead of 'Facet.'
 
@@ -44,3 +46,5 @@ Here you can add categories by clicking "Add Field", or you can edit or delete t
 
  ## Editing other content on the Page:
  - Unlike the other pages, editing the content of this page and changing the URL requires going into the code.  A pre-requisite is to have either a git connection estbalished, or by using cyber duck, so that you can commit the code changes to the website.  Since this requires going into the code, check under the DEVS docs for more information on how to edit the content.  
+
+### There are further settings at route (on the drupal site) /admin/config/content/finder with little documentation on what it's for. It includes fields for email address, body, header, etc. As of right now, these settings have not been touched.

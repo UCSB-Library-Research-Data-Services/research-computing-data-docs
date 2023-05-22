@@ -1,5 +1,7 @@
 # Editing the Data Tool Explorer Page.
 
+### Visit: https://github.com/UCSB-Library-Research-Data-Services/researchdata-ucsb-edu-v01/blob/master/web/modules/CD-finder-master/docs/Finder_module.pdf for pdf documentation.
+
 ## Add a new Software/Service:
 - Go to Manage >> Content >> Add Content >> Service
 - The "Title" is for the name of the software.  The "Summary" is what is displayed on the purple card / selector table.  Keep it short.  You can add more details to this
@@ -39,3 +41,5 @@ Here you can add categories by clicking "Add Field", or you can edit or delete t
  ## Editing other content on the Data Tool Explorer Page:
  - Unlike the other pages, editing the content of this page requires going into the code.  A pre-requisite is to have either a git connection estbalished, or by using cyber duck, so that you can commit the code changes to the website.  Since this requires going into the code, check under the DEVS docs for more information on how to edit the content.  
 
+
+### There are further settings at route (on the drupal site) /admin/config/content/finder with little documentation on what it's for. It includes fields for email address, body, header, etc. As of right now, these settings have not been touched.

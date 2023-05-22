@@ -1,5 +1,6 @@
 # Editing the Data Literacy Series Page.
 
+
 ## Add a new DLS Post:
 - Go to Manage >> Content >> Add Content >> DLS Post
 - If you want to add a tag to the DLS post, but there is no existing tag of the same name, you will have to create a new tag.  This is very easy and it is showed how to do so below.
