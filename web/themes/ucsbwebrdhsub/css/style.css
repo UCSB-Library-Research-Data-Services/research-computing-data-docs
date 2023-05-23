@@ -29,10 +29,16 @@
 .localist-widget-hl .event-card{
   font-size: 12px !important;
   margin-bottom: 0 !important;
+  height: 22em !important;
+
 }
 
 .localist-widget-hl .event-list .event-card .start-time.location{
   display: none;
+}
+
+.localist-widget-hl .event-list .event-overview .content{
+  padding: 10px 5px 0px !important;
 }
 
 
@@ -77,8 +83,14 @@ table.localist_minicalendar_minicalendar caption{
   border-bottom: none !important;
 }
 
+.localist_minicalendar_nav {
+  display: flex;
+  justify-content: space-around;
+}
+
 .localist_minicalendar_nav a {
-  color: white !important
+  color: white !important;
+
 }
 
 .localist_minicalendar_nav {
@@ -113,7 +125,11 @@ table.localist_minicalendar_minicalendar caption{
 }
 
 .localist-widget-hl .event-title{
-  font-size: 12px !important;
+  font-size: 10px !important;
+}
+
+.localist-widget-hl .event-card .content p {
+  overflow: inherit !important;
 }
 
 .localist-widget-hl .event-list{
@@ -128,6 +144,7 @@ table.localist_minicalendar_minicalendar caption{
   .localist_minicalendar{
     width: 400px;
     float: right;
+    margin-top: -20px;
   }
 
   .localist-widget-hl .event-list>li {
@@ -317,7 +334,7 @@ table.localist_minicalendar_minicalendar caption{
 
 
 
-/* Resource List Page: */
+/* Resource List Page:  (And for News & Events List Page as it borrows some of these styles).*/
 /* *************************************** */
 @media (min-width: 992px) {
   .resource-image-view.col-md-4 {
