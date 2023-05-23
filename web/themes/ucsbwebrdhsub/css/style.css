@@ -1,5 +1,7 @@
 /* Changes style of exposed form filter buttons to be UCSB themed. */
-.form-actions button {
+.form-actions button,
+.localist_minicalendar_nav a
+{
   padding: 10px 18px;
   font-size: 15px;
   -moz-border-radius: 5px;
@@ -13,10 +15,151 @@
   text-align: center;
 }
 
-.form-actions button:hover {
+.form-actions button:hover,
+.localist_minicalendar_nav a:hover 
+{
   background: #369;
 }
 
+/* Calendar Page */
+.localist-widget-hl .event-card header {
+  height: 10.5em !important;
+}
+
+.localist-widget-hl .event-card{
+  font-size: 12px !important;
+  margin-bottom: 0 !important;
+  height: 22em !important;
+
+}
+
+.localist-widget-hl .event-list .event-card .start-time.location{
+  display: none;
+}
+
+.localist-widget-hl .event-list .event-overview .content{
+  padding: 10px 5px 0px !important;
+}
+
+
+.localist_minicalendar_minicalendar td,
+.localist_minicalendar_minicalendar th
+{
+  background-color: white !important;
+  border: 1px solid #d7d7d7 !important;
+}
+.localist_minicalendar_minicalendar th {
+  font-size: 14px !important;
+}
+
+.localist_minicalendar .localist_minicalendar_page_heading h1{
+  background-color: #003660;
+  color: white !important;
+  font-size: 20px !important;
+}
+
+.localist_minicalendar .localist_minicalendar_pager a{
+  background-color: #febc11 !important;
+  padding-bottom: 4px !important;
+  color: white !important;
+  font-weight: 900;
+}
+.localist_minicalendar .localist_minicalendar_pager a.disabled{
+  background-color: #ccc !important;
+}
+
+.localist_minicalendar .localist_minicalendar_pager a:hover {
+  background-color: #ce9d22 !important;
+}
+
+table.localist_minicalendar_minicalendar caption{
+  padding-left: 10px;
+  background-color: #003660;
+  color: white !important;
+}
+
+.localist_minicalendar_events a.cover{
+  position: absolute !important;
+  border-bottom: none !important;
+}
+
+.localist_minicalendar_nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.localist_minicalendar_nav a {
+  color: white !important;
+
+}
+
+.localist_minicalendar_nav {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.localist_minicalendar_minicalendar{
+  /* width: 520px !important; */
+  height: 300px;
+}
+
+.localist_minicalendar_minicalendar a{
+  color: inherit !important;
+  border-bottom: none !important;
+  display: flex !important;
+  align-items: center;
+  height: 100% !important;
+  justify-content: center;
+
+}
+
+.localist_minicalendar table{
+  color: inherit !important;
+  border-bottom: none !important;
+  table-layout: fixed;
+}
+
+.localist_minicalendar table tbody td{
+  border: 1px solid white;
+  padding: 0 !important;
+}
+
+.localist-widget-hl .event-title{
+  font-size: 10px !important;
+}
+
+.localist-widget-hl .event-card .content p {
+  overflow: inherit !important;
+}
+
+.localist-widget-hl .event-list{
+  clear: none !important;
+}
+
+.localist-widget-hl .event-list li{
+  clear: none !important;
+}
+
+@media (min-width: 62.5em) {
+  .localist_minicalendar{
+    width: 400px;
+    float: right;
+    margin-top: -20px;
+  }
+
+  .localist-widget-hl .event-list>li {
+    width: 18.3% !important;
+  }
+
+  .localist-widget-hl .event-list>li{
+    margin-right: 1.666667% !important;
+  }
+
+  .localist-widget-hl .event-list>li:nth-child(7){
+    clear: left !important;
+  }
+
+}
 
 
 /* Communities Page */
@@ -191,7 +334,7 @@
 
 
 
-/* Resource List Page: */
+/* Resource List Page:  (And for News & Events List Page as it borrows some of these styles).*/
 /* *************************************** */
 @media (min-width: 992px) {
   .resource-image-view.col-md-4 {
