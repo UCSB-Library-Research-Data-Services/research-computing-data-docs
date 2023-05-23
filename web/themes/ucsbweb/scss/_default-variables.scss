@@ -28,7 +28,7 @@ $icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
   margin-right: auto;
   max-width: $screen-lg;
   padding-left: 15px;
-  padding-right: 15px; 
+  padding-right: 15px;
   @media all and (min-width: $screen-md) {
     padding-left: 30px;
     padding-right: 30px;
@@ -69,27 +69,26 @@ $icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
   font-family: 'weather';
   src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot');
   src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
-       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.woff') format('woff'),
-       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.ttf') format('truetype'),
-       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+  url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.woff') format('woff'),
+  url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.ttf') format('truetype'),
+  url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+$base-font-size: 1.6rem;
+$p-line-height: 2.8rem;
+$small-font-size: 1.4rem;
+$smaller-font-size: 1.3rem;
+$smallest-font-size: 1.2rem;
 
-$base-font-size: 16px;
-$p-line-height: 28px;
-$small-font-size: 14px;
-$smaller-font-size: 13px;
-$smallest-font-size: 12px;
+$search-font-size: 2.2rem;
 
-$search-font-size: 22px;
-
-$h1-font-size: 38px;
-$h2-font-size: 27px;
-$h3-font-size: 21px;
+$h1-font-size: 3.8rem;
+$h2-font-size: 2.7rem;
+$h3-font-size: 2.1rem;
 $h4-font-size: $base-font-size;
-$h5-font-size: 12px;
-$h6-font-size: 12px;
+$h5-font-size: 1.2rem;
+$h6-font-size: 1.2rem;
 
 $avenir-font-stack: Avenir, "Century Gothic", sans-serif;
 $produkt-font-stack: Produkt, serif;
@@ -215,126 +214,126 @@ $border-color:                $lightgray-lighten-6;
 $border-color-dark:           $lightgray-darken-20;
 
 $background-colors: // background, display, header, body, link, caption
-	( '#ffffff'
-    ( '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-60}',
-      '#{$base-interactive-blue}',
-      '#{$lightgray-darken-45}'
-    )
-	, '#{$lightgray-lighten-6}'
-    ( '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-60}',
-      '#{$base-interactive-blue}',
-      '#{$lightgray-darken-60}'
-    ) 
-  , '#{$base-lightgray}'
-    ( '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-60}',
-      '#{$base-interactive-blue}',
-      '#{$lightgray-darken-60}'
-    ) 
-  , '#{$base-mist}'
-    ( '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-60}',
-      '#{$lightgray-darken-60}',
-      '#{$lightgray-darken-60}'
-    ) 
-  , '#{$mist-lighten-20}'
-    ( '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-60}',
-      '#{$base-interactive-blue}',
-      '#{$lightgray-darken-60}'
-    )
-  , '#{$base-clay}'
-    ( '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-60}',
-      '#{$base-interactive-blue}',
-      '#{$lightgray-darken-60}'
-    )
-  , '#{$clay-lighten-10}'
-    ( '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-60}',
-      '#{$base-interactive-blue}',
-      '#{$lightgray-darken-60}'
-    )
-  , '#{$base-sandstone}'
-    ( '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-60}',
-      '#{$lightgray-darken-60}',
-      '#{$lightgray-darken-60}'
-    )
-  , '#{$sandstone-lighten-20}'
-    ( '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-60}',
-      '#{$base-interactive-blue}',
-      '#{$lightgray-darken-60}'
-    )
-  , '#{$base-gold}'
-    ( '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-60}',
-      '#{$lightgray-darken-60}',
-      '#{$lightgray-darken-60}'
-    ) 
-  , '#{$base-navy}'
-    ( '#{$base-white}',
-      '#{$base-white}',
-      '#{$base-white}',
-      '#{$base-white}',
-      '#{$base-white}'
-    )
-  , '#{$base-moss-web}'
-    ( '#{$base-white}',
-      '#{$base-white}',
-      '#{$base-white}',
-      '#{$base-white}',
-      '#{$base-white}'
-    )
-  , '#{$base-seagreen-web}'
-    ( '#{$base-white}',
-      '#{$base-white}',
-      '#{$base-white}',
-      '#{$base-white}',
-      '#{$base-white}'
-    )
-  , '#{$base-aqua-web}'
-    ( '#{$base-white}',
-      '#{$base-white}',
-      '#{$base-white}',
-      '#{$base-white}',
-      '#{$base-white}'
-    )
-  , '#{$base-coral}'
-    ( '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-80}',
-      '#{$lightgray-darken-80}'
-    ) 
-  , '#{$coral-darken-15-desat-15}'
-    ( '#{$base-white}',
-      '#{$base-white}',
-      '#{$base-white}',
-      '#{$base-white}',
-      '#{$base-white}'
-    )
-  , '#000000'
-    ( '#{$base-white}',
-      '#{$base-white}',
-      '#{$base-white}',
-      '#{$base-white}',
-      '#{$base-white}'
-    )
-  );
+                ( '#ffffff'
+                        ( '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-60}',
+                        '#{$base-interactive-blue}',
+                        '#{$lightgray-darken-45}'
+                        )
+                , '#{$lightgray-lighten-6}'
+                        ( '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-60}',
+                        '#{$base-interactive-blue}',
+                        '#{$lightgray-darken-60}'
+                        )
+                , '#{$base-lightgray}'
+                        ( '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-60}',
+                        '#{$base-interactive-blue}',
+                        '#{$lightgray-darken-60}'
+                        )
+                , '#{$base-mist}'
+                        ( '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-60}',
+                        '#{$lightgray-darken-60}',
+                        '#{$lightgray-darken-60}'
+                        )
+                , '#{$mist-lighten-20}'
+                        ( '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-60}',
+                        '#{$base-interactive-blue}',
+                        '#{$lightgray-darken-60}'
+                        )
+                , '#{$base-clay}'
+                        ( '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-60}',
+                        '#{$base-interactive-blue}',
+                        '#{$lightgray-darken-60}'
+                        )
+                , '#{$clay-lighten-10}'
+                        ( '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-60}',
+                        '#{$base-interactive-blue}',
+                        '#{$lightgray-darken-60}'
+                        )
+                , '#{$base-sandstone}'
+                        ( '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-60}',
+                        '#{$lightgray-darken-60}',
+                        '#{$lightgray-darken-60}'
+                        )
+                , '#{$sandstone-lighten-20}'
+                        ( '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-60}',
+                        '#{$base-interactive-blue}',
+                        '#{$lightgray-darken-60}'
+                        )
+                , '#{$base-gold}'
+                        ( '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-60}',
+                        '#{$lightgray-darken-60}',
+                        '#{$lightgray-darken-60}'
+                        )
+                , '#{$base-navy}'
+                        ( '#{$base-white}',
+                        '#{$base-white}',
+                        '#{$base-white}',
+                        '#{$base-white}',
+                        '#{$base-white}'
+                        )
+                , '#{$base-moss-web}'
+                        ( '#{$base-white}',
+                        '#{$base-white}',
+                        '#{$base-white}',
+                        '#{$base-white}',
+                        '#{$base-white}'
+                        )
+                , '#{$base-seagreen-web}'
+                        ( '#{$base-white}',
+                        '#{$base-white}',
+                        '#{$base-white}',
+                        '#{$base-white}',
+                        '#{$base-white}'
+                        )
+                , '#{$base-aqua-web}'
+                        ( '#{$base-white}',
+                        '#{$base-white}',
+                        '#{$base-white}',
+                        '#{$base-white}',
+                        '#{$base-white}'
+                        )
+                , '#{$base-coral}'
+                        ( '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-80}',
+                        '#{$lightgray-darken-80}'
+                        )
+                , '#{$coral-darken-15-desat-15}'
+                        ( '#{$base-white}',
+                        '#{$base-white}',
+                        '#{$base-white}',
+                        '#{$base-white}',
+                        '#{$base-white}'
+                        )
+                , '#000000'
+                        ( '#{$base-white}',
+                        '#{$base-white}',
+                        '#{$base-white}',
+                        '#{$base-white}',
+                        '#{$base-white}'
+                        )
+                );
 
 /*
 Color field presets
