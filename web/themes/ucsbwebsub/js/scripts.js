@@ -206,46 +206,4 @@
     }
 
 
-    $(function (){
-        $("iframe").each(function (){
-            var iframe = $(this);
-
-            //remove the width HTML attribute
-            iframe.removeAttr("width");
-            iframe.removeAttr("frameborder");
-            //set a CSS width attribute
-            iframe.css("width","100%");
-            if ((iframe.attr("title") == undefined) || (iframe.attr("title") == "")) {
-
-                var url = iframe.prop("src");
-                var hostname = $('<a>').prop('href', url).prop('hostname');
-                var title ="";
-                
-                if (url.includes("statuspage.io")) {
-                    title = "System Status Announcements";
-                } else if (url.includes("google.com/maps")) {
-                    title = "Google Map";
-                } else if (url.includes("calendar.google.com")) {
-                    title = "Google Calendar";
-                } else if (url.includes("youtube.com")) {
-                    title = "YouTube Video";
-                } else if (url.includes("facebook.com")) {
-                    title = "Facebook";
-                } else if (url.includes("twitter.com")) {
-                    title = "Twitter";
-                } else if (url.includes("instagram.com")) {
-                    title = "Instagram";
-                } else if (url.includes("issuu.com")) {
-                    title = "Issuu";
-                } else if (url.includes("vimeo.com")) {
-                    title = "Vimeo Video";
-                } else if (url.includes("ucsb.dserec.com")) {
-                    title = "Recreation";
-                }
-                
-                iframe.attr("title",title);
-            }
-        });
-    });
-
 })(jQuery, Drupal);
