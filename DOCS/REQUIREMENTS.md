@@ -8,6 +8,9 @@ To add someone as a Team Member, you must also be a team member.  Go to the rese
 ### Need to be added to the Drupal site.
 To add someone on the Drupal website, first login on the Drupal DEV site, then go to Manage >> People.  You can use "Add CAS user" to add a user with their UCSB Net ID so that they can login with their UCSB authorization.  Or you can use the other 'Add User' button to add someone with a custom username and password.  For full permissions for editing the website, give them "Administrator" role.
 
+### Be added to the Github Repository
+You will most likely not have to do a lot of work on the Github Repository, but it still may be useful to have the repo so that you can view the DOCS like this one.  Someone must add you to the repo at https://github.com/UCSB-Library-Research-Data-Services/researchdata-ucsb-edu-v01.  For more information on the Github workflow, go to DOCS/DEVS/GITWORKFLOW.md
+
 ## Devs:
 
 ### Make sure to have everything completed for 'Content Editors' listed above.
@@ -15,8 +18,6 @@ To add someone on the Drupal website, first login on the Drupal DEV site, then g
 ### Pantheon SSH Key:
 For your computer to have access to make changes to the website, you must create a SSH Key for your computer with your Pantheon account to give your computer your Pantheon account's permissions.  Tutorial of how this is done: https://docs.pantheon.io/ssh-keys.
 
-### Be added to the Github Repository
-You will most likely not have to do a lot of work on the Github Repository, but it still may be useful to have the repo so that you can view the DOCS like this one.  Someone must add you to the repo at https://github.com/UCSB-Library-Research-Data-Services/researchdata-ucsb-edu-v01.  For more information on the Github workflow, go to DOCS/DEVS/GITWORKFLOW.md
 
 ### Cyberduck
 Download and install Cyberduck: https://cyberduck.io/.  This is the best way to SFTP into the code for the website to make real=time edits and commits.  
