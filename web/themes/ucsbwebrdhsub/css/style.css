@@ -22,6 +22,17 @@
 }
 
 /* Calendar Page */
+
+.localist_minicalendar_minicalendar .localist_minicalendar_today a{
+  background: #febc11 !important;
+}
+
+
+.localist_minicalendar_minicalendar .undefined a{
+  /* For some reason, the current date in the calendar will have class "undefined" after you unselect it.  This is the only way to get the current date cell */
+  background: #d7d7d7;
+}
+
 .localist-widget-hl .event-card header {
   height: 10.5em !important;
 }
