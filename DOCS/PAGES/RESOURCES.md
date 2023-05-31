@@ -4,9 +4,9 @@
 - Go to Manage >> Content >> Add Content >> Resource
  
 
-## Edit/Delete Community:
+## Edit/Delete Resource:
 - Go to Manage >> Content
-- In the filter, you can search for the title of the Community you are looking for.  You should also use the 'Content Type' dropdown and change it to 'Resource'.  
+- In the filter, you can search for the title of the Resource you are looking for.  You should also use the 'Content Type' dropdown and change it to 'Resource'.  
 
 ## Edit the Resource View:
 - Go to Manage >> Structure >> Views >> Resources >> Edit
