@@ -12,7 +12,7 @@
 - Select Open Links in new window
 ### Get the HTML:
 - Click Generate Embed Code and copy the HTML code.
-- Go to the Calendar Page at https://nj-exp5-researchdata-ucsb-edu-v01.pantheonsite.io/calendar and click edit to edit the page
+- Go to the Calendar Page at [ https://nj-exp5-researchdata-ucsb-edu-v01.pantheonsite.io/calendar](https://dev-researchdata-ucsb-edu-v01.pantheonsite.io/calendar) and click edit to edit the page
 - Click on the Main Content Dropdown
 - Click on the dropdown for the Second Blade.
 - Click Edit for that blade
@@ -22,7 +22,7 @@
 - If done correctly, the new calendar should look the same as the old one, but it contains different events depending on which ones you selected with tags.
 
 ## Edit the other content of the Calendar Page:
-- Go to the Calendar Page at https://nj-exp5-researchdata-ucsb-edu-v01.pantheonsite.io/calendar and click edit to edit the page
+- Go to the Calendar Page at [https://nj-exp5-researchdata-ucsb-edu-v01.pantheonsite.io/calendar](https://dev-researchdata-ucsb-edu-v01.pantheonsite.io/calendar) and click edit to edit the page
 - Click on the Main Content Dropdown
 - Click on the dropdown for the First Blade.
 - Click edit on the blade and edit on the column if you want to edit that column.
