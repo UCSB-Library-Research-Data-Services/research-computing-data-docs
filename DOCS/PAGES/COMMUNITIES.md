@@ -13,7 +13,15 @@
 - Go to Manage >> Content
 - In the filter, you can search for the title of the Community you are looking for.  You should also use the 'Content Type' dropdown and change it to 'Community'.  
 
-## Edit DLS Page:  
+## Edit Community Page:  
 - Go to Manage >> Content
 - In the Filter 'Content Type' dropdown, change it to 'Basic page'.  Then the title is 'Communities'  
+- Alternatively, on the Communities page there is an Edit Button
+- The top image is under "Hero"
+- The other content is under Main Content, including the Communities View.
+
+## Edit the Communities View:
+- The view is the list of communities.
+- Structure >> Views >> Communities
+- The view is mostly structured by custom templating and css.  The template file is under code/web/themes/ucsbwebrdhsub/templates/node--community.html.twig and the css is under  code/web/themes/ucsbwebrdhsub/css.  If you are editing the template, then I recommend reading the documentation in DEVS.  
 
