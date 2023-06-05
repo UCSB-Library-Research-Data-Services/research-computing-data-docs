@@ -25,3 +25,5 @@
 - Structure >> Views >> Communities
 - The view is mostly structured by custom templating and css.  The template file is under code/web/themes/ucsbwebrdhsub/templates/node--community.html.twig and the css is under  code/web/themes/ucsbwebrdhsub/css.  If you are editing the template, then I recommend reading the documentation in DEVS.  
 
+## Edit Community Content Type / Node:
+- Structure >> Content Types >> Community
