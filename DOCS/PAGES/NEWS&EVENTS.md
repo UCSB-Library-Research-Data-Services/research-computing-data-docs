@@ -2,7 +2,7 @@
 
 ## Add Content
 - Go to Manage >> Content >> Add Content >> NewsEvents
- 
+- Once the NewsEvent is added, you will be redirected to the Drupal Node.  This is not navigatable by a user on the website, so you can ignore the formatting.  To view it, visit the new News and Events Page.
 
 ## Edit/Delete NewsEvent:
 - Go to Manage >> Content
