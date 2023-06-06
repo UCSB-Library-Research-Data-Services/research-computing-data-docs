@@ -1,4 +1,4 @@
-# Editing the Finder2 Page (Finder2 is a placeholder name for this page)
+# Editing the Data Storage Finder Page 
 
 ### Visit: https://github.com/UCSB-Library-Research-Data-Services/researchdata-ucsb-edu-v01/blob/master/web/modules/CD-finder-master/docs/Finder_module.pdf for pdf documentation.
 
