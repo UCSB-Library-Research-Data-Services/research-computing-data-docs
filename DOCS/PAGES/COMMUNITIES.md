@@ -8,6 +8,7 @@
 - Community-Label: Add 1 or more groups of which the community is open to.  (ie: undergrad, faculty etc.) Click "Add another item" to add multiple.
 - Destionation URL is for the URL of the community.  
 - - Community-Mode: Add if community is hybrid, remote, or in person.  
+- Once the community is added, you will be redirected to the Drupal Node.  This is not navigatable by a user on the website, so you can ignore the formatting.  To view the new community, you can go to the Communities page.
 
 ## Edit/Delete Community:
 - Go to Manage >> Content
