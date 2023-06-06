@@ -33,6 +33,16 @@ When you push a code change, you can push to either the Github remote labeled 'g
 
 Github and Pantheon both have their own ways of creating branches, then merging them into the main code.  Github uses Pull Requests to do this.  In Pantheon, it is with 'multidev.'
 
+## Getting the Error: Run Failed: Deploy to Pantheon Workflow
+You may get an error like this for a few reasons.  One of which is you are pushing to the github repository too quickly, so github is not able to push your changes to Pantheon before you make successive pushes to github. 
+In general, if you encounter an error for this workflow on Github after trying to push your code changes to github, you can fix it with the following:
+- Make sure the Dev site on Pantheon is on Git Development Mode.
+- Set up the two remotes with Github and Pantheon as described how to above.
+- Git pull from both remotes onto your local code.  ie: 'git pull origin master' and then do 'git pull github master'.  This should merge the most recent code from the two different remotes into your local repository.  
+- Resolve any merge conflicts if git tells you there are any.
+- After you made your changes, add the changes to a commit, and push to github with 'git push github master'.  
+- There should not be an error on the next Deploy to Pantheon Workflow, so github should automatically push the code changes to Pantheon's repository.
+
 ## Summary:
 
 Any git pushes to the master branch on the Github Repository will automatically push the changes to the Pantheon dev Repository. ie: git push github master
