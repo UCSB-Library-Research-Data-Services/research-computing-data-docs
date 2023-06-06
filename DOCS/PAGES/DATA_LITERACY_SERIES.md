@@ -11,6 +11,7 @@
 - DLS File: Upload the alternative PDF file if there is one.
 - DLS Date: put the date for the DLS document.
 - Notes: DLS Media PDF is for adding the PDF that will be displayed in the post's thumbnail.  It will ask you to add or select the PDF.  You will first need to add the PDF, then it will appear for you to be able to select it.  Then, the DLS File input is for the alternate PDF file if there is one.  
+- Once the DLS Post is added, you will be redirected to the Drupal Node.  This is not navigatable by a user on the website, so you can ignore the formatting.  To view the new DLS Post, you can go to the DLS page.
 
 ## Edit/Delete DLS Post:
 - Go to Manage >> Content
