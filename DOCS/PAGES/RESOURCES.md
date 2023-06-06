@@ -16,3 +16,6 @@
 Note that the the Resource Page is not a content type of "Basic Page," but it is Drupal's View.  This means you can only add or remove resources from it, but you cannot add text or anything else to the page.  In order to change the Resource Page into a Basic Page instead of a view (ie so you can make edits to it like adding text above the resource list):
 - Create a new content of Basic Page, and add the Resource View to the page.  Then you can add other blades to the page while including the resource view.  
 - Note that the Resource view is currently taking path /resources, so you may have to change this if you want a Basic Page instead.
+
+## Edit Resource Content Type / Node:
+Structure >> Content Types >> Resource

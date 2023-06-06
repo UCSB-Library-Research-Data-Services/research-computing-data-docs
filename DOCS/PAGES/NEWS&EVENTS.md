@@ -16,3 +16,6 @@
 Note that the the News & Event Page is not a content type of "Basic Page," but it is Drupal's View.  This means you can only add or remove content from it, but you cannot add text or anything else to the page.  In order to change the News & Event Page into a Basic Page instead of a view (ie so you can make edits to it like adding text above the News & Event list):
 - Create a new content of Basic Page, and add the News & Event View to the page.  Then you can add other blades to the page while including the News & Event view.  
 - Note that the News & Event view is currently taking path /news-events, so you may have to change this if you want a Basic Page instead.
+
+## Edit NewsEvent Content Type / Node:
+- Structure >> Content Types >> NewsEvent
