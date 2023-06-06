@@ -1,6 +1,6 @@
-# Editing the Data Tool Explorer Page or the Finder2 page - Editing the Finder Module
+# Editing the Data Tool Explorer Page or the Data Storage Finder page - Editing the Finder Module
 
-- To edit the Finder2 page, it is the exact same as the Data Tool Explorer page, but most of the names have '2' at the end.  For example - Data Tool Explorer corresponds to 'finder', but Finder2 corresponds to 'finder2'.
+- To edit the Data Storage Finder page, it is the exact same as the Data Tool Explorer page, but most of the names have '2' at the end.  For example - Data Tool Explorer corresponds to 'finder', but Finder2 corresponds to 'finder2'.
 
 ### Using git: Go to web/modules/CD-Finder-2-master to edit the Finder2 Page, or web/modules/CD-finder-master to edit the Data Tools Explorer Page
 ### With SFTP Connection (Recommended) - Go to code/web/modules/CD-Finder-2-master or code/web/modules/CD-finder-master
@@ -10,6 +10,7 @@
 ## Edit Page content / text / template:
 - In the directory for the module (Data Tools Explorer or Finder2 page), go to /templates/finder(2).html.twig
 - Here is the HTML for the page.  If you are new to HTML, I recommend opening the corresponding web page on your browser (ie visiting the page Data Tools Explorer Page if that's the one you are editing), and see what text in the HTML corresponds to on the page, and change and edit the text.  
+- To change the title, go to /finder{2}.routing.yml.  under finder(2).content: there is a variable called _title.  Change that variable value to your desired title.
 
 ## Edit the Page CSS:
 - Most of the CSS is in /css/finder.css
