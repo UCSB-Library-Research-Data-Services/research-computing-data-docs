@@ -7,5 +7,11 @@ data-literacy-series:
   version: 9
   js:
     js/data-literacy-series.js: {}
+
+calendar:
+  version: 9
+  js:
+    js/calendar.js: {}
+  
   dependencies:
     - core/jquery

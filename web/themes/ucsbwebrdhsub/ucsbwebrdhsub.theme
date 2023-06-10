@@ -29,4 +29,9 @@ function ucsbwebrdhsub_preprocess_page(&$variables){
     $variables['#attached']['library'][] = 'ucsbwebrdhsub/data-literacy-series';
   }
 
+
+  if ($route_name === 'entity.node.canonical' && $node->getTitle() === 'Calendar') {
+    $variables['#attached']['library'][] = 'ucsbwebrdhsub/calendar';
+  }
+
 }
