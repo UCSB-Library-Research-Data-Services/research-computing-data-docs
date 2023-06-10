@@ -278,13 +278,13 @@
           if(yearList.length > 1){
              year = parseInt(yearList[1]);
           } 
-          console.log(year)
+
 
           var month = all_months[position];
           var date = year + "-" + (month < 10 ? "0" : '') + month + '-' + (1 < 10 ? '0' : '') + 1;
-          console.log(date);
+
           var el = findChildWithData(getEl(`localist-minical-${minical_id}`), 'a', 'date', date);
-          console.log(el);
+
           choseDate(el, 31);
           const eventSelectLabel = document.querySelector('#event-selection-label');
 
