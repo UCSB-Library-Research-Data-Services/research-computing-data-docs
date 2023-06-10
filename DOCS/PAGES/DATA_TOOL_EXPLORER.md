@@ -8,10 +8,12 @@
 service later, because this is NOT what is displayed in the Comparison Chart (that renders below the selector table).  
 - Pick all the relevant facet matches.  If you need to make a new one, there is more information on how to do this below later in this tutorial.  The facet matches also do not determine any information that is displayed with the service, but this information is necessary for the filter to work (On the page, this information is for answering all the questions under "Describe your Data").
 - Service Paragraphs: This is for all the information displayed WITH the service (in the Comparison Chart).  Note that if you do not have information for some of the fields, it is okay to leave it empty.  
+- Once you add a new service, you will be redircted to a broken page.  This is expected, and it is caused by Cornell's developers because they did not create a viewable Drupal Node for the Service.  This is fine, because we typically don't make drupal nodes viewable to users anyways.  To view the new service, navigate back to the website and go to the Data Tool Explorer.
 
 ## Edit a new Software/Service
 - Go to Manage >> Content
 - In the filter, you can search for the title of the Service/Software you are looking for.  You should also use the 'Content Type' dropdown and change it to 'Service'. 
+- Click on the Edit button next to the content.  If you click on the Content itself, it will take you to a broken page.  
 
 ## Add a new Facet
 - Go to Manage >> Structure >> Taxonomy >> Facets

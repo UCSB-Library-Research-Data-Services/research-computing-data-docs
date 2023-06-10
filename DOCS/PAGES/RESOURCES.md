@@ -2,6 +2,7 @@
 
 ## Add a Resource
 - Go to Manage >> Content >> Add Content >> Resource
+- Once the Resource  is added, you will be redirected to the Drupal Node.  This is not navigatable by a user on the website, so you can ignore the formatting.  To view the new resource, you can go to the Resources page.
  
 
 ## Edit/Delete Resource:
