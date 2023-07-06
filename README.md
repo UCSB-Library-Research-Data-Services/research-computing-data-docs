@@ -30,3 +30,10 @@ To get started, there are accounts and tools that require registration prior to 
 * You generally do not need to update core in the custom upstream any longer. Pantheon / Composer will update core when there are new versions available, without requiring changes to the upstream.
 
 * Do not attempt to require a different set of modules on different sites. This use case does not work well with Composer, which is designed to manage dependencies for a single application. Instead, include the superset of modules needed in the upstream, and only enable the ones that are needed on any given site.
+<br />
+
+### Project Structure:
+
+* DOCS contains the main directories and files in this repository. You can start with DOCS/DEVS/00_GETTING_STARTED.md file and proceed in numerical order.
+* After going through 'DEVS' files, you may read the DOCS/04_PANTHEON_WORKFLOW.md and DOCS/05_REQUIREMENTS.md.
+* Now move forward to the files in DOCS/PAGES and feel free to explore the rest of the repository.
