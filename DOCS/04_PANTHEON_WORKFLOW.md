@@ -35,4 +35,17 @@ If you are installing a new module on drupal, then make sure that the website is
 ## Status Errors and Updates
 - From time to time there may be errors that show up in "System Status."  Common ones include: Public files directory / Error / Not fully protected and Webform: External libraries / Error / 19 libraries (2 installed; 1 excluded; 16 CDN)
 - These ones are usually harmless, and they are fixed once upstream updates appear for the version of Drupal 9 / UCSB Web Theme (in the Code Tab of Panbtheon).  Once these updates are ready, and after you install them, they will update the drupal core for you and usually fix the System Status errors.  
-- For this reason, you should not have to worry about updating the Drupal Core manually, even if you get an error telling you to do so.  I have had problems before where the drupal would not install the updates correctly.  Usually it is just better to wait for the upstream updates to appear for new version of  Drupal 9 / UCSB Web Theme, and installing those updates will update the Drupal Core for you. 
+- For this reason, you should not have to worry about updating the Drupal Core manually, even if you get an error telling you to do so.  I have had problems before where the drupal would not install the updates correctly.  Usually it is just better to wait for the upstream updates to appear for new version of  Drupal 9 / UCSB Web Theme, and installing those updates will update the Drupal Core for you.
+  
+## Visual Studio Code
+- In terminal of vs code, clone the git to your local environment (if it's from github: ; if it's from patheon:)
+- Do the change you need in vs code
+- cd "file_name" (open the file)
+- git checkout -b "branch_name" (go to the branch to do the modify work. need to make sure that it work well in branch, and then merge it to the master one later to be safe)
+- save the files (ctrl S)
+- git add . (save it)
+- git commit -m "the_message_u_wanna_commit"
+- git push origin "branch_name"
+- now go to pantheon website, click dev, click merge, and then merge
+
+- (not done yet btw)
