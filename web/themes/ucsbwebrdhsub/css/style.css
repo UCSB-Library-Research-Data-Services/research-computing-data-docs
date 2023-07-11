@@ -176,20 +176,6 @@ table.localist_minicalendar_minicalendar caption{
 /* Communities Page */
 /* *************************************** */
 
-.view-communities-list .views-row:nth-of-type(odd) .views-col.col-1 .community-container,
-.view-communities-list .views-row:nth-of-type(even) .views-col.col-2 .community-container
-{
-  background-color: #003660;
-  color: white;
-}
-.view-communities-list .views-row:nth-of-type(odd) .views-col.col-2 .community-container,
-.view-communities-list .views-row:nth-of-type(even) .views-col.col-1 .community-container
-{
-  background-color: #febc11;
-  color: black;
-  font-weight: 600;
-}
-
 .view-communities-list .views-view-grid .views-row {
   float:none !important;
   max-width: 1230px;
@@ -204,32 +190,56 @@ table.localist_minicalendar_minicalendar caption{
   padding-left: 30px;
 }
 
-[about |= "/communities"] .grid-item--height1{
-  height: 150px !important;
-}
-
-[about |="/communities"] .background-color-003660:hover {
-  background-color: #215985 !important;
-}
-
-[about |="/communities"] .background-color-febc11:hover {
-  background-color: #ce9d22 !important;
-}
-
 .community-content{
   height: 90%;
 }
 
 .community-container {
+  perspective: 1000px;
   min-height: 465px;
-  position:relative;
+  position: relative;
   background-size: cover;
   background-position: center;
   padding: 45px 0px 125px 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
-  /* height: 615px; */
   margin: 8px;
+}
+
+
+/* card itself */
+.community-container .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* front of the card */
+.community-container .card .card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #09847A;
+  color: #FFFFFF;
+}
+
+/* back of the card */
+.community-container .card .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  background-color: #047C91;
+  color: #FFFFFF;
+}
+
+/* hover effect */
+.community-container .card:hover {
+  transform: rotateY(180deg);
 }
 
 .community-inner {
@@ -316,7 +326,6 @@ table.localist_minicalendar_minicalendar caption{
   border-radius: 5px;
   margin-bottom: 30px;
   margin-left: -5px;
-
 }
 
 @media (max-width: 992px) {
@@ -342,7 +351,6 @@ table.localist_minicalendar_minicalendar caption{
     max-height: 230px;
   }
 }
-
 
 
 /* Resource List Page:  (And for News & Events List Page as it borrows some of these styles).*/
