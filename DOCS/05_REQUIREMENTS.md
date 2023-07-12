@@ -19,11 +19,14 @@ You will most likely not have to do a lot of work on the Github Repository, but 
 For your computer to have access to make changes to the website, you must create a SSH Key for your computer with your Pantheon account to give your computer your Pantheon account's permissions.  Tutorial of how this is done: https://docs.pantheon.io/ssh-keys.
 
 
-### Cyberduck
+### Cyberduck and SFTP
 Download and install Cyberduck: https://cyberduck.io/.  This is the best way to SFTP into the code for the website to make real=time edits and commits. In addition, if you have trouble using your password while connecting Pantheon to your local files, that might be because of your password. If you were using your UCSBNetId or Google account to log in to Pantheon, you might not have had your own Pantheon's password while registering because you were using your UCSBNetId SSO. If you also run into this situation, just go to personal setting => security => forgot my password, and then get a link to your email to set the new password. You can now use your password to connect to cyberduck now.
 
+### Visual Studio Code and SFTP
+Download and install Visual Studio Code. For extensions, also install SFTP. You might find these links helpful: https://docs.pantheon.io/guides/sftp/vscode-sftp. https://docs.pantheon.io/guides/sftp/sftp-development#commit-sftp-changes. Following the instructions from the links should be stright forward. Now make a little change to check if the connection works well before you move on to the coding or debugging. Once it works, everytime you simply save the changed in vs code, you should be able to see the change in Pantheon's website.
+
 ### Install your favorite text editor
-I recommend VSCode.  Cyberduck will allow you to open files live on the website into your chosen text editor.  You will need this for mostly making CSS styles.
+I recommend VSCode. Cyberduck will allow you to open files live on the website into your chosen text editor. You will need this for mostly making CSS styles.
 
 ### Optional:
 - Terminus is Pantheon's tool for facilitating commands that you can use for managing sites on Pantheon.  It is mostly helpful for installing modules and plugins for Drupal and Pantheon.  Docs: https://docs.pantheon.io/terminus.  An important note is that the only compatible operating systems are: MacOS; Windows 10 – WSL 2 Ubuntu 20.0; Ubuntu 20.0 – this would include Ubuntu under Docker or VirtualBox.  In addition, installing Terminus also requires installing PHP, Composer, and Git.
