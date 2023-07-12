@@ -20,7 +20,7 @@ For your computer to have access to make changes to the website, you must create
 
 
 ### Cyberduck
-Download and install Cyberduck: https://cyberduck.io/.  This is the best way to SFTP into the code for the website to make real=time edits and commits.  
+Download and install Cyberduck: https://cyberduck.io/.  This is the best way to SFTP into the code for the website to make real=time edits and commits. In addition, if you have trouble using your password while connecting Pantheon to your local files, that might because of your password. If you were using UCSBNetId/Google account to log in to Pantheon, you might not have your own Pantheon's password while registrating because you were using your UCSBNetId SSO. If you also run into this situation, just go to personal setting => security => forgopt my password, and then get a link to your email to set the new password. You can now use your password to connect to cyberduck now.
 
 ### Install your favorite text editor
 I recommend VSCode.  Cyberduck will allow you to open files live on the website into your chosen text editor.  You will need this for mostly making CSS styles.
