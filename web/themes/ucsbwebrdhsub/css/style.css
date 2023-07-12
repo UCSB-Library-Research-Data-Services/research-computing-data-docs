@@ -213,6 +213,7 @@ table.localist_minicalendar_minicalendar caption{
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  transform-origin: center; /* Add this */
 }
 
 /* front of the card */
@@ -222,7 +223,6 @@ table.localist_minicalendar_minicalendar caption{
   height: 100%;
   backface-visibility: hidden;
   background-color: #047b90 !important;
- /* !important is to check if it override with other style */
   color: #ffffff; 
 }
 
@@ -232,7 +232,6 @@ table.localist_minicalendar_minicalendar caption{
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  transform: rotateY(180deg);
   background-color: #09847A !important;
   color: #ffffff;
 }
@@ -240,8 +239,8 @@ table.localist_minicalendar_minicalendar caption{
 /* hover effect */
 .community-container .card:hover {
   transform: rotateY(180deg);
-  transform-origin: center;
 }
+
 
 .community-inner {
   justify-content: center;
