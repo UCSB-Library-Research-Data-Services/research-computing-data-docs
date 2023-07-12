@@ -195,7 +195,6 @@ table.localist_minicalendar_minicalendar caption{
 }
 
 .community-container {
-  perspective: 1000px;
   min-height: 465px;
   position: relative;
   background-size: cover;
@@ -222,8 +221,9 @@ table.localist_minicalendar_minicalendar caption{
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background-color: #047b90;
-  color: #FFFFFF;
+  background-color: #047b90 !important;
+ /* !important is to check if it override with other style */
+  color: #ffffff; 
 }
 
 /* back of the card */
@@ -233,13 +233,14 @@ table.localist_minicalendar_minicalendar caption{
   height: 100%;
   backface-visibility: hidden;
   transform: rotateY(180deg);
-  background-color: #09847A;
-  color: #FFFFFF;
+  background-color: #09847A !important;
+  color: #ffffff;
 }
 
 /* hover effect */
 .community-container .card:hover {
   transform: rotateY(180deg);
+  transform-origin: center;
 }
 
 .community-inner {
