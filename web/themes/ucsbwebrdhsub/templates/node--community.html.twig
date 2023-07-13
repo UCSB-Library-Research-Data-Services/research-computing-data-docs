@@ -1,4 +1,3 @@
-@@ -1,76 +1,76 @@
 {#
 /**
  * @file
@@ -68,52 +67,73 @@
 #}
 {% set background_color = node.field_background_color.color ? node.field_background_color.color : ''%}
 {% set text_color = node.field_text_color.color %}
-{% set text_color_style =  'color: #'~ text_color ~';'%}
 {# {% set text_color_style =  'color: #'~ text_color ~';'%} #}
 
-
-{% set style = 'background-color: #' ~ background_color ~'; color: #'~ text_color ~';' %}
-{# background-color: #' ~ background_color ~';  #}
-{# {% set style = 'color: #'~ text_color ~';' %} #}
+background-color: #' ~ background_color ~';  
+{% set style = 'color: #'~ text_color ~';' %} 
 
 
 {# How to use PHP For statement within Twig: #}
-@@ -100,7 +100,7 @@
+{% if content.field_community_label[0] %}
+  {% set labelList = content.field_community_label[0]['#title'] %}
+  {% for key, item in content.field_community_label if (key|first != '#' and key != 0) %}
+    {% set labelList = labelList ~ ', ' ~ item['#title'] %}
+  {% endfor %}
+{% endif %}
 
-{# Example of using the HTML with help of PHP and Drupal values to display each of the content's fields: #}
+
+{# Drupal has default classes that are for displaying the content type.  We get these with the following: #}
+{%
+  set classes = [
+    node.bundle|clean_class,
+    node.isPromoted() ? 'is-promoted',
+    node.isSticky() ? 'is-sticky',
+    not node.isPublished() ? 'is-unpublished',
+    view_mode ? view_mode|clean_class,
+    'clearfix',
+    white_text ? 'white-text',
+    node.field_top_padding.value ? 'top-padding-' ~ node.field_top_padding.value,
+    'community-container'
+  ]
+%}
+
+
 {% if view_mode == 'default' or view_mode == 'full' %}
-  <div{{ attributes.addClass(classes)}} {{attributes.setAttribute("style",style)}}>
   <div{{ attributes.addClass(classes)}} >
-
-      <div class="inner community-inner">
-      <div class="community-content">
-        <div class='community-title' >
-          <center>{{ content.field_displayed_title_logo.0 }} </center>
+    <div class="card">
+      <div class="card-front">
+        <div class="inner community-inner">
+          <div class="community-content">
+            <div class='community-title'>
+              <center>{{ content.field_displayed_title_logo.0 }} </center>
+            </div>
+          </div>
         </div>
-        <div class='community-body' style="{{ text_color_style }}">
-          {{ content.body }}
-           
+      </div>
+      <div class="card-back">
+        <div class="inner community-inner">
+          <div class="community-content">
+            <div class='community-body' style="{{ text_color_style }}">
+              {{ content.body }}
+            </div>
+            <span class="community-footer">
+              <a class='btn btn-tertiary btn-sm community-btn' role='button' target='_blank'  rel='noreferrer' href={{ content.field_url.0['#url'] }}>Visit Website</a>
+              {% if content.field_community_mode[0] %}
+                <h6>
+                <b>MODE: </b>
+                  {{content.field_community_mode[0]['#title']}}
+                </h6>
+              {% endif %}
+              {% if content.field_community_label[0] %}
+                <h6>
+                <b>OPEN TO: </b>
+                  {{labelList}}
+                </h6>
+              {% endif %}
+            </span>
+          </div>
         </div>
-      
-    
-    <span class="community-footer">
-    <a class='btn btn-tertiary btn-sm community-btn' role='button' target='_blank'  rel='noreferrer' href={{ content.field_url.0['#url'] }}>Visit Website</a>
-    {% if content.field_community_mode[0] %}
-          <h6>
-          <b>MODE: </b>
-            {{content.field_community_mode[0]['#title']}}
-          </h6>
-    {% endif %}
-    {% if content.field_community_label[0] %}
-          <h6>
-          <b>OPEN TO: </b>
-            {{labelList}}
-          </h6>
-    {% endif %}
-    
-    </span>
+      </div>
     </div>
-    </div>
-     
   </div>
 {% endif %}
