@@ -215,7 +215,7 @@ table.localist_minicalendar_minicalendar caption{
   transition: transform 2s; 
   transform-style: preserve-3d;
   background-color: #047b90 !important;
-  /* transform-origin: center;  */
+  transform-origin: center; 
 }
 
 /* front of the card */
@@ -274,9 +274,17 @@ table.localist_minicalendar_minicalendar caption{
   flex-direction: column-reverse;
 }
 
+.community-inner,
+.community-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* will align the items vertically */
+}
+
+
 .community-column {
   flex: 50%;
- 
 }
 
 .community-column-right{
