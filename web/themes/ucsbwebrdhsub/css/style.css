@@ -319,8 +319,8 @@ table.localist_minicalendar_minicalendar caption{
 }
 
 .community-footer{
-    position: absolute;
-    bottom: 30px;
+    /* position: absolute;
+    bottom: 30px; */
 }
 
 .community-footer h6{
