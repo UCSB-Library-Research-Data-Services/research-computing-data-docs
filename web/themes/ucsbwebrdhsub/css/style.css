@@ -1,4 +1,3 @@
-@@ -1,27 +1,38 @@
 /* Changes style of exposed form filter buttons to be UCSB themed. */
 .form-actions button,
 .localist_minicalendar_nav a
@@ -15,6 +14,7 @@
   color: #fff;
   text-align: center;
 }
+
 .form-actions button:hover,
 .localist_minicalendar_nav a:hover 
 {
@@ -36,17 +36,23 @@
 .localist-widget-hl .event-card header {
   height: 10.5em !important;
 }
+
 .localist-widget-hl .event-card{
   font-size: 12px !important;
   margin-bottom: 0 !important;
   height: 22em !important;
+
 }
+
 .localist-widget-hl .event-list .event-card .start-time.location{
   display: none;
 }
+
 .localist-widget-hl .event-list .event-overview .content{
   padding: 10px 5px 0px !important;
 }
+
+
 .localist_minicalendar_minicalendar td,
 .localist_minicalendar_minicalendar th
 {
@@ -56,11 +62,13 @@
 .localist_minicalendar_minicalendar th {
   font-size: 14px !important;
 }
+
 .localist_minicalendar .localist_minicalendar_page_heading h1{
   background-color: #003660;
   color: white !important;
   font-size: 20px !important;
 }
+
 .localist_minicalendar .localist_minicalendar_pager a{
   background-color: #febc11 !important;
   padding-bottom: 4px !important;
@@ -70,33 +78,42 @@
 .localist_minicalendar .localist_minicalendar_pager a.disabled{
   background-color: #ccc !important;
 }
+
 .localist_minicalendar .localist_minicalendar_pager a:hover {
   background-color: #ce9d22 !important;
 }
+
 table.localist_minicalendar_minicalendar caption{
   padding-left: 10px;
   background-color: #003660;
   color: white !important;
 }
+
 .localist_minicalendar_events a.cover{
   position: absolute !important;
   border-bottom: none !important;
 }
+
 .localist_minicalendar_nav {
   display: flex;
   justify-content: space-around;
 }
+
 .localist_minicalendar_nav a {
   color: white !important;
+
 }
+
 .localist_minicalendar_nav {
   margin-bottom: 30px;
   margin-top: 20px;
 }
+
 .localist_minicalendar_minicalendar{
   /* width: 520px !important; */
   height: 300px;
 }
+
 .localist_minicalendar_minicalendar a{
   color: inherit !important;
   border-bottom: none !important;
@@ -104,46 +121,61 @@ table.localist_minicalendar_minicalendar caption{
   align-items: center;
   height: 100% !important;
   justify-content: center;
+
 }
+
 .localist_minicalendar table{
   color: inherit !important;
   border-bottom: none !important;
   table-layout: fixed;
 }
+
 .localist_minicalendar table tbody td{
   border: 1px solid white;
   padding: 0 !important;
 }
+
 .localist-widget-hl .event-title{
   font-size: 10px !important;
 }
+
 .localist-widget-hl .event-card .content p {
   overflow: inherit !important;
 }
+
 .localist-widget-hl .event-list{
   clear: none !important;
 }
+
 .localist-widget-hl .event-list li{
   clear: none !important;
 }
+
 @media (min-width: 62.5em) {
   .localist_minicalendar{
     width: 400px;
     float: right;
     margin-top: -20px;
   }
+
   .localist-widget-hl .event-list>li {
     width: 18.3% !important;
   }
+
   .localist-widget-hl .event-list>li{
     margin-right: 1.666667% !important;
   }
+
   .localist-widget-hl .event-list>li:nth-child(7){
     clear: left !important;
   }
+
 }
+
+
 /* Communities Page */
 /* *************************************** */
+
 .view-communities-list .views-row:nth-of-type(odd) .views-col.col-1 .community-container,
 .view-communities-list .views-row:nth-of-type(even) .views-col.col-2 .community-container
 {
@@ -157,30 +189,37 @@ table.localist_minicalendar_minicalendar caption{
   color: black;
   font-weight: 600;
 }
+
 .view-communities-list .views-view-grid .views-row {
   float:none !important;
   max-width: 1230px;
   margin-left: auto;
   margin-right: auto;
 }
+
 #views-exposed-form-communities-list-block-1 .form--inline{
   max-width: 1230px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 30px;
 }
+
 [about |= "/communities"] .grid-item--height1{
   height: 150px !important;
 }
+
 [about |="/communities"] .background-color-003660:hover {
   background-color: #215985 !important;
 }
+
 [about |="/communities"] .background-color-febc11:hover {
   background-color: #ce9d22 !important;
 }
+
 .community-content{
   height: 90%;
 }
+
 .community-container {
   min-height: 465px;
   position:relative;
@@ -188,9 +227,11 @@ table.localist_minicalendar_minicalendar caption{
   background-position: center;
   padding: 45px 0px 125px 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
   /* height: 615px; */
   margin: 8px;
 }
+
 .community-inner {
   justify-content: center;
   padding: 0 30px;
@@ -198,28 +239,34 @@ table.localist_minicalendar_minicalendar caption{
   margin-left: auto;
   margin-right: auto;
 }
+
 .community-inner-cols {
   display: flex;
   flex-direction: column-reverse;
 }
+
 .community-column {
   flex: 50%;
  
 }
+
 .community-column-right{
    display: flex;
   justify-content: center;
 }
+
 .community-title{
   height: 64px;
   margin-bottom: 10px;
 }
+
 .community-title p{
   font-size: 27px;
   font-weight: 600;
   letter-spacing: -0.1pt;
   font-family: Avenir, "Century Gothic", sans-serif;
 }
+
 .community-title h1,
 .community-title h2,
 .community-title h3,
@@ -230,6 +277,7 @@ table.localist_minicalendar_minicalendar caption{
   margin: 0;
   color: unset;
 }
+
 .community-body h1,
 .community-body h2,
 .community-body h3,
@@ -239,30 +287,40 @@ table.localist_minicalendar_minicalendar caption{
 .community-body p {
   color: unset;
 }
+
+
+
 .community-body p{
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 10px;
 }
+
 .community-image{
   object-fit: contain;
   max-height: 200px;
 }
+
 .community-footer{
     position: absolute;
     bottom: 30px;
 }
+
 .community-footer h6{
   color: unset;
 }
+
 .community-btn{
   background-color: azure;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   border-radius: 5px;
   margin-bottom: 30px;
   margin-left: -5px;
+
 }
+
 @media (max-width: 992px) {
+
   .view-communities-list .views-view-grid .views-col{
     width: 100% !important;
   }
@@ -270,6 +328,7 @@ table.localist_minicalendar_minicalendar caption{
       font-size: 14px;
       line-height: 18px;
     }
+
   .community-container {
     height: fit-content !important;
     padding: 20px 0 180px 0;
@@ -278,10 +337,14 @@ table.localist_minicalendar_minicalendar caption{
   .community-inner {
     padding: 0 8px;
   }
+
   .community-image {
     max-height: 230px;
   }
 }
+
+
+
 /* Resource List Page:  (And for News & Events List Page as it borrows some of these styles).*/
 /* *************************************** */
 @media (min-width: 992px) {
@@ -289,27 +352,37 @@ table.localist_minicalendar_minicalendar caption{
     padding-right: 16px;
   }
 }
+
 #edit-sort-bef-combine {
   width: 140px;
 }
+
+
 .resource-title-link h2:hover {
   color: #005aa3;
   position: relative;
   text-decoration: underline #005aa3;
   /* border-bottom: 1px solid #005aa3; */
 }
+
+
 /* DLS List Page: */
 .views-element-container .contextual-region.view-data-literacy-series-view {
   margin-bottom: 40px;
 }
+
+
 /* Get rid of pdf file name under the thumbnail in the DLS View */
 .dls-media-thumbnail>div:first-of-type>article:first-of-type>div:last-of-type {
   display: none;
 }
+
 .dls-media-thumbnail img:hover {
   filter: drop-shadow(6px 3px 2px #484a63);
 }
+
 /* Fix margin on  data literacy series page*/
+
 .paragraph--type--view .view.view-data-literacy-series-view {
   box-sizing: border-box;
   margin-left: auto;
@@ -318,59 +391,81 @@ table.localist_minicalendar_minicalendar caption{
   padding-left: 30px;
   padding-right: 30px;
 }
+
 .dls-item-title {
   margin: 0 0 10px 0;
 }
+
 .dls-item-body {
   font-size: 14px;
   line-height: 0px;
 }
+
 .dls-item-body>p {
   line-height: 18px;
 }
+
 @media (max-width: 1200px) {
   .dls-item-tags {
     font-size: 11px;
   }
+
   .dls-item-title {
     font-size: 18px;
     line-height: 22px;
   }
+
 }
+
 @media (max-width: 992px) {
+
+
   .dls-item-body>p {
     line-height: 16px;
   }
 }
+
+
 /* For DLS Filter: */
+
 .view-data-literacy-series-view .bef--secondary {
   clear: right !important;
   float: right !important;
   width: min-content;
 }
+
+
 .view-data-literacy-series-view .bef-exposed-form .form--inline>.form-item {
   float: none;
 }
+
+
 @media (min-width: 992px) {
   .view-data-literacy-series-view .bef-exposed-form .form--inline>.form-item {
     margin-right: 8px;
   }
 }
+
 .view-data-literacy-series-view .bef--secondary>.panel-heading>a {
   width: max-content;
 }
+
 .view-data-literacy-series-view .form-actions {
   clear: both;
   display: block;
 }
+
+
 #edit-dls-tags-advanced-id {
   width: 400px;
 }
+
 @media (max-width: 992px) {
   #edit-dls-tags-advanced-id {
     width: 250px;
   }
 }
+
 .view-data-literacy-series-view .previous>a,
 .view-data-literacy-series-view .next>a {
   box-shadow: 5px 3px 3px grey;
@@ -380,12 +475,15 @@ table.localist_minicalendar_minicalendar caption{
   color: white !important;
   border: none !important;
   padding: 7px 16px !important;
+
 }
+
 .view-data-literacy-series-view .previous>a:hover,
 .view-data-literacy-series-view .next>a:hover {
   color: white !important;
   background: #369;
 }
+
 .view-footer {
   display: flex;
   justify-content: center;
