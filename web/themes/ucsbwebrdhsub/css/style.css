@@ -210,7 +210,7 @@ table.localist_minicalendar_minicalendar caption{
 .community-container .card {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100%; 
   text-align: center;
   transition: transform 2s; 
   transform-style: preserve-3d;
@@ -218,48 +218,32 @@ table.localist_minicalendar_minicalendar caption{
   transform-origin: center; 
 }
 
-/* front of the card */
-.community-container .card .card-front {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  background-color: #047b90 !important;
-  color: black; 
-  /* change it to black for testing */
-  /* color: #ffffff;  */
-  
-}
-
-/* back of the card */
+.community-container .card .card-front,
 .community-container .card .card-back {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100%; 
+  height: 100%; 
   backface-visibility: hidden;
-  background-color: #09847A !important;
-  color:blue;
-  /* change it to blue for testing */
-  /* color: #ffffff; */
-  transform: rotateY(180deg); /* flip the back side initially */
-}
-
-.card-front, .card-back {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.card-content {
-  max-width: 90%; 
-  text-align: center; 
+.community-container .card .card-back {
+  background-color: #09847A !important;
+  color:blue;
+  transform: rotateY(180deg); /* flip the back side initially */
 }
 
-/* hover effect */
 .community-container .card:hover {
   transform: rotateY(180deg);
 }
 
+.card-content {
+  max-width: 90%; 
+  height: auto;
+  text-align: center; 
+}
 
 .community-inner {
   justify-content: center;
