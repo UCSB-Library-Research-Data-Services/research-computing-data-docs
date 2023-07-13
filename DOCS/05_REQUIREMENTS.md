@@ -40,4 +40,5 @@ I recommend VSCode. Cyberduck will allow you to open files live on the website i
 
 ### Optional:
 - Terminus is Pantheon's tool for facilitating commands that you can use for managing sites on Pantheon.  It is mostly helpful for installing modules and plugins for Drupal and Pantheon.  Docs: https://docs.pantheon.io/terminus.  An important note is that the only compatible operating systems are: MacOS; Windows 10 – WSL 2 Ubuntu 20.0; Ubuntu 20.0 – this would include Ubuntu under Docker or VirtualBox.  In addition, installing Terminus also requires installing PHP, Composer, and Git.
+- For debugging, in addition to vscode, you can also debug the css with the help from chrome browser direcly. Hover to the part you wanna check, right click and go to inspect. For details, visit https://developer.chrome.com/docs/devtools/overview/. Happy coding and good luck!
 
