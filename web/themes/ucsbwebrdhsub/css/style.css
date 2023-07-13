@@ -202,6 +202,7 @@ table.localist_minicalendar_minicalendar caption{
   padding: 45px 0px 125px 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin: 8px;
+  overflow: hidden;
 }
 
 
@@ -284,6 +285,9 @@ table.localist_minicalendar_minicalendar caption{
 }
 
 .community-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 64px;
   margin-bottom: 10px;
 }
@@ -361,6 +365,7 @@ table.localist_minicalendar_minicalendar caption{
     padding: 20px 0 180px 0;
     min-height: 300px;
   }
+
   .community-inner {
     padding: 0 8px;
   }
