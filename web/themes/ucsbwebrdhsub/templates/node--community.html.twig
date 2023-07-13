@@ -1,337 +1,139 @@
-/* Changes style of exposed form filter buttons to be UCSB themed. */
-.form-actions button {
-  padding: 10px 18px;
-  font-size: 15px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  font-family: Hind, sans-serif;
-  border: 0 none;
-  background: #2280bf;
-  color: #fff;
-  text-align: center;
-}
+{#
+/**
+ * @file
+ * Theme override to display a node.
+ *
+ * Available variables:
+ * - node: The node entity with limited access to object properties and methods.
+     Only "getter" methods (method names starting with "get", "has", or "is")
+     and a few common methods such as "id" and "label" are available. Calling
+     other methods (such as node.delete) will result in an exception.
+ * - label: The title of the node.
+ * - content: All node items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - author_picture: The node author user entity, rendered using the "compact"
+ *   view mode.
+ * - metadata: Metadata for this node.
+ * - date: Themed creation date field.
+ * - author_name: Themed author name field.
+ * - url: Direct URL of the current node.
+ * - display_submitted: Whether submission information should be displayed.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - node: The current template type (also known as a "theming hook").
+ *   - node--type-[type]: The current node type. For example, if the node is an
+ *     "Article" it would result in "node--type-article". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - node--view-mode-[view_mode]: The View Mode of the node; for example, a
+ *     teaser would result in: "node--view-mode-teaser", and
+ *     full: "node--view-mode-full".
+ *   The following are controlled through the node publishing options.
+ *   - node--promoted: Appears on nodes promoted to the front page.
+ *   - node--sticky: Appears on nodes ordered above other non-sticky nodes in
+ *     teaser listings.
+ *   - node--unpublished: Appears on unpublished nodes visible only to site
+ *     admins.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - content_attributes: Same as attributes, except applied to the main
+ *   content tag that appears in the template.
+ * - author_attributes: Same as attributes, except applied to the author of
+ *   the node tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ * - view_mode: View mode; for example, "teaser" or "full".
+ * - teaser: Flag for the teaser state. Will be true if view_mode is 'teaser'.
+ * - page: Flag for the full page state. Will be true if view_mode is 'full'.
+ * - readmore: Flag for more state. Will be true if the teaser content of the
+ *   node cannot hold the main body content.
+ * - logged_in: Flag for authenticated user status. Will be true when the
+ *   current user is a logged-in member.
+ * - is_admin: Flag for admin user status. Will be true when the current user
+ *   is an administrator.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_node()
+ *
+ * @todo Remove the id attribute (or make it a class), because if that gets
+ *   rendered twice on a page this is invalid CSS for example: two lists
+ *   in different view modes.
+ */
+#}
+{% set background_color = node.field_background_color.color ? node.field_background_color.color : ''%}
+{% set text_color = node.field_text_color.color %}
+{# {% set text_color_style =  'color: #'~ text_color ~';'%} #}
+
+{# background-color: #' ~ background_color ~';  #}
+{# {% set style = 'color: #'~ text_color ~';' %} #}
+
+
+{# How to use PHP For statement within Twig: #}
+{% if content.field_community_label[0] %}
+  {% set labelList = content.field_community_label[0]['#title'] %}
+  {% for key, item in content.field_community_label if (key|first != '#' and key != 0) %}
+    {% set labelList = labelList ~ ', ' ~ item['#title'] %}
+  {% endfor %}
+{% endif %}
+
+
+{# Drupal has default classes that are for displaying the content type.  We get these with the following: #}
+{%
+  set classes = [
+    node.bundle|clean_class,
+    node.isPromoted() ? 'is-promoted',
+    node.isSticky() ? 'is-sticky',
+    not node.isPublished() ? 'is-unpublished',
+    view_mode ? view_mode|clean_class,
+    'clearfix',
+    white_text ? 'white-text',
+    node.field_top_padding.value ? 'top-padding-' ~ node.field_top_padding.value,
+    'community-container'
+  ]
+%}
+
+
+{# Example of using the HTML with help of PHP and Drupal values to display each of the content's fields: #}
+{% if view_mode == 'default' or view_mode == 'full' %}
+  <div{{ attributes.addClass(classes)}} >
+
+      <div class="inner community-inner">
+      <div class="community-content">
+        <div class='community-title' >
+          <center>{{ content.field_displayed_title_logo.0 }} </center>
+        </div>
+        <div class='community-body' style="{{ text_color_style }}">
+          {{ content.body }}
+           
+        </div>
+
+      
+    
+    <span class="community-footer">
+    <a class='btn btn-tertiary btn-sm community-btn' role='button' target='_blank'  rel='noreferrer' href={{ content.field_url.0['#url'] }}>Visit Website</a>
+    {% if content.field_community_mode[0] %}
+          <h6>
+          <b>MODE: </b>
+            {{content.field_community_mode[0]['#title']}}
+          </h6>
+    {% endif %}
+    {% if content.field_community_label[0] %}
+          <h6>
+          <b>OPEN TO: </b>
+            {{labelList}}
+          </h6>
+    {% endif %}
+    
+    </span>
+    </div>
+    </div>
+     
+  </div>
+{% endif %}
 
-.form-actions button:hover {
-  background: #369;
-}
 
-
-
-/* Communities Page */
-/* *************************************** */
-
-.view-communities-list .views-row:nth-of-type(odd) .views-col.col-1 .community-container,
-.view-communities-list .views-row:nth-of-type(even) .views-col.col-2 .community-container
-{
-  background-color: #003660;
-  color: white;
-}
-.view-communities-list .views-row:nth-of-type(odd) .views-col.col-2 .community-container,
-.view-communities-list .views-row:nth-of-type(even) .views-col.col-1 .community-container
-{
-  background-color: #febc11;
-  color: black;
-  font-weight: 600;
-}
-
-.view-communities-list .views-view-grid .views-row {
-  float:none !important;
-  max-width: 1230px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#views-exposed-form-communities-list-block-1 .form--inline{
-  max-width: 1230px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 30px;
-}
-
-[about |= "/communities"] .grid-item--height1{
-  height: 150px !important;
-}
-
-[about |="/communities"] .background-color-003660:hover {
-  background-color: #215985 !important;
-}
-
-[about |="/communities"] .background-color-febc11:hover {
-  background-color: #ce9d22 !important;
-}
-
-.community-content{
-  height: 90%;
-}
-
-.community-container {
-  min-height: 465px;
-  position:relative;
-  background-size: cover;
-  background-position: center;
-  padding: 45px 0px 125px 0;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
-  /* height: 615px; */
-  margin: 8px;
-}
-
-.community-inner {
-  justify-content: center;
-  padding: 0 30px;
-  max-width: 1230px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.community-inner-cols {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.community-column {
-  flex: 50%;
- 
-}
-
-.community-column-right{
-   display: flex;
-  justify-content: center;
-}
-
-.community-title{
-  height: 64px;
-  margin-bottom: 10px;
-}
-
-.community-title p{
-  font-size: 27px;
-  font-weight: 600;
-  letter-spacing: -0.1pt;
-  font-family: Avenir, "Century Gothic", sans-serif;
-}
-
-.community-title h1,
-.community-title h2,
-.community-title h3,
-.community-title h4,
-.community-title h5,
-.community-title h6,
-.community-title p {
-  margin: 0;
-  color: unset;
-}
-
-.community-body h1,
-.community-body h2,
-.community-body h3,
-.community-body h4,
-.community-body h5,
-.community-body h6,
-.community-body p {
-  color: unset;
-}
-
-
-
-.community-body p{
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 10px;
-}
-
-.community-image{
-  object-fit: contain;
-  max-height: 200px;
-}
-
-.community-footer{
-    position: absolute;
-    bottom: 30px;
-}
-
-.community-footer h6{
-  color: unset;
-}
-
-.community-btn{
-  background-color: azure;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-  border-radius: 5px;
-  margin-bottom: 30px;
-  margin-left: -5px;
-
-}
-
-@media (max-width: 992px) {
-
-  .view-communities-list .views-view-grid .views-col{
-    width: 100% !important;
-  }
-  .community-body p {
-      font-size: 14px;
-      line-height: 18px;
-    }
-
-  .community-container {
-    height: fit-content !important;
-    padding: 20px 0 180px 0;
-    min-height: 300px;
-  }
-  .community-inner {
-    padding: 0 8px;
-  }
-
-  .community-image {
-    max-height: 230px;
-  }
-}
-
-
-
-/* Resource List Page: */
-/* *************************************** */
-@media (min-width: 992px) {
-  .resource-image-view.col-md-4 {
-    padding-right: 16px;
-  }
-}
-
-#edit-sort-bef-combine {
-  width: 140px;
-}
-
-
-.resource-title-link h2:hover {
-  color: #005aa3;
-  position: relative;
-  text-decoration: underline #005aa3;
-  /* border-bottom: 1px solid #005aa3; */
-}
-
-
-/* DLS List Page: */
-.views-element-container .contextual-region.view-data-literacy-series-view {
-  margin-bottom: 40px;
-}
-
-
-/* Get rid of pdf file name under the thumbnail in the DLS View */
-.dls-media-thumbnail>div:first-of-type>article:first-of-type>div:last-of-type {
-  display: none;
-}
-
-.dls-media-thumbnail img:hover {
-  filter: drop-shadow(6px 3px 2px #484a63);
-}
-
-/* Fix margin on  data literacy series page*/
-
-.paragraph--type--view .view.view-data-literacy-series-view {
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1230px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.dls-item-title {
-  margin: 0 0 10px 0;
-}
-
-.dls-item-body {
-  font-size: 14px;
-  line-height: 0px;
-}
-
-.dls-item-body>p {
-  line-height: 18px;
-}
-
-@media (max-width: 1200px) {
-  .dls-item-tags {
-    font-size: 11px;
-  }
-
-  .dls-item-title {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-}
-
-@media (max-width: 992px) {
-
-
-  .dls-item-body>p {
-    line-height: 16px;
-  }
-}
-
-
-/* For DLS Filter: */
-
-.view-data-literacy-series-view .bef--secondary {
-  clear: right !important;
-  float: right !important;
-  width: min-content;
-}
-
-
-.view-data-literacy-series-view .bef-exposed-form .form--inline>.form-item {
-  float: none;
-}
-
-
-@media (min-width: 992px) {
-  .view-data-literacy-series-view .bef-exposed-form .form--inline>.form-item {
-    margin-right: 8px;
-  }
-}
-
-.view-data-literacy-series-view .bef--secondary>.panel-heading>a {
-  width: max-content;
-}
-
-.view-data-literacy-series-view .form-actions {
-  clear: both;
-  display: block;
-}
-
-
-#edit-dls-tags-advanced-id {
-  width: 400px;
-}
-
-@media (max-width: 992px) {
-  #edit-dls-tags-advanced-id {
-    width: 250px;
-  }
-}
-
-.view-data-literacy-series-view .previous>a,
-.view-data-literacy-series-view .next>a {
-  box-shadow: 5px 3px 3px grey;
-  font-size: 22px;
-  font-weight: bolder;
-  background: #2280bf;
-  color: white !important;
-  border: none !important;
-  padding: 7px 16px !important;
-
-}
-
-.view-data-literacy-series-view .previous>a:hover,
-.view-data-literacy-series-view .next>a:hover {
-  color: white !important;
-  background: #369;
-}
-
-.view-footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
