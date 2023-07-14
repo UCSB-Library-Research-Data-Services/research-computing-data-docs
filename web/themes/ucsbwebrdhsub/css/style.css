@@ -195,7 +195,7 @@ table.localist_minicalendar_minicalendar caption{
 }
 
 .community-container {
-  min-height: 365px;
+  min-height: 400px;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -252,7 +252,7 @@ table.localist_minicalendar_minicalendar caption{
   max-width: 90%; 
   height: auto;
   text-align: center; 
-  padding-top: 215px;
+  padding-top: 235px;
 }
 
 .community-inner {
