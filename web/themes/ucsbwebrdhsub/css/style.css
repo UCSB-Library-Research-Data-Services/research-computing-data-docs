@@ -220,7 +220,7 @@ table.localist_minicalendar_minicalendar caption{
   text-align: center;
   transition: transform 2s; 
   transform-style: preserve-3d;
-  background-color: #047b90 !important;
+  background-color: #047C91 !important;
   transform-origin: center; 
 }
 
@@ -238,7 +238,6 @@ table.localist_minicalendar_minicalendar caption{
 
 .community-container .card .card-back {
   background-color: #09847A !important;
-  color:blue;
   transform: rotateY(180deg); /* flip the back side initially */
 }
 
