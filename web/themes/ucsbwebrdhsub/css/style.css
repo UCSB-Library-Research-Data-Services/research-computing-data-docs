@@ -203,6 +203,8 @@ table.localist_minicalendar_minicalendar caption{
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin: 8px;
   overflow: hidden;
+  background-color: #047C91;
+  color: #FFFFFF;
 }
 
 
