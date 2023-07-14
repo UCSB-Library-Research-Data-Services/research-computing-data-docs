@@ -26,6 +26,7 @@ Download and install Cyberduck: https://cyberduck.io/.  This is the best way to 
 Download and install Visual Studio Code. For extensions, also install SFTP. You might find these links helpful: https://docs.pantheon.io/guides/sftp/vscode-sftp. https://docs.pantheon.io/guides/sftp/sftp-development#commit-sftp-changes. Following the instructions from the links should be stright forward. Now make a little change to check if the connection works well before you move on to the coding or debugging. Once it works, every time you simply save the changed in vs code, you should be able to see the change in Pantheon's website. (Don't forget to clear the cache EVERY TIME, which is very necessary for the changes to show up in Drupal.) Once you are happy with it, end the SFTP mode and swtich to GIT on Pantheon website, and then move to Dev to merge the code. 
 
 In addition of connecting to SFTP, while in the sftp.json file, simply copy the host, protocal, port, username. Then, you should have something similar:
+    
     "privateKeyPath": "C:/Users/ychen/.ssh/id_rsa",
     "remotePath": "/code",
     "uploadOnSave": true,
