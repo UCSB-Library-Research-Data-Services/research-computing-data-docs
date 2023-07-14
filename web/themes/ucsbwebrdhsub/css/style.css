@@ -252,6 +252,7 @@ table.localist_minicalendar_minicalendar caption{
   max-width: 90%; 
   height: auto;
   text-align: center; 
+  padding-top: 180px;
 }
 
 .community-inner {
