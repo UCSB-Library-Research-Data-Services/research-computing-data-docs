@@ -331,8 +331,8 @@ h2.sub-heading.heading-services {
       left: -9999px; }
       #modularstorage-services .service-panel input ~ .control-indicator {
         margin: 0;
-        background-color: #e4e6f0;
-        border: 2px #a1a9cd solid;
+        background-color: #F1EEEA;
+        border: 2px #DCD6CC solid;
         border-radius: 0.25em;
         height: 100%;
         width: 100%;
@@ -347,19 +347,19 @@ h2.sub-heading.heading-services {
           content: "\f10c";
           font-family: "FontAwesome";
           display: block;
-          color: #4a568b;
+          color:  #FEBC11;
           font-weight: normal;
           margin-left: 0.25em;
           position: absolute;
           top: 10px;
           right: 10px; }
       #modularstorage-services .service-panel input:checked ~ .control-indicator {
-        background-color: #a1a9cd; }
+        background-color: #dcd6cc; }
         #modularstorage-services .service-panel input:checked ~ .control-indicator::before {
           content: "\f058";
-          color: #262d49; }
+          color: #FEBC11; }
       #modularstorage-services .service-panel input:checked ~ h4, #modularstorage-services .service-panel input:checked ~ p {
-        color: #2f3759;
+        color: #3d4952;
         position: relative; }
     @media screen and (max-width: 1440px) {
       #modularstorage-services .service-panel {
@@ -371,7 +371,7 @@ h2.sub-heading.heading-services {
       #modularstorage-services .service-panel {
         width: calc(50% - 0.5em); } }
     #modularstorage-services .service-panel h4, #modularstorage-services .service-panel p {
-      color: #414b7b;
+      color: #3d4952;
       margin: 0; }
     #modularstorage-services .service-panel h4 {
       font-size: 16px; }
