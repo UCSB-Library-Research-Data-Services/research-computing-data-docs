@@ -180,8 +180,8 @@ color: white; }
   margin: 1.5em 0 0.35em; }
 
 .title + .lead {
-  color: #757575;
-  font-size: 21px;
+  color: #333333;
+  font-size: 19px;
   margin-bottom: 1em; }
 
 .cert {
