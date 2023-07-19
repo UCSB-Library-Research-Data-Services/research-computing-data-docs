@@ -203,7 +203,38 @@ table.localist_minicalendar_minicalendar caption{
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin: 8px;
   overflow: hidden;
+  /* background-color: #047C91; */
+  color: #FFFFFF;
+}
+
+/* diff color each block, row1row2, and the repeat */
+.view-communities-list .views-row:nth-of-type(2n+1) .views-col:nth-of-type(1) .community-container {
+  background-color: #003660;
+  color: #FFFFFF;
+}
+
+.view-communities-list .views-row:nth-of-type(2n+1) .views-col:nth-of-type(2) .community-container {
+  background-color: #FEBC11;
+  color: #3D4952;
+}
+
+.view-communities-list .views-row:nth-of-type(2n+1) .views-col:nth-of-type(3) .community-container {
   background-color: #047C91;
+  color: #FFFFFF;
+}
+
+.view-communities-list .views-row:nth-of-type(2n) .views-col:nth-of-type(1) .community-container {
+  background-color: #09847A;
+  color: #FFFFFF;
+}
+
+.view-communities-list .views-row:nth-of-type(2n) .views-col:nth-of-type(2) .community-container {
+  background-color: #EF5645;
+  color: #011517;
+}
+
+.view-communities-list .views-row:nth-of-type(2n) .views-col:nth-of-type(3) .community-container {
+  background-color: #6D7D33;
   color: #FFFFFF;
 }
 
