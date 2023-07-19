@@ -176,20 +176,6 @@ table.localist_minicalendar_minicalendar caption{
 /* Communities Page */
 /* *************************************** */
 
-.view-communities-list .views-row:nth-of-type(odd) .views-col.col-1 .community-container,
-.view-communities-list .views-row:nth-of-type(even) .views-col.col-2 .community-container
-{
-  background-color: #003660;
-  color: white;
-}
-.view-communities-list .views-row:nth-of-type(odd) .views-col.col-2 .community-container,
-.view-communities-list .views-row:nth-of-type(even) .views-col.col-1 .community-container
-{
-  background-color: #febc11;
-  color: black;
-  font-weight: 600;
-}
-
 .view-communities-list .views-view-grid .views-row {
   float:none !important;
   max-width: 1230px;
@@ -204,32 +190,101 @@ table.localist_minicalendar_minicalendar caption{
   padding-left: 30px;
 }
 
-[about |= "/communities"] .grid-item--height1{
-  height: 150px !important;
-}
-
-[about |="/communities"] .background-color-003660:hover {
-  background-color: #215985 !important;
-}
-
-[about |="/communities"] .background-color-febc11:hover {
-  background-color: #ce9d22 !important;
-}
-
 .community-content{
   height: 90%;
 }
 
 .community-container {
-  min-height: 465px;
-  position:relative;
+  min-height: 300px;
+  position: relative;
   background-size: cover;
   background-position: center;
   padding: 45px 0px 125px 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
-  /* height: 615px; */
   margin: 8px;
+  overflow: hidden;
+  /* background-color: #047C91; */
+  color: #FFFFFF;
+}
+
+/* diff color each block, row1row2, and the repeat */
+.view-communities-list .views-row:nth-of-type(2n+1) .views-col:nth-of-type(1) .community-container {
+  background-color: #003660;
+  color: #FFFFFF;
+}
+
+.view-communities-list .views-row:nth-of-type(2n+1) .views-col:nth-of-type(2) .community-container {
+  background-color: #FEBC11;
+  color: #3D4952;
+}
+
+.view-communities-list .views-row:nth-of-type(2n+1) .views-col:nth-of-type(3) .community-container {
+  background-color: #047C91;
+  color: #FFFFFF;
+}
+
+.view-communities-list .views-row:nth-of-type(2n) .views-col:nth-of-type(1) .community-container {
+  background-color: #09847A;
+  color: #FFFFFF;
+}
+
+.view-communities-list .views-row:nth-of-type(2n) .views-col:nth-of-type(2) .community-container {
+  background-color: #EF5645;
+  color: #011517;
+}
+
+.view-communities-list .views-row:nth-of-type(2n) .views-col:nth-of-type(3) .community-container {
+  background-color: #6D7D33;
+  color: #FFFFFF;
+}
+
+
+/* card itself */
+.community-container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  transition: transform 2s; 
+  transform-style: preserve-3d;
+  background-color: #047C91 !important;
+  transform-origin: center; 
+}
+
+.community-container .card .card-front,
+.community-container .card .card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  width: 100%; 
+  backface-visibility: hidden;
+}
+
+.community-container .card .card-back {
+  background-color: #09847A !important;
+  transform: rotateY(180deg); /* flip the back side initially */
+}
+
+.community-container .card:hover {
+  transform: rotateY(180deg);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%; 
+  height: auto;
+  text-align: center; 
+  padding-top: 225px;
 }
 
 .community-inner {
@@ -245,9 +300,17 @@ table.localist_minicalendar_minicalendar caption{
   flex-direction: column-reverse;
 }
 
+.community-inner,
+.community-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* will align the items vertically */
+}
+
+
 .community-column {
   flex: 50%;
- 
 }
 
 .community-column-right{
@@ -256,6 +319,9 @@ table.localist_minicalendar_minicalendar caption{
 }
 
 .community-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 64px;
   margin-bottom: 10px;
 }
@@ -302,8 +368,8 @@ table.localist_minicalendar_minicalendar caption{
 }
 
 .community-footer{
-    position: absolute;
-    bottom: 30px;
+    /* position: absolute;
+    bottom: 30px; */
 }
 
 .community-footer h6{
@@ -316,7 +382,6 @@ table.localist_minicalendar_minicalendar caption{
   border-radius: 5px;
   margin-bottom: 30px;
   margin-left: -5px;
-
 }
 
 @media (max-width: 992px) {
@@ -334,6 +399,7 @@ table.localist_minicalendar_minicalendar caption{
     padding: 20px 0 180px 0;
     min-height: 300px;
   }
+
   .community-inner {
     padding: 0 8px;
   }
@@ -342,7 +408,6 @@ table.localist_minicalendar_minicalendar caption{
     max-height: 230px;
   }
 }
-
 
 
 /* Resource List Page:  (And for News & Events List Page as it borrows some of these styles).*/
