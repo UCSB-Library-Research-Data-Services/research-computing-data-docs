@@ -12,35 +12,52 @@
   padding-right: 30px;
 }
 
-.btn-primary {
-  background-color: white;
-  border-radius: 2px;
-  border: 2px solid #11c3f4;
-  padding: 7px 30px;
-  color: #099fc9; }
-  .btn-primary:hover, .btn-primary:focus {
-    background-color: #d4f4fd;
-    border-color: #099fc9;
-    color: #077898; }
-  .btn-primary:active, .btn-primary:active:hover, .btn-primary:active:focus {
-    background-color: #099fc9;
-    border-color: #099fc9;
-    color: white; }
+.btn-clear-filters, .btn-select-none, .selectall-button {
+  padding: 20px 50px !important;
+  font-size: 18px !important;
+}
 
-.btn-secondary {
-  background-color: white;
-  border-radius: 2px;
-  border: 2px solid #a7804d;
-  padding: 7px 30px;
-  color: #84653d; }
-  .btn-secondary:hover, .btn-secondary:focus {
-    background-color: #ebe1d5;
-    border-color: #84653d;
-    color: #614a2d; }
-  .btn-secondary:active, .btn-secondary:active:hover, .btn-secondary:active:focus {
-    background-color: #84653d;
-    border-color: #84653d;
-    color: white; }
+.btn-clear-filters, .btn-select-none {
+  background-color: #003660 !important;
+  border-radius: 2px !important;
+  border: 2px solid #003660 !important;
+  padding: 7px 30px !important;
+  color: #FFFFFF !important; 
+  font-size: 18px !important;
+}
+
+.btn-clear-filters:hover, .btn-clear-filters:focus,
+.btn-select-none:hover, .btn-select-none:focus {
+  background-color: #DCE1E5 !important;
+  color: #3D4952 !important; 
+}
+
+.btn-clear-filters:active, .btn-clear-filters:active:hover, .btn-clear-filters:active:focus,
+.btn-select-none:active, .btn-select-none:active:hover, .btn-select-none:active:focus {
+  background-color: #003660 !important;
+  border-color: #003660 !important;
+  color: #FFFFFF !important; 
+}
+
+.selectall-button {
+  background-color: white !important;
+  border-radius: 2px !important;
+  border: 2px solid #003660 !important;
+  padding: 7px 30px !important;
+  color: #3D4952 !important; 
+  font-size: 18px !important;
+}
+
+.selectall-button:hover, .selectall-button:focus {
+  background-color: #DCE1E5 !important;
+  color: #3D4952 !important; 
+}
+
+.selectall-button:active, .selectall-button:active:hover, .selectall-button:active:focus {
+  background-color: #047C91 !important;
+  border-color: #047C91 !important;
+  color: #FFFFFF !important; 
+}
 
 * {
   -webkit-box-sizing: border-box;
