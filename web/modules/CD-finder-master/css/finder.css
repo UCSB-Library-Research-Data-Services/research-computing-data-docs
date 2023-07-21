@@ -206,6 +206,26 @@ color: white; }
   font-size: 16px;
 }
 
+#pagesubtitle0, #pagesubtitle1, #pagesubtitle2{
+  font-size:18px;
+  margin: 0 0 10px 0;
+  font-weight:normal;
+}
+
+/* the box bg */
+#pagesubtitle2 {
+  background-color: #DAE6E6 !important;
+  border: 1px solid #9CBEBE !important;
+  color: #3D4952 !important;
+  padding: 15px !important;
+}
+
+/* Make "How to use it?" italic*/
+#howToUse {
+  font-style: italic;
+  /* font-weight: bold; */
+}
+
 .cert {
   position: relative;
   text-indent: 24px;
