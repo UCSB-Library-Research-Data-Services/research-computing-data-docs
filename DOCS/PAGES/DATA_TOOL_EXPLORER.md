@@ -33,7 +33,12 @@ service later, because this is NOT what is displayed in the Comparison Chart (th
  ### Adding a question:
  - Click Add Term
  - Choose control type: Radio or Checkbox.  Radio is for a question that can have only one answer.  Checkbox is for a question that can have multiple answers.
- - Using the cross-shaped 'move' cursor on the term that you added, you can click and drag the term to reorder where it is displayed.  Make sure that it is not indented under another facet because this will make it into an answer.  
+ - Using the cross-shaped 'move' cursor on the term that you added, you can click and drag the term to reorder where it is displayed.  Make sure that it is not indented under another facet because this will make it into an answer.
+
+### Add details for explanation:
+ - Click Edit of the term you want to add description
+ - Input the words in description
+ - If you could not find the box for description, go to Home >> Administration >> Structure >> Taxonomy >> Edit Facets >> Facets >> Manage form display, and then drag "Description" from "Disabled" to "Field". Click "Save" and you are now all set.
 
 ## Add Categories to the Comparison Chart
 When you click "Compare Results," a comparison chart should render below the service table.  The comparison chart has additional information to compare one service to another based off of categories.  You can add or remove these categories if necessary:
