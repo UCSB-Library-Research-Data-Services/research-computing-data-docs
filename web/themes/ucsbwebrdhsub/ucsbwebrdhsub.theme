@@ -35,3 +35,13 @@ function ucsbwebrdhsub_preprocess_page(&$variables){
   }
 
 }
+
+function ucsbwebrdhsub_preprocess_node(&$variables) {
+  if ($variables['node']->getType() == 'partner') {
+    $query = \Drupal::entityQuery('node')
+      ->condition('type', 'partner')
+      ->condition('status', 1);
+    $nids = $query->execute();
+    $variables['partners'] = \Drupal\node\Entity\Node::loadMultiple($nids);
+  }
+}
