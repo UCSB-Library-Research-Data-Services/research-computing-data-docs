@@ -1,15 +1,16 @@
 # Editing the Campus Units Page.
+#### (it used to be called Partner, so if u found this word instead of campus unit, dont be surprise. Sorry for any inconvenience : ))
 
-## Add a new Partner:
-- Go to Manage >> Content >> Add Content >> Partner
+## Add a new Campus Unit:
+- Go to Manage >> Content >> Add Content >> Campus Unit
 - Title is important for the Campus Unitname (ie so you can search for it in case you need to edit it later), but it will not be displayed on the Campus Unitpage.
 - Name: just be same as title
 - Destionation: long description for the Campus Unit.  
 - URL: the website link of this Campus Unit.
   
-## Edit/Delete Partner:
+## Edit/Delete Campus Unit:
 - Go to Manage >> Content
-- In the filter, you can search for the title of the Campus Unityou are looking for.  You should also use the 'Content Type' dropdown and change it to 'Partner'.  
+- In the filter, you can search for the title of the Campus Unityou are looking for.  You should also use the 'Content Type' dropdown and change it to 'Campus Unit'.  
 
 ## Edit Campus UnitPage:  
 - Go to Manage >> Content
@@ -19,11 +20,11 @@
 
 
 ## Edit Campus UnitContent Type / Node:
-- Structure >> Content Types >> Partner
+- Structure >> Content Types >> Campus Unit
 
 ## Edit the Campus Units View:
 - The view is the list of Campus Units.
 - Structure >> Views >> Campus Units
 - The view is mostly structured by custom templating and css.  The template file is under code/web/themes/ucsbwebrdhsub/templates/node--Campus Unit.html.twig and the css is under  code/web/themes/ucsbwebrdhsub/css.
 - (btw, im still doing this two files, so there is no such node--Campus Unit.html.twig so far. will update later and delete this sentence : ))
-- (it used to be called Partner, so if u found this word instead of campus unit, dont be surprise. Sorry for any inconvenience : ))
+
