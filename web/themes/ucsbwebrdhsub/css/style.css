@@ -567,8 +567,8 @@ table.localist_minicalendar_minicalendar caption{
 .partner-card {
   max-width: 1165px;
   margin: auto;
-  background-color: #f5f5f5;
-  border: 1px solid #ddd;
+  background-color: #ffffff;
+  /* border: 1px solid #ddd; */
   margin-bottom: 1rem;
   border-radius: .25rem;
   padding: 10px;
@@ -595,7 +595,7 @@ table.localist_minicalendar_minicalendar caption{
 }
 
 .partner-card-body {
-  background-color: #FFFFFF;
+  background-color: #FFFFFF !important;
   color: #000000;
   border: 1px solid #003660;
 
