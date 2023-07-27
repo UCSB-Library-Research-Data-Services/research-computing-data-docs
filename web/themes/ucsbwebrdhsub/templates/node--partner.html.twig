@@ -28,7 +28,6 @@
   ]
 %}
 
-{# actually not quite sure if it should be called as 'partner-container', in the community twig, it is called 'community-container' #}
 
 {# {% if view_mode =="default" or view_mode=="full" %}
     <div class="accordion" id="partnerAccordion">
@@ -60,11 +59,80 @@
 {% endif %} #}
 
 
-{% if view_mode == "default" or view_mode == "full" %}
+{# {% if view_mode == "default" or view_mode == "full" %}
     <div{{ attributes.addClass('partner-container', classes)}} >
         <h3>{{content.field_name.0}}</h3>
         <p>{{content.field_description.0}}</p>
         <p>{{content.field_link.0}}</p>
         <p>{{content.field_partner_label}}</p>
+    </div>
+{% endif %} #}
+
+
+{# {% if view_mode =="default" or view_mode=="full" %}
+    {% set i = 0 %}
+    <div class="accordion" id="partnerAccordion">
+        {% for item in items %}
+            <div class="partner-card">
+                <div class="partner-card-header" id="heading{{ i }}">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse{{ i }}" aria-expanded="false" aria-controls="collapse{{ i }}">
+                            {{ item.content['#node'].field_name.value }}
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapse{{ i }}" class="collapse" aria-labelledby="heading{{ i }}" data-parent="#partnerAccordion">
+                    <div class="partner-card-body">
+                        {{ item.content['#node'].field_description.value }}
+                        <a href="{{ item.content['#node'].field_link.uri }}">{{ item.content['#node'].field_link.title }}</a>
+                    </div>
+                </div>
+            </div>
+            {% set i = i + 1 %}
+        {% endfor %}
+    </div>
+{% endif %} #}
+
+
+{# {% if view_mode =="default" or view_mode=="full" %}
+    {% set i = 0 %}
+    <div class="accordion" id="partnerAccordion">
+        {% for partner in partners %}
+            <div class="partner-card">
+                <div class="partner-card-header" id="heading{{ i }}">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse{{ i }}" aria-expanded="false" aria-controls="collapse{{ i }}">
+                            {{ partner.field_name.value }}
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapse{{ i }}" class="collapse" aria-labelledby="heading{{ i }}" data-parent="#partnerAccordion">
+                    <div class="partner-card-body">
+                        {{ partner.field_description.value | raw }}
+                        <a href="{{ partner.field_link.uri }}">{{ partner.field_link.title }}</a>
+                    </div>
+                </div>
+            </div>
+            {% set i = i + 1 %}
+        {% endfor %}
+    </div>
+{% endif %} #}
+
+
+{% if view_mode =="default" or view_mode=="full" %}
+    <div class="partner-card">
+        <div class="partner-card-header" id="heading{{ node.id }}">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse{{ node.id }}" aria-expanded="false" aria-controls="collapse{{ node.id }}">
+                    {{ node.field_name.value }}
+                </button>
+            </h2>
+        </div>
+        <div id="collapse{{ node.id }}" class="collapse" aria-labelledby="heading{{ node.id }}" data-parent="#partnerAccordion">
+            <div class="partner-card-body">
+                {{ node.field_description.value | raw }}
+                <a href="{{ node.field_link.uri }}">{{ node.field_link.title }}</a>
+            </div>
+        </div>
     </div>
 {% endif %}
