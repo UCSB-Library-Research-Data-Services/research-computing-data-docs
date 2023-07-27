@@ -59,8 +59,12 @@
     </div>
 {% endif %} #}
 
+
 {% if view_mode == "default" or view_mode == "full" %}
-    <div{{ attributes.addClass(classes)}} >
-        <p>{{"check"}}</p>
+    <div{{ attributes.addClass('partner-container', classes)}} >
+        <h3>{{content.field_name.0}}</h3>
+        <p>{{content.field_description.0}}</p>
+        <p>{{content.field_link.0}}</p>
+        <p>{{content.field_partner_label}}</p>
     </div>
 {% endif %}
