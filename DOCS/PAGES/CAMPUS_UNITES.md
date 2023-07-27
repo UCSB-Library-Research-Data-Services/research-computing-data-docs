@@ -25,6 +25,6 @@
 ## Edit the Campus Units View:
 - The view is the list of Campus Units.
 - Structure >> Views >> Campus Units
-- The view is mostly structured by custom templating and css.  The template file is under code/web/themes/ucsbwebrdhsub/templates/node--Campus Unit.html.twig and the css is under  code/web/themes/ucsbwebrdhsub/css.
-- (btw, im still doing this two files, so there is no such node--Campus Unit.html.twig so far. will update later and delete this sentence : ))
+- The view is mostly structured by custom templating and css.  The template file is under code/web/themes/ucsbwebrdhsub/templates/node--partner.html.twig and the css is under code/web/themes/ucsbwebrdhsub/css.
+- (btw, as started earlier, the file name is partner cuz the view name is partner cuz it was named partner in the past : ))
 
