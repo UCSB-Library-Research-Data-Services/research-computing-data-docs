@@ -1,4 +1,4 @@
-# Add Resources to the Resource Page
+# Editing Resources Page
 
 ## Add a Resource
 - Go to Manage >> Content >> Add Content >> Resource
