@@ -45,3 +45,19 @@ function ucsbwebrdhsub_preprocess_node(&$variables) {
     $variables['partners'] = \Drupal\node\Entity\Node::loadMultiple($nids);
   }
 }
+
+function mytheme_preprocess_node(&$variables) {
+  if ($variables['node']->getType() == 'resource') {
+    $alias = $variables['node']->path->alias;
+    try {
+      $url = \Drupal\Core\Url::fromUri('internal:' . $alias);
+      $variables['url'] = $url->toString();
+    }
+    catch (\Exception $e) {
+      // Log the exception to watchdog.
+      \Drupal::logger('mytheme')->error($e->getMessage());
+      // Assign a default value to url for debugging.
+      $variables['url'] = '/debug-url';
+    }
+  }
+}
