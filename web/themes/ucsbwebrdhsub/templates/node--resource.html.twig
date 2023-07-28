@@ -18,7 +18,7 @@
     'resource' 
   ]
 %}
-
+{# 
 {% if view_mode == "default" or view_mode == "full" %}
     <div{{ attributes.addClass(classes) }}>
         <div class="resource-card">
@@ -34,4 +34,22 @@
             </div>
         </div>
     </div>
+{% endif %} #}
+
+{% if view_mode == "default" or view_mode == "full" %}
+    <div{{ attributes.addClass('resource', classes) }}>
+        <div class="resource-card">
+            <div class="resource-card-image">
+                {{ content.field_image.0 }}
+            </div>
+            <div class="resource-card-header">
+                <h2>{{ node.title.value }}</h2>
+            </div>
+            <div class="resource-card-body">
+                {{ content.field_resource_summary.0 }}
+                <a href={{ content.field_url.0['#url'] }}>{{ 'Visit Resource' }}</a>
+            </div>
+        </div>
+    </div>
 {% endif %}
+
