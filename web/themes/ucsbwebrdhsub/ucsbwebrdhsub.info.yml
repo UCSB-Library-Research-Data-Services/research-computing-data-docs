@@ -21,3 +21,4 @@ regions:
   page_bottom: 'Page bottom'
 libraries:
   - 'ucsbwebrdhsub/ucsbwebrdhsub-styling'
+  - 'ucsbwebrdhsub/bootstrap'

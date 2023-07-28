@@ -554,3 +554,64 @@ table.localist_minicalendar_minicalendar caption{
   justify-content: center;
   margin-top: 20px;
 }
+
+/* Partners Page */
+/* also called as Community Unit Page */
+/* *************************************** */
+
+.partner-container {
+  max-width: 1165px;
+  margin: auto;
+}
+
+.partner-card {
+  max-width: 1165px;
+  margin: auto;
+  background-color: #ffffff;
+  /* border: 1px solid #ddd; */
+  margin-bottom: 1rem;
+  border-radius: .25rem;
+  padding: 10px;
+}
+
+.partner-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .75rem 1.25rem;
+  background-color: #003660;
+  border-bottom: 1px solid #003660;
+  color: #FFFFFF !important;
+  cursor: pointer;
+  height: 70px;
+}
+
+.partner-card-header h2 .btn {
+  color: #FFFFFF !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.1pt !important;
+  font-family: Avenir, "Century Gothic", sans-serif !important;
+}
+
+.partner-card-header .btn {
+  color: #FFFFFF !important;
+}
+
+.partner-card-body {
+  background-color: #FFFFFF !important;
+  color: #000000;
+  border: 1px solid #003660;
+  padding: 15px;
+}
+
+.partner-card .btn-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.partner-card .btn-link:hover {
+  text-decoration: none;
+  color: #212529;
+}
+
