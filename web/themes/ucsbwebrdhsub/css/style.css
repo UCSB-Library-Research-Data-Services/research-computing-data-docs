@@ -586,8 +586,12 @@ table.localist_minicalendar_minicalendar caption{
   height: 70px;
 }
 
-.partner-card-header h2 {
+.partner-card-header h2 .btn {
   color: #FFFFFF !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.1pt !important;
+  font-family: Avenir, "Century Gothic", sans-serif !important;
 }
 
 .partner-card-header .btn {
@@ -598,7 +602,7 @@ table.localist_minicalendar_minicalendar caption{
   background-color: #FFFFFF !important;
   color: #000000;
   border: 1px solid #003660;
-
+  padding: 15px;
 }
 
 .partner-card .btn-link {
@@ -610,3 +614,4 @@ table.localist_minicalendar_minicalendar caption{
   text-decoration: none;
   color: #212529;
 }
+
