@@ -12,7 +12,7 @@
 - Go to Manage >> Content
 - In the filter, you can search for the title of the Campus Unityou are looking for.  You should also use the 'Content Type' dropdown and change it to 'Campus Unit'.  
 
-## Edit Campus UnitPage:  
+## Edit Campus Units Page:  
 - Go to Manage >> Content
 - In the Filter 'Content Type' dropdown, change it to 'Basic page'.  Then the title is 'Campus Units'  
 - Alternatively, on the Campus Units page there is an Edit Button
@@ -25,6 +25,8 @@
 ## Edit the Campus Units View:
 - The view is the list of Campus Units.
 - Structure >> Views >> Campus Units
-- The view is mostly structured by custom templating and css.  The template file is under code/web/themes/ucsbwebrdhsub/templates/node--partner.html.twig and the css is under code/web/themes/ucsbwebrdhsub/css.
+- The view is mostly structured by custom templating and css.
+- The template file is under code/web/themes/ucsbwebrdhsub/templates/node--partner.html.twig and the css is under code/web/themes/ucsbwebrdhsub/css.
+- web/themes/ucsbwebrdhsub/ucsbwebrdhsub.theme is also necessary here. If u didnt run into trouble no need to modify this file. Nonetheless, if u run into trouble in twig, go check this file and you will know why. 
 - (btw, as started earlier, the file name is partner cuz the view name is partner cuz it was named partner in the past : ))
 
