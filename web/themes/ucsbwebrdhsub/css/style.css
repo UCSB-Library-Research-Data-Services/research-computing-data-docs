@@ -615,3 +615,40 @@ table.localist_minicalendar_minicalendar caption{
   color: #212529;
 }
 
+
+
+/* Resources Page */
+/* *************************************** */
+.resource{
+  max-width: 1165px;
+  margin: auto;
+}
+
+.resource-card {
+  max-width: 1165px;
+  margin: auto;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  border-radius: .25rem;
+  padding: 20px;
+}
+
+.resource-card-header {
+  padding: .75rem 1.25rem;
+  background-color: #003660;
+  color: #FFFFFF;
+}
+
+.resource-card-header h2 {
+  color: #FFFFFF;
+}
+
+.resource-card-image {
+  width: 100%;
+  height: auto;
+}
+
+.resource-card-body {
+  padding-top: 20px;
+}
