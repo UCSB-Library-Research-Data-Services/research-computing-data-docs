@@ -176,6 +176,11 @@ table.localist_minicalendar_minicalendar caption{
 /* Communities Page */
 /* *************************************** */
 
+/* for the select (drop down menu) in community page, testing */
+select {
+  width: 150px !important;
+}
+
 .view-communities-list .views-view-grid .views-row {
   float:none !important;
   max-width: 1230px;
@@ -365,11 +370,6 @@ table.localist_minicalendar_minicalendar caption{
 .community-image{
   object-fit: contain;
   max-height: 200px;
-}
-
-.community-footer{
-    /* position: absolute;
-    bottom: 30px; */
 }
 
 .community-footer h6{
@@ -681,3 +681,4 @@ table.localist_minicalendar_minicalendar caption{
   padding-top: 20px;
   height: 190px;
 }
+
