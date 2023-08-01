@@ -651,13 +651,25 @@ table.localist_minicalendar_minicalendar caption{
 }
 
 .resource-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: .75rem 1.25rem;
   background-color: #003660;
   color: #FFFFFF;
+  height: 80px;
+  overflow: hidden;
 }
 
-.resource-card-header h2 {
+/* for one line in header, height:60px; font-size:15px; */
+/* for two lines in header, height: 80px; font-size: 21px; */
+/* but still, there are some titles just in one line... */
+
+.resource-card-header h3 {
   color: #FFFFFF;
+  font-size: 21px;
+  margin:0;
+  
 }
 
 .resource-card-image {
@@ -667,4 +679,5 @@ table.localist_minicalendar_minicalendar caption{
 
 .resource-card-body {
   padding-top: 20px;
+  height: 190px;
 }
