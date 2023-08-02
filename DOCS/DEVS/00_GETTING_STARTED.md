@@ -3,8 +3,14 @@
 ## In this document, you will review all the requirements and training for developing the Research Data Hub Website.
 
 ## Firstly, you will have to review UCSB's Brand Guidelines to know what restrictions are in place for how to design a UCSB website. 
+
 https://brand.ucsb.edu/our-story
+
 https://ucsb.app.box.com/v/visual-identity-guidelines
+
+https://webtheme.brand.ucsb.edu/docs/content-editors/menus-utility-bar-footer
+
+https://webtheme.brand.ucsb.edu/support
 
 ## As a dev for the Research Data Hub website, you will need to learn the basics of Drupal.  
 
