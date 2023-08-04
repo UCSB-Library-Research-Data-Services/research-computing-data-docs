@@ -632,6 +632,16 @@ select {
   margin-right: auto;
 }
 
+.view-data-resources-view .views-view-grid .views-row{
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;  
+  float:none !important;
+  max-width: 1165px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .resource{
   display: flex;
   justify-content: center;
@@ -640,8 +650,19 @@ select {
   margin: auto;
 }
 
-.resource-card {
+/* original: */
+/* .resource-card {
   max-width: 580px;
+  margin: auto 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  border-radius: .25rem;
+  padding: 20px;
+} */
+
+.resource-card {
+  max-width: 266.25px;
   margin: auto 10px;
   background-color: #ffffff;
   border: 1px solid #ddd;
