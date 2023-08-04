@@ -642,6 +642,27 @@ select {
   margin-right: auto;
 }
 
+/* for computing&reseach resources views, havent check it yet, we have it in advance. but if it needs, go check it again */
+.view-computing-resources-view .views-view-grid .views-row{
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;  
+  float:none !important;
+  max-width: 1165px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.view-research-resources-view .views-view-grid .views-row{
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;  
+  float:none !important;
+  max-width: 1165px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .resource{
   display: flex;
   justify-content: center;
