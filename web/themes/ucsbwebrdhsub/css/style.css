@@ -723,7 +723,7 @@ select {
 }
 
 /* menu */
-.main-menu .dropdown-resources .dropdown-columns {
+.menu .dropdown-resources .dropdown-columns {
   display: flex;
   justify-content: space-between;
   border: 1px solid #ffffff;
@@ -735,7 +735,7 @@ select {
   z-index: 10;
 }
 
-.main-menu .dropdown-resources:hover .dropdown-columns {
+.menu .dropdown-resources:hover .dropdown-columns {
   display: flex;  /* Display dropdown on hover */
 }
 
