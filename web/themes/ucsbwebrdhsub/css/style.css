@@ -559,8 +559,6 @@ select {
 /* also called as Community Unit Page */
 /* *************************************** */
 
-
-
 .partner-container {
   max-width: 1165px;
   margin: auto;
@@ -724,3 +722,23 @@ select {
   height: 190px;
 }
 
+/* menu */
+.main-menu .dropdown-resources .dropdown-columns {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ffffff;
+  background-color: #fff;
+  position: absolute;
+  width: 200px;  /* Adjust as needed */
+  top: 100%;    /* Position it below the parent menu item */
+  left: 0;
+  z-index: 10;
+}
+
+.main-menu .dropdown-resources:hover .dropdown-columns {
+  display: flex;  /* Display dropdown on hover */
+}
+
+.col-overview, .col-items {
+  padding: 10px;
+}
