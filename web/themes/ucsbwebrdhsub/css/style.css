@@ -556,11 +556,9 @@ select {
 }
 
 /* Partners Page */
-/* also called as Community Unit Page */
+/* also called as Campus Unit Page */
 /* *************************************** */
-
-
-
+/* 
 .partner-container {
   max-width: 1165px;
   margin: auto;
@@ -570,7 +568,6 @@ select {
   max-width: 1165px;
   margin: auto;
   background-color: #ffffff;
-  /* border: 1px solid #ddd; */
   margin-bottom: 1rem;
   border-radius: .25rem;
   padding: 10px;
@@ -615,7 +612,75 @@ select {
 .partner-card .btn-link:hover {
   text-decoration: none;
   color: #212529;
+} */
+
+.partner-container {
+  max-width: 1165px;
+  margin: auto;
 }
+
+.partner-card {
+  max-width: 1165px;
+  margin: auto;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+  border-radius: .25rem;
+  padding: 10px;
+}
+
+.partner-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjusts space distribution */
+  padding: .75rem 1.25rem;
+  background-color: #DCE1E5;
+  border-bottom: 1px solid #DCE1E5;
+  color: #3D4952 !important;
+  cursor: pointer;
+  height: 70px;
+}
+
+.partner-card-header h2 {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  width: 100%; 
+}
+
+.partner-card-header h2 .btn {
+  flex: 1; 
+  text-align: left; 
+}
+
+.expand-icon, .link-icon {
+  margin-left: 15px; 
+  cursor: pointer; 
+}
+
+.partner-card-body {
+  background-color: #FFFFFF !important;
+  color: #000000;
+  border: 1px solid #DCE1E5;
+  padding: 15px;
+}
+
+.partner-card .btn-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.partner-card .btn-link:hover {
+  text-decoration: none;
+  color: #212529;
+}
+
+/* You might need to adjust sizes, margins, etc. of the icons */
+.expand-icon img, .link-icon img {
+  width: 24px; 
+  height: 24px; 
+}
+
+
 
 
 
@@ -671,17 +736,6 @@ select {
   margin: auto;
 }
 
-/* original: */
-/* .resource-card {
-  max-width: 580px;
-  margin: auto 10px;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  margin-bottom: 1rem;
-  border-radius: .25rem;
-  padding: 20px;
-} */
-
 .resource-card {
   max-width: 266.25px;
   margin: auto 10px;
@@ -724,3 +778,211 @@ select {
   height: 190px;
 }
 
+@media (max-width: 768px) {
+
+  /* Adjusting the main container of your resources */
+  .view-resources .views-view-grid .views-row,
+  .view-data-resources-view .views-view-grid .views-row,
+  .view-computing-resources-view .views-view-grid .views-row,
+  .view-research-resources-view .views-view-grid .views-row {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  /* Adjusting the general container for resources */
+  .resource {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Adjusting each individual card on mobile */
+  .resource-card {
+    max-width: 90%;  /* You can adjust this percentage based on your preference */
+    margin: 10px 0;
+  }
+
+  /* Adjusting the header for each card */
+  .resource-card-header {
+    height: auto;  /* Letting it adjust based on content */
+  }
+
+  .resource-card-header h3 {
+    font-size: 18px;  /* Slightly reducing font size */
+  }
+
+  /* Adjusting image size */
+  .resource-card-image {
+    width: 80%;  /* Reducing image width for better fit */
+    margin: 0 auto;  /* Centering the image */
+  }
+
+  /* Adjusting the body of each card */
+  .resource-card-body {
+    padding-top: 10px;
+    height: auto;
+  }
+
+}
+
+
+
+
+
+
+
+/* 	ResourceOverview1 */
+
+/* .resource-overview-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: start;
+  max-width: 1165px;
+  margin: 0 auto;  
+}
+
+.resource-overview-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1165px;
+  margin: auto 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  border-radius: .25rem;
+  padding: 20px;
+} */
+
+.resource-overview-container {
+  display: flex;
+  justify-content: space-around;  /* This will space your cards equally */
+  flex-wrap: wrap;
+  align-items: start;
+  max-width: 1200px;  /* I increased this a bit to allow for card + margin */
+  margin: 0 auto;  
+  padding: 0 10px;  /* Add a little padding to ensure cards don't touch the edges on small screens */
+}
+
+.resource-overview-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1165px;  /* Setting a definitive width can help in centering */
+  margin: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: .25rem;
+  padding: 20px;
+  box-sizing: border-box;  /* Ensure that padding and border are included in the width */
+}
+
+
+.resource-overview-image {
+  flex: 0 0 20%; /* 35% width */
+  margin-right: 20px;
+}
+
+.resource-overview-content {
+  flex: 1;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.resource-overview-content h3 {
+  color: #003660;
+  font-size: 21px; 
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.resource-overview-summary {
+  margin-bottom: 10px; 
+}
+
+@media (max-width: 768px) {
+  .resource-overview-card {
+      max-width: 100%; 
+      margin: 10px 0;
+  }
+}
+
+/* .resource-overview2 */
+
+.resource-overview2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1165px;
+  margin: auto;
+  gap: 20px; /* spacing between cards */
+  align-items: stretch; /* ensure that all cards stretch to the same height */
+}
+
+.resource-overview2-card {
+  width: 92%; 
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  margin: 10px auto;
+  border-radius: .25rem;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex; 
+  flex-direction: column; 
+  height: 400;
+  overflow: auto;
+}
+
+.resource-overview2-card h3 {
+  color: #003660;
+  font-size: 21px;
+  margin-bottom: 10px;
+  flex: 1; 
+}
+
+.resource-overview2-card a {
+  display: inline-block; 
+}
+
+.resource-overview2-card a.view-main-page {
+  display: inline;
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: underline;
+}
+
+.resource-overview2-sub-section {
+  margin-top: 20px;
+  flex: 2; 
+}
+
+.resource-overview2-sub {
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+.resource-overview2-sub h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.resource-overview2-sub a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .resource-overview2 {
+      gap: 10px;
+  }
+
+  .resource-overview2-card {
+      padding: 15px;
+  }
+}
