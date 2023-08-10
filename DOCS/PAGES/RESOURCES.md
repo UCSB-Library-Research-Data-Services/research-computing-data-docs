@@ -11,7 +11,7 @@
 
 ## Edit the Resource View:
 - Go to Manage >> Structure >> Views >> Resources >> Edit
-- Editing this may require a deeper understanding of Drupal, and more is described below:  
+- Editing this may require a deeper understanding of Drupal, and more is described below
 
 #### Create Custom Display using views:
  go to Manage >> Structure >> Views >> Edit Resources.
@@ -22,9 +22,14 @@
 - It is very easy to replicate this view if you would like to create another page like the Resources Page.  Just create a new content type that is structured the same as the Resource content type.  Then, create a view for your new content type, and copy the structure of the Resources view for that view.  This was done with the News & Events page, which is just copying the view that the Resources page used.
 
 ## Edit Resource Content Type / Node:
-Structure >> Content Types >> Resource
+- As you might notice, Resources section has Overview page, and each "kid" has their own page as well. In addition, each kid has its own view. I already set up everything in the View. In the future, if we need to have more grandkid for kid, we can add a resource normally. The only difference is that we need to pick a type for it, like "Computing Resources," "Data REsources," or "Research Resources." And then it will automatically shown in that view on that page
+-  Structure >> Views >> research resources view, Computing Resources View, Data Resources, View ResourceOverview1_VIew.
+
+## Menu for Resources
+- While modifing, clicking Resources in the menu navbar, we can see everything from "Overview" to "Data Tool Explorer" is in the same column. Nonetheless, while logging out, as a normal user, we could see that "Overview" is in the first column, and the rest will be on the right side. It is a tiny bug from druapl, but it doesnt hurt that much.
 
 ## Edit Resources Page
 - web/themes/ucsbwebrdhsub/templates/node--resource.html.twig
+- web/themes/ucsbwebrdhsub/templates/node--resourceoverview1.html.twig
 - web/themes/ucsbwebrdhsub/css/style.css
 - web/themes/ucsbwebrdhsub/ucsbwebrdhsub.theme
