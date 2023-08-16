@@ -30,3 +30,21 @@
 - web/themes/ucsbwebrdhsub/ucsbwebrdhsub.theme is also necessary here. If u didnt run into trouble no need to modify this file. Nonetheless, if u run into trouble in twig, go check this file and you will know why. 
 - (btw, as started earlier, the file name is partner cuz the view name is partner cuz it was named partner in the past : ))
 
+
+## Icon/Image in Drupal
+- There are two ways using images in drupal, one is through media, the other one is theough a random blade. Personally recommend the blade one, cuz that would be easier.
+- Open a random page, edit, open a random blade, click image, then you can see the public folder. Now upload the images you need. Put them in the time order. For example, today is Aug 16th, 2023, I put the images I need in this page in the folder 2023-08.
+- and then copy the path, such as "/2023-08/expand.png"
+- According to https://www.drupal.org/docs/contributed-modules/twig-tweak-2x/cheat-sheet#s-drupal-image, we can use something like
+
+      {# Render image specified by file URI. This is relative to default sites directory. If your file has the path `sites/default/files/2020/05/ocean.jpg`, drop the default sites directory bit. #}
+      {{ drupal_image('public://2020/05/ocean.jpg') }}
+      {# Render image using 'thumbnail' image style and custom attributes. #}
+      {{ drupal_image('public://2020/05/ocean.jpg', 'thumbnail', {alt: 'The alternative text'|t, title: 'The title text'|t}) }}
+  
+- In this case, we have
+
+      <a href="{{ node.field_link.uri }}" class="link-icon" target="_blank" rel="noopener noreferrer">{{ drupal_image('public://2023-08/link.png', 'thumbnail', {alt: 'Link Icon'}) }}</a>
+      <span class="expand-icon" data-toggle="collapse" data-target="#collapse{{ node.id }}">{{ drupal_image('public://2023-08/expand.png', 'thumbnail', {alt: 'Expand Icon'}) }}</span>
+
+- You are now all set : ))
