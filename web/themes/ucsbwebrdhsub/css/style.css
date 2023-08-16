@@ -631,7 +631,7 @@ select {
 .partner-card-header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Adjusts space distribution */
+  justify-content: space-between; 
   padding: .75rem 1.25rem;
   background-color: #DCE1E5;
   border-bottom: 1px solid #DCE1E5;
@@ -650,6 +650,12 @@ select {
 .partner-card-header h2 .btn {
   flex: 1; 
   text-align: left; 
+  padding-left: 3px;
+  justify-content: flex-start;
+}
+
+.partner-card-header h2 .btn-link {
+  font-size: 22px;  
 }
 
 .expand-icon, .link-icon {
@@ -674,10 +680,14 @@ select {
   color: #212529;
 }
 
-/* You might need to adjust sizes, margins, etc. of the icons */
+.partner-card-header h2 .btn:focus {
+  outline: none;
+  border-color: #DCE1E5;
+}
+
 .expand-icon img, .link-icon img {
-  width: 24px; 
-  height: 24px; 
+  width: 18px; 
+  height: 18px; 
 }
 
 
@@ -826,57 +836,51 @@ select {
 }
 
 
-
-
-
-
-
 /* 	ResourceOverview1 */
 
-/* .resource-overview-container {
+/* .view-resources .views-view-grid .views-row{
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  align-items: start;
+  padding: 0 10px;  
+  float:none !important;
   max-width: 1165px;
-  margin: 0 auto;  
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.resource-overview-card {
+.view-data-resources-view .views-view-grid .views-row{
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  padding: 0 10px;  
+  float:none !important;
   max-width: 1165px;
-  margin: auto 10px;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  margin-bottom: 1rem;
-  border-radius: .25rem;
-  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
 } */
 
 .resource-overview-container {
   display: flex;
-  justify-content: space-around;  /* This will space your cards equally */
+  justify-content: center !important;  
+  float:none !important;
   flex-wrap: wrap;
   align-items: start;
   max-width: 1200px;  /* I increased this a bit to allow for card + margin */
-  margin: 0 auto;  
-  padding: 0 10px;  /* Add a little padding to ensure cards don't touch the edges on small screens */
+  margin: auto;  
+  padding: 0 10px;  
 }
 
 .resource-overview-card {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center !important;
+  float:none !important;
   width: 1165px;  /* Setting a definitive width can help in centering */
   margin: 10px;
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: .25rem;
   padding: 20px;
-  box-sizing: border-box;  /* Ensure that padding and border are included in the width */
+  box-sizing: border-box; 
 }
 
 

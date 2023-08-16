@@ -27,7 +27,7 @@
     
   ]
 %}
-
+{# 
 {% if view_mode =="default" or view_mode=="full" %}
     <div class="partner-card">
         <div class="partner-card-header" id="heading{{ node.id }}">
@@ -44,96 +44,89 @@
             </div>
         </div>
     </div>
+{% endif %} #}
+
+{# {% if view_mode =="default" or view_mode=="full" %}
+    <div class="partner-card">
+        <div class="partner-card-header" id="heading{{ node.id }}">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse{{ node.id }}" aria-expanded="false" aria-controls="collapse{{ node.id }}">
+                    {{ node.field_name.value }}
+                </button>
+                <a href="{{ node.field_link.uri }}" class="link-icon"><img src="/link-icon-image" alt="Link Icon"></a>
+                <span class="expand-icon" data-toggle="collapse" data-target="#collapse{{ node.id }}"><img src="/expand-icon-image" alt="Expand Icon"></span>
+            </h2>
+        </div>
+        <div id="collapse{{ node.id }}" class="collapse" aria-labelledby="heading{{ node.id }}" data-parent="#partnerAccordion">
+            <div class="partner-card-body">
+                {{ node.field_description.value | raw }}
+                <a href="{{ node.field_link.uri }}">{{ node.field_link.title }}</a>
+            </div>
+        </div>
+    </div>
+{% endif %} #}
+
+
+
+{# {% if view_mode =="default" or view_mode=="full" %}
+    <div class="partner-card">
+        <div class="partner-card-header" id="heading{{ node.id }}">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse{{ node.id }}" aria-expanded="false" aria-controls="collapse{{ node.id }}">
+                    {{ node.field_name.value }}
+                </button>
+                <a href="{{ node.field_link.uri }}" class="link-icon"><img src= {{ drupal_image('public://2023-08/link.png') }} alt="Link Icon"></a>
+                <span class="expand-icon" data-toggle="collapse" data-target="#collapse{{ node.id }}"><img src={{ drupal_image('public://2023-08/expand.png') }} alt="Expand Icon"></span>
+            </h2>
+        </div>
+        <div id="collapse{{ node.id }}" class="collapse" aria-labelledby="heading{{ node.id }}" data-parent="#partnerAccordion">
+            <div class="partner-card-body">
+                {{ node.field_description.value | raw }}
+                <a href="{{ node.field_link.uri }}">{{ node.field_link.title }}</a>
+            </div>
+        </div>
+    </div>
+{% endif %} #}
+
+{# {% if view_mode =="default" or view_mode=="full" %}
+    <div class="partner-card">
+        <div class="partner-card-header" id="heading{{ node.id }}">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse{{ node.id }}" aria-expanded="false" aria-controls="collapse{{ node.id }}">
+                    {{ node.field_name.value }}
+                </button>
+                <a href="{{ node.field_link.uri }}" class="link-icon">{{ drupal_image('public://2023-08/link.png', 'thumbnail', {alt: 'Link Icon'}) }}</a>
+                <span class="expand-icon" data-toggle="collapse" data-target="#collapse{{ node.id }}">{{ drupal_image('public://2023-08/expand.png', 'thumbnail', {alt: 'Expand Icon'}) }}</span>
+            </h2>
+        </div>
+        <div id="collapse{{ node.id }}" class="collapse" aria-labelledby="heading{{ node.id }}" data-parent="#partnerAccordion">
+            <div class="partner-card-body">
+                {{ node.field_description.value | raw }}
+                <a href="{{ node.field_link.uri }}">{{ node.field_link.title }}</a>
+            </div>
+        </div>
+    </div>
+{% endif %} #}
+
+{% if view_mode =="default" or view_mode=="full" %}
+    <div class="partner-card">
+        <div class="partner-card-header" id="heading{{ node.id }}">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse{{ node.id }}" aria-expanded="false" aria-controls="collapse{{ node.id }}">
+                    {{ node.field_name.value }}
+                </button>
+                <a href="{{ node.field_link.uri }}" class="link-icon" target="_blank" rel="noopener noreferrer">{{ drupal_image('public://2023-08/link.png', 'thumbnail', {alt: 'Link Icon'}) }}</a>
+                <span class="expand-icon" data-toggle="collapse" data-target="#collapse{{ node.id }}">{{ drupal_image('public://2023-08/expand.png', 'thumbnail', {alt: 'Expand Icon'}) }}</span>
+            </h2>
+        </div>
+        <div id="collapse{{ node.id }}" class="collapse" aria-labelledby="heading{{ node.id }}" data-parent="#partnerAccordion">
+            <div class="partner-card-body">
+                {{ node.field_description.value | raw }}
+                <a href="{{ node.field_link.uri }}">{{ node.field_link.title }}</a>
+            </div>
+        </div>
+    </div>
 {% endif %}
 
-
-{# {% if view_mode =="default" or view_mode=="full" %}
-    <div class="accordion" id="partnerAccordion">
-        {% for item in items %}
-            <div class="partner">
-                <div class="partner-card-header" id="heading{{ loop.index }}">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{ loop.index }}" aria-expanded="true" aria-controls="collapse{{ loop.index }}">
-                            {{ item.content['#node'].field_name.value }}
-                        </button>
-                    </h5>
-                </div>
-
-                <div id="collapse{{ loop.index }}" class="collapse" aria-labelledby="heading{{ loop.index }}" data-parent="#partnerAccordion">
-                    <div class="partner-card-body">
-                        {{ item.content['#node'].field_description.value }}
-                        {% if item.content['#node'].field_partner_label %}
-                            <h6>
-                                <b>Label: </b>
-                                {{ item.content['#node'].field_partner_label.value }}
-                            </h6>
-                        {% endif %}
-                        <a href="{{ item.content['#node'].field_link.uri }}">{{ item.content['#node'].field_link.title }}</a>
-                    </div>
-                </div>
-            </div>
-        {% endfor %}
-    </div>
-{% endif %} #}
-
-
-{# {% if view_mode == "default" or view_mode == "full" %}
-    <div{{ attributes.addClass('partner-container', classes)}} >
-        <h3>{{content.field_name.0}}</h3>
-        <p>{{content.field_description.0}}</p>
-        <p>{{content.field_link.0}}</p>
-        <p>{{content.field_partner_label}}</p>
-    </div>
-{% endif %} #}
-
-
-{# {% if view_mode =="default" or view_mode=="full" %}
-    {% set i = 0 %}
-    <div class="accordion" id="partnerAccordion">
-        {% for item in items %}
-            <div class="partner-card">
-                <div class="partner-card-header" id="heading{{ i }}">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse{{ i }}" aria-expanded="false" aria-controls="collapse{{ i }}">
-                            {{ item.content['#node'].field_name.value }}
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapse{{ i }}" class="collapse" aria-labelledby="heading{{ i }}" data-parent="#partnerAccordion">
-                    <div class="partner-card-body">
-                        {{ item.content['#node'].field_description.value }}
-                        <a href="{{ item.content['#node'].field_link.uri }}">{{ item.content['#node'].field_link.title }}</a>
-                    </div>
-                </div>
-            </div>
-            {% set i = i + 1 %}
-        {% endfor %}
-    </div>
-{% endif %} #}
-
-
-{# {% if view_mode =="default" or view_mode=="full" %}
-    {% set i = 0 %}
-    <div class="accordion" id="partnerAccordion">
-        {% for partner in partners %}
-            <div class="partner-card">
-                <div class="partner-card-header" id="heading{{ i }}">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse{{ i }}" aria-expanded="false" aria-controls="collapse{{ i }}">
-                            {{ partner.field_name.value }}
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapse{{ i }}" class="collapse" aria-labelledby="heading{{ i }}" data-parent="#partnerAccordion">
-                    <div class="partner-card-body">
-                        {{ partner.field_description.value | raw }}
-                        <a href="{{ partner.field_link.uri }}">{{ partner.field_link.title }}</a>
-                    </div>
-                </div>
-            </div>
-            {% set i = i + 1 %}
-        {% endfor %}
-    </div>
-{% endif %} #}
-
+{# https://www.drupal.org/docs/contributed-modules/twig-tweak-2x/cheat-sheet#s-drupal-image #}
 
