@@ -990,3 +990,25 @@ select {
       padding: 15px;
   }
 }
+
+
+/* for "our members" page
+.view-rdc-member-view .views-row {
+  height: 500px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
+.view-rdc-member-view .container {
+  max-width: 1200px;
+  margin: 0 auto; /* This will center the container */
+}
+
+.view-rdc-member-view .col-sm-12.col-md-4 {
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
