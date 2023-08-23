@@ -835,28 +835,6 @@ select {
 }
 
 
-/* 	ResourceOverview1 */
-
-/* .view-resources .views-view-grid .views-row{
-  display: flex;
-  justify-content: center;
-  padding: 0 10px;  
-  float:none !important;
-  max-width: 1165px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.view-data-resources-view .views-view-grid .views-row{
-  display: flex;
-  justify-content: center;
-  padding: 0 10px;  
-  float:none !important;
-  max-width: 1165px;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
 .resource-overview-container {
   display: flex;
   justify-content: center !important;  
@@ -1002,18 +980,38 @@ select {
 }
 
 .view-rdc-member-view .container {
-  max-width: 1200px !important;
+  max-width: 1210px !important;
   margin: 0 auto !important;
 }
 
 .view-rdc-member-view .col-sm-12.col-md-4 {
   height: 480px;
-  width: 340px;
+  width: 350px;
   padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .view-rdc-member-view .row {
   justify-content: center !important;
+}
+
+
+
+/* for the sidebar in rdc pages */
+/* Target the specific block based on its unique class */
+.block-block-content02cbffbc-cf34-4fc2-a9dc-55db38d188bb .block-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Center the title and keep the menu items text left-aligned */
+.block-block-content02cbffbc-cf34-4fc2-a9dc-55db38d188bb .block-title {
+  text-align: center;
+}
+
+.block-block-content02cbffbc-cf34-4fc2-a9dc-55db38d188bb p {
+  text-align: left;
+  width: 100%;
 }
