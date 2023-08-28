@@ -696,6 +696,31 @@ select {
 /* Resources Page */
 /* *************************************** */
 
+.view-computing-resources-view .view-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.view-data-resources-view .view-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.view-research-resources-view .view-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
 .view-resources .views-view-grid .views-row{
   display: flex;
   justify-content: center;
@@ -716,7 +741,6 @@ select {
   margin-right: auto;
 }
 
-/* for computing&reseach resources views, havent check it yet, we have it in advance. but if it needs, go check it again */
 .view-computing-resources-view .views-view-grid .views-row{
   display: flex;
   justify-content: center;
