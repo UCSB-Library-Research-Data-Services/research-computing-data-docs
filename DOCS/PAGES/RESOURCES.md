@@ -1,4 +1,5 @@
 # Editing Resources Page
+- For Resources pages, while clicking "Resources" in the menu, you can see it drops down with Overview, Computing Resources, Data Resources, Data Storage Finder, Data Tool Explorer, Regulated Research. You can find more details for Data Storage Finder & Data Tool Explorer in other documentations. This documentation will focus more on Overview, Computing Resources, Data Resources, and Regulated Research.
 
 ## Add a Resource
 - Go to Manage >> Content >> Add Content >> Resource
@@ -7,9 +8,11 @@
 
 ## Edit/Delete Resource:
 - Go to Manage >> Content
-- In the filter, you can search for the title of the Resource you are looking for.  You should also use the 'Content Type' dropdown and change it to 'Resource'.  
+- In the filter, you can search for the title of the Resource you are looking for.  You should also use the 'Content Type' dropdown and change it to 'Resource'.
+- While creating/editing resource, pay attention to the "TypeOfResources" you pick. I already made the connection from different type of resources to each resource view. After choosing its type, it will show up in its page. Take "Sharing & Archiving" as an example, we pick "Data Resources" in "TypeOfResources" and then save. Now we can see it is shown up in /data-resources.
 
 ## Edit the Resource View:
+- Unlike other page usually have one view, we actually have a lot views for resources pages: Resources, Computing Resources View, Data Resources View, Research Resources View, ResourceOverview1_VIew.
 - Go to Manage >> Structure >> Views >> Resources >> Edit
 - Editing this may require a deeper understanding of Drupal, and more is described below
 
