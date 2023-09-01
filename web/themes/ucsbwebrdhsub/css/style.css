@@ -178,7 +178,7 @@ table.localist_minicalendar_minicalendar caption{
 
 /* for the select (drop down menu) in community page, testing */
 select {
-  width: 150px !important;
+  width: 300px !important;
 }
 
 .view-communities-list .views-view-grid .views-row {
