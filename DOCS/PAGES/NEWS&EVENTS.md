@@ -10,7 +10,7 @@
 
 ## Edit the News & Event View:
 - Go to Manage >> Structure >> Views >> News & Event >> Edit
-- Editing this may require a deeper understanding of Drupal.  I reviewed how I have structured this view (but for Resources) in https://github.com/UCSB-Library-Research-Data-Services/researchdata-ucsb-edu-v01/blob/master/DOCS/DEVS/GETTING_STARTED.md in the section "Create Custom Display using views". There is also information on RESOURCES.md. 
+- Editing this may require a deeper understanding of Drupal.  I reviewed how I have structured this view (but for Resources) in /DOCS/DEVS/GETTING_STARTED.md in the section "Create Custom Display using views". There is also information on RESOURCES.md. 
 
 ## Change News & Event View into a Basic Page
 Note that the the News & Event Page is not a content type of "Basic Page," but it is Drupal's View.  This means you can only add or remove content from it, but you cannot add text or anything else to the page.  In order to change the News & Event Page into a Basic Page instead of a view (ie so you can make edits to it like adding text above the News & Event list):
