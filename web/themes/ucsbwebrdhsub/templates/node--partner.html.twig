@@ -124,6 +124,14 @@
             <div class="partner-card-body">
                 {{ node.field_description.value | raw }}
                 <a href="{{ node.field_link.uri }}">{{ node.field_link.title }}</a>
+                
+                {# Display Partner Labels #}
+                {% if node.field_partner_label[0] %}
+                    <h6>
+                        <b>Labels: </b>
+                        {{labelList}}
+                    </h6>
+                {% endif %}
             </div>
         </div>
     </div>
