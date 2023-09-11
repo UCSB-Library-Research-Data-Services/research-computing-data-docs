@@ -809,6 +809,7 @@ select {
 }
 
 
+/* resource overview 1 */
 .resource-overview-container {
   display: flex;
   justify-content: center !important;  
@@ -833,7 +834,6 @@ select {
   padding: 20px;
   box-sizing: border-box; 
 }
-
 
 .resource-overview-image {
   flex: 0 0 20%; /* 35% width */
@@ -946,7 +946,7 @@ select {
 
 /* for "our members" page */
 .view-rdc-member-view .view-content {
-  max-width: 1100px !important;
+  max-width: 1200px !important;
   display: flex;
   flex-wrap: wrap;
   justify-content: center !important;
@@ -962,13 +962,13 @@ select {
   height: 480px;
   width: 350px;
   padding-bottom: 10px;
-  padding-left: 40px;
+  padding-left: 0px;
   padding-right: 40px;
 }
 
-.view-rdc-member-view .row {
+/* .view-rdc-member-view .row {
   justify-content: center !important;
-}
+} */
 
 
 
