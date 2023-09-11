@@ -19,3 +19,7 @@ Note that the the News & Event Page is not a content type of "Basic Page," but i
 
 ## Edit NewsEvent Content Type / Node:
 - Structure >> Content Types >> NewsEvent
+
+
+## Localist
+- https://docs.google.com/document/d/12bNZ6pQBBXNKFtDOPJK7VcDsMaDUCyu3KFHZiqvM0YY/edit#heading=h.ly7bjly2c922
