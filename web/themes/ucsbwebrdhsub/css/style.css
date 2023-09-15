@@ -740,10 +740,6 @@ select {
   overflow: hidden;
 }
 
-/* for one line in header, height:60px; font-size:15px; */
-/* for two lines in header, height: 80px; font-size: 21px; */
-/* but still, there are some titles just in one line... */
-
 .resource-card-header h3 {
   color: #FFFFFF;
   font-size: 21px;
@@ -760,6 +756,13 @@ select {
   padding-top: 20px;
   height: 190px;
 }
+
+.resource-card-link {
+  text-decoration: none;
+  color: inherit; /* Inherits the color from parent elements to avoid the usual blue color for links */
+  display: block;  /* Ensures the anchor takes up the full space of its parent container */
+}
+
 
 @media (max-width: 768px) {
 
