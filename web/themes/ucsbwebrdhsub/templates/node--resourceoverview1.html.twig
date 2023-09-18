@@ -23,7 +23,9 @@
     <div{{ attributes.addClass('resource-overview', classes) }}>
         <div class="resource-overview-card">
             <div class="resource-overview-image">
-                {{ content.field_resourceoverview1_image.0 }}
+                <a target='_blank' href={{ content.field_desination_url.0['#url'] }}>
+                    {{ content.field_resourceoverview1_image.0 }}
+                </a>
             </div>
             <div class="resource-overview-content">
                 <h3>{{ node.title.value }}</h3>
