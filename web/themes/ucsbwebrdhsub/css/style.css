@@ -830,7 +830,7 @@ select {
   justify-content: center !important;
   float:none !important;
   width: 1165px;  /* Setting a definitive width can help in centering */
-  margin: 10px;
+  margin-top: 15px !important;
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: .25rem;
