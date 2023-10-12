@@ -608,6 +608,10 @@ select {
   font-size: 22px;  
 }
 
+.partner-card-header:hover {
+  background-color: #FEBC11;
+}
+
 .expand-icon, .link-icon {
   margin-left: 15px; 
   cursor: pointer; 
@@ -1080,3 +1084,11 @@ select {
   width: 18px; 
   height: 18px; 
 }
+
+
+/* testing for the sticky box */
+/* div[data-quickedit-entity-id="paragraph/763"] .inner {
+  position: sticky;
+  top: 0;
+  z-index: 100; 
+} */
