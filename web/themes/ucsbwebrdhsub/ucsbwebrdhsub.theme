@@ -29,6 +29,16 @@ function ucsbwebrdhsub_preprocess_page(&$variables){
     $variables['#attached']['library'][] = 'ucsbwebrdhsub/data-literacy-series';
   }
 
+  if ($route_name === 'entity.node.canonical' && $node->getTitle() === 'Our Members') {
+    $variables['#attached']['library'][] = 'ucsbwebrdhsub/our-members';
+  }
+
+  // Check if the current path starts with "/our-members/".
+  $current_path = \Drupal::service('path.current')->getPath();
+  if (strpos($current_path, '/our-members/') === 0) {
+    $variables['#attached']['library'][] = 'ucsbwebrdhsub/our-members';
+  }
+
 
   if ($route_name === 'entity.node.canonical' && $node->getTitle() === 'Calendar') {
     $variables['#attached']['library'][] = 'ucsbwebrdhsub/calendar';
