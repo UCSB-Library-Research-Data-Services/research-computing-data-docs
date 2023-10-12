@@ -16,6 +16,12 @@ calendar:
   dependencies:
     - core/jquery
 
+
+our-members:
+  version: 9
+  js:
+    js/our-members.js: {}
+
 bootstrap:
   js:
     https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js: { type: external, minified: true }
