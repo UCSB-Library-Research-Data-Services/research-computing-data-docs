@@ -770,8 +770,16 @@ select {
 }
 
 .resource-card-image {
+  display: flex;
+  align-items: center; /* Centers children vertically */
+  justify-content: center; /* Centers children horizontally */
   width: 100%;
   height: auto;
+}
+
+.resource-card-image img {
+  max-width: 100%; 
+  height: auto; 
 }
 
 .resource-card-body {
