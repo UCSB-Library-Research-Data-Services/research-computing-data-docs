@@ -674,13 +674,14 @@ select {
   margin: 0 auto;
 }
 
-.view-resources-overview-normal-card-view .view-content {
+.view-resourceoverviewnormalcards .view-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 
 .view-resources .views-view-grid .views-row{
   display: flex;
@@ -722,7 +723,7 @@ select {
   margin-right: auto;
 }
 
-.view-resources-overview-normal-card-view .views-view-grid .views-row{
+.view-resourceoverviewnormalcards .views-view-grid .views-row{
   display: flex;
   justify-content: center;
   padding: 0 10px;  
@@ -791,8 +792,8 @@ select {
   .view-resources .views-view-grid .views-row,
   .view-data-resources-view .views-view-grid .views-row,
   .view-computing-resources-view .views-view-grid .views-row,
-  .view-research-resources-view .views-view-grid .views-row,
-  .view-resources-overview-normal-card-view .views-view-grid .views-row {
+  .view-research-resources-view .views-view-grid .views-row, 
+  .view-resourceoverviewnormalcards .views-view-grid .views-row{
     max-width: 100%;
     padding: 10px;
   }
@@ -1031,18 +1032,19 @@ select {
   width: 100%;
 }
 
-/* for the sidebar in resources overview page */
-.block-block-content1e09e046-33a8-4a51-9b0d-00972fce1a47 .block-inner {
+/* blcok for resources overview page */
+.block-block-contente0912e4a-7bbf-4dd2-b74c-7e2c5b0fd3fd .block-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.block-block-content1e09e046-33a8-4a51-9b0d-00972fce1a47 .block-title {
+/* Center the title and keep the menu items text left-aligned */
+.block-block-contente0912e4a-7bbf-4dd2-b74c-7e2c5b0fd3fd .block-title {
   text-align: center;
 }
 
-.block-block-content1e09e046-33a8-4a51-9b0d-00972fce1a47 p {
+.block-block-contente0912e4a-7bbf-4dd2-b74c-7e2c5b0fd3fd p {
   text-align: left;
   width: 100%;
 }
