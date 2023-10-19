@@ -674,6 +674,14 @@ select {
   margin: 0 auto;
 }
 
+.view-resourceoverviewnormalcards .view-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 
 .view-resources .views-view-grid .views-row{
   display: flex;
@@ -706,6 +714,16 @@ select {
 }
 
 .view-research-resources-view .views-view-grid .views-row{
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;  
+  float:none !important;
+  max-width: 1165px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.view-resourceoverviewnormalcards .views-view-grid .views-row{
   display: flex;
   justify-content: center;
   padding: 0 10px;  
@@ -774,7 +792,8 @@ select {
   .view-resources .views-view-grid .views-row,
   .view-data-resources-view .views-view-grid .views-row,
   .view-computing-resources-view .views-view-grid .views-row,
-  .view-research-resources-view .views-view-grid .views-row {
+  .view-research-resources-view .views-view-grid .views-row, 
+  .view-resourceoverviewnormalcards .views-view-grid .views-row{
     max-width: 100%;
     padding: 10px;
   }
@@ -1009,6 +1028,23 @@ select {
 }
 
 .block-block-content02cbffbc-cf34-4fc2-a9dc-55db38d188bb p {
+  text-align: left;
+  width: 100%;
+}
+
+/* blcok for resources overview page */
+.block-block-contente0912e4a-7bbf-4dd2-b74c-7e2c5b0fd3fd .block-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Center the title and keep the menu items text left-aligned */
+.block-block-contente0912e4a-7bbf-4dd2-b74c-7e2c5b0fd3fd .block-title {
+  text-align: center;
+}
+
+.block-block-contente0912e4a-7bbf-4dd2-b74c-7e2c5b0fd3fd p {
   text-align: left;
   width: 100%;
 }
