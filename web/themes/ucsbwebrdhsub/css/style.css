@@ -733,6 +733,17 @@ select {
   margin-right: auto;
 }
 
+.view-resourcemenu .views-view-grid .views-row{
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;  
+  float:none !important;
+  max-width: 1165px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .resource{
   display: flex;
   justify-content: center;
@@ -770,8 +781,16 @@ select {
 }
 
 .resource-card-image {
+  display: flex;
+  align-items: center; /* Centers children vertically */
+  justify-content: center; /* Centers children horizontally */
   width: 100%;
   height: auto;
+}
+
+.resource-card-image img {
+  max-width: 100%; 
+  height: auto; 
 }
 
 .resource-card-body {
@@ -854,7 +873,7 @@ select {
   float:none !important;
   width: 1165px;  /* Setting a definitive width can help in centering */
   margin-top: 15px !important;
-  background-color: #ffffff;
+  background-color: #09847A;
   border: 1px solid #ddd;
   border-radius: .25rem;
   padding: 20px;
@@ -880,10 +899,11 @@ select {
   display: inline-block;
   flex-direction: column;
   justify-content: center;
+  color: #FFFFFF;
 }
 
 .resource-overview-content h3 {
-  color: #003660;
+  color: #FFFFFF;
   font-size: 21px; 
   margin: 0;
   margin-bottom: 10px;
@@ -891,6 +911,15 @@ select {
 
 .resource-overview-summary {
   margin-bottom: 10px; 
+}
+
+.resource-overview-content a {
+  color: #FFFFFF !important; 
+  /* text-decoration: none; */
+}
+
+.resource-overview-content a:hover {
+  color: #FFFFFF; 
 }
 
 @media (max-width: 768px) {
