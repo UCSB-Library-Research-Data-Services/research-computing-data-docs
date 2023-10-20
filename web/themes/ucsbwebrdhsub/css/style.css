@@ -733,16 +733,6 @@ select {
   margin-right: auto;
 }
 
-.view-resourcemenu .views-view-grid .views-row{
-  display: flex;
-  justify-content: center;
-  padding: 0 10px;  
-  float:none !important;
-  max-width: 1165px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 
 .resource{
   display: flex;
@@ -1164,3 +1154,91 @@ select {
   top: 0;
   z-index: 100; 
 } */
+
+
+/* for resource menu, which is located in resources overview page */
+.view-resourcemenu .views-view-grid .views-row{
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;  
+  float:none !important;
+  /* max-width: 1165px; */
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resource-menu-card {
+  max-width: 1165px;
+  margin: auto;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+  border-radius: .25rem;
+  padding: 10px;
+}
+
+.resource-menu-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: .75rem 1.25rem;
+  background-color: #9CBEBE;
+  border-bottom: 1px solid #9CBEBE;
+  color: #3D4952 !important;
+  cursor: pointer;
+  height: 70px;
+}
+
+.resource-menu-card-header h2 {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  width: 100%; 
+}
+
+.resource-menu-card-header h2 .btn {
+  flex: 1; 
+  text-align: left; 
+  padding-left: 3px;
+  justify-content: flex-start;
+}
+
+.resource-menu-card-header h2 .resource-menu-title {
+  font-size: 22px;  
+}
+
+.resource-menu-card-header:hover {
+  background-color: #047C91;
+}
+
+.expand-icon, .link-icon, .resource-menu-link-icon {
+  margin-left: 15px; 
+  cursor: pointer; 
+}
+
+.resource-menu-card-body {
+  background-color: #FFFFFF !important;
+  color: #000000;
+  border: 1px solid #9CBEBE;
+  padding: 15px;
+}
+
+.resource-menu-card .btn-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.resource-menu-card .btn-link:hover {
+  text-decoration: none;
+  color: #212529;
+}
+
+.resource-menu-card-header h2 .btn:focus {
+  outline: none;
+  border-color: #9CBEBE;
+}
+
+.expand-icon img, .link-icon img, .resource-menu-link-icon img {
+  width: 18px; 
+  height: 18px; 
+}
