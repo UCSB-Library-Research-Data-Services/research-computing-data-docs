@@ -615,6 +615,8 @@ select {
 .expand-icon, .link-icon {
   margin-left: 15px; 
   cursor: pointer; 
+  text-decoration: none !important;
+  border-bottom: none !important;
 }
 
 .partner-card-body {
@@ -642,6 +644,11 @@ select {
 .expand-icon img, .link-icon img {
   width: 18px; 
   height: 18px; 
+}
+
+.link-icon {
+  text-decoration: none !important;
+  border-bottom: none !important;
 }
 
 
@@ -807,39 +814,34 @@ select {
     padding: 10px;
   }
 
-  /* Adjusting the general container for resources */
   .resource {
     max-width: 100%;
     flex-direction: column;
     align-items: center;
   }
 
-  /* Adjusting each individual card on mobile */
-  .resource-card {
-    max-width: 90%;  /* You can adjust this percentage based on your preference */
+  /* .resource-card {
+    max-width: 90%;  
     margin: 10px 0;
   }
 
-  /* Adjusting the header for each card */
   .resource-card-header {
-    height: auto;  /* Letting it adjust based on content */
+    height: auto;  
   }
 
   .resource-card-header h3 {
-    font-size: 18px;  /* Slightly reducing font size */
+    font-size: 18px; 
   }
 
-  /* Adjusting image size */
   .resource-card-image {
-    width: 80%;  /* Reducing image width for better fit */
-    margin: 0 auto;  /* Centering the image */
+    width: 90%;  
+    margin: 0 auto;  
   }
 
-  /* Adjusting the body of each card */
   .resource-card-body {
     padding-top: 10px;
     height: auto;
-  }
+  } */
 
 }
 
