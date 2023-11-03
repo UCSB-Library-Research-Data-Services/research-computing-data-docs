@@ -651,7 +651,55 @@ select {
   border-bottom: none !important;
 }
 
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .view-partners,
+  .partner-container,
+  .partner-card {
+    max-width: 100%;
+    margin: 0;
+    padding: 0
+  }
 
+  .partner-card {
+    margin-bottom: 1rem; 
+  }
+
+  .partner-card-header {
+    height: auto; 
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .partner-card-header h2 {
+    /* flex-direction: column;  */
+    font-size: 16px;
+  }
+
+  .partner-card-header h2 .btn {
+    text-align: left;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+  }
+
+  .expand-icon, .link-icon {
+    margin: 0.5rem 0;
+  }
+
+  .expand-icon img, .link-icon img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .partner-card-body {
+    padding: 0.75rem; 
+    font-size: 14px;
+    min-height:0;
+  }
+
+}
 
 
 /* Resources Page */
