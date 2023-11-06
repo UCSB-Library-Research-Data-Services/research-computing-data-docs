@@ -40,7 +40,7 @@ function ucsbwebrdhsub_preprocess_page(&$variables){
   }
 
 
-  if ($route_name === 'entity.node.canonical' && $node->getTitle() === 'Calendar') {
+  if ($route_name === 'entity.node.canonical' && $node->getTitle() === 'Events') {
     $variables['#attached']['library'][] = 'ucsbwebrdhsub/calendar';
   }
 
