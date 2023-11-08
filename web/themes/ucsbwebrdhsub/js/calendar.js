@@ -5,6 +5,21 @@
 
 // Minicalendar id: 59891903
 
+// this is not working... yet
+document.addEventListener('DOMContentLoaded', (event) => {
+  // the function would run when the page is fully loaded
+  function updateNoEventsMessage() {
+    // select the element that contains the "No events found" text
+    var noEventsElement = document.querySelector('.lw_event_item_title'); 
+
+    // check if the element exists and contains the specific text
+    if (noEventsElement && noEventsElement.textContent.includes("No events found")) {
+      // update the text content
+      noEventsElement.textContent = "No events found. Please click another date or click the \"This Month's Events\" or \"Past Events\" buttons.";
+    }
+  }
+  updateNoEventsMessage();
+});
 
 (function ($) {
   
@@ -12,8 +27,7 @@
     'datascience',
     'dataliteracy',
     'researchdata'
-]
-
+  ]
 
     $(document).ready(function() {
 
@@ -30,20 +44,17 @@
 
       if (minicalendarNav) {
         const anchorTags = minicalendarNav.getElementsByTagName('a');
-
         if (anchorTags.length >= 2) {
           anchorTags[0].textContent = "This Month's Events";
           anchorTags[1].textContent = "Past Events";
         }
       }
 
-
       const elements = document.querySelectorAll('[onclick]');
 
       // Loop through each element
       elements.forEach(element => {
         const originalOnClick = element.getAttribute('onclick');
-        
         // Check if the onclick event starts with "minicalendar_xxxx"
         if (originalOnClick.startsWith('minicalendar_')) {
           // Replace the onclick event with "minicalendar()"
@@ -58,15 +69,9 @@
       });
 
       minicalendar = (function () {
-        // 7133
-
-     
         var minical_id;
         var all_months =[];
         var all_month_names =[];
-
-
-
         var position = 0;
         var events_base_url; 
         var current_day;
@@ -115,17 +120,14 @@
         }
 
         function getEl(id) {
-          
           return document.getElementById(id);
         }
 
         function indexInArray(ary, obj) {
           var num = ary.length, idx;
-
           for (idx = 0; idx < num; idx++) {
             if (ary[idx] === obj) return idx;
           }
-
           return -1;
         }
 
@@ -181,9 +183,7 @@
 
             if (cal_el) {
               if (show){
-
                 showElement(cal_el); 
-                
              } 
               else hideElement(cal_el);
             }
@@ -192,22 +192,18 @@
 
         function choseDate(el, num_days) {
           num_days = num_days || days_shown;
-
           //   Want to display at least 7 days at all times now.
           if (num_days < 8 && num_days > 0) {
             num_days = 8;
           }
           if(num_days == 8){
             const eventSelectLabel = document.querySelector('#event-selection-label');
-
             if (eventSelectLabel) {
-
             eventSelectLabel.textContent = "Weekly Events";
-    
           }
           }
-          /* if we're not in the current displayed month, find a better one to show
-             if possible */
+
+          /* if we're not in the current displayed month, find a better one to show if possible */
           var the_date = el.getAttribute('data-date');
           var the_month = the_date.substr(5, 2);
           if (the_month.substr(0, 1) == '0') the_month = the_month.substr(1, 1);
@@ -219,7 +215,6 @@
             if (new_el = findChildWithData(table, 'A', 'date', the_date)) {
               position = indexInArray(all_months, Number(the_month));
               chooseMonth(the_month, position);
-
               el = new_el;
             }
           }
@@ -246,7 +241,6 @@
 
         function chooseTodayReplace(num_days){
           num_days = num_days || 8;
-
           /* find the element representing today */
           var today = new Date();
           var month = today.getMonth() + 1,
@@ -257,18 +251,14 @@
           choseDate(el, num_days);
         }
 
-
         // Overwriting "choseToday" to actually be chooseThisMonth
         function chooseToday(num_days) {
-
           chooseThisMonth();
-          
         }
 
         // Overwrite chooseThisWeek to actually be choose Past Events
         function chooseThisWeek() {
           choosePastEvents();
-          
         }
 
         function chooseThisMonth() {
@@ -282,27 +272,20 @@
 
           var month = all_months[position];
           var date = year + "-" + (month < 10 ? "0" : '') + month + '-' + (1 < 10 ? '0' : '') + 1;
-
           var el = findChildWithData(getEl(`localist-minical-${minical_id}`), 'a', 'date', date);
-
           choseDate(el, 31);
           const eventSelectLabel = document.querySelector('#event-selection-label');
-
           if (eventSelectLabel) {
-
             eventSelectLabel.textContent = "This Month's Events";
-    
           }
         }
 
         function choosePastEvents() {
-          chooseTodayReplace(-31);
+          chooseTodayReplace(-365);
           const eventSelectLabel = document.querySelector('#event-selection-label');
-
           if (eventSelectLabel) {
-
-            eventSelectLabel.textContent = "Past Events";
-    
+            // eventSelectLabel.textContent = "Past Events";
+            eventSelectLabel.textContent = "Past Events (last 365 days)";
           }
         }
 
@@ -326,25 +309,23 @@
           el.type = 'text/javascript';
           el.src = url;
           document.body.appendChild(el);
-          
         }
 
         function setInitial() {
           const rootMiniCal = document.querySelector('.localist_minicalendar');
           if (rootMiniCal) {
-          minical_id = rootMiniCal.id.substring(17);
-          // console.log(minical_id);
+            minical_id = rootMiniCal.id.substring(17);
+            // console.log(minical_id);
           }
 
           var tagsString = ""
           if(tags.length > 0){
-               tagsString = "tags=" + tags[0];
+            tagsString = "tags=" + tags[0];
           }
           
           for (let i = 1; i < tags.length; i++){
-              tagsString += "%2C" + tags[i];
+            tagsString += "%2C" + tags[i];
           }
-
 
           const h1StartMonth = document.querySelector(`#localist-minical-${minical_id}-month-name`).textContent;
           all_months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -380,7 +361,6 @@
           var initial_date_el = getEl(`localist-minical-${minical_id}-initial`);
 
           
-
           current_day = initial_date_el;
         }
 
@@ -411,8 +391,6 @@
         }; /* return */
       })();
       ; minicalendar.setInitial();
-
     });
-
 
 })(jQuery);
