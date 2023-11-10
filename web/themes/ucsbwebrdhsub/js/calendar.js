@@ -191,16 +191,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
 
         function choseDate(el, num_days) {
-          num_days = num_days || days_shown;
-          //   Want to display at least 7 days at all times now.
-          if (num_days < 8 && num_days > 0) {
-            num_days = 8;
-          }
-          if(num_days == 8){
-            const eventSelectLabel = document.querySelector('#event-selection-label');
-            if (eventSelectLabel) {
-            eventSelectLabel.textContent = "Weekly Events";
-          }
+          // num_days = num_days || days_shown;
+          num_days = num_days || 1;
+
+          // //   Want to display at least 7 days at all times now.
+          // if (num_days < 8 && num_days > 0) {
+          //   num_days = 8;
+          // }
+          const eventSelectLabel = document.querySelector('#event-selection-label');
+          if (eventSelectLabel) {
+            eventSelectLabel.textContent = "Events";
           }
 
           /* if we're not in the current displayed month, find a better one to show if possible */
@@ -256,10 +256,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
           chooseThisMonth();
         }
 
-        // Overwrite chooseThisWeek to actually be choose Past Events
-        function chooseThisWeek() {
-          choosePastEvents();
-        }
+        // comment out the whole section cuz wanna remove the weekly view.
+
+        // // Overwrite chooseThisWeek to actually be choose Past Events
+        // function chooseThisWeek() {
+        //   choosePastEvents();
+        // }
 
         function chooseThisMonth() {
           var today = new Date();
@@ -383,7 +385,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
           choseDate: choseDate,
           updateEvents: updateEvents,
           chooseToday: chooseToday,
-          chooseThisWeek: chooseThisWeek,
+          // chooseThisWeek: chooseThisWeek,
           chooseThisMonth: chooseThisMonth,
           choosePastEvents: choosePastEvents,
           choseType: choseType,
