@@ -3,8 +3,6 @@
  * Overrride UI behaviors
  */
 
-// Minicalendar id: 59891903
-
 // this is not working... yet
 document.addEventListener('DOMContentLoaded', (event) => {
   // the function would run when the page is fully loaded
@@ -191,16 +189,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
 
         function choseDate(el, num_days) {
-          // num_days = num_days || days_shown;
           num_days = num_days || 1;
 
-          // //   Want to display at least 7 days at all times now.
-          // if (num_days < 8 && num_days > 0) {
-          //   num_days = 8;
-          // }
           const eventSelectLabel = document.querySelector('#event-selection-label');
           if (eventSelectLabel) {
-            eventSelectLabel.textContent = "Events";
+            eventSelectLabel.textContent = num_days > 1 ? "Events" : "This Day's Events";
           }
 
           /* if we're not in the current displayed month, find a better one to show if possible */
@@ -259,9 +252,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // comment out the whole section cuz wanna remove the weekly view.
 
         // // Overwrite chooseThisWeek to actually be choose Past Events
-        // function chooseThisWeek() {
-        //   choosePastEvents();
-        // }
+        function chooseThisWeek() {
+          choosePastEvents();
+        }
 
         function chooseThisMonth() {
           var today = new Date();
@@ -282,6 +275,29 @@ document.addEventListener('DOMContentLoaded', (event) => {
           }
         }
 
+        // function choosePastEvents() {
+        //   var pastDate = new Date();
+        //   pastDate.setDate(pastDate.getDate() - 365); // Set to 365 days ago
+        
+        //   var pastYear = pastDate.getFullYear();
+        //   var pastMonth = pastDate.getMonth() + 1;
+        //   var pastDay = pastDate.getDate();
+        //   var pastDateStr = pastYear + "-" + (pastMonth < 10 ? "0" : '') + pastMonth + '-' + (pastDay < 10 ? '0' : '') + pastDay;
+        
+        //   var el = findChildWithData(getEl(`localist-minical-${minical_id}`), 'a', 'date', pastDateStr);
+        //   if (!el) {
+        //     // If the exact date is not found, use the current day element as a fallback
+        //     el = current_day;
+        //   }
+        
+        //   choseDate(el, 365); // Call choseDate for 365 days
+        
+        //   const eventSelectLabel = document.querySelector('#event-selection-label');
+        //   if (eventSelectLabel) {
+        //     eventSelectLabel.textContent = "Past Events (last 365 days)";
+        //   }
+        // }
+
         function choosePastEvents() {
           chooseTodayReplace(-365);
           const eventSelectLabel = document.querySelector('#event-selection-label');
@@ -290,6 +306,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
             eventSelectLabel.textContent = "Past Events (last 365 days)";
           }
         }
+        
+        
+        
 
         function choseType(el) {
           var chosen_type = el.options[el.selectedIndex].value;
@@ -385,7 +404,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
           choseDate: choseDate,
           updateEvents: updateEvents,
           chooseToday: chooseToday,
-          // chooseThisWeek: chooseThisWeek,
+          chooseThisWeek: chooseThisWeek,
           chooseThisMonth: chooseThisMonth,
           choosePastEvents: choosePastEvents,
           choseType: choseType,
@@ -396,3 +415,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 
 })(jQuery);
+
