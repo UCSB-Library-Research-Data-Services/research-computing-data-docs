@@ -23,7 +23,7 @@
     <div{{ attributes.addClass('resource-overview', classes) }}>
         <div class="resource-overview-card">
             <div class="resource-overview-image">
-                <a target='_blank' href={{ content.field_desination_url.0['#url'] }}>
+                <a href={{ content.field_desination_url.0['#url'] }}>
                     {{ content.field_resourceoverview1_image.0 }}
                 </a>
             </div>
@@ -32,7 +32,7 @@
                 <div class="resource-overview-summary">
                     {{ content.field_resourceoverview1_summary.0 }}
                 </div>
-                <a target='_blank' href={{ content.field_desination_url.0['#url'] }}>{{ 'View Resource' }}</a>
+                <a href={{ content.field_desination_url.0['#url'] }}>{{ 'View Resource' }}</a>
             </div>
         </div>
     </div>
