@@ -43,5 +43,8 @@ If you do not need a very customized content display, and you are using a view t
 ### Clear Caches
 When editing the code using SFTP mode, the changes will most likely not appear right away because the website is cached.  In order to clear caches, the fastest way to do this is with Devel.  It should be a tab in the Drupal toolbar "Devel" and "Cache Clear" is the first option after you click on Devel.  
 
+### Upstream Update
+Swtich to Git if you were in SFTP mode. And then update in Pantheon. Do not update directly in drupal, which will cause the website (that branch) be blank. As usual, update in the test branch to make sure it work well before updating directly in the dev.
+
 ### Other Resources
 - https://selwynpolit.github.io/d9book/ is a very recent resource we came across that would be good for advanced Drupal development.
