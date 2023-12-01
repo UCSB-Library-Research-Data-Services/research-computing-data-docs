@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
       if (localistMinicalendarEvents) {
         const h2Element = document.createElement('h2');
-        h2Element.textContent = "This Month's Events";
+        h2Element.textContent = "Upcoming Events";
         h2Element.id = 'event-selection-label';
         localistMinicalendarEvents.insertAdjacentElement('beforebegin', h2Element);
       }
