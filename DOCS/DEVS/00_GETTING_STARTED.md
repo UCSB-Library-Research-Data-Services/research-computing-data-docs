@@ -12,6 +12,8 @@ https://webtheme.brand.ucsb.edu/docs/content-editors/menus-utility-bar-footer
 
 https://webtheme.brand.ucsb.edu/support
 
+https://webtheme.brand.ucsb.edu/pre-launch-checklist
+
 ## As a dev for the Research Data Hub website, you will need to learn the basics of Drupal.  
 
 ### Pantheon has a crash-course for Drupal 9 which I recommend going through: https://pantheon.io/drupal-9-training.  Note you have to scroll down to see the webinar recordings, and you do NOT have to sign up for the webinar.  
