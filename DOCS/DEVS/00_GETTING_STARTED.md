@@ -48,5 +48,10 @@ When editing the code using SFTP mode, the changes will most likely not appear r
 ### Upstream Update
 Swtich to Git if you were in SFTP mode. And then update in Pantheon. Do not update directly in drupal, which will cause the website (that branch) be blank. As usual, update in the test branch to make sure it work well before updating directly in the dev.
 
+### Content/code Update after live
+Since the website is live now, after changing the content or code, we need to clone in the following sequence: multidev -> dev -> test -> live. Check in every step to make sure everything looks fine before we make the changes live!
+
+
+
 ### Other Resources
 - https://selwynpolit.github.io/d9book/ is a very recent resource we came across that would be good for advanced Drupal development.
