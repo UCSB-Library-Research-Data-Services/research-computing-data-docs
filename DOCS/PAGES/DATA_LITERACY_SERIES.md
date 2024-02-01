@@ -39,3 +39,10 @@
 
 ## Edit Data Literacy Series Content Type / Node:
 - Structure >> Content Types >> DLS Post
+ 
+## URL problems in the thumbnail
+- When clicking the thumbnail images, it will guide us to somewhere such as https://rcd.ucsb.edu/sites/default/files/2024-01/DLS-202401-Binder-navy.pdf.
+- If the url doesn't start with https://rcd.ucsb.edu/sites, rebuild the site's cache and force the setting of any new database queries.
+- If it doesn't work, then try see if any aggregation is turned on/off and re-configure that, especially if the module or theme uses a lot of javascript calls.
+- If that still not working, it could be due to the module's code not properly redirecting the links once the page is saved.
+
