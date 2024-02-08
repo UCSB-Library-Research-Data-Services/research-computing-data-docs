@@ -216,6 +216,10 @@ color: white; }
   font-weight:normal;
 }
 
+#pagesubtitle1{
+  padding-top: 8px;
+
+}
 /* the box bg */
 #pagesubtitle2 {
   background-color: #F1EEEA !important;
