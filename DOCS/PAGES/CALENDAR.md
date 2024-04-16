@@ -1,5 +1,7 @@
 # Editing the Calendar Page.
 
+## We are no longer using this page, but we keep it here for future reference if in need.
+
 ## Change the Calendar Tags:
 - The calendar dashboard is at https://campuscalendar.ucsb.edu/rds_405/home.  
 - Build a new embed widget
