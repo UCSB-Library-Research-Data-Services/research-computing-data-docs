@@ -2,7 +2,7 @@
 
 - This is the page for RDC, we can access it with /rdc, or from Communities page => RDC. In the future, we might need to find another place to show it more apparently.
 
-## Activate Left Side-bar Menu
+## Activate Left Side-bar Menu ( We actually removed this featue earlier, but still keep it for future reference.
 - Go to the Custom block library, /admin/structure/block/block-content
 - Edit the custom block of Sidebar Navigation type installed by default
 - Block description: Sidebar Nav Menu Block
