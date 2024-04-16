@@ -1,5 +1,7 @@
 # Add Resources to the News And Events Page
 
+We are no longer using this page, but we keep it here for future reference if in need.
+
 ## Add Content
 - Go to Manage >> Content >> Add Content >> NewsEvents
 - Once the NewsEvent is added, you will be redirected to the Drupal Node.  This is not navigatable by a user on the website, so you can ignore the formatting.  To view it, visit the new News and Events Page.
