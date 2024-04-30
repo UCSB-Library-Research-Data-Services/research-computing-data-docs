@@ -5,6 +5,7 @@
 {% set style = 'color: #'~ text_color ~';' %} 
 
 {# How to use PHP For statement within Twig: #}
+{# for the tags #}
 {% set labelList = '' %}
 {% if content.field_learningresourcestags[0] %}
   {% set labelList = content.field_learningresourcestags[0]['#title'] %}
@@ -15,6 +16,17 @@
   {% endfor %}
 {% endif %}
 
+{# for the types #}
+
+{% set labelList1 = '' %}
+{% if content.field_learningresourcestype[0] %}
+  {% set labelList1 = content.field_learningresourcestype[0]['#title'] %}
+  {% for key, item in content.field_learningresourcestype %}
+    {% if key|first != '#' and key != 0 %}
+      {% set labelList1 = labelList1 ~ ', ' ~ item['#title'] %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
 
 {# Drupal has default classes that are for displaying the content type.  We get these with the following: #}
 {%
@@ -59,6 +71,15 @@
                 <h6>
                     <b>Date: </b> {{ node.field_learningresourcestypedate.value}}
                 </h6>
+            </div>
+
+            <div class="learning-resource-tags">
+                {% if node.field_learningresourcestype[0] %}
+                    <h6>
+                        <b>Topics: </b>
+                        {{labelList1}}
+                    </h6>
+                {% endif %}
             </div>
 
             <div class="learning-resource-tags">
