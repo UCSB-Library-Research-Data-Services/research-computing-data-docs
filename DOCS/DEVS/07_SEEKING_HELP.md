@@ -12,7 +12,7 @@ Where to look for help:
 
 - Campus support: It might take you a whole day to figure out something that a senior-level colleague only needs a few minutes. Don't be shy to ask when you are in need! They are all very smart, nice, and helpful people:
 
-    - Ryan Vizena: Senior Web Developer at UCSB. He offers office hours [add link to calendering] or ryan.vizena@ucsb.edu (Drupal and Pantheon). Updates to the upstream. 
+    - Ryan Vizena: Senior Web Developer at UCSB. He offers office hours https://www.campuscalendar.ucsb.edu/event/web_theme_open_office_hours or ryan.vizena@ucsb.edu (Drupal and Pantheon). Updates to the upstream. 
  
     - Ian Lessing: Digital Library Developer at UCSB. SFTP connections and Twig. ilessing@library.ucsb.edu
  
