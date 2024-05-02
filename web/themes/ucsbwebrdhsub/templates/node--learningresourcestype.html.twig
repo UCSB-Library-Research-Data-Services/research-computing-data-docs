@@ -67,10 +67,14 @@
                 {{ content.body }}
             </div>
 
-            <div class="learning-resource-date">
-                <h6>
-                    <b>Date: </b> {{ node.field_learningresourcestypedate.value}}
-                </h6>
+            
+            <div class="learning-resource-tags">
+                {% if node.field_learningresourcestags[0] %}
+                    <h6>
+                        <b>tags: </b>
+                        {{labelList}}
+                    </h6>
+                {% endif %}
             </div>
 
             <div class="learning-resource-tags">
@@ -82,14 +86,13 @@
                 {% endif %}
             </div>
 
-            <div class="learning-resource-tags">
-                {% if node.field_learningresourcestags[0] %}
-                    <h6>
-                        <b>Tags: </b>
-                        {{labelList}}
-                    </h6>
-                {% endif %}
+            <div class="learning-resource-date">
+                <h6>
+                    <b>Date: </b> {{ node.field_learningresourcestypedate.value}}
+                </h6>
             </div>
+
+            
             
         </div>
 
