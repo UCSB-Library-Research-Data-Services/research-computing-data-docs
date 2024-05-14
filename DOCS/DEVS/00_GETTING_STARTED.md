@@ -16,13 +16,29 @@ https://webtheme.brand.ucsb.edu/pre-launch-checklist
 
 ## As a dev for the Research Data Hub website, you will need to learn the basics of Drupal.  
 
-### Pantheon has a crash-course for Drupal 9 which I recommend going through: https://pantheon.io/drupal-9-training.  Note you have to scroll down to see the webinar recordings, and you do NOT have to sign up for the webinar.  
+### Pantheon has a crash-course for drupal 9 which I recommend going through: https://pantheon.io/drupal-9-training.  Note you have to scroll down to see the webinar recordings, and you do NOT have to sign up for the webinar. I understand that we are in Drupal 10 right now, but our website was initially built with drupal 9. In addition, Pantheon website has not released the training for drupal 10 yet. Drupal 9 and 10 are not too different.
 
 ### I also recommend getting more Drupal practice from Acquia which has free, in-depth Drupal courses: acquiaacademy.com/  Create an account, then start the "Drupal 9 Site Building Course" which is part of the "Drupal Developer Certification Learning Plan."  This should be a free course (as of May 2023). You will only need to complete the "Drupal 9 Site Building Course," and none of the other courses that are part of the learning plan, although Acquia is a good resource for any Drupal learning.  
 
 - For Drupal 9 Site Building Course: You can skip Units 1-3 as they are not really relevant.  
 - I recommend creating your own Drupal website on Pantheon in order to follow along the course.
 - Pay extra attention and take notes on how to create and edit Content Types, creating custom form displays, building custom and complex views, and creating a taxonomy.  
+
+## Go to the website
+- First, go to https://dashboard.pantheon.io/login and login with your account.
+  ![Screenshot (123)](https://github.com/UCSB-Library-Research-Data-Services/researchdata-ucsb-edu-v01/assets/91364746/3ab0230b-304d-43b8-8e34-475f7e769c93)
+
+- Then, click researchdata-ucsb-edu-v01 site. Your manager Renata will add you to the team so that you can join the group and view/edit this site.
+- Next, click Site Admin
+  ![Screenshot (122)](https://github.com/UCSB-Library-Research-Data-Services/researchdata-ucsb-edu-v01/assets/91364746/bfa94e15-082b-46c4-ac2e-235c7017dc9d)
+
+- Now log in with your account again
+![Screenshot (124)](https://github.com/UCSB-Library-Research-Data-Services/researchdata-ucsb-edu-v01/assets/91364746/53bfb4f0-0495-46ab-85fb-8ad808caa8db)
+
+- You are now all set
+![Screenshot (125)](https://github.com/UCSB-Library-Research-Data-Services/researchdata-ucsb-edu-v01/assets/91364746/2cc1bb70-b36a-4543-8073-9941ab017c7b)
+
+
 
 ## Cyberduck
 Much of the custom CSS editing and HTML templating will be done via SFTP connections with Cyberduck.  But before you make any edits, I recommend making your own Multidev environment.  Read more about what that means here: https://docs.pantheon.io/guides/multidev.  Basically, a multidev environment is Pantheon's version of having a git branch that you can use for development purposes before merging it into master (the 'DEV' site is the master branch).  After creating your multidev, open it up on pantheon, then change it to SFTP mode.  Once that's done, click Connect with SFTP >> Open SFTP Client.  Then, Open Cyberduck.
