@@ -51,4 +51,6 @@ If you are installing a new module on drupal, then make sure that the website is
 - git push origin "branch_name"
 - now go to pantheon website, click dev, click merge, and then merge
 
-- (not done yet btw)
+## Merging workflow
+- After completing your multibranch, merge the code to dev branch, and then test branch, and eventually live branch. Don't forgete to double check if everything works well in the new branch after every merge.
+- If you need to merge the contents inside drupal instead of the code, click database/files, select the branch you want to clone, and then check all four boxes (Clone Database, Clone Files, Run update.php, Clear Caches) and then click "Clone the Database & the Files from XXX into the Development Environment" button.
