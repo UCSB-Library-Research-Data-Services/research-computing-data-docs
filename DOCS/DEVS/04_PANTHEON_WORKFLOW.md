@@ -38,18 +38,7 @@ If you are installing a new module on drupal, then make sure that the website is
 - These ones are usually harmless, and they are fixed once upstream updates appear for the version of Drupal 9 / UCSB Web Theme (in the Code Tab of Panbtheon).  Once these updates are ready, and after you install them, they will update the drupal core for you and usually fix the System Status errors.  
 - For this reason, you should not have to worry about updating the Drupal Core manually, even if you get an error telling you to do so.  I have had problems before where the drupal would not install the updates correctly.  Usually it is just better to wait for the upstream updates to appear for new version of  Drupal 9 / UCSB Web Theme, and installing those updates will update the Drupal Core for you.
   
-## Visual Studio Code
-- In terminal of vs code, clone the git to your local environment (if it's from github: click code and copy the address, and then git clone +addressUJustCopied ; if it's from patheon: click clone with git and copy the command line)
-- Besides, if u need to remove the old one to restart it (which happended a lot), make sure you already saved the change to somewhere else, such as a new random branch here. and then:  Remove-Item researchdata-ucsb-edu-v01 -Recurse -Force
-- now you should be fine with the clone part
-- Do the change you need in vs code
-- cd "file_name" (open the file)
-- git checkout -b "branch_name" (go to the branch to do the modify work. need to make sure that it work well in branch, and then merge it to the master one later to be safe)
-- save the files (ctrl S)
-- git add . (save it)
-- git commit -m "the_message_u_wanna_commit"
-- git push origin "branch_name"
-- now go to pantheon website, click dev, click merge, and then merge
+
 
 ## Merging workflow
 - After completing your multibranch, merge the code to dev branch, and then test branch, and eventually live branch. Don't forgete to double check if everything works well in the new branch after every merge.
