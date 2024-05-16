@@ -1,6 +1,6 @@
 # Getting Started
 
-## In this document, you will review all the requirements and training for developing the Research Data Hub Website.
+## In this document, you will review all the requirements and training for developing the Research Computing and Data Website.
 
 ## Firstly, you will have to review UCSB's Brand Guidelines to know what restrictions are in place for how to design a UCSB website. 
 
@@ -14,7 +14,7 @@ https://webtheme.brand.ucsb.edu/support
 
 https://webtheme.brand.ucsb.edu/pre-launch-checklist
 
-## As a dev for the Research Data Hub website, you will need to learn the basics of Drupal.  
+## As a dev for the Research Computing and Data website, you will need to learn the basics of Drupal.  
 
 ### Pantheon has a crash-course for drupal 9 which I recommend going through: https://pantheon.io/drupal-9-training.  Note you have to scroll down to see the webinar recordings, and you do NOT have to sign up for the webinar. I understand that we are in Drupal 10 right now, but our website was initially built with drupal 9. In addition, Pantheon website has not released the training for drupal 10 yet. Drupal 9 and 10 are not too different.
 
@@ -60,12 +60,12 @@ Much of the custom CSS editing and HTML templating will be done via SFTP connect
 ### If you prefer SFTP mode, you can find more details in /05_REQUIREMENTS.md
 
 ### CSS Code
-All the website's code is under the 'code' directory.  In code/web/themes/ucsbwebrdhsub is where you will make most of your edits.  This is the folder that contains the active sub-theme for the Research Data Hub Website.  It inherits the UCSB Web theme, then it adds CSS as well as templates to it.  You can go ahead and open the 'styles.css' file with your preferred text editor, and this is all the CSS that is specifically for the Research Data Hub Website, and it is where you will make all your CSS additions, too. 
+All the website's code is under the 'code' directory.  In code/web/themes/ucsbwebrdhsub is where you will make most of your edits.  This is the folder that contains the active sub-theme for the Research Computing and Data Website.  It inherits the UCSB Web theme, then it adds CSS as well as templates to it.  You can go ahead and open the 'styles.css' file with your preferred text editor, and this is all the CSS that is specifically for the Research Computing and Data Website, and it is where you will make all your CSS additions, too. 
 ### Creating Custom Content Formats:
 - Drupal has lots of limitations for how content is formatted, so I found it much easier to skip around Drupal's content display editing and to just use my own HTML.
 #### Twig Templating: 
 An important skill will be to know how to use Twig templating.  It is basically just HTML and PHP that you can use to overwrite the default templating that Drupal provides.  Quickly review https://www.drupal.org/docs/theming-drupal/twig-in-drupal/working-with-twig-templates to see how it works, but it will be most helpful to practice when you get to that stage.  https://sarahcodes.medium.com/getting-drupal-8-field-values-in-twig-22b80cb609bd is a great resource for knowing how to access the Drupal values (mostly the field values are important) within Twig. 
-- Take a look at code/web/themes/ucsbwebrdhsub/templates/node--community.html.twig which is used for the Community display.  It is a good example of how PHP and HTML is used in Twig to create a custom display for a content type. I recommend playing around with it by opening the file with cyberduck, and making sure you know how everything works in that file.  When you save the file using Cyberduck, you will notice real time changes made to your multidev site on the Communities page after you clear caches.  The best way to clear cache is to use Devel >> Cache Clear on the Drupal toolbar.  If you make a change that crashes the Communities page, that's okay! Just undo the change using Cyberduck, then open a new window of the Research Data Hub website that is NOT on the communities page, and clear cache again.  
+- Take a look at code/web/themes/ucsbwebrdhsub/templates/node--community.html.twig which is used for the Community display.  It is a good example of how PHP and HTML is used in Twig to create a custom display for a content type. I recommend playing around with it by opening the file with cyberduck, and making sure you know how everything works in that file.  When you save the file using Cyberduck, you will notice real time changes made to your multidev site on the Communities page after you clear caches.  The best way to clear cache is to use Devel >> Cache Clear on the Drupal toolbar.  If you make a change that crashes the Communities page, that's okay! Just undo the change using Cyberduck, then open a new window of the Research Computing and Data website that is NOT on the communities page, and clear cache again.  
 
 
 
