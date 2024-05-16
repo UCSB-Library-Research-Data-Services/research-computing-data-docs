@@ -1,3 +1,11 @@
+**<FIXME>**
+ADD BASIC INFO ABOUT THE WEBSITE
+LINK TO NEW CODE REPOSITORY
+EXPLANATION OF FOLDERS AND FILES CONTAINED IN THIS REPO AND HOW THEY RELATE TO EACH OTHER
+
+
+
+Move the information below to an MD named UPSTREAM_UPDATES.md
 # UCSB Web Theme Upstream for Drupal 9 Sites using Pantheon's Integrated Composer.
 
 This is a collaborative effort from SIS&T and the Office of Public Affairs & Communications to bring the campus one unified CMS template.
