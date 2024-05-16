@@ -48,4 +48,4 @@ All the contents are inside Drupal system which is host by Pantheon. You can add
 ### Code
 Even though UCSB drupal theme has a lot of templates for us to use, sometime we want to have more custom pages. In that case, we need to write some code. There are several ways to get the code and then edit and push the code. 
 
-### For more details, check 02_CONTENT_&_CODE.md.
+### For more details, check 01_CONTENT_&_CODE.md.
