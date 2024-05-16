@@ -1,4 +1,4 @@
-# Requirements for content editors for the Pantheon/Drupal Research Data Hub Website
+# Requirements for content editors for the Pantheon/Drupal Research Computing and Data Website
 
 ## Content Editors:
 
@@ -35,6 +35,20 @@ In addition of connecting to SFTP, while in the sftp.json file, simply copy the 
 
 You are now all set.
 
+### Visual Studio Code and Git
+I recommend using SFTP mode instead of Git, because SFTP mode will save you lots of time in waiting the change in your code to show the change in the web. However, here are the instructions for the git if you still prefer git:
+- In terminal of vs code, clone the git to your local environment (if it's from github: click code and copy the address, and then git clone +addressUJustCopied ; if it's from patheon: click clone with git and copy the command line)
+- Besides, if u need to remove the old one to restart it (which happended a lot), make sure you already saved the change to somewhere else, such as a new random branch here. and then:  Remove-Item researchdata-ucsb-edu-v01 -Recurse -Force
+- now you should be fine with the clone part
+- Do the change you need in vs code
+- cd "file_name" (open the file)
+- git checkout -b "branch_name" (go to the branch to do the modify work. need to make sure that it work well in branch, and then merge it to the master one later to be safe)
+- save the files (ctrl S)
+- git add . (save it)
+- git commit -m "the_message_u_wanna_commit"
+- git push origin "branch_name"
+- now go to pantheon website, click dev, click merge, and then merge
+
 
 ### Install your favorite text editor
 I recommend VSCode. Cyberduck will allow you to open files live on the website into your chosen text editor. You will need this for mostly making CSS styles.
@@ -42,4 +56,21 @@ I recommend VSCode. Cyberduck will allow you to open files live on the website i
 ### Optional:
 - Terminus is Pantheon's tool for facilitating commands that you can use for managing sites on Pantheon.  It is mostly helpful for installing modules and plugins for Drupal and Pantheon.  Docs: https://docs.pantheon.io/terminus.  An important note is that the only compatible operating systems are: MacOS; Windows 10 – WSL 2 Ubuntu 20.0; Ubuntu 20.0 – this would include Ubuntu under Docker or VirtualBox.  In addition, installing Terminus also requires installing PHP, Composer, and Git.
 - For debugging, in addition to vscode, you can also debug the css with the help from chrome browser direcly. Hover to the part you wanna check, right click and go to inspect. For details, visit https://developer.chrome.com/docs/devtools/overview/. Happy coding and good luck!
+
+### CSS Code
+All the website's code is under the 'code' directory.  In code/web/themes/ucsbwebrdhsub is where you will make most of your edits.  This is the folder that contains the active sub-theme for the Research Computing and Data Website.  It inherits the UCSB Web theme, then it adds CSS as well as templates to it.  You can go ahead and open the 'styles.css' file with your preferred text editor, and this is all the CSS that is specifically for the Research Computing and Data Website, and it is where you will make all your CSS additions, too. 
+### Creating Custom Content Formats:
+- Drupal has lots of limitations for how content is formatted, so I found it much easier to skip around Drupal's content display editing and to just use my own HTML.
+#### Twig Templating: 
+An important skill will be to know how to use Twig templating.  It is basically just HTML and PHP that you can use to overwrite the default templating that Drupal provides.  Quickly review https://www.drupal.org/docs/theming-drupal/twig-in-drupal/working-with-twig-templates to see how it works, but it will be most helpful to practice when you get to that stage.  https://sarahcodes.medium.com/getting-drupal-8-field-values-in-twig-22b80cb609bd is a great resource for knowing how to access the Drupal values (mostly the field values are important) within Twig. 
+- Take a look at code/web/themes/ucsbwebrdhsub/templates/node--community.html.twig which is used for the Community display.  It is a good example of how PHP and HTML is used in Twig to create a custom display for a content type. I recommend playing around with it by opening the file with cyberduck, and making sure you know how everything works in that file.  When you save the file using Cyberduck, you will notice real time changes made to your multidev site on the Communities page after you clear caches.  The best way to clear cache is to use Devel >> Cache Clear on the Drupal toolbar.  If you make a change that crashes the Communities page, that's okay! Just undo the change using Cyberduck, then open a new window of the Research Computing and Data website that is NOT on the communities page, and clear cache again.
+
+### Clear Caches
+When editing the code using SFTP mode, the changes will most likely not appear right away because the website is cached.  In order to clear caches, the fastest way to do this is with Devel.  It should be a tab in the Drupal toolbar "Devel" and "Cache Clear" is the first option after you click on Devel.  
+
+### Upstream Update
+Swtich to Git if you were in SFTP mode. And then update in Pantheon. Do not update directly in drupal, which will cause the website (that branch) be blank. As usual, update in the test branch to make sure it work well before updating directly in the dev.
+
+### Content/code Update after live
+Since the website is live now, after changing the content or code, we need to clone in the following sequence: multidev -> dev -> test -> live. Check in every step to make sure everything looks fine before we make the changes live!
 
