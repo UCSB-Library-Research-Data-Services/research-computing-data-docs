@@ -1,15 +1,36 @@
 # Requirements for content editors or developers for the Pantheon/Drupal Research Computing and Data Website
 
+## Idea of Code vs Database / Files
+- Before we go to the application, let's learn about the difference first.
+- There is a strict distinction between the Code and the Database / Files on Pantheon
+- Database / Files refers to any content changes you would make using Drupal (besides for installing modules and updates which requires installing to the code base).  For example, if you add a new Basic Page to the site, this would NOT be in the code, but it would be in the Database/Files
+- Code is separate.  The code is what renders all the database / files so that they are presented a certain way. 
+- Database / File changes are live.  If you use Drupal to add content, you do not have to push those changes to the site.  You would, however, need to replicate the database/files onto other sites if you want your changes to be seen on another site.  For example, if you added content to a multidev, then you would need the dev site to clone over the content, or else it will not have your changes.  (More on this below).
+- Code changes are not live, and, you have to push to the website to see any changes.  If you are using git, this is done by either pushing your local changes to the github master branch (view DEVS/GITWORKFLOW) or by pushing to any branch using the Pantheon remote git connection.  If you push the code directly to Pantheon, github will not have the code, so you should push to github as well. 
+- Code changes with SFTP mode on Pantheon: On Pantheon, if you made code changes with SFTP, then you can push the code using Pantheon's interface.
+- Similar to Database / Files, once you push the code to the site, the code changes are ONLY for that site, and so you would have to merge the code over to see it on another site.  For example, if you made code changes to a multidev, but now want your code changes to go to the dev site, you must merge the multidev code into the dev site.
+- I will elaborate more below when you actually reach there.
+
 ## Content Editors:
 
-### Need to be added as a 'team member' to the Pantheon site.
+### You need those first:
+
+#### Need to be added as a 'team member' to the Pantheon site.
 To add someone as a Team Member, you must also be a team member.  Go to the researchdata-ucsb-edu-v01 site dashboard on Pantheon.  On the top right, there is a "Team" button that you click to then add a team member by their email.  
 
-### Need to be added to the Drupal site.
+#### Need to be added to the Drupal site.
 To add someone on the Drupal website, first login on the Drupal DEV site, then go to Manage >> People.  You can use "Add CAS user" to add a user with their UCSB Net ID so that they can login with their UCSB authorization.  Or you can use the other 'Add User' button to add someone with a custom username and password.  For full permissions for editing the website, give them "Administrator" role.
 
-### Be added to the Github Repository
+#### Be added to the Github Repository
 You will most likely not have to do a lot of work on the Github Repository, but it still may be useful to have the repo so that you can view the DOCS like this one.  Someone must add you to the repo at https://github.com/UCSB-Library-Research-Data-Services/researchdata-ucsb-edu-v01.  For more information on the Github workflow, go to DOCS/DEVS/GITWORKFLOW.md
+
+### During the editing:
+- When you use drupal to add content / edit pages etc., the database/files are automatically updated on the site that you are making edits on.  This means that you do NOT have to make any code pushes etc.  The changes you make are live for the site that you are editing.
+- Changes you make on drupal are only seen for YOUR site.  For example, if you add content to the Dev site, that content is not yet on the Test, multidevs or Live sites.  Furthermore, if you add content to a MultiDev site, that content will not be seen on any other multi-dev nor the dev site etc.
+- (This one might seem irreverent, but it took a while for me so I wanna document it for future reference) For changing the names in the navigation bar, you might notice that when you hover on the nav bar, there is a pencil (edit) part in the very right, but when you move to there, it is gone. Try right click in a random name in nav bar, and then go to the right side to click the pencil. In this case, you can edit it easily.
+
+
+
 
 ## Devs:
 
