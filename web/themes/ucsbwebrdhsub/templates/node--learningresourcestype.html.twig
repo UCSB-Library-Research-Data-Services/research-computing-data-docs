@@ -1,10 +1,10 @@
-{# some copy and paste from node--community.html.twig in the begining #}
-
 {% set background_color = node.field_background_color.color ? node.field_background_color.color : ''%}
 {% set text_color = node.field_text_color.color %}
 {% set style = 'color: #'~ text_color ~';' %} 
 
-{# How to use PHP For statement within Twig: #}
+
+
+
 {# for the tags #}
 {% set labelList = '' %}
 {% if content.field_learningresourcestags[0] %}
@@ -16,8 +16,7 @@
   {% endfor %}
 {% endif %}
 
-{# for the types #}
-
+{# for the formats #}
 {% set labelList1 = '' %}
 {% if content.field_learningresourcestype[0] %}
   {% set labelList1 = content.field_learningresourcestype[0]['#title'] %}
@@ -28,7 +27,6 @@
   {% endfor %}
 {% endif %}
 
-{# Drupal has default classes that are for displaying the content type.  We get these with the following: #}
 {%
   set classes = [
     node.bundle|clean_class,
@@ -43,7 +41,6 @@
     
   ]
 %}
-
 
 {% if view_mode == "default" or view_mode == "full" %}
 <div class="learning-resource-type-card"{{ attributes }}>
@@ -63,15 +60,17 @@
                 {{ content.body }}
             </div>
 
-            
             <div class="learning-resource-tags">
-                {% if node.field_learningresourcestags[0] %}
-                    <h6>
-                        <b>tags: </b>
-                        {{labelList}}
-                    </h6>
-                {% endif %}
+                <h6><b>tags: </b>
+                  {% for key, item in content.field_learningresourcestags %}
+                    {% if key|first != '#' %}
+                      {# Render each tag as an anchor tag for JavaScript processing #}
+                      <a class="learning-resource-tag">{{ item['#title'] }}</a>{% if not loop.last %}, {% endif %}
+                    {% endif %}
+                  {% endfor %}
+                </h6>
             </div>
+          
 
             <div class="learning-resource-tags">
                 {% if node.field_learningresourcestype[0] %}
