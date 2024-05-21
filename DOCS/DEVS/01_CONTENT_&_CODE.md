@@ -22,7 +22,7 @@ To add someone as a Team Member, you must also be a team member.  Go to the rese
 To add someone on the Drupal website, first login on the Drupal DEV site, then go to Manage >> People.  You can use "Add CAS user" to add a user with their UCSB Net ID so that they can login with their UCSB authorization.  Or you can use the other 'Add User' button to add someone with a custom username and password.  For full permissions for editing the website, give them "Administrator" role.
 
 #### Be added to the Github Repository
-You will most likely not have to do a lot of work on the Github Repository, but it still may be useful to have the repo so that you can view the DOCS like this one.  Someone must add you to the repo at https://github.com/UCSB-Library-Research-Data-Services/researchdata-ucsb-edu-v01.  For more information on the Github workflow, go to DOCS/DEVS/GITWORKFLOW.md
+You will most likely not have to do a lot of work on the Github Repository, but it still may be useful to have the repo so that you can view the DOCS like this one.  Someone must add you to the repo at https://github.com/UCSB-Library-Research-Data-Services/researchdata-ucsb-edu-v01. 
 
 ### During the editing:
 - When you use drupal to add content / edit pages etc., the database/files are automatically updated on the site that you are making edits on.  This means that you do NOT have to make any code pushes etc.  The changes you make are live for the site that you are editing.
