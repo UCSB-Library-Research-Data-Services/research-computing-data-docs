@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: blade_block
-label: 'Blade block'
-revision: 0
-description: ''

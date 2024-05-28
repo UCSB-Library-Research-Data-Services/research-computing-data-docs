@@ -1,9 +1,0 @@
-name: CKEditor UCSB Icon
-type: module
-description: This plugin module adds a UCSB icon feature to CKEditor
-package: SIS&T
-dependencies:
-  - ckeditor
-version: '8.x-1.0'
-core: '8.x'
-core_version_requirement: ^8 || ^9
