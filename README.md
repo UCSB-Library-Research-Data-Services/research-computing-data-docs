@@ -1,46 +1,4 @@
-**<FIXME>**
-* ADD BASIC INFO ABOUT THE WEBSITE
-* LINK TO NEW CODE REPOSITORY
-* EXPLANATION OF FOLDERS AND FILES CONTAINED IN THIS REPO AND HOW THEY RELATE TO EACH OTHER
-
-
-
-Move the information below to an MD named UPSTREAM_UPDATES.md
-# UCSB Web Theme Upstream for Drupal 9 Sites using Pantheon's Integrated Composer.
-
-This is a collaborative effort from SIS&T and the Office of Public Affairs & Communications to bring the campus one unified CMS template.
-
-* SIS&T = Student Information Systems & Technology
-* OPAC = Office of Public Affairs & Communications
-* ETS = Pantheon admins for UCSB
-
-We used Pantheon's recommended starting point for forking new Drupal upstreams that work with the Platform's Integrated Composer build process. The custom upstream includes the UCSB's Web theme and several custom modules.
-
-To get started, there are accounts and tools that require registration prior to getting started.
-
-### You will need:
-
-* A GitHub account connected to the [UCSB organization](https://github.com/ucsb/github-guide) if you plan on contributing to this upstream.
-
-* A Pantheon account setup using the EDU pathway during [registration](https://pantheon.io/register).
-
-* [Terminus, the Pantheon command line tool](https://pantheon.io/docs/terminus/install/) (recommended for developers)
-
-* The codebase uses a CSS-preprocessor called Sass for our styles. We recommend all style changes be made using SASS and are compiled accordingly.
-
-* We use a custom development workflow while implementing new features for the upstream. Please contact us to request more information.
-<br />
-
-### About the new upstream:
-
-* Pantheon will automatically run composer. The build results are added to your repository as a tag; they are not pushed to your development branch. When you update a site from the dashboard, Pantheon will both update the git repository from the upstream and then run Composer to get any updates to core, modules or themes.
-
-* You generally do not need to update core in the custom upstream any longer. Pantheon / Composer will update core when there are new versions available, without requiring changes to the upstream.
-
-* Do not attempt to require a different set of modules on different sites. This use case does not work well with Composer, which is designed to manage dependencies for a single application. Instead, include the superset of modules needed in the upstream, and only enable the ones that are needed on any given site.
-
-* In addition, if using any module that are not belonging to ucsb's module, remember to keep those module inside the folder custom, in case it might be gone while updating upstream or transit to the latest drupal.
-<br />
+This is the documentation repo for https://rcd.ucsb.edu/. For the code of this website, please visit https://github.com/UCSB-Library-Research-Data-Services/research-computing-data-code.
 
 ### Project Structure:
 
