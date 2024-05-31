@@ -50,6 +50,6 @@
 - Go to https://perma.cc/manage/create?folder=147717-227797, select UCSB Research Data Services -> Data Literacy Series - live branch
 - Clone your latest content to the live branch. Clicking the image to go to the pdf of that file in the live branch, then copy the url and input to perma and click "create perma link."
 - Make this perma link you just created visible to public.
-- Copy the url of this perma link back to the content of that data literacy in the multi branch u were working on
+- Copy the url of this perma link back to the content of that data literacy in the multi branch you were working on
 - Clone to live branch again and you are now all set
 
