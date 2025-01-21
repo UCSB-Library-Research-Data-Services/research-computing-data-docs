@@ -133,7 +133,9 @@ When editing the code using SFTP mode, the changes will most likely not appear r
 Swtich to Git if you were in SFTP mode. And then update in Pantheon. Do not update directly in drupal, which will cause the website (that branch) be blank. As usual, update in the test branch to make sure it work well before updating directly in the dev.
 
 If there is an error when updating, look for the error message, e.g.:
+
 Error message: "Merge conflict: Merge conflict detected:\nCONFLICT (content): Merge conflict in composer.lock".
+
 The type of error will be enclosed in the parantheses(content), and you can troubleshoot from there.
 
 ### Content Update workflow
