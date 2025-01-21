@@ -132,6 +132,10 @@ When editing the code using SFTP mode, the changes will most likely not appear r
 ### Upstream Update
 Swtich to Git if you were in SFTP mode. And then update in Pantheon. Do not update directly in drupal, which will cause the website (that branch) be blank. As usual, update in the test branch to make sure it work well before updating directly in the dev.
 
+If there is an error when updating, look for the error message, e.g.:
+Error message: "Merge conflict: Merge conflict detected:\nCONFLICT (content): Merge conflict in composer.lock".
+The type of error will be enclosed in the parantheses(content), and you can troubleshoot from there.
+
 ### Content Update workflow
 In multidev of Pantheon, every developer has their own branch, such as nj-exp5 and yc-12. You will do all the changing in your branch. Once you are happy with the result in your multibranch, go to Pantheon, click "Dev" and as the image shown below, choose your own multidev from the environment, check all four boxes (the third and fourth ones are usually uncheck, but it would make the website work better if we check them too), and then clone. 
 
