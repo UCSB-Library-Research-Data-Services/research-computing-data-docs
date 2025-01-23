@@ -20,14 +20,16 @@ On the pantheon dashboard for the researchdata-ucsb-edu-v01 site, there is a Clo
 
 ### Step 2: Add this Github Repository as a Remote
 
-- You do this by: git remote add github [git clone URL]
+```
+cd researchdata-ucsb-edu-v01 // change into the pantheon code directory
+git remote add github [https git clone URL]
+```
 
 - Important note: Now you should now have two remote repositories connected to your local repo.  The Pantheon one is called 'origin,' and the github one is called 'github'.
 
 ### Step 3: Pushing any code changes: 
 
 When you push a code change, you can push to either the Github remote labeled 'github' or the Pantheon remote labeled 'origin', or both.  You would probably want to push your code to both if you are working on either a multidev or on a separate branch from the master branch.  But if you are just updating the code on the master branch directly, then you can make sure top set the Pantheon Development Mode to Git, and then pushing your code to the master branch on Github will automatically push the code to the Pantheon repo for you.  Having this set up is also good to make sure there are no merge conflicts.  To do this, you must git pull from both 'origin' and 'github' remote repositories.
-
 
 ### Branching Workflows:
 
