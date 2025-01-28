@@ -32,4 +32,6 @@ To get started, there are accounts and tools that require registration prior to 
 * Do not attempt to require a different set of modules on different sites. This use case does not work well with Composer, which is designed to manage dependencies for a single application. Instead, include the superset of modules needed in the upstream, and only enable the ones that are needed on any given site.
 
 * In addition, if using any module that are not belonging to ucsb's module, remember to keep those module inside the folder custom, in case it might be gone while updating upstream or transit to the latest drupal.
+
+* Look in composer.lock / relevant files for commented code that when uncommmented, can help resolve failed upstream updates
 <br />
