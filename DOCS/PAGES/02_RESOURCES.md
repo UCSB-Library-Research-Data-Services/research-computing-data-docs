@@ -30,6 +30,7 @@
 
 ## Menu for Resources
 - While modifing, clicking Resources in the menu navbar, we can see everything from "Overview" to "Data Tool Explorer" is in the same column. Nonetheless, while logging out, as a normal user, we could see that "Overview" is in the first column, and the rest will be on the right side. It is a tiny bug from druapl, but it doesnt hurt that much.
+- To edit the drop-down menu display names, go to Structure >> Menus >> Main >> Resources, and edit from there.
 
 ## Edit Resources Page
 - web/themes/ucsbwebrdhsub/templates/node--resource.html.twig
