@@ -143,14 +143,14 @@ In multidev of Pantheon, every developer has their own branch, such as nj-exp5 a
 
 <img width="1204" alt="Screenshot 2024-05-16 at 8 47 28 PM" src="https://github.com/UCSB-Library-Research-Data-Services/research-computing-data-docs/assets/91364746/6027c24b-87d5-4e34-a148-9c79eb3dfe18">
 
-After this process is done, Click SIte Admin again and go check if the changing also work well in the Dev. Normally, you are the only one who is working on this project, so it will just show whatever you have done in your branch. However, while working with others, everybody has their own branch, and when you push your contents to the dev, that might cause a conclict and you need to solve it.
+After this process is done, Click SIte Admin again and go check if the changing also work well in the Dev. Normally, you are the only one who is working on this project, so it will just show whatever you have done in your branch. However, while working with others, everybody has their own branch, and when you push your contents to the dev, that might cause a conflict and you need to solve it. To go further, if you are NOT the only one working on this website, then the explained workflow should be different, as when pushing from your multi-dev site all the way to the live site, there is a risk of overriding changes made by other developers. Regardless.
 
 After that, doing the same process to clone the contents to the test branch, and if everything works well, clone to the live branch eventually. 
 
 Check in every step to make sure everything looks fine before we make the changes live!
 
 ### Code Update workflow
-The workflow of code is pretty similar to the content one. First, we commit the change in our multidev branch when we are happy with the result. And then we move to the Dev brnach, click "Merge" and select the branch you were working on as the image shows below.
+The workflow of code is pretty similar to the content one. First, we commit the change in our multidev branch when we are happy with the result. And then we move to the Dev branch, click "Merge" and select the branch you were working on as the image shows below.
 
 <img width="1211" alt="Screenshot 2024-05-16 at 8 54 51 PM" src="https://github.com/UCSB-Library-Research-Data-Services/research-computing-data-docs/assets/91364746/76487279-f8d3-4657-969e-a0663fc12100">
 
@@ -159,3 +159,6 @@ Similarly, click "Site Admin" to make sure it work well. And then move to the "T
 <img width="1202" alt="Screenshot 2024-05-16 at 8 56 00 PM" src="https://github.com/UCSB-Library-Research-Data-Services/research-computing-data-docs/assets/91364746/82887c47-e392-4e35-977b-125db15fadaf">
 
 If it works well again here, we clone to the live branch too.
+
+### Accessibility Testing / Broken Links
+UCSB sites use the tool SiteImprove to check for broken links and test for accessibility. In order to gain access to this service, you will follow the instructions and fill out the form as explained [here](https://webguide.ucsb.edu/accessibility/siteimprove).
