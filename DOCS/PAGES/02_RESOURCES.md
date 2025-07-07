@@ -10,6 +10,7 @@
 - Go to Manage >> Content
 - In the filter, you can search for the title of the Resource you are looking for.  You should also use the 'Content Type' dropdown and change it to 'Resource'.
 - While creating/editing resource, pay attention to the "TypeOfResources" you pick. I already made the connection from different type of resources to each resource view. After choosing its type, it will show up in its page. Take "Sharing & Archiving" as an example, we pick "Data Resources" in "TypeOfResources" and then save. Now we can see it is shown up in /data-resources.
+- For new Data Resources (https://rcd.ucsb.edu/resources/data-resources), for proper formatting you need to have images of size 396 x 265 pixels.
 
 ## Edit the Resource View:
 - Unlike other page usually have one view, we actually have a lot views for resources pages: Resources, Computing Resources View, Data Resources View, Research Resources View, ResourceOverview1_VIew.
