@@ -5,7 +5,7 @@
 - There is a strict distinction between the Code and the Database / Files on Pantheon
 - Database / Files refers to any content changes you would make using Drupal (besides for installing modules and updates which requires installing to the code base).  For example, if you add a new Basic Page to the site, this would NOT be in the code, but it would be in the Database/Files
 - Code is separate.  The code is what renders all the database / files so that they are presented a certain way. 
-- Database / File changes are live.  If you use Drupal to add content, you do not have to push those changes to the site.  You would, however, need to replicate the database/files onto other sites if you want your changes to be seen on another site.  For example, if you added content to a multidev, then you would need the dev site to clone over the content, or else it will not have your changes.  (More on this below).
+- Database / File changes are live.  If you use Drupal to add content, you do not have to push those changes to the site.  You would, however, need to replicate the database/files onto other sites if you want your changes to be seen on another site. More on this below.
 - Code changes are not live, and, you have to push to the website to see any changes.  If you are using git, this is done by either pushing your local changes to the github master branch (view DEVS/GITWORKFLOW) or by pushing to any branch using the Pantheon remote git connection.  If you push the code directly to Pantheon, github will not have the code, so you should push to github as well. 
 - Code changes with SFTP mode on Pantheon: On Pantheon, if you made code changes with SFTP, then you can push the code using Pantheon's interface.
 - Similar to Database / Files, once you push the code to the site, the code changes are ONLY for that site, and so you would have to merge the code over to see it on another site.  For example, if you made code changes to a multidev, but now want your code changes to go to the dev site, you must merge the multidev code into the dev site.
@@ -139,18 +139,19 @@ Error message: "Merge conflict: Merge conflict detected:\nCONFLICT (content): Me
 The type of error will be enclosed in the parantheses(content), and you can troubleshoot from there.
 
 ### Content Update workflow
-In multidev of Pantheon, every developer has their own branch, such as nj-exp5 and yc-12. You will do all the changing in your branch. Once you are happy with the result in your multibranch, go to Pantheon, click "Dev" and as the image shown below, choose your own multidev from the environment, check all four boxes (the third and fourth ones are usually uncheck, but it would make the website work better if we check them too), and then clone. 
+In Pantheon, a content-down code-up approach is followed, meaning that you will make ALL content updates DIRECTLY in the live branch. You should use the preview function to test how the changed content appears and ensure quality before saving. Additionally, content-down refers to the fact that when you alter the code, you will always clone the database/files from the live branch down to the branch you are working on (whether it be dev, multidev, or test).
+
+The reason for this approach is because when multiple developers are working on the site, having each developer change the sites content on their own multi-devs / developers site, and then proceed to clone upwards into live would almost certainly result in loss of content due to overwrites. Following this approach is best practice. 
 
 <img width="1204" alt="Screenshot 2024-05-16 at 8 47 28 PM" src="https://github.com/UCSB-Library-Research-Data-Services/research-computing-data-docs/assets/91364746/6027c24b-87d5-4e34-a148-9c79eb3dfe18">
 
 After this process is done, Click SIte Admin again and go check if the changing also work well in the Dev. Normally, you are the only one who is working on this project, so it will just show whatever you have done in your branch. However, while working with others, everybody has their own branch, and when you push your contents to the dev, that might cause a conflict and you need to solve it. To go further, if you are NOT the only one working on this website, then the explained workflow should be different, as when pushing from your multi-dev site all the way to the live site, there is a risk of overriding changes made by other developers. Regardless.
 
-After that, doing the same process to clone the contents to the test branch, and if everything works well, clone to the live branch eventually. 
-
-Check in every step to make sure everything looks fine before we make the changes live!
 
 ### Code Update workflow
-The workflow of code is pretty similar to the content one. First, we commit the change in our multidev branch when we are happy with the result. And then we move to the Dev branch, click "Merge" and select the branch you were working on as the image shows below.
+As mentioned above, Pantheon follows a content-down code-up philosophy, meaning that any code changes will start from the bottom, e.g.
+
+First, we commit the change in our multidev branch when we are happy with the result. And then we move to the Dev branch, click "Merge" and select the branch you were working on as the image shows below.
 
 <img width="1211" alt="Screenshot 2024-05-16 at 8 54 51 PM" src="https://github.com/UCSB-Library-Research-Data-Services/research-computing-data-docs/assets/91364746/76487279-f8d3-4657-969e-a0663fc12100">
 
