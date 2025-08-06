@@ -141,11 +141,10 @@ The type of error will be enclosed in the parantheses(content), and you can trou
 ### Content Update workflow
 In Pantheon, a content-down code-up approach is followed, meaning that you will make ALL content updates DIRECTLY in the live branch. You should use the preview function to test how the changed content appears and ensure quality before saving. Additionally, content-down refers to the fact that when you alter the code, you will always clone the database/files from the live branch down to the branch you are working on (whether it be dev, multidev, or test).
 
+Example of content-down:
+- <img width="1176" height="608" alt="Screenshot 2025-08-06 at 11 09 02 AM" src="https://github.com/user-attachments/assets/34a4968b-59da-49ad-9fcc-0bb5caeedf0d" />
+
 The reason for this approach is because when multiple developers are working on the site, having each developer change the sites content on their own multi-devs / developers site, and then proceed to clone upwards into live would almost certainly result in loss of content due to overwrites. Following this approach is best practice. 
-
-<img width="1204" alt="Screenshot 2024-05-16 at 8 47 28 PM" src="https://github.com/UCSB-Library-Research-Data-Services/research-computing-data-docs/assets/91364746/6027c24b-87d5-4e34-a148-9c79eb3dfe18">
-
-After this process is done, Click SIte Admin again and go check if the changing also work well in the Dev. Normally, you are the only one who is working on this project, so it will just show whatever you have done in your branch. However, while working with others, everybody has their own branch, and when you push your contents to the dev, that might cause a conflict and you need to solve it. To go further, if you are NOT the only one working on this website, then the explained workflow should be different, as when pushing from your multi-dev site all the way to the live site, there is a risk of overriding changes made by other developers. Regardless.
 
 
 ### Code Update workflow
