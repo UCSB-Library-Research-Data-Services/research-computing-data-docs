@@ -63,7 +63,7 @@ As a developer or site admin, you may need to add new team members to the Resear
    - The new user will receive a confirmation email with login instructions.  
 
 ### Best Practices
-- Always confirm with your manager (e.g., Renata) which role to assign before creating the account.  
+- When possible, confirm with your manager (e.g., Renata) which role to assign before creating the account.  
 - If someone only needs to update pages or add content, assign them the **Content Editor** role instead of **Administrator**. 
 
 ## Content and Code
