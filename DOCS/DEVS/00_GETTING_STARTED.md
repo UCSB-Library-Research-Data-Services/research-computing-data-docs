@@ -64,8 +64,7 @@ As a developer or site admin, you may need to add new team members to the Resear
 
 ### Best Practices
 - Always confirm with your manager (e.g., Renata) which role to assign before creating the account.  
-- If someone only needs to update pages or add content, assign them the **Content Editor** role instead of **Administrator**.  
-- Periodically review the **People** list to ensure only active team members have access.  
+- If someone only needs to update pages or add content, assign them the **Content Editor** role instead of **Administrator**. 
 
 ## Content and Code
 After entering the website, every change would be either content changing or code changing.
