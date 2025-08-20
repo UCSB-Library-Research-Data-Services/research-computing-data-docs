@@ -38,6 +38,34 @@ https://webtheme.brand.ucsb.edu/pre-launch-checklist
 - You are now all set
 ![Screenshot (125)](https://github.com/UCSB-Library-Research-Data-Services/researchdata-ucsb-edu-v01/assets/91364746/2cc1bb70-b36a-4543-8073-9941ab017c7b)
 
+## Adding New Users to Drupal
+
+As a developer or site admin, you may need to add new team members to the Research Computing and Data website.
+
+1. **Log in to the Site Admin**
+   - Go to [Pantheon Dashboard](https://dashboard.pantheon.io/login) and log in with your account.  
+   - Select the **researchdata-ucsb-edu-v01** site.  
+   - Click **Site Admin** to enter the Drupal administrative interface.  
+
+2. **Navigate to the People Section**
+   - In the top menu bar, click on **People**.  
+   - This is where all user accounts are managed.  
+
+3. **Fill Out User Information**
+   - **Email address**: Enter the user’s email (used for account recovery and notifications).  
+   - **Check** "Allow user to log in via CAS" to allow them to log in through the UCSB portal.  
+   - **Username**: Keep this the same username as their UCSB portal username.  
+   - **Password / Confirm password**: Set a password (will not be actually used to log in).  
+   - **Status**: Select **Active** to allow the account to log in.
+   - 
+4. **Save the New User**
+   - Click **Create new account**.  
+   - The new user will receive a confirmation email with login instructions.  
+
+### Best Practices
+- Always confirm with your manager (e.g., Renata) which role to assign before creating the account.  
+- If someone only needs to update pages or add content, assign them the **Content Editor** role instead of **Administrator**.  
+- Periodically review the **People** list to ensure only active team members have access.  
 
 ## Content and Code
 After entering the website, every change would be either content changing or code changing.
