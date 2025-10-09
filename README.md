@@ -2,7 +2,10 @@ This is the documentation repo for https://rcd.ucsb.edu/. For the code of this w
 
 ### Project Structure:
 
-* Whatever you change in this github repo, it is just for the repo here. Whatever you change in the code in Pantheon, it is just for there only as well. The repo here is easier to access by public so we still keep this repo.
-* DOCS contains the main directories and files in this repository about the whole system. You can start with DOCS/DEVS/00_GETTING_STARTED.md file and proceed in numerical order. 
-* While the files in DOCS/PAGES are more specific about some specific pages such as community page, and there will be more details inside to guide you.
-* After viewing all the documentations from DOCS, feel free to explore the rest of the repository.
+* Any changes made in this GitHub repository apply only to this repository. Similarly, any modifications made to the code in Pantheon affect only that environment. This repository is retained primarily for easier public access.
+
+* The DOCS directory contains the primary directories and files for this repository, providing an overview of the entire system. We recommend starting with the file DOCS/DEVS/00_GETTING_STARTED.md and proceeding in numerical order.
+
+* The files in DOCS/PAGES focus on specific pages, such as the community page, and include detailed guidance for each.
+
+* After reviewing all documentation in DOCS, you are encouraged to explore the code repository.
