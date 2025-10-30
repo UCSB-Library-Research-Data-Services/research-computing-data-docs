@@ -160,5 +160,19 @@ Similarly, click "Site Admin" to make sure it work well. And then move to the "T
 
 If it works well again here, we clone to the live branch too.
 
-### Accessibility Testing / Broken Links
-UCSB sites use the tool SiteImprove to check for broken links and test for accessibility. In order to gain access to this service, you will follow the instructions and fill out the form as explained [here](https://webguide.ucsb.edu/accessibility/siteimprove).
+### Accessibility Checking with Siteimprove
+UCSB websites use Siteimprove to monitor accessibility, broken links, SEO, and content quality. Siteimprove automatically crawls the site every ~5 days and reports issues.
+
+Access & Setup:
+- Create account
+  - Go to https://siteimprove.ucop.edu
+  - Sign in with UCSB NetID (SSO)
+  - Your account will be created but you will not yet see scans
+- Request Site Access
+  - Submit the site URL via UCSB Web Standards Group form: https://webguide.ucsb.edu/accessibility/siteimprove#siteimprove-form
+
+Support & Training
+- Refer to these resources to get a better understanding of Siteimprove
+  - Checking website accessibility with Siteimprove | UCOP: https://www.ucop.edu/electronic-accessibility/web-developers/tools-and-testing/siteimprove/index.html
+  - On-Demand Webinar: Accessibility 101: https://help.siteimprove.com/support/solutions/articles/80000863892
+  - Siteimprove Onboarding: Introduction and Accessibility: https://learninghub.siteimprove.com/siteimprove-onboarding-part-1-introduction-and-accessibility
