@@ -5,7 +5,8 @@
 
 ### Home
 - https://rcd.ucsb.edu/home
-- blade
+- blade + view
+- for view, check DOCS/PAGES/10_HOME.md
 
 ### Resources Overview
 - https://rcd.ucsb.edu/resources
