@@ -50,3 +50,14 @@ Here you can add categories by clicking "Add Field", or you can edit or delete t
 
 
 ### There are further settings at route (on the drupal site) /admin/config/content/finder with little documentation on what it's for. It includes fields for email address, body, header, etc. As of right now, these settings have not been touched.
+
+## External Website Change Monitoring (Automation)
+Some external service pages referenced by the RCD website are monitored by an automated script. The script periodically checks a small set of known external pages (for example COSL software catalog pages and the DREAM Lab resources page) for content changes.
+
+If a change is detected, the script automatically creates a Jira subtask in the RDS project to notify maintainers that the content may need review.
+
+After a ticket is created:
+- Open the Jira subtask.
+- Review the external page referenced in the ticket.
+- Determine whether the change affects information shown on the Finder page.
+- If needed, update the corresponding  entry using the editing steps described above.
