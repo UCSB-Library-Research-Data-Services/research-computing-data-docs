@@ -2,8 +2,6 @@
 
 This document provides a general overview of how SiteImprove monitoring works and how issues are reviewed and tracked.
 
-<br />
-
 ### SiteImprove Overview
 
 SiteImprove scans the website and evaluates several categories of site quality.
@@ -16,8 +14,6 @@ These categories include:
 * Policy and compliance checks
 
 Each category contributes to an overall score displayed in the SiteImprove dashboard.
-
-<br />
 
 ### Requesting or Running Site Crawls
 
@@ -34,8 +30,6 @@ During a crawl, SiteImprove scans:
 
 The crawl results are used to generate reports and update the SiteImprove score dashboard.
 
-<br />
-
 ### Reviewing SiteImprove Reports
 
 You can review reports in the SiteImprove dashboard.
@@ -49,8 +43,6 @@ You can review reports in the SiteImprove dashboard.
 4. Review flagged issues and affected pages.
 
 The dashboard also provides a breakdown of issues by type and occurrence.
-
-<br />
 
 ### Accessibility Monitoring
 
@@ -73,8 +65,6 @@ Common accessibility issues include:
 
 Accessibility issues can be reviewed under the **Accessibility section** of the SiteImprove dashboard.
 
-<br />
-
 
 ### Connecting SiteImprove with Analytics
 
@@ -82,10 +72,6 @@ Analytics integration has not yet been configured for the RCD site.
 
 Once connected, analytics data can help identify high-traffic pages and prioritize accessibility and content improvements: https://help.siteimprove.com/support/solutions/articles/80000900556
 
-<br />
-
 ### SiteImprove Score Targets
 
 The current goal is to maintain a **SiteImprove score above 90%**.
-
-<br />
