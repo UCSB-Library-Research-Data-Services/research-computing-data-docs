@@ -70,6 +70,11 @@ When the analytics subtask appears under RDS-436:
 3. Note anything notable (a spike, a drop, a newly popular page) in the subtask.
 4. Mark the subtask resolved.
 
+### Site Monitor
+
+The RCD site is monitored through UptimeRobot. You can access it through logging into UptimeRobot using the library-rds email. If the site ever goes down, review the reason through the email sent from UptimeRobot and investigate.
+
+
 ### Related Docs
 
 * 07_SITEIMPROVE.md - the other site-monitoring workflow.
